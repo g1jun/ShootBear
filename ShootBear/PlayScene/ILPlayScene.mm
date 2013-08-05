@@ -21,11 +21,29 @@
     if(self) {
         self.world = [self createPhyscisWorld];
         CCLayer *tmxLayer = [ILTMXLayer nodeWithB2World:self.world];
-        [self addChild:tmxLayer];
-        
+//        [self addChild:tmxLayer];
+        [self scheduleUpdate];
     }
     return self;
 }
+
+-(void) update: (ccTime) dt
+{
+	int32 velocityIterations = 8;
+	int32 positionIterations = 1;
+	self.world->Step(dt, velocityIterations, positionIterations);
+}
+
+-(void) draw
+{
+	[super draw];
+	ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+	kmGLPushMatrix();
+	self.world->DrawDebugData();
+	kmGLPopMatrix();
+}
+
+
 
 - (b2World *) createPhyscisWorld
 {	

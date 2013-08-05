@@ -33,7 +33,8 @@
 
 - (void) producePhysicsLines:(NSArray *)lines
 {
-    
+    ILBox2dFactory *factory = [[ILBox2dFactory alloc] initWithB2World:self.world];
+    [factory createLineSegement:lines];
 }
 
 - (NSArray *)configPhyscisLine:(NSArray *)lines atTilePoint:(CGPoint) position
