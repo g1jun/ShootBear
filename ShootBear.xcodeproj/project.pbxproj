@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB217AE606D0023BD39 /* ILPlayScene.mm */; };
+		0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */; };
+		0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DABC17AE61A40023BD39 /* ILShootBear.mm */; };
+		0411DAC117AE6BDD0023BD39 /* map1-ipad.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 0411DAC017AE6BDD0023BD39 /* map1-ipad.tmx */; };
+		0411DAC317AE71B30023BD39 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0411DAC217AE71B30023BD39 /* map.png */; };
+		0411DAC517AE74690023BD39 /* collision.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0411DAC417AE74690023BD39 /* collision.txt */; };
+		0411DAC917AE76800023BD39 /* ILBox2dFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAC817AE76800023BD39 /* ILBox2dFactory.mm */; };
+		0411DACC17AE76B70023BD39 /* ILTMXToBox2d.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACB17AE76B70023BD39 /* ILTMXToBox2d.mm */; };
+		0411DAD017AE82AC0023BD39 /* ILBox2dConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */; };
+		0413619017AF1BFF0097E87F /* ILLineSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0413618F17AF1BFF0097E87F /* ILLineSegment.mm */; };
 		04886BF917ACB1F6005D8DB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BF817ACB1F6005D8DB9 /* QuartzCore.framework */; };
 		04886BFB17ACB1F6005D8DB9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BFA17ACB1F6005D8DB9 /* OpenGLES.framework */; };
 		04886BFD17ACB1F6005D8DB9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BFC17ACB1F6005D8DB9 /* OpenAL.framework */; };
@@ -191,6 +201,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0411DAB117AE606D0023BD39 /* ILPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILPlayScene.h; path = PlayScene/ILPlayScene.h; sourceTree = "<group>"; };
+		0411DAB217AE606D0023BD39 /* ILPlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ILPlayScene.mm; path = PlayScene/ILPlayScene.mm; sourceTree = "<group>"; };
+		0411DAB817AE60E50023BD39 /* ILTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTMXLayer.h; sourceTree = "<group>"; };
+		0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILTMXLayer.mm; sourceTree = "<group>"; };
+		0411DABB17AE61A40023BD39 /* ILShootBear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShootBear.h; sourceTree = "<group>"; };
+		0411DABC17AE61A40023BD39 /* ILShootBear.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILShootBear.mm; sourceTree = "<group>"; };
+		0411DAC017AE6BDD0023BD39 /* map1-ipad.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "map1-ipad.tmx"; sourceTree = "<group>"; };
+		0411DAC217AE71B30023BD39 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		0411DAC417AE74690023BD39 /* collision.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = collision.txt; sourceTree = "<group>"; };
+		0411DAC717AE76800023BD39 /* ILBox2dFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBox2dFactory.h; sourceTree = "<group>"; };
+		0411DAC817AE76800023BD39 /* ILBox2dFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBox2dFactory.mm; sourceTree = "<group>"; };
+		0411DACA17AE76B70023BD39 /* ILTMXToBox2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTMXToBox2d.h; sourceTree = "<group>"; };
+		0411DACB17AE76B70023BD39 /* ILTMXToBox2d.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILTMXToBox2d.mm; sourceTree = "<group>"; };
+		0411DACE17AE82AC0023BD39 /* ILBox2dConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBox2dConfig.h; sourceTree = "<group>"; };
+		0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBox2dConfig.mm; sourceTree = "<group>"; };
+		0413618E17AF1BFF0097E87F /* ILLineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLineSegment.h; sourceTree = "<group>"; };
+		0413618F17AF1BFF0097E87F /* ILLineSegment.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILLineSegment.mm; sourceTree = "<group>"; };
 		04886BF517ACB1F6005D8DB9 /* ShootBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04886BF817ACB1F6005D8DB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04886BFA17ACB1F6005D8DB9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -592,6 +619,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0411DAB417AE60760023BD39 /* PlayScene */ = {
+			isa = PBXGroup;
+			children = (
+				0411DAB117AE606D0023BD39 /* ILPlayScene.h */,
+				0411DAB217AE606D0023BD39 /* ILPlayScene.mm */,
+				0411DAB817AE60E50023BD39 /* ILTMXLayer.h */,
+				0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */,
+			);
+			name = PlayScene;
+			sourceTree = "<group>";
+		};
+		0411DAC617AE76600023BD39 /* Box2d */ = {
+			isa = PBXGroup;
+			children = (
+				0411DAC717AE76800023BD39 /* ILBox2dFactory.h */,
+				0411DAC817AE76800023BD39 /* ILBox2dFactory.mm */,
+				0411DACA17AE76B70023BD39 /* ILTMXToBox2d.h */,
+				0411DACB17AE76B70023BD39 /* ILTMXToBox2d.mm */,
+				0411DACE17AE82AC0023BD39 /* ILBox2dConfig.h */,
+				0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */,
+				0413618E17AF1BFF0097E87F /* ILLineSegment.h */,
+				0413618F17AF1BFF0097E87F /* ILLineSegment.mm */,
+			);
+			name = Box2d;
+			sourceTree = "<group>";
+		};
+		0411DACD17AE80950023BD39 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				04886E3017ACB20D005D8DB9 /* AppDelegate.h */,
+				04886E3117ACB20D005D8DB9 /* AppDelegate.mm */,
+				04886E3317ACB20D005D8DB9 /* HelloWorldLayer.h */,
+				04886E3417ACB20D005D8DB9 /* HelloWorldLayer.mm */,
+				04886E3617ACB20E005D8DB9 /* IntroLayer.h */,
+				04886E3717ACB20E005D8DB9 /* IntroLayer.mm */,
+				04886E3917ACB20E005D8DB9 /* GLES-Render.h */,
+				04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
 		04886BEC17ACB1F5005D8DB9 = {
 			isa = PBXGroup;
 			children = (
@@ -629,17 +697,14 @@
 		04886C0C17ACB1F6005D8DB9 /* ShootBear */ = {
 			isa = PBXGroup;
 			children = (
-				04886E3017ACB20D005D8DB9 /* AppDelegate.h */,
-				04886E3117ACB20D005D8DB9 /* AppDelegate.mm */,
-				04886E3317ACB20D005D8DB9 /* HelloWorldLayer.h */,
-				04886E3417ACB20D005D8DB9 /* HelloWorldLayer.mm */,
-				04886E3617ACB20E005D8DB9 /* IntroLayer.h */,
-				04886E3717ACB20E005D8DB9 /* IntroLayer.mm */,
-				04886E3917ACB20E005D8DB9 /* GLES-Render.h */,
-				04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */,
+				0411DACD17AE80950023BD39 /* Start */,
+				0411DAC617AE76600023BD39 /* Box2d */,
+				0411DAB417AE60760023BD39 /* PlayScene */,
 				04886C0D17ACB1F6005D8DB9 /* Resources */,
 				04886C2517ACB1F7005D8DB9 /* libs */,
 				04886E2C17ACB20D005D8DB9 /* Supporting Files */,
+				0411DABB17AE61A40023BD39 /* ILShootBear.h */,
+				0411DABC17AE61A40023BD39 /* ILShootBear.mm */,
 			);
 			path = ShootBear;
 			sourceTree = "<group>";
@@ -647,19 +712,10 @@
 		04886C0D17ACB1F6005D8DB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				04886C0E17ACB1F6005D8DB9 /* Default.png */,
-				04886C1017ACB1F6005D8DB9 /* Default@2x.png */,
-				04886C1217ACB1F6005D8DB9 /* Default-568h@2x.png */,
-				04886C1417ACB1F6005D8DB9 /* Default-Landscape~ipad.png */,
-				04886C1617ACB1F6005D8DB9 /* Icon-72.png */,
-				04886C1817ACB1F6005D8DB9 /* Icon-Small-50.png */,
-				04886C1A17ACB1F6005D8DB9 /* Icon-Small.png */,
-				04886C1C17ACB1F6005D8DB9 /* Icon-Small@2x.png */,
-				04886C1E17ACB1F7005D8DB9 /* Icon.png */,
-				04886C2017ACB1F7005D8DB9 /* Icon@2x.png */,
-				04886C2217ACB1F7005D8DB9 /* Info.plist */,
-				04886C2317ACB1F7005D8DB9 /* iTunesArtwork */,
-				04886E3C17ACB20E005D8DB9 /* blocks.png */,
+				04886E4617ACB591005D8DB9 /* common */,
+				04886E4517ACB57E005D8DB9 /* ipad */,
+				04886E4417ACB576005D8DB9 /* iphone */,
+				04886E4317ACB55E005D8DB9 /* config */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1184,6 +1240,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04886E4317ACB55E005D8DB9 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				04886C0E17ACB1F6005D8DB9 /* Default.png */,
+				04886C1017ACB1F6005D8DB9 /* Default@2x.png */,
+				04886C1217ACB1F6005D8DB9 /* Default-568h@2x.png */,
+				04886C1417ACB1F6005D8DB9 /* Default-Landscape~ipad.png */,
+				04886C1617ACB1F6005D8DB9 /* Icon-72.png */,
+				04886C1817ACB1F6005D8DB9 /* Icon-Small-50.png */,
+				04886C1A17ACB1F6005D8DB9 /* Icon-Small.png */,
+				04886C1C17ACB1F6005D8DB9 /* Icon-Small@2x.png */,
+				04886C1E17ACB1F7005D8DB9 /* Icon.png */,
+				04886C2017ACB1F7005D8DB9 /* Icon@2x.png */,
+				04886C2217ACB1F7005D8DB9 /* Info.plist */,
+				04886C2317ACB1F7005D8DB9 /* iTunesArtwork */,
+				04886E3C17ACB20E005D8DB9 /* blocks.png */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		04886E4417ACB576005D8DB9 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iphone;
+			sourceTree = "<group>";
+		};
+		04886E4517ACB57E005D8DB9 /* ipad */ = {
+			isa = PBXGroup;
+			children = (
+				0411DAC017AE6BDD0023BD39 /* map1-ipad.tmx */,
+			);
+			name = ipad;
+			sourceTree = "<group>";
+		};
+		04886E4617ACB591005D8DB9 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0411DAC417AE74690023BD39 /* collision.txt */,
+				0411DAC217AE71B30023BD39 /* map.png */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1210,6 +1310,7 @@
 		04886BED17ACB1F5005D8DB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = IL;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mac;
 			};
@@ -1248,6 +1349,9 @@
 				04886C2417ACB1F7005D8DB9 /* iTunesArtwork in Resources */,
 				04886D7D17ACB205005D8DB9 /* ChangeLog in Resources */,
 				04886E3D17ACB20E005D8DB9 /* blocks.png in Resources */,
+				0411DAC117AE6BDD0023BD39 /* map1-ipad.tmx in Resources */,
+				0411DAC317AE71B30023BD39 /* map.png in Resources */,
+				0411DAC517AE74690023BD39 /* collision.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1416,6 +1520,13 @@
 				04886E3517ACB20D005D8DB9 /* HelloWorldLayer.mm in Sources */,
 				04886E3817ACB20E005D8DB9 /* IntroLayer.mm in Sources */,
 				04886E3B17ACB20E005D8DB9 /* GLES-Render.mm in Sources */,
+				0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */,
+				0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */,
+				0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */,
+				0411DAC917AE76800023BD39 /* ILBox2dFactory.mm in Sources */,
+				0411DACC17AE76B70023BD39 /* ILTMXToBox2d.mm in Sources */,
+				0411DAD017AE82AC0023BD39 /* ILBox2dConfig.mm in Sources */,
+				0413619017AF1BFF0097E87F /* ILLineSegment.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1426,6 +1537,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1436,6 +1551,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
@@ -1447,6 +1563,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1455,6 +1575,7 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
@@ -1477,6 +1598,7 @@
 				);
 				HEADER_SEARCH_PATHS = "\"ShootBear/libs/kazmath/include\"";
 				INFOPLIST_FILE = ShootBear/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1502,6 +1624,7 @@
 				);
 				HEADER_SEARCH_PATHS = "\"ShootBear/libs/kazmath/include\"";
 				INFOPLIST_FILE = ShootBear/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1533,6 +1656,7 @@
 				04886E4217ACB20E005D8DB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
