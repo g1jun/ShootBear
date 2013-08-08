@@ -7,6 +7,7 @@
 //
 
 #import "ILPlayScene.h"
+#import "ILBox2dDebug.h"
 
 @interface ILPlayScene ()
 
@@ -21,7 +22,10 @@
     if(self) {
         self.world = [self createPhyscisWorld];
         CCLayer *tmxLayer = [ILTMXLayer nodeWithB2World:self.world];
-//        [self addChild:tmxLayer];
+        [self addChild:tmxLayer];
+        ILBox2dDebug *debug = [[ILBox2dDebug alloc] initWithB2World:self.world];
+        [self addChild:debug];
+        [debug release];
         [self scheduleUpdate];
     }
     return self;
@@ -34,14 +38,6 @@
 	self.world->Step(dt, velocityIterations, positionIterations);
 }
 
--(void) draw
-{
-	[super draw];
-	ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
-	kmGLPushMatrix();
-	self.world->DrawDebugData();
-	kmGLPopMatrix();
-}
 
 
 
@@ -52,11 +48,6 @@
 	b2World *world = new b2World(gravity);
 	world->SetAllowSleeping(true);
     world->SetContinuousPhysics(true);
-    GLESDebugDraw *debugDraw = new GLESDebugDraw(PIXELS_PER_METER);
-	world->SetDebugDraw(debugDraw);
-	uint32 flags = 0;
-	flags += b2Draw::e_shapeBit;
-	debugDraw->SetFlags(flags);
     return world;
 }
 

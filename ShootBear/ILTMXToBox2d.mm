@@ -18,7 +18,7 @@
     CGSize tilesCout = box2dLayer.layerSize;
     for (int x = 0; x < tilesCout.width; x++) {
         for (int y = 0; y < tilesCout.height; y++) {
-            int tileType = [box2dLayer tileGIDAt:ccp(x, y)];
+            int tileType = [box2dLayer tileGIDAt:ccp(x, tilesCout.height - 1 - y)];
             if ([self isTileEmpty:tileType]) {
                 continue;
             }
