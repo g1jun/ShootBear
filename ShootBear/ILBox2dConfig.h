@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define PIXELS_PER_METER 60
+#define PIXELS_PER_METER 8
 
 @interface ILBox2dConfig : NSObject
 
