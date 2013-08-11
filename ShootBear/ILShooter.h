@@ -11,6 +11,9 @@
 
 @interface ILShooter : CCNode {
     
+    CCNode *_leftShooter;
+    CCNode *_rightShooter;
+    
 }
 
 @end

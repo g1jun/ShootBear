@@ -11,4 +11,9 @@
 
 @implementation ILShooter
 
+- (void)didLoadFromCCB
+{
+    _leftShooter.visible = false;
+}
+
 @end

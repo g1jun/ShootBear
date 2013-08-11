@@ -10,18 +10,30 @@
 		0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB217AE606D0023BD39 /* ILPlayScene.mm */; };
 		0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */; };
 		0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DABC17AE61A40023BD39 /* ILShootBear.mm */; };
-		0411DAC117AE6BDD0023BD39 /* map1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 0411DAC017AE6BDD0023BD39 /* map1.tmx */; };
 		0411DAC317AE71B30023BD39 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0411DAC217AE71B30023BD39 /* map.png */; };
 		0411DAC517AE74690023BD39 /* collision.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0411DAC417AE74690023BD39 /* collision.txt */; };
 		0411DAC917AE76800023BD39 /* ILBox2dFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAC817AE76800023BD39 /* ILBox2dFactory.mm */; };
 		0411DACC17AE76B70023BD39 /* ILTMXToBox2d.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACB17AE76B70023BD39 /* ILTMXToBox2d.mm */; };
 		0411DAD017AE82AC0023BD39 /* ILBox2dConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */; };
 		0413619017AF1BFF0097E87F /* ILLineSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0413618F17AF1BFF0097E87F /* ILLineSegment.mm */; };
+		04306B6217B653EB00350575 /* Bullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5517B653EB00350575 /* Bullet.ccbi */; };
+		04306B6317B653EB00350575 /* BulletTrack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5617B653EB00350575 /* BulletTrack.ccbi */; };
+		04306B6417B653EB00350575 /* LineReference.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5717B653EB00350575 /* LineReference.ccbi */; };
+		04306B6517B653EB00350575 /* Shooter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5817B653EB00350575 /* Shooter.ccbi */; };
+		04306B6617B653EB00350575 /* ShooterArmLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5917B653EB00350575 /* ShooterArmLeft.ccbi */; };
+		04306B6717B653EB00350575 /* ShooterArmRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5A17B653EB00350575 /* ShooterArmRight.ccbi */; };
+		04306B6817B653EB00350575 /* ShooterBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5B17B653EB00350575 /* ShooterBodyLeft.ccbi */; };
+		04306B6917B653EB00350575 /* ShooterBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5C17B653EB00350575 /* ShooterBodyRight.ccbi */; };
+		04306B6A17B653EB00350575 /* ShooterHeadLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5D17B653EB00350575 /* ShooterHeadLeft.ccbi */; };
+		04306B6B17B653EB00350575 /* ShooterHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5E17B653EB00350575 /* ShooterHeadRight.ccbi */; };
+		04306B6C17B653EB00350575 /* ShooterLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5F17B653EB00350575 /* ShooterLeft.ccbi */; };
+		04306B6D17B653EB00350575 /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B6017B653EB00350575 /* ShooterRight.ccbi */; };
+		04306B6E17B653EB00350575 /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B6117B653EB00350575 /* TestScene.ccbi */; };
+		04306B7317B65BF900350575 /* ILLineReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 04306B7217B65BF900350575 /* ILLineReference.m */; };
+		04306B7617B65C6B00350575 /* ILLinePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04306B7517B65C6B00350575 /* ILLinePoint.m */; };
+		04306B7817B667D000350575 /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 04306B7717B667D000350575 /* dot.png */; };
+		04306B7B17B6806E00350575 /* ILShooterArm.m in Sources */ = {isa = PBXBuildFile; fileRef = 04306B7A17B6806D00350575 /* ILShooterArm.m */; };
 		0443B66817AFA92B00DA0D69 /* ILBox2dDebug.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0443B66717AFA92B00DA0D69 /* ILBox2dDebug.mm */; };
-		0456BB5017B39F43007C0325 /* resources-ipad in Resources */ = {isa = PBXBuildFile; fileRef = 0456BB4C17B39F43007C0325 /* resources-ipad */; };
-		0456BB5117B39F43007C0325 /* resources-ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 0456BB4D17B39F43007C0325 /* resources-ipadhd */; };
-		0456BB5217B39F43007C0325 /* resources-iphone in Resources */ = {isa = PBXBuildFile; fileRef = 0456BB4E17B39F43007C0325 /* resources-iphone */; };
-		0456BB5317B39F43007C0325 /* resources-iphonehd in Resources */ = {isa = PBXBuildFile; fileRef = 0456BB4F17B39F43007C0325 /* resources-iphonehd */; };
 		04886BF917ACB1F6005D8DB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BF817ACB1F6005D8DB9 /* QuartzCore.framework */; };
 		04886BFB17ACB1F6005D8DB9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BFA17ACB1F6005D8DB9 /* OpenGLES.framework */; };
 		04886BFD17ACB1F6005D8DB9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BFC17ACB1F6005D8DB9 /* OpenAL.framework */; };
@@ -231,24 +243,11 @@
 		04B1092917B37F4000778F8E /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 04B1090A17B37F4000778F8E /* unzip.c */; };
 		04B1092A17B37F4000778F8E /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 04B1090C17B37F4000778F8E /* zip.c */; };
 		04B1092B17B37F4000778F8E /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1090F17B37F4000778F8E /* SSZipArchive.m */; };
-		04B1094117B37FBC00778F8E /* people.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B1093517B37FBC00778F8E /* people.plist */; };
-		04B1094217B37FBC00778F8E /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B1093617B37FBC00778F8E /* people.png */; };
 		04B1094B17B3800D00778F8E /* ILShooter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B1094A17B3800D00778F8E /* ILShooter.mm */; };
-		04DCE26517B4D3DC0036CA68 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26317B4D3DC0036CA68 /* bear.plist */; };
-		04DCE26617B4D3DC0036CA68 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26417B4D3DC0036CA68 /* bear.png */; };
+		04D2368C17B7382F007608F4 /* ccbResources in Resources */ = {isa = PBXBuildFile; fileRef = 04D2368B17B7382F007608F4 /* ccbResources */; };
 		04DCE27717B4D42E0036CA68 /* BearHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26917B4D42E0036CA68 /* BearHeadRight.ccbi */; };
 		04DCE27817B4D42E0036CA68 /* BearOutterLeg.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26A17B4D42E0036CA68 /* BearOutterLeg.ccbi */; };
 		04DCE27917B4D42E0036CA68 /* BearRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26B17B4D42E0036CA68 /* BearRight.ccbi */; };
-		04DCE27A17B4D42E0036CA68 /* Shooter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26D17B4D42E0036CA68 /* Shooter.ccbi */; };
-		04DCE27B17B4D42E0036CA68 /* ShooterArmLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26E17B4D42E0036CA68 /* ShooterArmLeft.ccbi */; };
-		04DCE27C17B4D42E0036CA68 /* ShooterArmRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26F17B4D42E0036CA68 /* ShooterArmRight.ccbi */; };
-		04DCE27D17B4D42E0036CA68 /* ShooterBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE27017B4D42E0036CA68 /* ShooterBodyLeft.ccbi */; };
-		04DCE27E17B4D42E0036CA68 /* ShooterBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE27117B4D42E0036CA68 /* ShooterBodyRight.ccbi */; };
-		04DCE27F17B4D42E0036CA68 /* ShooterHeadLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE27217B4D42E0036CA68 /* ShooterHeadLeft.ccbi */; };
-		04DCE28017B4D42E0036CA68 /* ShooterHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE27317B4D42E0036CA68 /* ShooterHeadRight.ccbi */; };
-		04DCE28117B4D42E0036CA68 /* ShooterLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE27417B4D42E0036CA68 /* ShooterLeft.ccbi */; };
-		04DCE28217B4D42E0036CA68 /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE27517B4D42E0036CA68 /* ShooterRight.ccbi */; };
-		04DCE28317B4D42E0036CA68 /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE27617B4D42E0036CA68 /* TestScene.ccbi */; };
 		04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
 		04DCE28A17B4D64A0036CA68 /* GB2ShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE28917B4D64A0036CA68 /* GB2ShapeCache.mm */; };
 		04DCE28D17B4E1010036CA68 /* ILPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */; };
@@ -262,7 +261,6 @@
 		0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILTMXLayer.mm; sourceTree = "<group>"; };
 		0411DABB17AE61A40023BD39 /* ILShootBear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShootBear.h; sourceTree = "<group>"; };
 		0411DABC17AE61A40023BD39 /* ILShootBear.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILShootBear.mm; sourceTree = "<group>"; };
-		0411DAC017AE6BDD0023BD39 /* map1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = map1.tmx; path = ../map1.tmx; sourceTree = "<group>"; };
 		0411DAC217AE71B30023BD39 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		0411DAC417AE74690023BD39 /* collision.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = collision.txt; sourceTree = "<group>"; };
 		0411DAC717AE76800023BD39 /* ILBox2dFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBox2dFactory.h; sourceTree = "<group>"; };
@@ -273,12 +271,28 @@
 		0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBox2dConfig.mm; sourceTree = "<group>"; };
 		0413618E17AF1BFF0097E87F /* ILLineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLineSegment.h; sourceTree = "<group>"; };
 		0413618F17AF1BFF0097E87F /* ILLineSegment.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILLineSegment.mm; sourceTree = "<group>"; };
+		04306B5517B653EB00350575 /* Bullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bullet.ccbi; sourceTree = "<group>"; };
+		04306B5617B653EB00350575 /* BulletTrack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletTrack.ccbi; sourceTree = "<group>"; };
+		04306B5717B653EB00350575 /* LineReference.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LineReference.ccbi; sourceTree = "<group>"; };
+		04306B5817B653EB00350575 /* Shooter.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shooter.ccbi; sourceTree = "<group>"; };
+		04306B5917B653EB00350575 /* ShooterArmLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmLeft.ccbi; sourceTree = "<group>"; };
+		04306B5A17B653EB00350575 /* ShooterArmRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmRight.ccbi; sourceTree = "<group>"; };
+		04306B5B17B653EB00350575 /* ShooterBodyLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyLeft.ccbi; sourceTree = "<group>"; };
+		04306B5C17B653EB00350575 /* ShooterBodyRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyRight.ccbi; sourceTree = "<group>"; };
+		04306B5D17B653EB00350575 /* ShooterHeadLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadLeft.ccbi; sourceTree = "<group>"; };
+		04306B5E17B653EB00350575 /* ShooterHeadRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadRight.ccbi; sourceTree = "<group>"; };
+		04306B5F17B653EB00350575 /* ShooterLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterLeft.ccbi; sourceTree = "<group>"; };
+		04306B6017B653EB00350575 /* ShooterRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterRight.ccbi; sourceTree = "<group>"; };
+		04306B6117B653EB00350575 /* TestScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScene.ccbi; sourceTree = "<group>"; };
+		04306B7117B65BF800350575 /* ILLineReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLineReference.h; sourceTree = "<group>"; };
+		04306B7217B65BF900350575 /* ILLineReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLineReference.m; sourceTree = "<group>"; };
+		04306B7417B65C6B00350575 /* ILLinePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLinePoint.h; sourceTree = "<group>"; };
+		04306B7517B65C6B00350575 /* ILLinePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLinePoint.m; sourceTree = "<group>"; };
+		04306B7717B667D000350575 /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
+		04306B7917B6806D00350575 /* ILShooterArm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShooterArm.h; sourceTree = "<group>"; };
+		04306B7A17B6806D00350575 /* ILShooterArm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILShooterArm.m; sourceTree = "<group>"; };
 		0443B66617AFA92B00DA0D69 /* ILBox2dDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBox2dDebug.h; sourceTree = "<group>"; };
 		0443B66717AFA92B00DA0D69 /* ILBox2dDebug.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBox2dDebug.mm; sourceTree = "<group>"; };
-		0456BB4C17B39F43007C0325 /* resources-ipad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-ipad"; sourceTree = "<group>"; };
-		0456BB4D17B39F43007C0325 /* resources-ipadhd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-ipadhd"; sourceTree = "<group>"; };
-		0456BB4E17B39F43007C0325 /* resources-iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-iphone"; sourceTree = "<group>"; };
-		0456BB4F17B39F43007C0325 /* resources-iphonehd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-iphonehd"; sourceTree = "<group>"; };
 		04886BF517ACB1F6005D8DB9 /* ShootBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04886BF817ACB1F6005D8DB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04886BFA17ACB1F6005D8DB9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -711,25 +725,12 @@
 		04B1090D17B37F4000778F8E /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
 		04B1090E17B37F4000778F8E /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
 		04B1090F17B37F4000778F8E /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
-		04B1093517B37FBC00778F8E /* people.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = people.plist; sourceTree = "<group>"; };
-		04B1093617B37FBC00778F8E /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		04B1094917B3800D00778F8E /* ILShooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShooter.h; sourceTree = "<group>"; };
 		04B1094A17B3800D00778F8E /* ILShooter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILShooter.mm; sourceTree = "<group>"; };
-		04DCE26317B4D3DC0036CA68 /* bear.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bear.plist; sourceTree = "<group>"; };
-		04DCE26417B4D3DC0036CA68 /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		04D2368B17B7382F007608F4 /* ccbResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbResources; sourceTree = "<group>"; };
 		04DCE26917B4D42E0036CA68 /* BearHeadRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BearHeadRight.ccbi; sourceTree = "<group>"; };
 		04DCE26A17B4D42E0036CA68 /* BearOutterLeg.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BearOutterLeg.ccbi; sourceTree = "<group>"; };
 		04DCE26B17B4D42E0036CA68 /* BearRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BearRight.ccbi; sourceTree = "<group>"; };
-		04DCE26D17B4D42E0036CA68 /* Shooter.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shooter.ccbi; sourceTree = "<group>"; };
-		04DCE26E17B4D42E0036CA68 /* ShooterArmLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmLeft.ccbi; sourceTree = "<group>"; };
-		04DCE26F17B4D42E0036CA68 /* ShooterArmRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmRight.ccbi; sourceTree = "<group>"; };
-		04DCE27017B4D42E0036CA68 /* ShooterBodyLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyLeft.ccbi; sourceTree = "<group>"; };
-		04DCE27117B4D42E0036CA68 /* ShooterBodyRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyRight.ccbi; sourceTree = "<group>"; };
-		04DCE27217B4D42E0036CA68 /* ShooterHeadLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadLeft.ccbi; sourceTree = "<group>"; };
-		04DCE27317B4D42E0036CA68 /* ShooterHeadRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadRight.ccbi; sourceTree = "<group>"; };
-		04DCE27417B4D42E0036CA68 /* ShooterLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterLeft.ccbi; sourceTree = "<group>"; };
-		04DCE27517B4D42E0036CA68 /* ShooterRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterRight.ccbi; sourceTree = "<group>"; };
-		04DCE27617B4D42E0036CA68 /* TestScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScene.ccbi; sourceTree = "<group>"; };
 		04DCE28517B4D61A0036CA68 /* BearPhysics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BearPhysics.plist; sourceTree = "<group>"; };
 		04DCE28817B4D64A0036CA68 /* GB2ShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB2ShapeCache.h; sourceTree = "<group>"; };
 		04DCE28917B4D64A0036CA68 /* GB2ShapeCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GB2ShapeCache.mm; sourceTree = "<group>"; };
@@ -773,6 +774,12 @@
 				04B1094A17B3800D00778F8E /* ILShooter.mm */,
 				04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */,
 				04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */,
+				04306B7117B65BF800350575 /* ILLineReference.h */,
+				04306B7217B65BF900350575 /* ILLineReference.m */,
+				04306B7417B65C6B00350575 /* ILLinePoint.h */,
+				04306B7517B65C6B00350575 /* ILLinePoint.m */,
+				04306B7917B6806D00350575 /* ILShooterArm.h */,
+				04306B7A17B6806D00350575 /* ILShooterArm.m */,
 			);
 			name = PlayScene;
 			sourceTree = "<group>";
@@ -805,6 +812,26 @@
 				04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */,
 			);
 			name = Start;
+			sourceTree = "<group>";
+		};
+		04306B5417B653EB00350575 /* Shooter */ = {
+			isa = PBXGroup;
+			children = (
+				04306B5517B653EB00350575 /* Bullet.ccbi */,
+				04306B5617B653EB00350575 /* BulletTrack.ccbi */,
+				04306B5717B653EB00350575 /* LineReference.ccbi */,
+				04306B5817B653EB00350575 /* Shooter.ccbi */,
+				04306B5917B653EB00350575 /* ShooterArmLeft.ccbi */,
+				04306B5A17B653EB00350575 /* ShooterArmRight.ccbi */,
+				04306B5B17B653EB00350575 /* ShooterBodyLeft.ccbi */,
+				04306B5C17B653EB00350575 /* ShooterBodyRight.ccbi */,
+				04306B5D17B653EB00350575 /* ShooterHeadLeft.ccbi */,
+				04306B5E17B653EB00350575 /* ShooterHeadRight.ccbi */,
+				04306B5F17B653EB00350575 /* ShooterLeft.ccbi */,
+				04306B6017B653EB00350575 /* ShooterRight.ccbi */,
+				04306B6117B653EB00350575 /* TestScene.ccbi */,
+			);
+			path = Shooter;
 			sourceTree = "<group>";
 		};
 		04886BEC17ACB1F5005D8DB9 = {
@@ -848,7 +875,9 @@
 				0411DACD17AE80950023BD39 /* Start */,
 				0411DAC617AE76600023BD39 /* Box2d */,
 				0411DAB417AE60760023BD39 /* PlayScene */,
+				04DCE26717B4D41E0036CA68 /* CCBI */,
 				04886C0D17ACB1F6005D8DB9 /* Resources */,
+				04D2368B17B7382F007608F4 /* ccbResources */,
 				04886C2517ACB1F7005D8DB9 /* libs */,
 				04886E2C17ACB20D005D8DB9 /* Supporting Files */,
 				0411DABB17AE61A40023BD39 /* ILShootBear.h */,
@@ -860,9 +889,8 @@
 		04886C0D17ACB1F6005D8DB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04306B7717B667D000350575 /* dot.png */,
 				04DCE28417B4D5EE0036CA68 /* Physics */,
-				04DCE26717B4D41E0036CA68 /* CCBI */,
-				04B1093417B37FBC00778F8E /* ccbResources */,
 				04886E4617ACB591005D8DB9 /* common */,
 				04886E4317ACB55E005D8DB9 /* config */,
 			);
@@ -1545,27 +1573,11 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
-		04B1093417B37FBC00778F8E /* ccbResources */ = {
-			isa = PBXGroup;
-			children = (
-				04DCE26317B4D3DC0036CA68 /* bear.plist */,
-				04DCE26417B4D3DC0036CA68 /* bear.png */,
-				0456BB4C17B39F43007C0325 /* resources-ipad */,
-				0456BB4D17B39F43007C0325 /* resources-ipadhd */,
-				0456BB4E17B39F43007C0325 /* resources-iphone */,
-				0456BB4F17B39F43007C0325 /* resources-iphonehd */,
-				0411DAC017AE6BDD0023BD39 /* map1.tmx */,
-				04B1093517B37FBC00778F8E /* people.plist */,
-				04B1093617B37FBC00778F8E /* people.png */,
-			);
-			path = ccbResources;
-			sourceTree = "<group>";
-		};
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
+				04306B5417B653EB00350575 /* Shooter */,
 				04DCE26817B4D42E0036CA68 /* Bear */,
-				04DCE26C17B4D42E0036CA68 /* Shooter */,
 			);
 			name = CCBI;
 			sourceTree = "<group>";
@@ -1578,23 +1590,6 @@
 				04DCE26B17B4D42E0036CA68 /* BearRight.ccbi */,
 			);
 			path = Bear;
-			sourceTree = "<group>";
-		};
-		04DCE26C17B4D42E0036CA68 /* Shooter */ = {
-			isa = PBXGroup;
-			children = (
-				04DCE26D17B4D42E0036CA68 /* Shooter.ccbi */,
-				04DCE26E17B4D42E0036CA68 /* ShooterArmLeft.ccbi */,
-				04DCE26F17B4D42E0036CA68 /* ShooterArmRight.ccbi */,
-				04DCE27017B4D42E0036CA68 /* ShooterBodyLeft.ccbi */,
-				04DCE27117B4D42E0036CA68 /* ShooterBodyRight.ccbi */,
-				04DCE27217B4D42E0036CA68 /* ShooterHeadLeft.ccbi */,
-				04DCE27317B4D42E0036CA68 /* ShooterHeadRight.ccbi */,
-				04DCE27417B4D42E0036CA68 /* ShooterLeft.ccbi */,
-				04DCE27517B4D42E0036CA68 /* ShooterRight.ccbi */,
-				04DCE27617B4D42E0036CA68 /* TestScene.ccbi */,
-			);
-			path = Shooter;
 			sourceTree = "<group>";
 		};
 		04DCE28417B4D5EE0036CA68 /* Physics */ = {
@@ -1679,34 +1674,30 @@
 				04886C2417ACB1F7005D8DB9 /* iTunesArtwork in Resources */,
 				04886D7D17ACB205005D8DB9 /* ChangeLog in Resources */,
 				04886E3D17ACB20E005D8DB9 /* blocks.png in Resources */,
-				0411DAC117AE6BDD0023BD39 /* map1.tmx in Resources */,
 				0411DAC317AE71B30023BD39 /* map.png in Resources */,
 				0411DAC517AE74690023BD39 /* collision.txt in Resources */,
 				04B1092317B37F4000778F8E /* README.md in Resources */,
 				04B1092517B37F4000778F8E /* README.md in Resources */,
 				04B1092617B37F4000778F8E /* LICENSE in Resources */,
-				04B1094117B37FBC00778F8E /* people.plist in Resources */,
-				04B1094217B37FBC00778F8E /* people.png in Resources */,
-				0456BB5017B39F43007C0325 /* resources-ipad in Resources */,
-				0456BB5117B39F43007C0325 /* resources-ipadhd in Resources */,
-				0456BB5217B39F43007C0325 /* resources-iphone in Resources */,
-				0456BB5317B39F43007C0325 /* resources-iphonehd in Resources */,
-				04DCE26517B4D3DC0036CA68 /* bear.plist in Resources */,
-				04DCE26617B4D3DC0036CA68 /* bear.png in Resources */,
 				04DCE27717B4D42E0036CA68 /* BearHeadRight.ccbi in Resources */,
 				04DCE27817B4D42E0036CA68 /* BearOutterLeg.ccbi in Resources */,
 				04DCE27917B4D42E0036CA68 /* BearRight.ccbi in Resources */,
-				04DCE27A17B4D42E0036CA68 /* Shooter.ccbi in Resources */,
-				04DCE27B17B4D42E0036CA68 /* ShooterArmLeft.ccbi in Resources */,
-				04DCE27C17B4D42E0036CA68 /* ShooterArmRight.ccbi in Resources */,
-				04DCE27D17B4D42E0036CA68 /* ShooterBodyLeft.ccbi in Resources */,
-				04DCE27E17B4D42E0036CA68 /* ShooterBodyRight.ccbi in Resources */,
-				04DCE27F17B4D42E0036CA68 /* ShooterHeadLeft.ccbi in Resources */,
-				04DCE28017B4D42E0036CA68 /* ShooterHeadRight.ccbi in Resources */,
-				04DCE28117B4D42E0036CA68 /* ShooterLeft.ccbi in Resources */,
-				04DCE28217B4D42E0036CA68 /* ShooterRight.ccbi in Resources */,
-				04DCE28317B4D42E0036CA68 /* TestScene.ccbi in Resources */,
 				04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */,
+				04306B6217B653EB00350575 /* Bullet.ccbi in Resources */,
+				04306B6317B653EB00350575 /* BulletTrack.ccbi in Resources */,
+				04306B6417B653EB00350575 /* LineReference.ccbi in Resources */,
+				04306B6517B653EB00350575 /* Shooter.ccbi in Resources */,
+				04306B6617B653EB00350575 /* ShooterArmLeft.ccbi in Resources */,
+				04306B6717B653EB00350575 /* ShooterArmRight.ccbi in Resources */,
+				04306B6817B653EB00350575 /* ShooterBodyLeft.ccbi in Resources */,
+				04306B6917B653EB00350575 /* ShooterBodyRight.ccbi in Resources */,
+				04306B6A17B653EB00350575 /* ShooterHeadLeft.ccbi in Resources */,
+				04306B6B17B653EB00350575 /* ShooterHeadRight.ccbi in Resources */,
+				04306B6C17B653EB00350575 /* ShooterLeft.ccbi in Resources */,
+				04306B6D17B653EB00350575 /* ShooterRight.ccbi in Resources */,
+				04306B6E17B653EB00350575 /* TestScene.ccbi in Resources */,
+				04306B7817B667D000350575 /* dot.png in Resources */,
+				04D2368C17B7382F007608F4 /* ccbResources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1911,6 +1902,9 @@
 				04B1094B17B3800D00778F8E /* ILShooter.mm in Sources */,
 				04DCE28A17B4D64A0036CA68 /* GB2ShapeCache.mm in Sources */,
 				04DCE28D17B4E1010036CA68 /* ILPhysicsSprite.mm in Sources */,
+				04306B7317B65BF900350575 /* ILLineReference.m in Sources */,
+				04306B7617B65C6B00350575 /* ILLinePoint.m in Sources */,
+				04306B7B17B6806E00350575 /* ILShooterArm.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

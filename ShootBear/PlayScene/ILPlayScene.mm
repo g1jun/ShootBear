@@ -11,6 +11,7 @@
 #import "CCBReader.h"
 #import "GB2ShapeCache.h"
 #import "ILPhysicsSprite.h"
+#import "CCBAnimationManager.h"
 
 @interface ILPlayScene ()
 
@@ -27,19 +28,24 @@
         [[GB2ShapeCache sharedShapeCache] addShapesWithFile:@"BearPhysics.plist"];
         CCLayer *tmxLayer = [ILTMXLayer nodeWithB2World:self.world];
         [self addChild:tmxLayer];
-        ILBox2dDebug *debug = [[ILBox2dDebug alloc] initWithB2World:self.world];
-        [self addChild:debug];
-        [debug release];
+        
         CCNode *shooter = [CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
         shooter.position = ccp(100, 100);
         CCNode *bear = [CCBReader nodeGraphFromFile:@"BearRight.ccbi"];
         bear.position = ccp(300, 300);
+//        CCBAnimationManager* animationManager = bear.userObject;
+//        [animationManager runAnimationsForSequenceNamed:@"dynamic"];
+        
         [self addChild:bear];
         
         [self addPhysicsFeature:bear];
         [self addChild:shooter];
         [self scheduleUpdate];
         
+        
+        ILBox2dDebug *debug = [[ILBox2dDebug alloc] initWithB2World:self.world];
+        [self addChild:debug];
+        [debug release];
     }
     return self;
 }
