@@ -13,7 +13,7 @@
 
 - (void)didLoadFromCCB
 {
-    _leftShooter.visible = false;
+    _leftShooter.visible = NO;
 }
 
 @end

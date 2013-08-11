@@ -9,12 +9,12 @@
 #import "CCNode.h"
 #import "CCTouchDelegateProtocol.h"
 #import "CCControlExtension.h"
+#import "ILGun.h"
 
 @interface ILShooterArm : CCNode <CCTouchOneByOneDelegate>
 {
-    CCNode *_touchRotation;
 }
 
-- (void)pressedButton:(id)sender event:(CCControlEvent)event;
+@property (retain, nonatomic) ILGun *gun;
 
 @end

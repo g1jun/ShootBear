@@ -244,7 +244,20 @@
 		04B1092A17B37F4000778F8E /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 04B1090C17B37F4000778F8E /* zip.c */; };
 		04B1092B17B37F4000778F8E /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1090F17B37F4000778F8E /* SSZipArchive.m */; };
 		04B1094B17B3800D00778F8E /* ILShooter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B1094A17B3800D00778F8E /* ILShooter.mm */; };
-		04D2368C17B7382F007608F4 /* ccbResources in Resources */ = {isa = PBXBuildFile; fileRef = 04D2368B17B7382F007608F4 /* ccbResources */; };
+		04D2368E17B73E74007608F4 /* map1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 04D2368D17B73E74007608F4 /* map1.tmx */; };
+		04D2369F17B74134007608F4 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369417B74134007608F4 /* bear.plist */; };
+		04D236A017B74134007608F4 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369517B74134007608F4 /* bear.png */; };
+		04D236A117B74134007608F4 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369617B74134007608F4 /* bullet.png */; };
+		04D236A217B74134007608F4 /* button.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369717B74134007608F4 /* button.plist */; };
+		04D236A317B74134007608F4 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369817B74134007608F4 /* button.png */; };
+		04D236A417B74134007608F4 /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369917B74134007608F4 /* particle */; };
+		04D236A517B74134007608F4 /* people.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369A17B74134007608F4 /* people.plist */; };
+		04D236A617B74134007608F4 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369B17B74134007608F4 /* people.png */; };
+		04D236A717B74134007608F4 /* resources-ipad in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369C17B74134007608F4 /* resources-ipad */; };
+		04D236A817B74134007608F4 /* resources-ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369D17B74134007608F4 /* resources-ipadhd */; };
+		04D236A917B74134007608F4 /* resources-iphonehd in Resources */ = {isa = PBXBuildFile; fileRef = 04D2369E17B74134007608F4 /* resources-iphonehd */; };
+		04D236AB17B76DB3007608F4 /* GunRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D236AA17B76DB3007608F4 /* GunRight.ccbi */; };
+		04D236AE17B777CD007608F4 /* ILGun.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D236AD17B777CD007608F4 /* ILGun.m */; };
 		04DCE27717B4D42E0036CA68 /* BearHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26917B4D42E0036CA68 /* BearHeadRight.ccbi */; };
 		04DCE27817B4D42E0036CA68 /* BearOutterLeg.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26A17B4D42E0036CA68 /* BearOutterLeg.ccbi */; };
 		04DCE27917B4D42E0036CA68 /* BearRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE26B17B4D42E0036CA68 /* BearRight.ccbi */; };
@@ -727,7 +740,21 @@
 		04B1090F17B37F4000778F8E /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		04B1094917B3800D00778F8E /* ILShooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShooter.h; sourceTree = "<group>"; };
 		04B1094A17B3800D00778F8E /* ILShooter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILShooter.mm; sourceTree = "<group>"; };
-		04D2368B17B7382F007608F4 /* ccbResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbResources; sourceTree = "<group>"; };
+		04D2368D17B73E74007608F4 /* map1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map1.tmx; sourceTree = "<group>"; };
+		04D2369417B74134007608F4 /* bear.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bear.plist; sourceTree = "<group>"; };
+		04D2369517B74134007608F4 /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		04D2369617B74134007608F4 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		04D2369717B74134007608F4 /* button.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = button.plist; sourceTree = "<group>"; };
+		04D2369817B74134007608F4 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		04D2369917B74134007608F4 /* particle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = particle; sourceTree = "<group>"; };
+		04D2369A17B74134007608F4 /* people.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = people.plist; sourceTree = "<group>"; };
+		04D2369B17B74134007608F4 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		04D2369C17B74134007608F4 /* resources-ipad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-ipad"; sourceTree = "<group>"; };
+		04D2369D17B74134007608F4 /* resources-ipadhd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-ipadhd"; sourceTree = "<group>"; };
+		04D2369E17B74134007608F4 /* resources-iphonehd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-iphonehd"; sourceTree = "<group>"; };
+		04D236AA17B76DB3007608F4 /* GunRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = GunRight.ccbi; sourceTree = "<group>"; };
+		04D236AC17B777CD007608F4 /* ILGun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGun.h; sourceTree = "<group>"; };
+		04D236AD17B777CD007608F4 /* ILGun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGun.m; sourceTree = "<group>"; };
 		04DCE26917B4D42E0036CA68 /* BearHeadRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BearHeadRight.ccbi; sourceTree = "<group>"; };
 		04DCE26A17B4D42E0036CA68 /* BearOutterLeg.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BearOutterLeg.ccbi; sourceTree = "<group>"; };
 		04DCE26B17B4D42E0036CA68 /* BearRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BearRight.ccbi; sourceTree = "<group>"; };
@@ -780,6 +807,8 @@
 				04306B7517B65C6B00350575 /* ILLinePoint.m */,
 				04306B7917B6806D00350575 /* ILShooterArm.h */,
 				04306B7A17B6806D00350575 /* ILShooterArm.m */,
+				04D236AC17B777CD007608F4 /* ILGun.h */,
+				04D236AD17B777CD007608F4 /* ILGun.m */,
 			);
 			name = PlayScene;
 			sourceTree = "<group>";
@@ -817,6 +846,7 @@
 		04306B5417B653EB00350575 /* Shooter */ = {
 			isa = PBXGroup;
 			children = (
+				04D236AA17B76DB3007608F4 /* GunRight.ccbi */,
 				04306B5517B653EB00350575 /* Bullet.ccbi */,
 				04306B5617B653EB00350575 /* BulletTrack.ccbi */,
 				04306B5717B653EB00350575 /* LineReference.ccbi */,
@@ -876,8 +906,8 @@
 				0411DAC617AE76600023BD39 /* Box2d */,
 				0411DAB417AE60760023BD39 /* PlayScene */,
 				04DCE26717B4D41E0036CA68 /* CCBI */,
+				04D2369317B740CD007608F4 /* CCBIResources */,
 				04886C0D17ACB1F6005D8DB9 /* Resources */,
-				04D2368B17B7382F007608F4 /* ccbResources */,
 				04886C2517ACB1F7005D8DB9 /* libs */,
 				04886E2C17ACB20D005D8DB9 /* Supporting Files */,
 				0411DABB17AE61A40023BD39 /* ILShootBear.h */,
@@ -889,6 +919,7 @@
 		04886C0D17ACB1F6005D8DB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04D2368D17B73E74007608F4 /* map1.tmx */,
 				04306B7717B667D000350575 /* dot.png */,
 				04DCE28417B4D5EE0036CA68 /* Physics */,
 				04886E4617ACB591005D8DB9 /* common */,
@@ -1573,6 +1604,24 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
+		04D2369317B740CD007608F4 /* CCBIResources */ = {
+			isa = PBXGroup;
+			children = (
+				04D2369417B74134007608F4 /* bear.plist */,
+				04D2369517B74134007608F4 /* bear.png */,
+				04D2369617B74134007608F4 /* bullet.png */,
+				04D2369717B74134007608F4 /* button.plist */,
+				04D2369817B74134007608F4 /* button.png */,
+				04D2369917B74134007608F4 /* particle */,
+				04D2369A17B74134007608F4 /* people.plist */,
+				04D2369B17B74134007608F4 /* people.png */,
+				04D2369C17B74134007608F4 /* resources-ipad */,
+				04D2369D17B74134007608F4 /* resources-ipadhd */,
+				04D2369E17B74134007608F4 /* resources-iphonehd */,
+			);
+			name = CCBIResources;
+			sourceTree = "<group>";
+		};
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
@@ -1697,7 +1746,19 @@
 				04306B6D17B653EB00350575 /* ShooterRight.ccbi in Resources */,
 				04306B6E17B653EB00350575 /* TestScene.ccbi in Resources */,
 				04306B7817B667D000350575 /* dot.png in Resources */,
-				04D2368C17B7382F007608F4 /* ccbResources in Resources */,
+				04D2368E17B73E74007608F4 /* map1.tmx in Resources */,
+				04D2369F17B74134007608F4 /* bear.plist in Resources */,
+				04D236A017B74134007608F4 /* bear.png in Resources */,
+				04D236A117B74134007608F4 /* bullet.png in Resources */,
+				04D236A217B74134007608F4 /* button.plist in Resources */,
+				04D236A317B74134007608F4 /* button.png in Resources */,
+				04D236A417B74134007608F4 /* particle in Resources */,
+				04D236A517B74134007608F4 /* people.plist in Resources */,
+				04D236A617B74134007608F4 /* people.png in Resources */,
+				04D236A717B74134007608F4 /* resources-ipad in Resources */,
+				04D236A817B74134007608F4 /* resources-ipadhd in Resources */,
+				04D236A917B74134007608F4 /* resources-iphonehd in Resources */,
+				04D236AB17B76DB3007608F4 /* GunRight.ccbi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1905,6 +1966,7 @@
 				04306B7317B65BF900350575 /* ILLineReference.m in Sources */,
 				04306B7617B65C6B00350575 /* ILLinePoint.m in Sources */,
 				04306B7B17B6806E00350575 /* ILShooterArm.m in Sources */,
+				04D236AE17B777CD007608F4 /* ILGun.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
