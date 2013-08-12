@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-
+#import "ILShooterHalf.h"
 @interface ILShooter : CCNode {
     
-    CCNode *_leftShooter;
-    CCNode *_rightShooter;
+    ILShooterHalf *_leftShooter;
+    ILShooterHalf *_rightShooter;
     
 }
 

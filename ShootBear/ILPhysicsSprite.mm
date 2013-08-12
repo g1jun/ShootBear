@@ -7,8 +7,8 @@
 //
 
 #import "ILPhysicsSprite.h"
-#import <objc/message.h>
 #import "Box2D.h"
+#import "ILTools.h"
 
 @implementation ILPhysicsSprite
 
@@ -66,14 +66,6 @@
 
 - (float)getTotalRotation
 {
-    CCNode *temp = self;
-    float rad = super.rotation;
-    while ((temp = temp.parent)) {
-        rad += temp.rotation;
-    }
-    return rad;
+    return [ILTools rotationTotal:self];
 }
-
-
-
 @end

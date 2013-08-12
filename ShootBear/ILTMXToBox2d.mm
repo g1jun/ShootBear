@@ -35,6 +35,7 @@
 {
     ILBox2dFactory *factory = [[ILBox2dFactory alloc] initWithB2World:self.world];
     [factory createLineSegement:lines];
+    [factory release];
 }
 
 - (NSArray *)configPhyscisLine:(NSArray *)lines atTilePoint:(CGPoint) position
@@ -45,6 +46,7 @@
         physicsLine.start = [self convertToOpenGL:position line:lineSegement.start];
         physicsLine.end = [self convertToOpenGL:position line:lineSegement.end];
         [physicsLines addObject:physicsLine];
+        [physicsLine release];
     }
     return physicsLines;
 }

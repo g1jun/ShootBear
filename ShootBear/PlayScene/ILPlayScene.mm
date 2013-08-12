@@ -9,10 +9,9 @@
 #import "ILPlayScene.h"
 #import "ILBox2dDebug.h"
 #import "CCBReader.h"
-#import "GB2ShapeCache.h"
 #import "ILPhysicsSprite.h"
 #import "CCBAnimationManager.h"
-
+#import "ILShapeCache.h"
 @interface ILPlayScene ()
 
 @property (assign, nonatomic) b2World *world;
@@ -25,16 +24,16 @@
     self = [super init];
     if(self) {
         self.world = [self createPhyscisWorld];
-        [[GB2ShapeCache sharedShapeCache] addShapesWithFile:@"BearPhysics.plist"];
+        [[ILShapeCache sharedShapeCache] addShapesWithFile:@"BearPhysics.plist"];
         CCLayer *tmxLayer = [ILTMXLayer nodeWithB2World:self.world];
         [self addChild:tmxLayer];
         
         CCNode *shooter = [CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
-        shooter.position = ccp(100, 100);
+        shooter.position = ccp(500, 100);
         CCNode *bear = [CCBReader nodeGraphFromFile:@"BearRight.ccbi"];
-        bear.position = ccp(300, 300);
-//        CCBAnimationManager* animationManager = bear.userObject;
-//        [animationManager runAnimationsForSequenceNamed:@"dynamic"];
+        bear.position = ccp(100, 300);
+        CCBAnimationManager* animationManager = bear.userObject;
+        [animationManager runAnimationsForSequenceNamed:@"dynamic"];
         
         [self addChild:bear];
         
@@ -68,8 +67,8 @@
     bodyDef.type = b2_staticBody;
     b2Body *body = _world->CreateBody(&bodyDef);
     [sprite setPTMRatio:8];
-    [[GB2ShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:sprite.imageName];
-   [sprite setAnchorPoint: [[GB2ShapeCache sharedShapeCache] anchorPointForShape:sprite.imageName]];
+    [[ILShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:sprite.imageName];
+//    [sprite setAnchorPoint: [[GB2ShapeCache sharedShapeCache] anchorPointForShape:sprite.imageName]];
     [sprite setB2Body:body];
 
 }

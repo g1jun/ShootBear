@@ -12,7 +12,6 @@
 
 @interface ILShooterArm ()
 
-@property (assign, nonatomic) CGPoint prePoint;
 
 @end
 
@@ -20,10 +19,20 @@
 
 - (void)didLoadFromCCB
 {
-    float degree = - self.gun.lineReference.rotation;
-    float radius = CC_DEGREES_TO_RADIANS(degree);
-    self.prePoint = ccpRotateByAngle(ccp(100, 0), ccp(0, 0), radius);
+   
      [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate:self priority:0 swallowsTouches:NO];
+}
+
+- (CGPoint)lineVector
+{
+    float degree = [self lineDegree];
+    float radius = -CC_DEGREES_TO_RADIANS(degree);
+    return ccpRotateByAngle(ccp(100, 0), ccp(0, 0), radius);
+}
+
+- (float)lineDegree
+{
+    return self.gun.lineReference.rotation;
 }
 
 - (BOOL) hasVisibleParents
@@ -38,35 +47,39 @@
 
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    if (!self.visible || ![ self hasVisibleParents])
-    {
-		return NO;
-	}
-//    CGPoint touchPoint = [self convertTouchToNodeSpace:touch];
-//    if (touchPoint.x == 0 && touchPoint.y == 0) {
-//        return NO;
-//    }
-//    float degree = - self.rotation;
-//    float x = touchPoint.x * cos(degree) - touchPoint.y * sin(degree);
-//    float y = touchPoint.x * cos(degree) + touchPoint.y * sin(degree);
-//    return CGRectContainsPoint([_touchRotation boundingBox], ccp(x, y));
-    
-    
+    [self rotationToTouchPoint:touch];
     
     return YES;
 }
 
-- (void)rotation:(UITouch *)touch
+- (float)currentDegree
 {
-    CGPoint touchPoint = [self convertTouchToNodeSpace:touch];
-    float radians = ccpAngle(self.prePoint, touchPoint);
-    float angle = -1 * CC_RADIANS_TO_DEGREES(radians);
-    if (ABS(angle) > ANGLE_STEP) {
-        self.rotation += angle;
-        self.prePoint = touchPoint;
+    return self.rotation + [self lineDegree];
+}
+
+- (void)rotationToTouchPoint:(UITouch *)touch
+{
+    CGPoint glPoint = [[CCDirector sharedDirector] convertTouchToGL:touch];
+    CGPoint targetVector = ccpSub(glPoint, [self.parent convertToWorldSpace:self.position]);
+    float radians = ccpToAngle(targetVector);
+    float angle = -CC_RADIANS_TO_DEGREES(radians);
+    float step = angle  - [self currentDegree];
+    if (fabs(step) > ANGLE_STEP) {
+        self.rotation += step;
+        [self fixRotaionDegree];
     }
-    NSLog(@"touhc--->%@", NSStringFromCGPoint(touchPoint));
-    NSLog(@"====>%f", angle);
+
+
+}
+
+- (void)fixRotaionDegree
+{
+    if (self.rotation > 360) {
+        self.rotation -= 360;
+    }
+    if (self.rotation < -360) {
+        self.rotation += 360;
+    }
 }
 
 - (void)onEnter
@@ -83,15 +96,11 @@
 
 - (void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
+    [self rotationToTouchPoint:touch];
 }
 - (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    
-}
-
-- (void)fire:(CGPoint) startPoint angle:(float)angle
-{
-    
+    [self.gun fire];
 }
 
 @end

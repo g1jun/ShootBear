@@ -17,4 +17,6 @@
 
 @property (retain, nonatomic) ILGun *gun;
 
+- (float)currentDegree;
+
 @end

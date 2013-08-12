@@ -16,4 +16,9 @@
     [super dealloc];
 }
 
+- (void)fire
+{
+    
+}
+
 @end

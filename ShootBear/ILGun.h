@@ -15,4 +15,6 @@
 
 @property (retain, nonatomic) ILLineReference *lineReference;
 
+- (void)fire;
+
 @end
