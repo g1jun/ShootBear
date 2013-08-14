@@ -268,6 +268,7 @@
 		04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
 		04DCE28D17B4E1010036CA68 /* ILPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */; };
 		04E0832017B50901007F5486 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0831F17B50901007F5486 /* libobjc.A.dylib */; };
+		04FCDCC717BAFD9D005D151B /* ILBullet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04FCDCC617BAFD9D005D151B /* ILBullet.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -772,6 +773,8 @@
 		04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPhysicsSprite.h; sourceTree = "<group>"; };
 		04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsSprite.mm; sourceTree = "<group>"; };
 		04E0831F17B50901007F5486 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		04FCDCC517BAFD9D005D151B /* ILBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBullet.h; sourceTree = "<group>"; };
+		04FCDCC617BAFD9D005D151B /* ILBullet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBullet.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1648,6 +1651,8 @@
 				04D236B217B79DDF007608F4 /* ILShooterHalf.m */,
 				04B1094917B3800D00778F8E /* ILShooter.h */,
 				04B1094A17B3800D00778F8E /* ILShooter.mm */,
+				04FCDCC517BAFD9D005D151B /* ILBullet.h */,
+				04FCDCC617BAFD9D005D151B /* ILBullet.mm */,
 			);
 			name = Shooter;
 			sourceTree = "<group>";
@@ -1664,9 +1669,9 @@
 		04DCE26817B4D42E0036CA68 /* Bear */ = {
 			isa = PBXGroup;
 			children = (
-				04DCE26917B4D42E0036CA68 /* BearHeadRight.ccbi */,
 				04DCE26A17B4D42E0036CA68 /* BearOutterLeg.ccbi */,
 				04DCE26B17B4D42E0036CA68 /* BearRight.ccbi */,
+				04DCE26917B4D42E0036CA68 /* BearHeadRight.ccbi */,
 			);
 			path = Bear;
 			sourceTree = "<group>";
@@ -1991,6 +1996,7 @@
 				04D236B317B79DDF007608F4 /* ILShooterHalf.m in Sources */,
 				049EF6FF17B8ABBB00A9D1B7 /* ILTools.m in Sources */,
 				049EF70517B8D74900A9D1B7 /* ILShapeCache.mm in Sources */,
+				04FCDCC717BAFD9D005D151B /* ILBullet.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

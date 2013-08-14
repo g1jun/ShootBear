@@ -29,9 +29,9 @@
         [self addChild:tmxLayer];
         
         CCNode *shooter = [CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
-        shooter.position = ccp(500, 100);
+        shooter.position = ccp(100, 100);
         CCNode *bear = [CCBReader nodeGraphFromFile:@"BearRight.ccbi"];
-        bear.position = ccp(100, 300);
+        bear.position = ccp(300, 100);
         CCBAnimationManager* animationManager = bear.userObject;
         [animationManager runAnimationsForSequenceNamed:@"dynamic"];
         
@@ -66,7 +66,7 @@
     b2BodyDef bodyDef;
     bodyDef.type = b2_staticBody;
     b2Body *body = _world->CreateBody(&bodyDef);
-    [sprite setPTMRatio:8];
+    [sprite setPTMRatio:PIXELS_PER_METER];
     [[ILShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:sprite.imageName];
 //    [sprite setAnchorPoint: [[GB2ShapeCache sharedShapeCache] anchorPointForShape:sprite.imageName]];
     [sprite setB2Body:body];

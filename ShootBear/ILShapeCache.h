@@ -7,12 +7,13 @@
 //
 
 #import <Box2D.h>
+#import "ILPhysicsSprite.h"
 
 @interface ILShapeCache : NSObject 
 {
     NSMutableDictionary *shapeObjects_;
     float ptmRatio_;
-    NSMutableDictionary *shapeData_;
+    NSMutableDictionary *shapDic_;
 }
 
 + (ILShapeCache *)sharedShapeCache;
@@ -20,6 +21,8 @@
 -(void) addShapesWithFile:(NSString*)plist;
 
 -(void) addFixturesToBody:(b2Body*)body forShapeName:(NSString*)shape;
+
+-(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILPhysicsSprite *)sprite;
 
 -(CGPoint) anchorPointForShape:(NSString*)shape;
 

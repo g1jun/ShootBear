@@ -7,6 +7,8 @@
 //
 
 #import "ILShapeCache.h"
+#import "CCNode+CCBRelativePositioning.h"
+
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 #   define CGPointFromString_ CGPointFromString
 #else
@@ -83,13 +85,13 @@ public:
     return shapeCache;
 }
 
+
 -(id) init
 {
     self = [super init];
     if(self)
     {
         shapeObjects_ = [[NSMutableDictionary alloc] init];
-        shapeData_ = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -97,8 +99,11 @@ public:
 -(void) dealloc
 {
     [shapeObjects_ release];
-    [shapeData_ release];
     [super dealloc];
+}
+
+-(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILPhysicsSprite *)sprite
+{
 }
 
 -(void) addFixturesToBody:(b2Body*)body forShapeName:(NSString*)shape
@@ -121,13 +126,13 @@ public:
     return bd->anchorPoint;
 }
 
+
 -(void) addShapesWithFile:(NSString*)plist
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:plist
                                                      ofType:nil
                                                 inDirectory:nil];
-    
-	NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithContentsOfFile:path];
     NSDictionary *metadataDict = [dictionary objectForKey:@"metadata"];
     int format = [[metadataDict objectForKey:@"format"] intValue];
     ptmRatio_ =  [[metadataDict objectForKey:@"ptm_ratio"] floatValue];
@@ -138,44 +143,43 @@ public:
     
 }
 
+- (BOOL)isPolygons:(NSDictionary *)fixtureData
+{
+    return [[fixtureData objectForKey:@"fixture_type"] isEqual:@"POLYGON"];
+}
+
+- (BOOL)isCycle:(NSDictionary *)fixtureData
+{
+    return [[fixtureData objectForKey:@"fixture_type"] isEqual:@"CIRCLE"];
+}
+
+
 - (void)putBodyToCache:(NSDictionary *)bodyDict
 {
-    for(NSString *bodyName in bodyDict)
-    {
+    for(NSString *bodyName in bodyDict) {
         NSDictionary *bodyData = [bodyDict objectForKey:bodyName];
         BodyDef *bodyDef = [[[BodyDef alloc] init] autorelease];
         bodyDef->anchorPoint = CGPointFromString_([bodyData objectForKey:@"anchorpoint"]);
         NSArray *fixtureList = [bodyData objectForKey:@"fixtures"];
         FixtureDef **nextFixtureDef = &(bodyDef->fixtures);
-        
-        for(NSDictionary *fixtureData in fixtureList)
-        {
-            
-            if([[fixtureData objectForKey:@"fixture_type"] isEqual:@"POLYGON"])
-            {
+        for(NSDictionary *fixtureData in fixtureList) {
+            if([self isPolygons:fixtureData]) {
                 NSArray *polygonsArray = [fixtureData objectForKey:@"polygons"];
-                
-                for(int i = 0; i < polygonsArray.count; i++)
-                {
-                    
+                for(int i = 0; i < polygonsArray.count; i++) {
                     FixtureDef *fix = [self createPolygonFixtureDef:fixtureData index:i];
                     *nextFixtureDef = fix;
                     nextFixtureDef = &(fix->next);
                 }
             }
-            else if([[fixtureData objectForKey:@"fixture_type"] isEqual:@"CIRCLE"])
-            {
+            else if([self isCycle:fixtureData]) {
                 FixtureDef *fix = [self createCircleFixtureDef:fixtureData];
                 *nextFixtureDef = fix;
                 nextFixtureDef = &(fix->next);
-            }
-            else
-            {
+            } else {
                 assert(0);
             }
         }
         
-        // add the body element to the hash
         [shapeObjects_ setObject:bodyDef forKey:bodyName];
     }
 }

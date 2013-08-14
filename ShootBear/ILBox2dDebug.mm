@@ -9,6 +9,7 @@
 #import "ILBox2dDebug.h"
 #import "GLES-Render.h"
 #import "ILBox2dConfig.h"
+#import "CCNode+CCBRelativePositioning.h"
 
 @interface ILBox2dDebug ()
 

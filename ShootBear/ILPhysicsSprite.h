@@ -10,10 +10,9 @@
 
 @interface ILPhysicsSprite : CCSprite
 {
-    	BOOL	_ignoreBodyRotation;
+    BOOL	_ignoreBodyRotation;
     b2Body	*_b2Body;
 	
-	// Pixels to Meters ratio
 	float	_PTMRatio;
 }
 

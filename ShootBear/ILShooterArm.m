@@ -23,12 +23,6 @@
      [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate:self priority:0 swallowsTouches:NO];
 }
 
-- (CGPoint)lineVector
-{
-    float degree = [self lineDegree];
-    float radius = -CC_DEGREES_TO_RADIANS(degree);
-    return ccpRotateByAngle(ccp(100, 0), ccp(0, 0), radius);
-}
 
 - (float)lineDegree
 {
