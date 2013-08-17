@@ -7,8 +7,10 @@
 //
 
 #import "CCPhysicsSprite.h"
+#import "ILPhysicsFlag.h"
+#import <Box2D.h>
 
-@interface ILPhysicsSprite : CCSprite
+@interface ILPhysicsSprite : CCSprite <ILPhysicsFlag>
 {
     BOOL	_ignoreBodyRotation;
     b2Body	*_b2Body;

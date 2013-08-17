@@ -8,6 +8,10 @@
 
 #import "ILGun.h"
 #import "ILTools.h"
+#import "ILBox2dEntity.h"
+#import "CCBReader.h"
+#import "ILBox2dFactory.h"
+#import "ILBullet.h"
 
 #define BULLET 30
 
@@ -21,9 +25,14 @@
 
 - (void)fire
 {
-    CGPoint fireLocalPoint = self.lineReference.position;
-    CGPoint fireGLPoint = [self.parent convertToWorldSpace:fireLocalPoint];
+    ILBullet *bullet = (ILBullet *)[CCBReader nodeGraphFromFile:@"Bullet.ccbi"];
+    [self addChild:bullet];
+    [bullet.entity setPTMRatio:PIXELS_PER_METER];
+    [bullet setPosition:self.lineReference.position];
+    CGPoint v = [self lineReferenceVector];
+    [[ILBox2dFactory sharedFactory] addPhysicsFeature:bullet];
     
+    [bullet.entity setSpeed:b2Vec2(v.x, v.y)];
 }
 
 - (CGPoint)lineReferenceVector
@@ -35,7 +44,7 @@
 
 - (float)lineTotalDegree
 {
-    return [ILTools rotationTotal:self];
+    return [ILTools rotationTotal:self.lineReference];
 }
 
 @end

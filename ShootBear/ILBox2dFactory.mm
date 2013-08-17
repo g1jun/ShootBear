@@ -8,16 +8,71 @@
 
 #import "ILBox2dFactory.h"
 #import "ILBox2dConfig.h"
+#import "ILContactListener.h"
+#import "ILShapeCache.h"
+
+@interface ILBox2dFactory ()
+
+@property (assign, nonatomic) ILContactListener *contactListener;
+@property (retain, nonatomic) NSMutableDictionary *collisionDelegates;
+
+@end
 
 @implementation ILBox2dFactory
 
-- (id)initWithB2World:(b2World *)world
++ (ILBox2dFactory *)sharedFactory
+{
+    static ILBox2dFactory *factory = nil;
+    if (factory == nil) {
+        factory = [[self alloc] init];
+    }
+    return factory;
+}
+
+- (void)dealloc
+{
+    self.collisionDelegates = nil;
+    [super dealloc];
+}
+
+- (id)init
 {
     self = [super init];
     if (self) {
-        self.world = world;
+        self.collisionDelegates = [NSMutableDictionary dictionary];
+        [[ILShapeCache sharedShapeCache] setPTMRatio:PIXELS_PER_METER];
+        [[ILShapeCache sharedShapeCache] addShapesWithFile:@"BearPhysics.plist"];
     }
     return self;
+}
+
+- (void)prepareB2World
+{
+    _world = [self createPhyscisWorld];
+    _contactListener = new ILContactListener();
+    _world->SetContactListener(_contactListener);
+    [self.collisionDelegates removeAllObjects];
+    
+
+}
+
+- (b2World *) createPhyscisWorld
+{
+	b2Vec2 gravity;
+	gravity.Set(0.0f, -10.0f);
+	b2World *world = new b2World(gravity);
+	world->SetAllowSleeping(false);
+    world->SetContinuousPhysics(true);
+    return world;
+}
+
+
+- (void)releaseB2World
+{
+    delete _contactListener;
+    delete _world;
+    _contactListener = NULL;
+    _world = NULL;
 }
 
 - (b2Body *)createLineSegement:(NSArray *)lines
@@ -27,12 +82,52 @@
     b2Body *body = self.world->CreateBody(&bodyDef);
     for (ILLineSegment *line in lines) {
         b2EdgeShape groundBox;
-        groundBox.Set(b2Vec2(line.start.x / PIXELS_PER_METER, line.start.y / PIXELS_PER_METER),
-                      b2Vec2(line.end.x / PIXELS_PER_METER, line.end.y / PIXELS_PER_METER));
+        groundBox.Set(b2Vec2(line.start.x / PIXELS_PER_METER,
+                             line.start.y / PIXELS_PER_METER),
+                      b2Vec2(line.end.x / PIXELS_PER_METER,
+                             line.end.y / PIXELS_PER_METER));
         body->CreateFixture(&groundBox,0);
     }
     return body;
 }
 
+- (void)addPhysicsFeature:(CCNode *) node
+{
+    CCArray *childrens = [node children];
+    for (CCNode *children in childrens) {
+        if ([children conformsToProtocol:@protocol(ILPhysicsFlag)]) {
+            [self addBox2dFeatureToSprite:(ILPhysicsSprite*)children];
+            continue;
+        }
+        [self addPhysicsFeature:children];
+    }
+}
+
+- (void)addBox2dFeatureToSprite:(ILPhysicsSprite *)sprite
+{
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    b2Body *body = [ILBox2dFactory sharedFactory].world->CreateBody(&bodyDef);
+    [sprite setPTMRatio:PIXELS_PER_METER];
+    [[ILShapeCache sharedShapeCache] addFixturesToBody:body forPhysicsSprite:sprite];
+    [sprite setB2Body:body];
+    
+}
+
+#pragma mark collision delegate
+- (void)setBearCollisionDelegate:(id<ILBearCollisionDelegate>)delegate
+{
+    self.collisionDelegates[kILBearCollisionDelegate] = delegate;
+}
+
+- (void)runTarget:(ILCollisionParameter *)param
+{
+    [param retain];
+    id target = self.collisionDelegates[param.delegateKey];
+    if ([target respondsToSelector:param.selector]) {
+        [target performSelector:param.selector withObject:param.meReference withObject:param.anotherReference];
+    }
+    [param release];
+}
 
 @end

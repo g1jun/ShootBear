@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04001B6817BCCDDF00E1332A /* ILCollisionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04001B6717BCCDDF00E1332A /* ILCollisionParameter.m */; };
 		0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB217AE606D0023BD39 /* ILPlayScene.mm */; };
 		0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */; };
 		0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DABC17AE61A40023BD39 /* ILShootBear.mm */; };
@@ -16,6 +17,7 @@
 		0411DACC17AE76B70023BD39 /* ILTMXToBox2d.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACB17AE76B70023BD39 /* ILTMXToBox2d.mm */; };
 		0411DAD017AE82AC0023BD39 /* ILBox2dConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */; };
 		0413619017AF1BFF0097E87F /* ILLineSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0413618F17AF1BFF0097E87F /* ILLineSegment.mm */; };
+		042D5AE517BCA7E800AA39FF /* ILContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 042D5AE417BCA7E800AA39FF /* ILContactListener.mm */; };
 		04306B6217B653EB00350575 /* Bullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5517B653EB00350575 /* Bullet.ccbi */; };
 		04306B6317B653EB00350575 /* BulletTrack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5617B653EB00350575 /* BulletTrack.ccbi */; };
 		04306B6417B653EB00350575 /* LineReference.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04306B5717B653EB00350575 /* LineReference.ccbi */; };
@@ -268,10 +270,21 @@
 		04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
 		04DCE28D17B4E1010036CA68 /* ILPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */; };
 		04E0832017B50901007F5486 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0831F17B50901007F5486 /* libobjc.A.dylib */; };
-		04FCDCC717BAFD9D005D151B /* ILBullet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04FCDCC617BAFD9D005D151B /* ILBullet.mm */; };
+		04E828A817BD066B00CF0006 /* ILBearHead.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828A717BD066B00CF0006 /* ILBearHead.mm */; };
+		04E828AB17BD068800CF0006 /* ILBearLeg.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828AA17BD068800CF0006 /* ILBearLeg.mm */; };
+		04E828AE17BD069700CF0006 /* ILBearBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828AD17BD069700CF0006 /* ILBearBody.mm */; };
+		04E828B817BD07A000CF0006 /* ILBear.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E828B717BD07A000CF0006 /* ILBear.m */; };
+		04E828BB17BD0E4000CF0006 /* ILPhysicsBearBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */; };
+		04E828BE17BD194100CF0006 /* ILBulletEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BD17BD194100CF0006 /* ILBulletEntity.mm */; };
+		04FCDCC717BAFD9D005D151B /* ILBox2dEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04FCDCC617BAFD9D005D151B /* ILBox2dEntity.mm */; };
+		04FCDCCB17BB8285005D151B /* ILBullet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04FCDCCA17BB8285005D151B /* ILBullet.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04001B6317BCB4D800E1332A /* ILCollisionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILCollisionDelegate.h; sourceTree = "<group>"; };
+		04001B6617BCCDDF00E1332A /* ILCollisionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILCollisionParameter.h; sourceTree = "<group>"; };
+		04001B6717BCCDDF00E1332A /* ILCollisionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILCollisionParameter.m; sourceTree = "<group>"; };
+		04001B6917BCDAB700E1332A /* ILBearCollisionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILBearCollisionDelegate.h; sourceTree = "<group>"; };
 		0411DAB117AE606D0023BD39 /* ILPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILPlayScene.h; path = PlayScene/ILPlayScene.h; sourceTree = "<group>"; };
 		0411DAB217AE606D0023BD39 /* ILPlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ILPlayScene.mm; path = PlayScene/ILPlayScene.mm; sourceTree = "<group>"; };
 		0411DAB817AE60E50023BD39 /* ILTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTMXLayer.h; sourceTree = "<group>"; };
@@ -288,6 +301,8 @@
 		0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBox2dConfig.mm; sourceTree = "<group>"; };
 		0413618E17AF1BFF0097E87F /* ILLineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLineSegment.h; sourceTree = "<group>"; };
 		0413618F17AF1BFF0097E87F /* ILLineSegment.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILLineSegment.mm; sourceTree = "<group>"; };
+		042D5AE317BCA7E800AA39FF /* ILContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILContactListener.h; sourceTree = "<group>"; };
+		042D5AE417BCA7E800AA39FF /* ILContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILContactListener.mm; sourceTree = "<group>"; };
 		04306B5517B653EB00350575 /* Bullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bullet.ccbi; sourceTree = "<group>"; };
 		04306B5617B653EB00350575 /* BulletTrack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletTrack.ccbi; sourceTree = "<group>"; };
 		04306B5717B653EB00350575 /* LineReference.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LineReference.ccbi; sourceTree = "<group>"; };
@@ -773,8 +788,23 @@
 		04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPhysicsSprite.h; sourceTree = "<group>"; };
 		04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsSprite.mm; sourceTree = "<group>"; };
 		04E0831F17B50901007F5486 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
-		04FCDCC517BAFD9D005D151B /* ILBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBullet.h; sourceTree = "<group>"; };
-		04FCDCC617BAFD9D005D151B /* ILBullet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBullet.mm; sourceTree = "<group>"; };
+		04E828A617BD066B00CF0006 /* ILBearHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBearHead.h; sourceTree = "<group>"; };
+		04E828A717BD066B00CF0006 /* ILBearHead.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBearHead.mm; sourceTree = "<group>"; };
+		04E828A917BD068800CF0006 /* ILBearLeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBearLeg.h; sourceTree = "<group>"; };
+		04E828AA17BD068800CF0006 /* ILBearLeg.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBearLeg.mm; sourceTree = "<group>"; };
+		04E828AC17BD069700CF0006 /* ILBearBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBearBody.h; sourceTree = "<group>"; };
+		04E828AD17BD069700CF0006 /* ILBearBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBearBody.mm; sourceTree = "<group>"; };
+		04E828B617BD07A000CF0006 /* ILBear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBear.h; sourceTree = "<group>"; };
+		04E828B717BD07A000CF0006 /* ILBear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILBear.m; sourceTree = "<group>"; };
+		04E828B917BD0E4000CF0006 /* ILPhysicsBearBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPhysicsBearBase.h; sourceTree = "<group>"; };
+		04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsBearBase.mm; sourceTree = "<group>"; };
+		04E828BC17BD194100CF0006 /* ILBulletEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletEntity.h; sourceTree = "<group>"; };
+		04E828BD17BD194100CF0006 /* ILBulletEntity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBulletEntity.mm; sourceTree = "<group>"; };
+		04FCDCC517BAFD9D005D151B /* ILBox2dEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBox2dEntity.h; sourceTree = "<group>"; };
+		04FCDCC617BAFD9D005D151B /* ILBox2dEntity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBox2dEntity.mm; sourceTree = "<group>"; };
+		04FCDCC817BB776A005D151B /* ILPhysicsFlag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILPhysicsFlag.h; sourceTree = "<group>"; };
+		04FCDCC917BB8285005D151B /* ILBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBullet.h; sourceTree = "<group>"; };
+		04FCDCCA17BB8285005D151B /* ILBullet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBullet.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -799,6 +829,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04001B6417BCBE2000E1332A /* Bear */ = {
+			isa = PBXGroup;
+			children = (
+				04E828A617BD066B00CF0006 /* ILBearHead.h */,
+				04E828A717BD066B00CF0006 /* ILBearHead.mm */,
+				04E828A917BD068800CF0006 /* ILBearLeg.h */,
+				04E828AA17BD068800CF0006 /* ILBearLeg.mm */,
+				04E828AC17BD069700CF0006 /* ILBearBody.h */,
+				04E828AD17BD069700CF0006 /* ILBearBody.mm */,
+				04E828B617BD07A000CF0006 /* ILBear.h */,
+				04E828B717BD07A000CF0006 /* ILBear.m */,
+				04001B6917BCDAB700E1332A /* ILBearCollisionDelegate.h */,
+				04E828B917BD0E4000CF0006 /* ILPhysicsBearBase.h */,
+				04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */,
+			);
+			name = Bear;
+			sourceTree = "<group>";
+		};
 		0411DAB417AE60760023BD39 /* PlayScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -806,12 +854,6 @@
 				0411DAB217AE606D0023BD39 /* ILPlayScene.mm */,
 				0411DAB817AE60E50023BD39 /* ILTMXLayer.h */,
 				0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */,
-				0443B66617AFA92B00DA0D69 /* ILBox2dDebug.h */,
-				0443B66717AFA92B00DA0D69 /* ILBox2dDebug.mm */,
-				04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */,
-				04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */,
-				049EF70317B8D74800A9D1B7 /* ILShapeCache.h */,
-				049EF70417B8D74800A9D1B7 /* ILShapeCache.mm */,
 			);
 			name = PlayScene;
 			sourceTree = "<group>";
@@ -819,6 +861,15 @@
 		0411DAC617AE76600023BD39 /* Box2d */ = {
 			isa = PBXGroup;
 			children = (
+				04FCDCC517BAFD9D005D151B /* ILBox2dEntity.h */,
+				04FCDCC617BAFD9D005D151B /* ILBox2dEntity.mm */,
+				04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */,
+				04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */,
+				04FCDCC817BB776A005D151B /* ILPhysicsFlag.h */,
+				049EF70317B8D74800A9D1B7 /* ILShapeCache.h */,
+				049EF70417B8D74800A9D1B7 /* ILShapeCache.mm */,
+				0443B66617AFA92B00DA0D69 /* ILBox2dDebug.h */,
+				0443B66717AFA92B00DA0D69 /* ILBox2dDebug.mm */,
 				0411DAC717AE76800023BD39 /* ILBox2dFactory.h */,
 				0411DAC817AE76800023BD39 /* ILBox2dFactory.mm */,
 				0411DACA17AE76B70023BD39 /* ILTMXToBox2d.h */,
@@ -827,6 +878,8 @@
 				0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */,
 				0413618E17AF1BFF0097E87F /* ILLineSegment.h */,
 				0413618F17AF1BFF0097E87F /* ILLineSegment.mm */,
+				042D5AE317BCA7E800AA39FF /* ILContactListener.h */,
+				042D5AE417BCA7E800AA39FF /* ILContactListener.mm */,
 			);
 			name = Box2d;
 			sourceTree = "<group>";
@@ -906,6 +959,7 @@
 		04886C0C17ACB1F6005D8DB9 /* ShootBear */ = {
 			isa = PBXGroup;
 			children = (
+				04001B6417BCBE2000E1332A /* Bear */,
 				049EF6FC17B8AB9700A9D1B7 /* Tools */,
 				04D236B417B79F24007608F4 /* Shooter */,
 				0411DACD17AE80950023BD39 /* Start */,
@@ -1651,8 +1705,13 @@
 				04D236B217B79DDF007608F4 /* ILShooterHalf.m */,
 				04B1094917B3800D00778F8E /* ILShooter.h */,
 				04B1094A17B3800D00778F8E /* ILShooter.mm */,
-				04FCDCC517BAFD9D005D151B /* ILBullet.h */,
-				04FCDCC617BAFD9D005D151B /* ILBullet.mm */,
+				04FCDCC917BB8285005D151B /* ILBullet.h */,
+				04FCDCCA17BB8285005D151B /* ILBullet.mm */,
+				04001B6317BCB4D800E1332A /* ILCollisionDelegate.h */,
+				04001B6617BCCDDF00E1332A /* ILCollisionParameter.h */,
+				04001B6717BCCDDF00E1332A /* ILCollisionParameter.m */,
+				04E828BC17BD194100CF0006 /* ILBulletEntity.h */,
+				04E828BD17BD194100CF0006 /* ILBulletEntity.mm */,
 			);
 			name = Shooter;
 			sourceTree = "<group>";
@@ -1996,7 +2055,16 @@
 				04D236B317B79DDF007608F4 /* ILShooterHalf.m in Sources */,
 				049EF6FF17B8ABBB00A9D1B7 /* ILTools.m in Sources */,
 				049EF70517B8D74900A9D1B7 /* ILShapeCache.mm in Sources */,
-				04FCDCC717BAFD9D005D151B /* ILBullet.mm in Sources */,
+				04FCDCC717BAFD9D005D151B /* ILBox2dEntity.mm in Sources */,
+				04FCDCCB17BB8285005D151B /* ILBullet.mm in Sources */,
+				042D5AE517BCA7E800AA39FF /* ILContactListener.mm in Sources */,
+				04001B6817BCCDDF00E1332A /* ILCollisionParameter.m in Sources */,
+				04E828A817BD066B00CF0006 /* ILBearHead.mm in Sources */,
+				04E828AB17BD068800CF0006 /* ILBearLeg.mm in Sources */,
+				04E828AE17BD069700CF0006 /* ILBearBody.mm in Sources */,
+				04E828B817BD07A000CF0006 /* ILBear.m in Sources */,
+				04E828BB17BD0E4000CF0006 /* ILPhysicsBearBase.mm in Sources */,
+				04E828BE17BD194100CF0006 /* ILBulletEntity.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

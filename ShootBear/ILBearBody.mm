@@ -1,0 +1,30 @@
+//
+//  ILBearBody.m
+//  ShootBear
+//
+//  Created by mac on 13-8-15.
+//  Copyright (c) 2013年 mac. All rights reserved.
+//
+
+#import "ILBearBody.h"
+#import "ILBearCollisionDelegate.h"
+
+@implementation ILBearBody
+
+- (NSString *)collisionType
+{
+    return kCollisionBearBody;
+}
+
+- (SEL)selectorWithType:(NSString *)type
+{
+    NSDictionary *dic = @{
+                          kCollisionBullet :
+                              [NSValue valueWithPointer:@selector(bodyCollision:bullet:)],
+                          
+                          };
+    return (SEL)[dic[type] pointerValue];
+}
+
+
+@end

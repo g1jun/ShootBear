@@ -9,11 +9,10 @@
 #import "ILBox2dDebug.h"
 #import "GLES-Render.h"
 #import "ILBox2dConfig.h"
+#import "ILBox2dFactory.h"
 #import "CCNode+CCBRelativePositioning.h"
 
 @interface ILBox2dDebug ()
-
-@property (assign, nonatomic) b2World *world;
 
 @end
 
@@ -22,16 +21,15 @@
 
 
 
-- (id)initWithB2World:(b2World *)world
+- (id)init
 {
     self = [super init];
     if (self) {
         GLESDebugDraw *debugDraw = new GLESDebugDraw(PIXELS_PER_METER);
-        world->SetDebugDraw(debugDraw);
+        [ILBox2dFactory sharedFactory].world->SetDebugDraw(debugDraw);
         uint32 flags = 0;
         flags += b2Draw::e_shapeBit;
         debugDraw->SetFlags(flags);
-        self.world = world;
     }
     return self;
 }
@@ -41,7 +39,7 @@
 	[super draw];
 	ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
 	kmGLPushMatrix();
-	self.world->DrawDebugData();
+	[ILBox2dFactory sharedFactory].world->DrawDebugData();
 	kmGLPopMatrix();
 }
 

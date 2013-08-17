@@ -12,13 +12,14 @@
 
 @implementation ILTMXLayer
 
-+ (id) nodeWithB2World:(b2World *)world {
++ (id)physcisNode
+{
     ILTMXLayer *tmxLayer = [[self alloc] init];
     if (self) {
         CCTMXTiledMap *tmxMap = [CCTMXTiledMap tiledMapWithTMXFile:@"map1.tmx"];
         [tmxLayer addChild:tmxMap];
         ILTMXToBox2d *tmxToBox2d = [ILTMXToBox2d new];
-        tmxToBox2d.world = world;
+        tmxToBox2d.world = [ILBox2dFactory sharedFactory].world;
         tmxToBox2d.collisionString = [self loadCollisionString];
         tmxToBox2d.tmxMap = tmxMap;
         [tmxToBox2d loadPhysics];

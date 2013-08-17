@@ -8,14 +8,27 @@
 
 #import <Foundation/Foundation.h>
 #import "ILShootBear.h"
+#import "ILBearCollisionDelegate.h"
+#import "ILCollisionParameter.h"
 #import "Box2D.h"
 
 @interface ILBox2dFactory : NSObject
 
-@property (assign, nonatomic) b2World *world;
+@property (assign, nonatomic, readonly) b2World *world;
+
 
 - (b2Body *)createLineSegement:(NSArray *)line;
 
-- (id)initWithB2World:(b2World *)world;
+- (void)prepareB2World;
+
+- (void)releaseB2World;
+
+- (void)addPhysicsFeature:(CCNode *) node;
+
+- (void)setBearCollisionDelegate:(id<ILBearCollisionDelegate>)delegate;
+
+- (void)runTarget:(ILCollisionParameter *)param;
+
++ (ILBox2dFactory *)sharedFactory;
 
 @end

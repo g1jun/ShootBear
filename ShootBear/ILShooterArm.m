@@ -94,7 +94,9 @@
 }
 - (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    [self.gun fire];
+    if ([self hasVisibleParents]) {
+        [self.gun fire];
+    }
 }
 
 @end

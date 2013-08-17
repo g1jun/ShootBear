@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "ILShootBear.h"
+#import "ILBearCollisionDelegate.h"
 
-@interface ILPlayScene : CCScene {
+@interface ILPlayScene : CCScene <ILBearCollisionDelegate> {
         
 }
 

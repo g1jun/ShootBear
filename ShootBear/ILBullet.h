@@ -6,8 +6,11 @@
 //  Copyright (c) 2013年 mac. All rights reserved.
 //
 
-#import "ILPhysicsSprite.h"
+#import "CCNode.h"
+#import "ILBox2dEntity.h"
 
-@interface ILBullet : ILPhysicsSprite
+@interface ILBullet : CCNode
+
+@property (retain, nonatomic) ILBox2dEntity *entity;
 
 @end

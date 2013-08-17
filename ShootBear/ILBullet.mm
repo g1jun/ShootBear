@@ -7,14 +7,12 @@
 //
 
 #import "ILBullet.h"
-#import "Box2D.h"
-
 @implementation ILBullet
 
-- (void)setB2Body:(b2Body *)b2Body
+- (void)dealloc
 {
-    [super setB2Body:b2Body];
-    b2Body->SetGravityScale(0);
+    self.entity = nil;
+    [super dealloc];
 }
 
 @end

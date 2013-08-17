@@ -14,8 +14,6 @@
 #import "ILShapeCache.h"
 @interface ILPlayScene ()
 
-@property (assign, nonatomic) b2World *world;
-
 @end
 
 @implementation ILPlayScene
@@ -23,9 +21,9 @@
 - (id)init {
     self = [super init];
     if(self) {
-        self.world = [self createPhyscisWorld];
-        [[ILShapeCache sharedShapeCache] addShapesWithFile:@"BearPhysics.plist"];
-        CCLayer *tmxLayer = [ILTMXLayer nodeWithB2World:self.world];
+        [[ILBox2dFactory sharedFactory] prepareB2World];
+        [[ILBox2dFactory sharedFactory] setBearCollisionDelegate:self];
+        CCLayer *tmxLayer = [ILTMXLayer physcisNode];
         [self addChild:tmxLayer];
         
         CCNode *shooter = [CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
@@ -37,60 +35,50 @@
         
         [self addChild:bear];
         
-        [self addPhysicsFeature:bear];
+        [[ILBox2dFactory sharedFactory] addPhysicsFeature:bear];
         [self addChild:shooter];
         [self scheduleUpdate];
         
         
-        ILBox2dDebug *debug = [[ILBox2dDebug alloc] initWithB2World:self.world];
+        ILBox2dDebug *debug = [[ILBox2dDebug alloc] init];
         [self addChild:debug];
         [debug release];
     }
     return self;
 }
 
-- (void)addPhysicsFeature:(CCNode *) node
+- (void)dealloc
 {
-    CCArray *childrens = [node children];
-    for (CCNode *children in childrens) {
-        if ([children isKindOfClass:[ILPhysicsSprite class]]) {
-            [self addBox2dFeatureToSprite:(ILPhysicsSprite*)children];
-            continue;
-        }
-        [self addPhysicsFeature:children];
-    }
+    [[ILBox2dFactory sharedFactory] releaseB2World];
+    [super dealloc];
 }
 
-- (void)addBox2dFeatureToSprite:(ILPhysicsSprite *)sprite
-{
-    b2BodyDef bodyDef;
-    bodyDef.type = b2_staticBody;
-    b2Body *body = _world->CreateBody(&bodyDef);
-    [sprite setPTMRatio:PIXELS_PER_METER];
-    [[ILShapeCache sharedShapeCache] addFixturesToBody:body forShapeName:sprite.imageName];
-//    [sprite setAnchorPoint: [[GB2ShapeCache sharedShapeCache] anchorPointForShape:sprite.imageName]];
-    [sprite setB2Body:body];
 
-}
 
 -(void) update: (ccTime) dt
 {
 	int32 velocityIterations = 10;
 	int32 positionIterations = 10;
-	self.world->Step(dt, velocityIterations, positionIterations);
+	[ILBox2dFactory sharedFactory].world->Step(dt, velocityIterations, positionIterations);
+}
+
+
+- (void)headCollision:(ILBear *)bear bullet:(ILBullet *)bullet
+{
+    
+}
+
+- (void)bodyCollision:(ILBear *)bear bullet:(ILBullet *)bullet
+{
+    
+}
+
+- (void)legCollision:(ILBear *)bear bullet:(ILBullet *)bullet
+{
+    
 }
 
 
 
-
-- (b2World *) createPhyscisWorld
-{	
-	b2Vec2 gravity;
-	gravity.Set(0.0f, 0);
-	b2World *world = new b2World(gravity);
-	world->SetAllowSleeping(false);
-    world->SetContinuousPhysics(true);
-    return world;
-}
 
 @end

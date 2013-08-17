@@ -8,6 +8,9 @@
 
 #import "ILShapeCache.h"
 #import "CCNode+CCBRelativePositioning.h"
+#import "CCSprite.h"
+#import "ILBox2dConfig.h"
+
 
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 #   define CGPointFromString_ CGPointFromString
@@ -91,26 +94,81 @@ public:
     self = [super init];
     if(self)
     {
-        shapeObjects_ = [[NSMutableDictionary alloc] init];
+        shapeDic_ = [NSMutableDictionary new];
     }
     return self;
 }
 
 -(void) dealloc
 {
-    [shapeObjects_ release];
+    [shapeDic_ release];
     [super dealloc];
 }
 
 -(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILPhysicsSprite *)sprite
 {
+    CGPoint moveVector = [self moveVector:sprite];
+    NSDictionary *dic = [[self applayVector:moveVector forShape:sprite.imageName] retain];
+    BodyDef *so = [self createBodyDefWithName:dic];
+    [dic release];
+    [self configFixture:body bodyDef:so];
+    
+}
+
+- (CGPoint)moveVector:(ILPhysicsSprite *)sprite
+{
+    float scale = [self spriteScale:sprite];
+    CGPoint size = ccpFromSize(sprite.contentSize);
+    CGPoint imageSize = ccpMult(size, scale);
+    CGPoint imageAnchor = [self anchorPointForShape:sprite.imageName];
+    CGPoint spriteAnchor = sprite.anchorPoint;
+    CGPoint vector = ccpSub(imageAnchor, spriteAnchor);
+    CGPoint moveVector = ccp(vector.x * imageSize.x, vector.y * imageSize.y);
+    return moveVector;
+}
+
+- (NSMutableDictionary *)applayVector:(CGPoint)moveVector forShape:(NSString *)shapeName;
+{
+    NSMutableDictionary *dic = [shapeDic_[shapeName] mutableCopy];
+    NSMutableArray *fixtures = dic[@"fixtures"];
+    for (NSMutableDictionary *item in fixtures) {
+        if ([self isPolygons:item]) {
+            NSMutableArray *polygons = item[@"polygons"];
+            for (NSMutableArray *item in polygons) {
+                for (int i = 0; i < item.count; i++) {
+                    NSString *pString = item[i];
+                    CGPoint p = CGPointFromString_(pString);
+                    item[i] = NSStringFromCGPoint(ccpAdd(p, moveVector));
+                    
+                }
+            }
+            
+        } else if ([self isCycle:item]) {
+            NSMutableDictionary *circle = item[@"circle"];
+            CGPoint p = CGPointFromString_([circle objectForKey:@"position"]);
+            circle[@"position"] = NSStringFromCGPoint(ccpAdd(p, moveVector));
+        }
+    }
+    return [dic autorelease];
+}
+
+- (float)spriteScale:(ILPhysicsSprite *)sprite
+{
+    float resolutionScale = 2 - [sprite resolutionScale] + 1;
+    float imageScale = 1 / [self shapeScale:sprite.imageName];
+    return resolutionScale * imageScale;
 }
 
 -(void) addFixturesToBody:(b2Body*)body forShapeName:(NSString*)shape
 {
-    BodyDef *so = [shapeObjects_ objectForKey:shape];
+    NSDictionary *bodyData = [shapeDic_ objectForKey:shape];
+    BodyDef *so = [self createBodyDefWithName:bodyData];
+    [self configFixture:body bodyDef:so];
+}
+
+- (void)configFixture:(b2Body *)body bodyDef:(BodyDef *)so
+{
     assert(so);
-    
     FixtureDef *fix = so->fixtures;
     while(fix)
     {
@@ -121,9 +179,8 @@ public:
 
 -(CGPoint) anchorPointForShape:(NSString*)shape
 {
-    BodyDef *bd = [shapeObjects_ objectForKey:shape];
-    assert(bd);
-    return bd->anchorPoint;
+    NSDictionary *bodyData = shapeDic_[shape];
+    return CGPointFromString_([bodyData objectForKey:@"anchorpoint"]);
 }
 
 
@@ -135,12 +192,14 @@ public:
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithContentsOfFile:path];
     NSDictionary *metadataDict = [dictionary objectForKey:@"metadata"];
     int format = [[metadataDict objectForKey:@"format"] intValue];
-    ptmRatio_ =  [[metadataDict objectForKey:@"ptm_ratio"] floatValue];
     NSAssert(format == 1, @"Format not supported");
-    NSDictionary *bodyDict = [dictionary objectForKey:@"bodies"];
-    [self putBodyToCache:bodyDict];
-    
-    
+    NSMutableDictionary *bodyDict = [dictionary objectForKey:@"bodies"];
+    [shapeDic_ addEntriesFromDictionary:bodyDict];
+    for (id key in bodyDict) {
+        NSMutableDictionary *bodyData = bodyDict[key];
+        float ptm = [[metadataDict objectForKey:@"ptm_ratio"] floatValue] / 100;
+        bodyData[@"ptm_ratio"] = [NSString stringWithFormat:@"%f", ptm];
+    }
 }
 
 - (BOOL)isPolygons:(NSDictionary *)fixtureData
@@ -153,36 +212,33 @@ public:
     return [[fixtureData objectForKey:@"fixture_type"] isEqual:@"CIRCLE"];
 }
 
-
-- (void)putBodyToCache:(NSDictionary *)bodyDict
+- (BodyDef *)createBodyDefWithName:(NSDictionary *)bodyData
 {
-    for(NSString *bodyName in bodyDict) {
-        NSDictionary *bodyData = [bodyDict objectForKey:bodyName];
-        BodyDef *bodyDef = [[[BodyDef alloc] init] autorelease];
-        bodyDef->anchorPoint = CGPointFromString_([bodyData objectForKey:@"anchorpoint"]);
-        NSArray *fixtureList = [bodyData objectForKey:@"fixtures"];
-        FixtureDef **nextFixtureDef = &(bodyDef->fixtures);
-        for(NSDictionary *fixtureData in fixtureList) {
-            if([self isPolygons:fixtureData]) {
-                NSArray *polygonsArray = [fixtureData objectForKey:@"polygons"];
-                for(int i = 0; i < polygonsArray.count; i++) {
-                    FixtureDef *fix = [self createPolygonFixtureDef:fixtureData index:i];
-                    *nextFixtureDef = fix;
-                    nextFixtureDef = &(fix->next);
-                }
-            }
-            else if([self isCycle:fixtureData]) {
-                FixtureDef *fix = [self createCircleFixtureDef:fixtureData];
+    BodyDef *bodyDef = [[[BodyDef alloc] init] autorelease];
+    bodyDef->anchorPoint = CGPointFromString_([bodyData objectForKey:@"anchorpoint"]);
+    NSArray *fixtureList = [bodyData objectForKey:@"fixtures"];
+    FixtureDef **nextFixtureDef = &(bodyDef->fixtures);
+    localRatio_ = ptmRatio_/ ([bodyData[@"ptm_ratio"] floatValue]);
+    for(NSDictionary *fixtureData in fixtureList) {
+        if([self isPolygons:fixtureData]) {
+            NSArray *polygonsArray = [fixtureData objectForKey:@"polygons"];
+            for(int i = 0; i < polygonsArray.count; i++) {
+                FixtureDef *fix = [self createPolygonFixtureDef:fixtureData index:i];
                 *nextFixtureDef = fix;
                 nextFixtureDef = &(fix->next);
-            } else {
-                assert(0);
             }
         }
-        
-        [shapeObjects_ setObject:bodyDef forKey:bodyName];
+        else if([self isCycle:fixtureData]) {
+            FixtureDef *fix = [self createCircleFixtureDef:fixtureData];
+            *nextFixtureDef = fix;
+            nextFixtureDef = &(fix->next);
+        } else {
+            assert(0);
+        }
     }
+    return bodyDef;
 }
+
 
 - (FixtureDef *)createPolygonFixtureDef:(NSDictionary *)fixtureData index:(int)index
 {
@@ -195,6 +251,16 @@ public:
     return fix;
 }
 
+- (void)setPTMRatio:(float)ptmRatio
+{
+    ptmRatio_ = ptmRatio;
+}
+
+- (float)localPTMRatio:(NSString *)shape
+{
+    return ptmRatio_ / [self shapeScale:shape];
+}
+
 - (b2PolygonShape *)createPolygonShape:(NSArray *)polygonArray
 {
     b2Vec2 vertices[b2_maxPolygonVertices];
@@ -204,8 +270,8 @@ public:
     for(NSString *pointString in polygonArray)
     {
         CGPoint offset = CGPointFromString_(pointString);
-        vertices[vindex].x = (offset.x / ptmRatio_) ;
-        vertices[vindex].y = (offset.y / ptmRatio_) ;
+        vertices[vindex].x = (offset.x / localRatio_) ;
+        vertices[vindex].y = (offset.y / localRatio_) ;
         vindex++;
     }
     
@@ -241,15 +307,15 @@ public:
 {
     NSDictionary *circleData = [fixtureData objectForKey:@"circle"];
     b2CircleShape *circleShape = new b2CircleShape();
-    circleShape->m_radius = [[circleData objectForKey:@"radius"] floatValue]  / ptmRatio_;
+    circleShape->m_radius = [[circleData objectForKey:@"radius"] floatValue]  / localRatio_;
     CGPoint p = CGPointFromString_([fixtureData objectForKey:@"position"]);
-    circleShape->m_p = b2Vec2(p.x / ptmRatio_, p.y / ptmRatio_);
+    circleShape->m_p = b2Vec2(p.x / localRatio_, p.y / localRatio_);
     return circleShape;
 }
 
--(float) ptmRatio
+-(float) shapeScale:(NSString *)shape
 {
-    return ptmRatio_;
+    return [shapeDic_[shape][@"ptm_ratio"] floatValue];
 }
 
 @end

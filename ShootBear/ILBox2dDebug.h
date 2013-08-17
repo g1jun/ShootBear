@@ -14,6 +14,4 @@
     
 }
 
-- (id)initWithB2World:(b2World *)world;
-
 @end

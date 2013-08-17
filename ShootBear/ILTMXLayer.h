@@ -15,6 +15,6 @@
     
 }
 
-+ (id)nodeWithB2World:(b2World *) world;
++ (id)physcisNode;
 
 @end

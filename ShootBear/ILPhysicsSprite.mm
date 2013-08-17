@@ -48,7 +48,8 @@
 - (void)setB2Body:(b2Body *)b2Body
 {
     _b2Body = b2Body;
-    [self setPosition:super.position];
+    _b2Body->SetUserData(self);
+    _b2Body->SetGravityScale(0);
 }
 
 - (void)updateB2BodyRotation
@@ -68,4 +69,15 @@
 {
     return [ILTools rotationTotal:self];
 }
+
+- (NSString *)collisionType
+{
+    return kCollisionNothing;
+}
+
+- (id)collisionCCNode
+{
+    return self;
+}
+
 @end

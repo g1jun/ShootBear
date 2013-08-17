@@ -121,9 +121,6 @@
 {
 	float angle = _b2Body->GetAngle();
 	_b2Body->SetTransform( b2Vec2(position.x / _PTMRatio, position.y / _PTMRatio), angle );
-//	float angle = _b2Body->GetAngle();
-//    CGPoint worldP = [self convertToWorldSpace:position];
-//	_b2Body->SetTransform( b2Vec2(worldP.x / _PTMRatio, worldP.y / _PTMRatio), angle );
 }
 
 -(float)rotation

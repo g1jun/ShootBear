@@ -9,11 +9,14 @@
 #import <Box2D.h>
 #import "ILPhysicsSprite.h"
 
+
+//PTM_Radio 为缩放的百分比
+
 @interface ILShapeCache : NSObject 
 {
-    NSMutableDictionary *shapeObjects_;
+    NSMutableDictionary *shapeDic_;
     float ptmRatio_;
-    NSMutableDictionary *shapDic_;
+    float localRatio_;
 }
 
 + (ILShapeCache *)sharedShapeCache;
@@ -26,6 +29,8 @@
 
 -(CGPoint) anchorPointForShape:(NSString*)shape;
 
--(float) ptmRatio;
+-(float) shapeScale:(NSString *)shape;
+
+- (void)setPTMRatio:(float)ptmRatio;
 
 @end
