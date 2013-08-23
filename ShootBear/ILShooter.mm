@@ -13,8 +13,7 @@
 
 - (void)didLoadFromCCB
 {
-    _leftShooter.visible = YES;
-    _rightShooter.visible = NO;
+    [self turnRight];
     [self scheduleUpdate];
 }
 
@@ -26,6 +25,13 @@
 
 - (void)turnLeft
 {
+    if (_rightShooter.visible) {
+        CGPoint firePoint = [_rightShooter firePointGL];
+        CGPoint firePoint2 = [_leftShooter firePointGL];
+        CGPoint ret = ccpSub(firePoint, firePoint2);
+        CGPoint position = ccp(ret.x + _leftShooter.position.x, _leftShooter.position.y);
+        _leftShooter.position = position;
+    }
     _leftShooter.visible = YES;
     _rightShooter.visible = NO;
 }
@@ -39,6 +45,14 @@
     } else {
         [self turnRight];
     }
+}
+
+- (void)replaceGunType:(NSString *)type
+{
+    NSString *const ccbRightFileName = [type stringByAppendingString:@"Right.ccbi"];
+    [_rightShooter replaceGunType:ccbRightFileName];
+    NSString *const ccbLeftFileName = [type stringByAppendingString:@"Left.ccbi"];
+    [_leftShooter replaceGunType:ccbLeftFileName];
 }
 
 @end

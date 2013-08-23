@@ -8,7 +8,10 @@
 
 #import "ILShooterArm.h"
 #import "CCControlExtension.h"
-#define ANGLE_STEP 0.00001
+#import "CCBReader.h"
+#import "CCBAnimationManager+RmoveDeadNode.h"
+
+#define ANGLE_STEP 0.0001
 
 @interface ILShooterArm ()
 
@@ -16,6 +19,21 @@
 @end
 
 @implementation ILShooterArm
+
+- (void)dealloc
+{
+    _gun = nil;
+    [super dealloc];
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _isCannon = NO;
+    }
+    return self;
+}
 
 - (void)didLoadFromCCB
 {
@@ -48,22 +66,27 @@
 
 - (float)currentDegree
 {
-    return self.rotation + [self lineDegree];
+    return [self.gun lineTotalDegree];
 }
+
 
 - (void)rotationToTouchPoint:(UITouch *)touch
 {
     CGPoint glPoint = [[CCDirector sharedDirector] convertTouchToGL:touch];
-    CGPoint targetVector = ccpSub(glPoint, [self.parent convertToWorldSpace:self.position]);
+    CGPoint centerPoint = _isCannon ? [self.gun.lineReference.parent convertToWorldSpace:self.gun.lineReference.position] : [self.parent convertToWorldSpace:self.position];
+    CGPoint targetVector = ccpSub(glPoint, centerPoint);
     float radians = ccpToAngle(targetVector);
     float angle = -CC_RADIANS_TO_DEGREES(radians);
     float step = angle  - [self currentDegree];
-    if (fabs(step) > ANGLE_STEP) {
-        self.rotation += step;
-        [self fixRotaionDegree];
+    if (fabs(step) < ANGLE_STEP) {
+        return;
     }
-
-
+    if (_isCannon) {
+        self.gun.rotation += step;
+    } else {
+        self.rotation += step;
+    }
+    [self fixRotaionDegree];
 }
 
 - (void)fixRotaionDegree
@@ -82,11 +105,11 @@
    
 }
 
-- (void)onExit
+- (void)stopAccpetTouch
 {
     [[CCDirector sharedDirector].touchDispatcher removeDelegate:self];
-    [super onExit];
 }
+
 
 - (void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
@@ -97,6 +120,17 @@
     if ([self hasVisibleParents]) {
         [self.gun fire];
     }
+}
+
+- (void)replaceGunType:(NSString * )type
+{
+    ILGun *newGun = (ILGun *)[CCBReader nodeGraphFromFile:type];
+    CCBAnimationManager *manager = self.gun.userObject;
+    [manager removeDeadNode:self.gun];
+    newGun.position = self.gun.position;
+    [self removeChild:self.gun];
+    self.gun = newGun;
+    [self addChild:self.gun z:-1];
 }
 
 @end

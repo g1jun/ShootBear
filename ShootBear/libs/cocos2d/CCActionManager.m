@@ -180,6 +180,7 @@
 	for(tHashElement *element=targets; element != NULL; ) {
 		id target = element->target;
 		element = element->hh.next;
+        NSLog(@"---->%@", NSStringFromClass([target class]));
 		[self removeAllActionsFromTarget:target];
 	}
 }

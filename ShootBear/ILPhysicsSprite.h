@@ -8,21 +8,11 @@
 
 #import "CCPhysicsSprite.h"
 #import "ILPhysicsFlag.h"
+#import "ILSpriteBase.h"
 #import <Box2D.h>
 
-@interface ILPhysicsSprite : CCSprite <ILPhysicsFlag>
-{
-    BOOL	_ignoreBodyRotation;
-    b2Body	*_b2Body;
-	
-	float	_PTMRatio;
-}
+@interface ILPhysicsSprite : ILSpriteBase
 
-@property(nonatomic, assign) BOOL ignoreBodyRotation;
 
-@property (copy, nonatomic) NSString *imageName;
-@property(nonatomic, assign) b2Body *b2Body;
-
-@property(nonatomic, assign) float PTMRatio;
 
 @end

@@ -13,10 +13,15 @@
 
 @interface ILShooterArm : CCNode <CCTouchOneByOneDelegate>
 {
+    BOOL _isCannon;
 }
 
-@property (retain, nonatomic) ILGun *gun;
+@property (assign, nonatomic) ILGun *gun;
 
 - (float)currentDegree;
+
+- (void)replaceGunType:(NSString * )type;
+
+- (void)stopAccpetTouch;
 
 @end

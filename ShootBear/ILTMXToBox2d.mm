@@ -104,9 +104,9 @@
 
 - (void)dealloc
 {
-    [super dealloc];
     self.tmxMap = nil;
     self.collisionString = nil;
+    [super dealloc];
 }
 
 @end

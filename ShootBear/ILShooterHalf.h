@@ -15,6 +15,10 @@
 
 - (void)resetRotation;
 
-@property (retain, nonatomic) ILShooterArm *arm;
+- (void)replaceGunType:(NSString * )type;
+
+- (CGPoint)firePointGL;
+
+@property (assign, nonatomic) ILShooterArm *arm;
 
 @end

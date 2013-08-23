@@ -12,6 +12,7 @@
 #import "CCBReader.h"
 #import "ILBox2dFactory.h"
 #import "ILBullet.h"
+#import "CCBReader.h"
 
 #define BULLET 30
 
@@ -19,9 +20,10 @@
 
 - (void)dealloc
 {
-    self.lineReference = nil;
+    _lineReference = nil;
     [super dealloc];
 }
+
 
 - (void)fire
 {
@@ -45,6 +47,18 @@
 - (float)lineTotalDegree
 {
     return [ILTools rotationTotal:self.lineReference];
+}
+
+
+- (CCSprite *)findGunSprite
+{
+    CCArray *children = self.children;
+    for (id ch in children) {
+        if ([ch isKindOfClass:[CCSprite class]]) {
+            return ch;
+        }
+    }
+    return nil;
 }
 
 @end

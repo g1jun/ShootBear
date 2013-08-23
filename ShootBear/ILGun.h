@@ -13,8 +13,14 @@
 {
 }
 
-@property (retain, nonatomic) ILLineReference *lineReference;
+@property (assign, nonatomic) ILLineReference *lineReference;
 
 - (void)fire;
+
+- (CCSprite *)findGunSprite;
+
+- (float)lineTotalDegree;
+
+- (CGPoint)lineReferenceVector;
 
 @end

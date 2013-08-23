@@ -191,8 +191,7 @@ public:
                                                 inDirectory:nil];
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithContentsOfFile:path];
     NSDictionary *metadataDict = [dictionary objectForKey:@"metadata"];
-    int format = [[metadataDict objectForKey:@"format"] intValue];
-    NSAssert(format == 1, @"Format not supported");
+    NSAssert([[metadataDict objectForKey:@"format"] intValue] == 1, @"Format not supported");
     NSMutableDictionary *bodyDict = [dictionary objectForKey:@"bodies"];
     [shapeDic_ addEntriesFromDictionary:bodyDict];
     for (id key in bodyDict) {

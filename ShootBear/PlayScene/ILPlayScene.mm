@@ -12,6 +12,8 @@
 #import "ILPhysicsSprite.h"
 #import "CCBAnimationManager.h"
 #import "ILShapeCache.h"
+#import "ILShooter.h"
+
 @interface ILPlayScene ()
 
 @end
@@ -26,7 +28,7 @@
         CCLayer *tmxLayer = [ILTMXLayer physcisNode];
         [self addChild:tmxLayer];
         
-        CCNode *shooter = [CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
+        ILShooter *shooter = (ILShooter *)[CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
         shooter.position = ccp(100, 100);
         CCNode *bear = [CCBReader nodeGraphFromFile:@"BearRight.ccbi"];
         bear.position = ccp(300, 100);
@@ -39,6 +41,7 @@
         [self addChild:shooter];
         [self scheduleUpdate];
         
+        [shooter replaceGunType:kHandGun];
         
         ILBox2dDebug *debug = [[ILBox2dDebug alloc] init];
         [self addChild:debug];

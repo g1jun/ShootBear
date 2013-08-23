@@ -13,11 +13,7 @@
 @implementation ILPhysicsSprite
 
 
-- (void)dealloc
-{
-    self.imageName = nil;
-    [super dealloc];
-}
+
 
 - (id)init
 {
@@ -37,31 +33,31 @@
 
 - (void)updateB2BodyPosition
 {
-    if (_b2Body == NULL) {
+    if (super.b2Body == NULL) {
         return;
     }
     CGPoint taregt = [self.parent convertToWorldSpace:super.position];
-    _b2Body->SetTransform( b2Vec2(taregt.x / _PTMRatio, taregt.y / _PTMRatio), _b2Body->GetAngle());
+    super.b2Body->SetTransform( b2Vec2(taregt.x / super.PTMRatio, taregt.y / super.PTMRatio), super.b2Body->GetAngle());
 
 }
 
 - (void)setB2Body:(b2Body *)b2Body
 {
-    _b2Body = b2Body;
-    _b2Body->SetUserData(self);
-    _b2Body->SetGravityScale(0);
+    super.b2Body = b2Body;
+    super.b2Body->SetUserData(self);
+    super.b2Body->SetGravityScale(0);
 }
 
 - (void)updateB2BodyRotation
 {
-    if (_b2Body == NULL) {
+    if (super.b2Body == NULL) {
         return;
     }
-	if(!_ignoreBodyRotation){
-		b2Vec2 p = _b2Body->GetPosition();
+	if(!super.ignoreBodyRotation){
+		b2Vec2 p = super.b2Body->GetPosition();
         
 		float radians = -CC_DEGREES_TO_RADIANS([self getTotalRotation]);
-		_b2Body->SetTransform(p, radians);
+		super.b2Body->SetTransform(p, radians);
 	}
 }
 
@@ -70,14 +66,5 @@
     return [ILTools rotationTotal:self];
 }
 
-- (NSString *)collisionType
-{
-    return kCollisionNothing;
-}
-
-- (id)collisionCCNode
-{
-    return self;
-}
 
 @end

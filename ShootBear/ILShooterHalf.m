@@ -7,12 +7,15 @@
 //
 
 #import "ILShooterHalf.h"
+#import "ILShooter.h"
+#import "CCBReader.h"
+#import "CCBAnimationManager+RmoveDeadNode.h"
 
 @implementation ILShooterHalf
 
 - (void)dealloc
 {
-    self.arm = nil;
+    _arm = nil;
     [super dealloc];
 }
 
@@ -25,6 +28,30 @@
 {
     return [self.arm currentDegree];
 }
+
+- (void)replaceGunType:(NSString * )type
+{
+    if ([type hasPrefix:kCannon]) {
+        ILShooterArm *cannonArm = (ILShooterArm *)[CCBReader nodeGraphFromFile:type];
+        CCBAnimationManager *manager = self.userObject;
+        [manager removeDeadNode:self.arm];
+        cannonArm.position = self.arm.position;
+        [self removeChild:self.arm cleanup:YES];
+        [self.arm stopAccpetTouch];
+        self.arm = cannonArm;
+        [self addChild:self.arm];
+        return;
+    }
+    [self.arm replaceGunType:type];
+}
+
+
+- (CGPoint)firePointGL
+{
+    CCNode *line = self.arm.gun.lineReference;
+    return [line.parent convertToWorldSpace:line.position];
+}
+
 
 
 @end

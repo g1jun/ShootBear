@@ -7,21 +7,14 @@
 //
 
 #import "ILPhysicsSprite.h"
+#import "ILSpriteBase.h"
 #import "Box2D.h"
 
-@interface ILBox2dEntity : CCSprite <ILPhysicsFlag>
-{
-}
+@interface ILBox2dEntity : ILSpriteBase
 
 
 - (void)setSpeed:(b2Vec2) speed;
 
-@property (copy, nonatomic) NSString *imageName;
 
-@property(nonatomic, assign) b2Body *b2Body;
-
-@property(nonatomic, assign) float PTMRatio;
-
-@property(nonatomic, assign) BOOL ignoreBodyRotation;
 
 @end
