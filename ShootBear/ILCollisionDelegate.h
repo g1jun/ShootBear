@@ -15,6 +15,7 @@ static NSString* const kCollisionBearBody = @"kCollisionBearBearBody";
 static NSString* const kCollisionBearLeg = @"kCollisionBearBearLeg";
 static NSString* const kCollisionBullet = @"kCollisionBullet";
 static NSString* const kCollisionWood = @"kCollisionWood";
+static NSString* const kCollisionMetal = @"kCollisionMetal";
 
 
 @class ILCollisionParameter;

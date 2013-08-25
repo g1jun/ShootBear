@@ -31,7 +31,7 @@
         ILShooter *shooter = (ILShooter *)[CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
         shooter.position = ccp(100, 100);
         CCNode *bear = [CCBReader nodeGraphFromFile:@"BearRight.ccbi"];
-        bear.position = ccp(300, 100);
+        bear.position = ccp(600, 100);
         CCBAnimationManager* animationManager = bear.userObject;
         [animationManager runAnimationsForSequenceNamed:@"dynamic"];
         
@@ -42,7 +42,7 @@
         [shooter replaceGunType:kCannon];
         
         ILBox2dDebug *debug = [[ILBox2dDebug alloc] init];
-        [self addChild:debug z:100];
+//        [self addChild:debug z:100];
         [debug release];
     }
     return self;

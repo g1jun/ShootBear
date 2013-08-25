@@ -75,6 +75,7 @@
 		040D9FFC17C9C1FF0053BBCA /* WoodBurning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE617C9C1FF0053BBCA /* WoodBurning.ccbi */; };
 		040D9FFD17C9C1FF0053BBCA /* WoodLong.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE717C9C1FF0053BBCA /* WoodLong.ccbi */; };
 		040D9FFE17C9C1FF0053BBCA /* WoodParticle.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE817C9C1FF0053BBCA /* WoodParticle.ccbi */; };
+		040DA00117C9F2180053BBCA /* ILQueryTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040DA00017C9F2180053BBCA /* ILQueryTool.mm */; };
 		0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB217AE606D0023BD39 /* ILPlayScene.mm */; };
 		0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */; };
 		0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DABC17AE61A40023BD39 /* ILShootBear.mm */; };
@@ -400,6 +401,8 @@
 		040D9FE617C9C1FF0053BBCA /* WoodBurning.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodBurning.ccbi; sourceTree = "<group>"; };
 		040D9FE717C9C1FF0053BBCA /* WoodLong.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodLong.ccbi; sourceTree = "<group>"; };
 		040D9FE817C9C1FF0053BBCA /* WoodParticle.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodParticle.ccbi; sourceTree = "<group>"; };
+		040D9FFF17C9F2180053BBCA /* ILQueryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILQueryTool.h; sourceTree = "<group>"; };
+		040DA00017C9F2180053BBCA /* ILQueryTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILQueryTool.mm; sourceTree = "<group>"; };
 		0411DAB117AE606D0023BD39 /* ILPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILPlayScene.h; path = PlayScene/ILPlayScene.h; sourceTree = "<group>"; };
 		0411DAB217AE606D0023BD39 /* ILPlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ILPlayScene.mm; path = PlayScene/ILPlayScene.mm; sourceTree = "<group>"; };
 		0411DAB817AE60E50023BD39 /* ILTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTMXLayer.h; sourceTree = "<group>"; };
@@ -1017,6 +1020,8 @@
 				040D9FD017C9C1C30053BBCA /* ILWood.mm */,
 				040D9FCC17C9C1A20053BBCA /* ILMetal.h */,
 				040D9FCD17C9C1A20053BBCA /* ILMetal.mm */,
+				040D9FFF17C9F2180053BBCA /* ILQueryTool.h */,
+				040DA00017C9F2180053BBCA /* ILQueryTool.mm */,
 			);
 			name = Element;
 			sourceTree = "<group>";
@@ -2301,6 +2306,7 @@
 				04C3287917C8C45F00C586C8 /* NSArray+DeepCopy.m in Sources */,
 				040D9FCE17C9C1A20053BBCA /* ILMetal.mm in Sources */,
 				040D9FD117C9C1C30053BBCA /* ILWood.mm in Sources */,
+				040DA00117C9F2180053BBCA /* ILQueryTool.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

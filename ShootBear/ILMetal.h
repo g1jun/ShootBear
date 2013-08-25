@@ -10,4 +10,8 @@
 
 @interface ILMetal : ILBox2dEntity
 
+@property (assign,nonatomic) BOOL hasElctric;
+
+- (void)conductElectricity;
+
 @end
