@@ -7,7 +7,7 @@
 //
 
 #import <Box2D.h>
-#import "ILPhysicsSprite.h"
+#import "ILSpriteBase.h"
 
 
 //PTM_Radio 为缩放的百分比
@@ -25,7 +25,7 @@
 
 -(void) addFixturesToBody:(b2Body*)body forShapeName:(NSString*)shape;
 
--(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILPhysicsSprite *)sprite;
+-(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILSpriteBase *)sprite;
 
 -(CGPoint) anchorPointForShape:(NSString*)shape;
 

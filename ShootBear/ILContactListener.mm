@@ -20,6 +20,9 @@ ILContactListener::~ILContactListener() {
 }
 
 void ILContactListener::BeginContact(b2Contact *contact) {
+    if (this->isSensor(contact)) {
+        return;
+    }
     id node1 = (id)contact->GetFixtureA()->GetBody()->GetUserData();
     id node2 = (id)contact->GetFixtureB()->GetBody()->GetUserData();
     if (node1 == nil || node2 == nil) {
@@ -32,12 +35,23 @@ void ILContactListener::BeginContact(b2Contact *contact) {
 }
 
 void ILContactListener::dealWithCollisionOrder(id from, id to) {
-    if (![from respondsToSelector:@selector(collisionResponse:)]) {
-        return;
+    if ([from respondsToSelector:@selector(collisionResponse:)]) {
+        ILCollisionParameter *parameter = [[from collisionResponse:to] retain];
+        [[ILBox2dFactory sharedFactory] runTarget:parameter];
+        [parameter release];
     }
-    ILCollisionParameter *parameter = [[from collisionResponse:to] retain];
-    [[ILBox2dFactory sharedFactory] runTarget:parameter];
-    [parameter release];
+    
+    if ([from respondsToSelector:@selector(collisionDealWith:)]) {
+        [from collisionDealWith:to];
+    }
+    
+    
+}
+
+bool ILContactListener::isSensor(b2Contact *contact) {
+    bool bodyA = contact->GetFixtureA()->IsSensor();
+    bool bodyB = contact->GetFixtureB()->IsSensor();
+    return bodyA || bodyB;
 }
 
 

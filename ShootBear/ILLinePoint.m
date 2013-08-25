@@ -14,7 +14,7 @@
 
 - (id)initWithAcc:(float) acc age:(float)time;
 {
-    CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:@"dot.png"];
+    CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:@"ccbParticleDot.png"];
     self = [super initWithTexture:texture];
     if (self) {
         self.speed = BEGIN_SPEED;

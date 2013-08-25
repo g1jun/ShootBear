@@ -10,6 +10,7 @@
 #import "CCNode+CCBRelativePositioning.h"
 #import "CCSprite.h"
 #import "ILBox2dConfig.h"
+#import "NSDictionary+DeepCopy.h"
 
 
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
@@ -105,7 +106,7 @@ public:
     [super dealloc];
 }
 
--(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILPhysicsSprite *)sprite
+-(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILSpriteBase *)sprite
 {
     CGPoint moveVector = [self moveVector:sprite];
     NSDictionary *dic = [[self applayVector:moveVector forShape:sprite.imageName] retain];
@@ -115,7 +116,7 @@ public:
     
 }
 
-- (CGPoint)moveVector:(ILPhysicsSprite *)sprite
+- (CGPoint)moveVector:(ILSpriteBase *)sprite
 {
     float scale = [self spriteScale:sprite];
     CGPoint size = ccpFromSize(sprite.contentSize);
@@ -129,7 +130,7 @@ public:
 
 - (NSMutableDictionary *)applayVector:(CGPoint)moveVector forShape:(NSString *)shapeName;
 {
-    NSMutableDictionary *dic = [shapeDic_[shapeName] mutableCopy];
+    NSMutableDictionary *dic = [shapeDic_[shapeName] deepMutableCopy];
     NSMutableArray *fixtures = dic[@"fixtures"];
     for (NSMutableDictionary *item in fixtures) {
         if ([self isPolygons:item]) {
@@ -152,7 +153,7 @@ public:
     return [dic autorelease];
 }
 
-- (float)spriteScale:(ILPhysicsSprite *)sprite
+- (float)spriteScale:(ILSpriteBase *)sprite
 {
     float resolutionScale = 2 - [sprite resolutionScale] + 1;
     float imageScale = 1 / [self shapeScale:sprite.imageName];
@@ -307,7 +308,7 @@ public:
     NSDictionary *circleData = [fixtureData objectForKey:@"circle"];
     b2CircleShape *circleShape = new b2CircleShape();
     circleShape->m_radius = [[circleData objectForKey:@"radius"] floatValue]  / localRatio_;
-    CGPoint p = CGPointFromString_([fixtureData objectForKey:@"position"]);
+    CGPoint p = CGPointFromString_([circleData objectForKey:@"position"]);
     circleShape->m_p = b2Vec2(p.x / localRatio_, p.y / localRatio_);
     return circleShape;
 }

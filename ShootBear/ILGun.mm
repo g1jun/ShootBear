@@ -13,6 +13,7 @@
 #import "ILBox2dFactory.h"
 #import "ILBullet.h"
 #import "CCBReader.h"
+#import "ILShooter.h"
 
 #define BULLET 30
 
@@ -27,21 +28,33 @@
 
 - (void)fire
 {
-    ILBullet *bullet = (ILBullet *)[CCBReader nodeGraphFromFile:@"Bullet.ccbi"];
-    [self addChild:bullet];
+    NSString *bulletFileName = [_bulletCCBName stringByAppendingString:@".ccbi"];
+    ILBullet *bullet = (ILBullet *)[CCBReader nodeGraphFromFile:bulletFileName];
     [bullet.entity setPTMRatio:PIXELS_PER_METER];
-    [bullet setPosition:self.lineReference.position];
+    CGPoint glPoint = [self.lineReference.parent convertToWorldSpace:self.lineReference.position];
+    [bullet.entity setPosition:glPoint];
+    [[self bulletParent] addChild:bullet];
     CGPoint v = [self lineReferenceVector];
-    [[ILBox2dFactory sharedFactory] addPhysicsFeature:bullet];
-    
     [bullet.entity setSpeed:b2Vec2(v.x, v.y)];
+}
+
+- (CCNode *)bulletParent
+{
+    CCNode *temp = self;
+    while (temp) {
+        if ([temp isKindOfClass:[ILShooter class]]) {
+            return temp.parent;
+        }
+        temp = temp.parent;
+    }
+    return nil;
 }
 
 - (CGPoint)lineReferenceVector
 {
     float degree = [self lineTotalDegree];
     float radius = -CC_DEGREES_TO_RADIANS(degree);
-    return ccpRotateByAngle(ccp(100, 0), ccp(0, 0), radius);
+    return ccpRotateByAngle(ccp(10, 0), ccp(0, 0), radius);
 }
 
 - (float)lineTotalDegree

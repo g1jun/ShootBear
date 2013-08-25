@@ -8,13 +8,34 @@
 
 #import "ILSpriteBase.h"
 #import "CCSpriteFrameCache+ILSpriteNameSearch.h"
+#import "ILBox2dFactory.h"
+#import "ILShapeCache.h"
 
 @implementation ILSpriteBase
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _isStatic = NO;
+    }
+    return self;
+}
 
 - (void)dealloc
 {
     self.imageName = nil;
     [super dealloc];
+}
+
+- (void)didLoadFromCCB
+{
+    b2BodyDef bodyDef;
+    bodyDef.type = _isStatic ? b2_staticBody : b2_dynamicBody;
+    b2Body *body = [ILBox2dFactory sharedFactory].world->CreateBody(&bodyDef);
+    [self setPTMRatio:PIXELS_PER_METER];
+    [[ILShapeCache sharedShapeCache] addFixturesToBody:body forPhysicsSprite:self];
+    [self setB2Body:body];
 }
 
 - (NSString *)collisionType

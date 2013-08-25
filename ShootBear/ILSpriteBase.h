@@ -7,10 +7,10 @@
 //
 
 #import "CCSprite.h"
-#import "ILPhysicsFlag.h"
 #import "Box2D.h"
+#import "ILCollisionDelegate.h"
 
-@interface ILSpriteBase : CCSprite <ILPhysicsFlag>
+@interface ILSpriteBase : CCSprite <ILCollisionDelegate>
 
 @property (copy, nonatomic) NSString *imageName;
 
@@ -19,5 +19,7 @@
 @property(nonatomic, assign) float PTMRatio;
 
 @property(nonatomic, assign) BOOL ignoreBodyRotation;
+
+@property(assign, nonatomic)BOOL isStatic;
 
 @end

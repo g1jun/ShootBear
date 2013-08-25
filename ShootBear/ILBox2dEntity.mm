@@ -9,6 +9,7 @@
 #import "ILBox2dEntity.h"
 #import "Box2D.h"
 #import "ILTools.h"
+#import "ILShapeCache.h"
 #import <objc/message.h>
 
 @implementation ILBox2dEntity
@@ -17,11 +18,7 @@
 {
     [super setB2Body:b2Body];
     super.b2Body->SetGravityScale(0);
-    struct objc_super sp;
-    sp.receiver = self;
-    sp.super_class = [CCNode class];
-    id ret = objc_msgSendSuper(&sp, @selector(position), nil);
-    CGPoint position = *((CGPoint *)(&ret));
+    CGPoint position = super.position;
     super.b2Body->SetUserData(self);
     [self setPosition:position];
 }
@@ -46,14 +43,19 @@
     return [self.parent convertToNodeSpace:ccp(x, y)];
 }
 
+- (void)syncAnchor
+{
+    self.anchorPoint = [[ILShapeCache sharedShapeCache] anchorPointForShape:self.imageName];
+}
 
 
 -(void)setPosition:(CGPoint)position
 {
+    [super setPosition:position];
     if (super.b2Body != NULL) {
-        	float angle = super.b2Body->GetAngle();
-            CGPoint worldP = [self.parent convertToWorldSpace:position];
-        	super.b2Body->SetTransform( b2Vec2(worldP.x / super.PTMRatio, worldP.y / super.PTMRatio), angle );
+        float angle = super.b2Body->GetAngle();
+        CGPoint worldP = [self.parent convertToWorldSpace:position];
+        super.b2Body->SetTransform( b2Vec2(worldP.x / super.PTMRatio, worldP.y / super.PTMRatio), angle );
     }
 }
 
@@ -68,12 +70,10 @@
 
 -(void)setRotation:(float)rotation
 {
-    if (super.b2Body == NULL) {
-        return;
-    }
+    [super setRotation:rotation];
     if(super.ignoreBodyRotation){
 		self.rotation = rotation;
-	} else {
+	} else if(super.b2Body != NULL) {
 		b2Vec2 p = super.b2Body->GetPosition();
 		float radians = CC_DEGREES_TO_RADIANS(rotation);
 		super.b2Body->SetTransform( p, radians);

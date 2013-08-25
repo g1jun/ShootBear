@@ -7,7 +7,6 @@
 //
 
 #import "CCPhysicsSprite.h"
-#import "ILPhysicsFlag.h"
 #import "ILSpriteBase.h"
 #import <Box2D.h>
 

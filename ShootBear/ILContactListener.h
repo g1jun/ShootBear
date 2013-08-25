@@ -20,8 +20,9 @@ class ILContactListener : public b2ContactListener {
 	virtual void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
     
     private:
+    bool isSensor(b2Contact *contact);
     void dealWithCollisionOrder(id from, id to);
-    
+
     
     
 };

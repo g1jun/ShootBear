@@ -42,6 +42,7 @@
         self.collisionDelegates = [NSMutableDictionary dictionary];
         [[ILShapeCache sharedShapeCache] setPTMRatio:PIXELS_PER_METER];
         [[ILShapeCache sharedShapeCache] addShapesWithFile:@"BearPhysics.plist"];
+        [[ILShapeCache sharedShapeCache] addShapesWithFile:@"ElementPhysics.plist"];
     }
     return self;
 }
@@ -95,7 +96,7 @@
 {
     CCArray *childrens = [node children];
     for (CCNode *children in childrens) {
-        if ([children conformsToProtocol:@protocol(ILPhysicsFlag)]) {
+        if ([children conformsToProtocol:@protocol(ILCollisionDelegate)]) {
             [self addBox2dFeatureToSprite:(ILPhysicsSprite*)children];
             continue;
         }

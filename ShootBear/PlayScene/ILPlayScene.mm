@@ -25,9 +25,9 @@
     if(self) {
         [[ILBox2dFactory sharedFactory] prepareB2World];
         [[ILBox2dFactory sharedFactory] setBearCollisionDelegate:self];
-        CCLayer *tmxLayer = [ILTMXLayer physcisNode];
-        [self addChild:tmxLayer];
-        
+        CCNode *layer = [CCBReader nodeGraphFromFile:@"level0.ccbi"];
+        layer.position = ccp(0, 0);
+        [self addChild:layer];
         ILShooter *shooter = (ILShooter *)[CCBReader nodeGraphFromFile:@"Shooter.ccbi"];
         shooter.position = ccp(100, 100);
         CCNode *bear = [CCBReader nodeGraphFromFile:@"BearRight.ccbi"];
@@ -36,15 +36,13 @@
         [animationManager runAnimationsForSequenceNamed:@"dynamic"];
         
         [self addChild:bear];
-        
-        [[ILBox2dFactory sharedFactory] addPhysicsFeature:bear];
-        [self addChild:shooter];
+                [self addChild:shooter];
         [self scheduleUpdate];
         
-        [shooter replaceGunType:kHandGun];
+        [shooter replaceGunType:kCannon];
         
         ILBox2dDebug *debug = [[ILBox2dDebug alloc] init];
-        [self addChild:debug];
+        [self addChild:debug z:100];
         [debug release];
     }
     return self;

@@ -9,10 +9,13 @@
 #import "ILBullet.h"
 @implementation ILBullet
 
+- (void)didLoadFromCCB
+{
+}
+
 - (void)dealloc
 {
     self.entity = nil;
     [super dealloc];
 }
-
 @end

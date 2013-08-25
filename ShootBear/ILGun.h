@@ -11,6 +11,7 @@
 
 @interface ILGun : CCNode
 {
+    NSString *_bulletCCBName;
 }
 
 @property (assign, nonatomic) ILLineReference *lineReference;
