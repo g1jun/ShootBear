@@ -51,20 +51,30 @@
 		0403DF5817C74C950044DFCF /* ShooterLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0403DF3B17C74C950044DFCF /* ShooterLeft.ccbi */; };
 		0403DF5917C74C950044DFCF /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0403DF3C17C74C950044DFCF /* ShooterRight.ccbi */; };
 		0403DF5A17C74C950044DFCF /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0403DF3D17C74C950044DFCF /* TestScene.ccbi */; };
-		040D9FBC17C99A6D0053BBCA /* StaticWood1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB017C99A6C0053BBCA /* StaticWood1.ccbi */; };
-		040D9FBD17C99A6D0053BBCA /* StaticWood2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB117C99A6C0053BBCA /* StaticWood2.ccbi */; };
-		040D9FBE17C99A6D0053BBCA /* StaticWood3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB217C99A6C0053BBCA /* StaticWood3.ccbi */; };
-		040D9FBF17C99A6D0053BBCA /* StaticWood4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB317C99A6D0053BBCA /* StaticWood4.ccbi */; };
-		040D9FC017C99A6D0053BBCA /* StaticWood5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB417C99A6D0053BBCA /* StaticWood5.ccbi */; };
-		040D9FC117C99A6D0053BBCA /* StaticWood6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB517C99A6D0053BBCA /* StaticWood6.ccbi */; };
-		040D9FC217C99A6D0053BBCA /* StaticWood7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB617C99A6D0053BBCA /* StaticWood7.ccbi */; };
-		040D9FC317C99A6D0053BBCA /* StaticWood8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB717C99A6D0053BBCA /* StaticWood8.ccbi */; };
-		040D9FC417C99A6D0053BBCA /* StaticWood9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB817C99A6D0053BBCA /* StaticWood9.ccbi */; };
-		040D9FC517C99A6D0053BBCA /* WoodBurning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FB917C99A6D0053BBCA /* WoodBurning.ccbi */; };
-		040D9FC617C99A6D0053BBCA /* WoodLong.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FBA17C99A6D0053BBCA /* WoodLong.ccbi */; };
-		040D9FC717C99A6D0053BBCA /* WoodParticle.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FBB17C99A6D0053BBCA /* WoodParticle.ccbi */; };
 		040D9FCE17C9C1A20053BBCA /* ILMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FCD17C9C1A20053BBCA /* ILMetal.mm */; };
 		040D9FD117C9C1C30053BBCA /* ILWood.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FD017C9C1C30053BBCA /* ILWood.mm */; };
+		040D9FE917C9C1FF0053BBCA /* MetalLightning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FD317C9C1FF0053BBCA /* MetalLightning.ccbi */; };
+		040D9FEA17C9C1FF0053BBCA /* StaticMetal1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FD417C9C1FF0053BBCA /* StaticMetal1.ccbi */; };
+		040D9FEB17C9C1FF0053BBCA /* StaticMetal2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FD517C9C1FF0053BBCA /* StaticMetal2.ccbi */; };
+		040D9FEC17C9C1FF0053BBCA /* StaticMetal3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FD617C9C1FF0053BBCA /* StaticMetal3.ccbi */; };
+		040D9FED17C9C1FF0053BBCA /* StaticMetal4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FD717C9C1FF0053BBCA /* StaticMetal4.ccbi */; };
+		040D9FEE17C9C1FF0053BBCA /* StaticMetal5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FD817C9C1FF0053BBCA /* StaticMetal5.ccbi */; };
+		040D9FEF17C9C1FF0053BBCA /* StaticMetal6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FD917C9C1FF0053BBCA /* StaticMetal6.ccbi */; };
+		040D9FF017C9C1FF0053BBCA /* StaticMetal7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FDA17C9C1FF0053BBCA /* StaticMetal7.ccbi */; };
+		040D9FF117C9C1FF0053BBCA /* StaticMetal8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FDB17C9C1FF0053BBCA /* StaticMetal8.ccbi */; };
+		040D9FF217C9C1FF0053BBCA /* StaticMetal9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FDC17C9C1FF0053BBCA /* StaticMetal9.ccbi */; };
+		040D9FF317C9C1FF0053BBCA /* StaticWood1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FDD17C9C1FF0053BBCA /* StaticWood1.ccbi */; };
+		040D9FF417C9C1FF0053BBCA /* StaticWood2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FDE17C9C1FF0053BBCA /* StaticWood2.ccbi */; };
+		040D9FF517C9C1FF0053BBCA /* StaticWood3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FDF17C9C1FF0053BBCA /* StaticWood3.ccbi */; };
+		040D9FF617C9C1FF0053BBCA /* StaticWood4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE017C9C1FF0053BBCA /* StaticWood4.ccbi */; };
+		040D9FF717C9C1FF0053BBCA /* StaticWood5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE117C9C1FF0053BBCA /* StaticWood5.ccbi */; };
+		040D9FF817C9C1FF0053BBCA /* StaticWood6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE217C9C1FF0053BBCA /* StaticWood6.ccbi */; };
+		040D9FF917C9C1FF0053BBCA /* StaticWood7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE317C9C1FF0053BBCA /* StaticWood7.ccbi */; };
+		040D9FFA17C9C1FF0053BBCA /* StaticWood8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE417C9C1FF0053BBCA /* StaticWood8.ccbi */; };
+		040D9FFB17C9C1FF0053BBCA /* StaticWood9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE517C9C1FF0053BBCA /* StaticWood9.ccbi */; };
+		040D9FFC17C9C1FF0053BBCA /* WoodBurning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE617C9C1FF0053BBCA /* WoodBurning.ccbi */; };
+		040D9FFD17C9C1FF0053BBCA /* WoodLong.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE717C9C1FF0053BBCA /* WoodLong.ccbi */; };
+		040D9FFE17C9C1FF0053BBCA /* WoodParticle.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 040D9FE817C9C1FF0053BBCA /* WoodParticle.ccbi */; };
 		0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB217AE606D0023BD39 /* ILPlayScene.mm */; };
 		0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */; };
 		0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DABC17AE61A40023BD39 /* ILShootBear.mm */; };
@@ -364,22 +374,32 @@
 		0403DF3B17C74C950044DFCF /* ShooterLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterLeft.ccbi; sourceTree = "<group>"; };
 		0403DF3C17C74C950044DFCF /* ShooterRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterRight.ccbi; sourceTree = "<group>"; };
 		0403DF3D17C74C950044DFCF /* TestScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScene.ccbi; sourceTree = "<group>"; };
-		040D9FB017C99A6C0053BBCA /* StaticWood1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood1.ccbi; sourceTree = "<group>"; };
-		040D9FB117C99A6C0053BBCA /* StaticWood2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood2.ccbi; sourceTree = "<group>"; };
-		040D9FB217C99A6C0053BBCA /* StaticWood3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood3.ccbi; sourceTree = "<group>"; };
-		040D9FB317C99A6D0053BBCA /* StaticWood4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood4.ccbi; sourceTree = "<group>"; };
-		040D9FB417C99A6D0053BBCA /* StaticWood5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood5.ccbi; sourceTree = "<group>"; };
-		040D9FB517C99A6D0053BBCA /* StaticWood6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood6.ccbi; sourceTree = "<group>"; };
-		040D9FB617C99A6D0053BBCA /* StaticWood7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood7.ccbi; sourceTree = "<group>"; };
-		040D9FB717C99A6D0053BBCA /* StaticWood8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood8.ccbi; sourceTree = "<group>"; };
-		040D9FB817C99A6D0053BBCA /* StaticWood9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood9.ccbi; sourceTree = "<group>"; };
-		040D9FB917C99A6D0053BBCA /* WoodBurning.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodBurning.ccbi; sourceTree = "<group>"; };
-		040D9FBA17C99A6D0053BBCA /* WoodLong.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodLong.ccbi; sourceTree = "<group>"; };
-		040D9FBB17C99A6D0053BBCA /* WoodParticle.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodParticle.ccbi; sourceTree = "<group>"; };
 		040D9FCC17C9C1A20053BBCA /* ILMetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMetal.h; sourceTree = "<group>"; };
 		040D9FCD17C9C1A20053BBCA /* ILMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILMetal.mm; sourceTree = "<group>"; };
 		040D9FCF17C9C1C30053BBCA /* ILWood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILWood.h; sourceTree = "<group>"; };
 		040D9FD017C9C1C30053BBCA /* ILWood.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILWood.mm; sourceTree = "<group>"; };
+		040D9FD317C9C1FF0053BBCA /* MetalLightning.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalLightning.ccbi; sourceTree = "<group>"; };
+		040D9FD417C9C1FF0053BBCA /* StaticMetal1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal1.ccbi; sourceTree = "<group>"; };
+		040D9FD517C9C1FF0053BBCA /* StaticMetal2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal2.ccbi; sourceTree = "<group>"; };
+		040D9FD617C9C1FF0053BBCA /* StaticMetal3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal3.ccbi; sourceTree = "<group>"; };
+		040D9FD717C9C1FF0053BBCA /* StaticMetal4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal4.ccbi; sourceTree = "<group>"; };
+		040D9FD817C9C1FF0053BBCA /* StaticMetal5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal5.ccbi; sourceTree = "<group>"; };
+		040D9FD917C9C1FF0053BBCA /* StaticMetal6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal6.ccbi; sourceTree = "<group>"; };
+		040D9FDA17C9C1FF0053BBCA /* StaticMetal7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal7.ccbi; sourceTree = "<group>"; };
+		040D9FDB17C9C1FF0053BBCA /* StaticMetal8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal8.ccbi; sourceTree = "<group>"; };
+		040D9FDC17C9C1FF0053BBCA /* StaticMetal9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal9.ccbi; sourceTree = "<group>"; };
+		040D9FDD17C9C1FF0053BBCA /* StaticWood1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood1.ccbi; sourceTree = "<group>"; };
+		040D9FDE17C9C1FF0053BBCA /* StaticWood2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood2.ccbi; sourceTree = "<group>"; };
+		040D9FDF17C9C1FF0053BBCA /* StaticWood3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood3.ccbi; sourceTree = "<group>"; };
+		040D9FE017C9C1FF0053BBCA /* StaticWood4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood4.ccbi; sourceTree = "<group>"; };
+		040D9FE117C9C1FF0053BBCA /* StaticWood5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood5.ccbi; sourceTree = "<group>"; };
+		040D9FE217C9C1FF0053BBCA /* StaticWood6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood6.ccbi; sourceTree = "<group>"; };
+		040D9FE317C9C1FF0053BBCA /* StaticWood7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood7.ccbi; sourceTree = "<group>"; };
+		040D9FE417C9C1FF0053BBCA /* StaticWood8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood8.ccbi; sourceTree = "<group>"; };
+		040D9FE517C9C1FF0053BBCA /* StaticWood9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWood9.ccbi; sourceTree = "<group>"; };
+		040D9FE617C9C1FF0053BBCA /* WoodBurning.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodBurning.ccbi; sourceTree = "<group>"; };
+		040D9FE717C9C1FF0053BBCA /* WoodLong.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodLong.ccbi; sourceTree = "<group>"; };
+		040D9FE817C9C1FF0053BBCA /* WoodParticle.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodParticle.ccbi; sourceTree = "<group>"; };
 		0411DAB117AE606D0023BD39 /* ILPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILPlayScene.h; path = PlayScene/ILPlayScene.h; sourceTree = "<group>"; };
 		0411DAB217AE606D0023BD39 /* ILPlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ILPlayScene.mm; path = PlayScene/ILPlayScene.mm; sourceTree = "<group>"; };
 		0411DAB817AE60E50023BD39 /* ILTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTMXLayer.h; sourceTree = "<group>"; };
@@ -990,25 +1010,6 @@
 			path = Shooter;
 			sourceTree = "<group>";
 		};
-		040D9FAF17C99A6C0053BBCA /* Element */ = {
-			isa = PBXGroup;
-			children = (
-				040D9FB017C99A6C0053BBCA /* StaticWood1.ccbi */,
-				040D9FB117C99A6C0053BBCA /* StaticWood2.ccbi */,
-				040D9FB217C99A6C0053BBCA /* StaticWood3.ccbi */,
-				040D9FB317C99A6D0053BBCA /* StaticWood4.ccbi */,
-				040D9FB417C99A6D0053BBCA /* StaticWood5.ccbi */,
-				040D9FB517C99A6D0053BBCA /* StaticWood6.ccbi */,
-				040D9FB617C99A6D0053BBCA /* StaticWood7.ccbi */,
-				040D9FB717C99A6D0053BBCA /* StaticWood8.ccbi */,
-				040D9FB817C99A6D0053BBCA /* StaticWood9.ccbi */,
-				040D9FB917C99A6D0053BBCA /* WoodBurning.ccbi */,
-				040D9FBA17C99A6D0053BBCA /* WoodLong.ccbi */,
-				040D9FBB17C99A6D0053BBCA /* WoodParticle.ccbi */,
-			);
-			path = Element;
-			sourceTree = "<group>";
-		};
 		040D9FCB17C9C1920053BBCA /* Element */ = {
 			isa = PBXGroup;
 			children = (
@@ -1018,6 +1019,35 @@
 				040D9FCD17C9C1A20053BBCA /* ILMetal.mm */,
 			);
 			name = Element;
+			sourceTree = "<group>";
+		};
+		040D9FD217C9C1FF0053BBCA /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				040D9FD317C9C1FF0053BBCA /* MetalLightning.ccbi */,
+				040D9FD417C9C1FF0053BBCA /* StaticMetal1.ccbi */,
+				040D9FD517C9C1FF0053BBCA /* StaticMetal2.ccbi */,
+				040D9FD617C9C1FF0053BBCA /* StaticMetal3.ccbi */,
+				040D9FD717C9C1FF0053BBCA /* StaticMetal4.ccbi */,
+				040D9FD817C9C1FF0053BBCA /* StaticMetal5.ccbi */,
+				040D9FD917C9C1FF0053BBCA /* StaticMetal6.ccbi */,
+				040D9FDA17C9C1FF0053BBCA /* StaticMetal7.ccbi */,
+				040D9FDB17C9C1FF0053BBCA /* StaticMetal8.ccbi */,
+				040D9FDC17C9C1FF0053BBCA /* StaticMetal9.ccbi */,
+				040D9FDD17C9C1FF0053BBCA /* StaticWood1.ccbi */,
+				040D9FDE17C9C1FF0053BBCA /* StaticWood2.ccbi */,
+				040D9FDF17C9C1FF0053BBCA /* StaticWood3.ccbi */,
+				040D9FE017C9C1FF0053BBCA /* StaticWood4.ccbi */,
+				040D9FE117C9C1FF0053BBCA /* StaticWood5.ccbi */,
+				040D9FE217C9C1FF0053BBCA /* StaticWood6.ccbi */,
+				040D9FE317C9C1FF0053BBCA /* StaticWood7.ccbi */,
+				040D9FE417C9C1FF0053BBCA /* StaticWood8.ccbi */,
+				040D9FE517C9C1FF0053BBCA /* StaticWood9.ccbi */,
+				040D9FE617C9C1FF0053BBCA /* WoodBurning.ccbi */,
+				040D9FE717C9C1FF0053BBCA /* WoodLong.ccbi */,
+				040D9FE817C9C1FF0053BBCA /* WoodParticle.ccbi */,
+			);
+			path = Element;
 			sourceTree = "<group>";
 		};
 		0411DAB417AE60760023BD39 /* PlayScene */ = {
@@ -1868,7 +1898,7 @@
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
-				040D9FAF17C99A6C0053BBCA /* Element */,
+				040D9FD217C9C1FF0053BBCA /* Element */,
 				04FD2E2117C8E76800E1091B /* Level */,
 				0403DF2017C74C950044DFCF /* Shooter */,
 				04DCE26817B4D42E0036CA68 /* Bear */,
@@ -2022,18 +2052,28 @@
 				0403DF5917C74C950044DFCF /* ShooterRight.ccbi in Resources */,
 				0403DF5A17C74C950044DFCF /* TestScene.ccbi in Resources */,
 				04FD2E2317C8E76800E1091B /* level0.ccbi in Resources */,
-				040D9FBC17C99A6D0053BBCA /* StaticWood1.ccbi in Resources */,
-				040D9FBD17C99A6D0053BBCA /* StaticWood2.ccbi in Resources */,
-				040D9FBE17C99A6D0053BBCA /* StaticWood3.ccbi in Resources */,
-				040D9FBF17C99A6D0053BBCA /* StaticWood4.ccbi in Resources */,
-				040D9FC017C99A6D0053BBCA /* StaticWood5.ccbi in Resources */,
-				040D9FC117C99A6D0053BBCA /* StaticWood6.ccbi in Resources */,
-				040D9FC217C99A6D0053BBCA /* StaticWood7.ccbi in Resources */,
-				040D9FC317C99A6D0053BBCA /* StaticWood8.ccbi in Resources */,
-				040D9FC417C99A6D0053BBCA /* StaticWood9.ccbi in Resources */,
-				040D9FC517C99A6D0053BBCA /* WoodBurning.ccbi in Resources */,
-				040D9FC617C99A6D0053BBCA /* WoodLong.ccbi in Resources */,
-				040D9FC717C99A6D0053BBCA /* WoodParticle.ccbi in Resources */,
+				040D9FE917C9C1FF0053BBCA /* MetalLightning.ccbi in Resources */,
+				040D9FEA17C9C1FF0053BBCA /* StaticMetal1.ccbi in Resources */,
+				040D9FEB17C9C1FF0053BBCA /* StaticMetal2.ccbi in Resources */,
+				040D9FEC17C9C1FF0053BBCA /* StaticMetal3.ccbi in Resources */,
+				040D9FED17C9C1FF0053BBCA /* StaticMetal4.ccbi in Resources */,
+				040D9FEE17C9C1FF0053BBCA /* StaticMetal5.ccbi in Resources */,
+				040D9FEF17C9C1FF0053BBCA /* StaticMetal6.ccbi in Resources */,
+				040D9FF017C9C1FF0053BBCA /* StaticMetal7.ccbi in Resources */,
+				040D9FF117C9C1FF0053BBCA /* StaticMetal8.ccbi in Resources */,
+				040D9FF217C9C1FF0053BBCA /* StaticMetal9.ccbi in Resources */,
+				040D9FF317C9C1FF0053BBCA /* StaticWood1.ccbi in Resources */,
+				040D9FF417C9C1FF0053BBCA /* StaticWood2.ccbi in Resources */,
+				040D9FF517C9C1FF0053BBCA /* StaticWood3.ccbi in Resources */,
+				040D9FF617C9C1FF0053BBCA /* StaticWood4.ccbi in Resources */,
+				040D9FF717C9C1FF0053BBCA /* StaticWood5.ccbi in Resources */,
+				040D9FF817C9C1FF0053BBCA /* StaticWood6.ccbi in Resources */,
+				040D9FF917C9C1FF0053BBCA /* StaticWood7.ccbi in Resources */,
+				040D9FFA17C9C1FF0053BBCA /* StaticWood8.ccbi in Resources */,
+				040D9FFB17C9C1FF0053BBCA /* StaticWood9.ccbi in Resources */,
+				040D9FFC17C9C1FF0053BBCA /* WoodBurning.ccbi in Resources */,
+				040D9FFD17C9C1FF0053BBCA /* WoodLong.ccbi in Resources */,
+				040D9FFE17C9C1FF0053BBCA /* WoodParticle.ccbi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
