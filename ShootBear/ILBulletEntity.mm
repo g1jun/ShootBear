@@ -27,6 +27,12 @@
     return nil;
 }
 
+- (void)setB2Body:(b2Body *)b2Body
+{
+    [super setB2Body:b2Body];
+    super.b2Body->SetGravityScale(0);
+}
+
 
 
 @end

@@ -17,6 +17,8 @@
 
 #define BULLET 30
 
+#define BULLET_SPPED 100
+
 @implementation ILGun
 
 - (void)dealloc
@@ -54,7 +56,7 @@
 {
     float degree = [self lineTotalDegree];
     float radius = -CC_DEGREES_TO_RADIANS(degree);
-    return ccpRotateByAngle(ccp(10, 0), ccp(0, 0), radius);
+    return ccpRotateByAngle(ccp(BULLET_SPPED, 0), ccp(0, 0), radius);
 }
 
 - (float)lineTotalDegree

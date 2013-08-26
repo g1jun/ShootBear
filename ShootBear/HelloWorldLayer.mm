@@ -154,7 +154,7 @@ enum {
 -(void) initPhysics
 {
 	
-	CGSize s = [[CCDirector sharedDirector] winSize];
+	
 	
 	b2Vec2 gravity;
 	gravity.Set(0.0f, -10.0f);
@@ -177,7 +177,7 @@ enum {
 	//		flags += b2Draw::e_centerOfMassBit;
 	m_debugDraw->SetFlags(flags);		
 	
-	
+	CGSize s = [[CCDirector sharedDirector] winSize];
 	// Define the ground body.
 	b2BodyDef groundBodyDef;
 	groundBodyDef.position.Set(0, 0); // bottom-left corner

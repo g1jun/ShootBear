@@ -17,7 +17,6 @@
 - (void)setB2Body:(b2Body *)b2Body
 {
     [super setB2Body:b2Body];
-    super.b2Body->SetGravityScale(0);
     CGPoint position = super.position;
     super.b2Body->SetUserData(self);
     [self setPosition:position];

@@ -78,7 +78,7 @@
 	//  - Possible values: 0 to glGetIntegerv(GL_MAX_SAMPLES_APPLE)
 	CCGLView *glView = [CCGLView viewWithFrame:[window_ bounds]
 								   pixelFormat:kEAGLColorFormatRGB565
-								   depthFormat:0
+								   depthFormat:GL_DEPTH24_STENCIL8_OES
 							preserveBackbuffer:NO
 									sharegroup:nil
 								 multiSampling:NO
@@ -133,7 +133,6 @@
 	
 	// for rotation and other messages
 	[director_ setDelegate:navController_];
-	
 	// set the Navigation Controller as the root view controller
 	[window_ setRootViewController:navController_];
 	

@@ -50,6 +50,7 @@
 - (void)prepareB2World
 {
     _world = [self createPhyscisWorld];
+    [self configWorldBound];
     _contactListener = new ILContactListener();
     _world->SetContactListener(_contactListener);
     [self.collisionDelegates removeAllObjects];
@@ -57,12 +58,35 @@
 
 }
 
+- (void)configWorldBound
+{
+    CGSize s = [[CCDirector sharedDirector] winSize];
+
+    b2BodyDef groundBodyDef;
+	groundBodyDef.position.Set(0, 0); // bottom-left corner
+	b2Body* groundBody = _world->CreateBody(&groundBodyDef);
+	b2EdgeShape groundBox;
+	// bottom
+	groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PIXELS_PER_METER,0));
+	groundBody->CreateFixture(&groundBox,0);
+	// top
+	groundBox.Set(b2Vec2(0,s.height/PIXELS_PER_METER),
+                  b2Vec2(s.width/PIXELS_PER_METER,s.height/PIXELS_PER_METER));
+	groundBody->CreateFixture(&groundBox,0);
+	// left
+	groundBox.Set(b2Vec2(0,s.height/PIXELS_PER_METER), b2Vec2(0,0));
+	groundBody->CreateFixture(&groundBox,0);
+	// right
+	groundBox.Set(b2Vec2(s.width/PIXELS_PER_METER,s.height/PIXELS_PER_METER), b2Vec2(s.width/PIXELS_PER_METER,0));
+	groundBody->CreateFixture(&groundBox,0);
+}
+
 - (b2World *) createPhyscisWorld
 {
 	b2Vec2 gravity;
 	gravity.Set(0.0f, -10.0f);
 	b2World *world = new b2World(gravity);
-	world->SetAllowSleeping(false);
+	world->SetAllowSleeping(true);
     world->SetContinuousPhysics(true);
     return world;
 }

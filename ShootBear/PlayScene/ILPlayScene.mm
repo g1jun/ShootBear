@@ -36,10 +36,10 @@
         [animationManager runAnimationsForSequenceNamed:@"dynamic"];
         
         [self addChild:bear];
-                [self addChild:shooter];
+        [self addChild:shooter];
         [self scheduleUpdate];
         
-        [shooter replaceGunType:kCannon];
+        [shooter replaceGunType:kElectriGun];
         
         ILBox2dDebug *debug = [[ILBox2dDebug alloc] init];
 //        [self addChild:debug z:100];

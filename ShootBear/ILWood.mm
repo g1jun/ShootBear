@@ -32,8 +32,10 @@ class WoodQueryCallback : public b2QueryCallback
 
 - (void)collisionDealWith:(id<ILCollisionDelegate>)another
 {
+    if ([[another collisionType] isEqualToString:kCollisionBullet] && [[[another collisionCCNode] bulletType] isEqualToString:kFireGunBullet]) {
+        [self burning];
+    }
     
-    [self burning];
 }
 
 - (void)burning

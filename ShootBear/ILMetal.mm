@@ -10,6 +10,7 @@
 #import "CCBReader.h"
 #import "ILQueryTool.h"
 #import "CCBAnimationManager.h"
+#import "ILBullet.h"
 
 class MetalQueryCallback : public b2QueryCallback
 {
@@ -31,7 +32,10 @@ class MetalQueryCallback : public b2QueryCallback
 
 - (void)collisionDealWith:(id<ILCollisionDelegate>)another
 {
-    [self conductElectricity];
+    if ([[another collisionType]isEqualToString:kCollisionBullet] &&
+        [[[another collisionCCNode] bulletType] isEqualToString:kElectriGunBullet]) {
+        [self conductElectricity];
+    }
 }
 
 - (void)conductElectricity
@@ -49,15 +53,34 @@ class MetalQueryCallback : public b2QueryCallback
 {
     CCSprite *spriteAnimation = (CCSprite *)[CCBReader nodeGraphFromFile:@"MetalLightning.ccbi"];
     spriteAnimation.position = ccpMult(ccpFromSize(self.contentSize), 0.5f);
-    [self addChild:spriteAnimation];
+    [self showWithClippingNode:spriteAnimation];
     CCBAnimationManager *manager = spriteAnimation.userObject;
     [manager runAnimationsForSequenceNamed:@"lightning"];
     
 }
 
-- (void)runCCBAnimation:(CCBAnimationManager *)manager
+- (CCNode *)showWithClippingNode: (CCSprite *)sprite
 {
-    
+    CCDrawNode *sencil = [CCDrawNode node];
+    CGPoint rectangle[4];
+    rectangle[0] = ccp(0, 0);
+    rectangle[1] = ccp(self.contentSize.width, 0);
+    rectangle[2] = ccpFromSize(self.contentSize);
+    rectangle[3] = ccp(0, self.contentSize.height);
+    ccColor4F white = {1, 1, 1, 1};
+    [sencil drawPolyWithVerts:rectangle count:4 fillColor:white
+                  borderWidth:0 borderColor:white];
+    sencil.position = ccp(0, 0);
+    sencil.anchorPoint = ccp(0.5, 0.5);
+    CCClippingNode *clip = [CCClippingNode clippingNodeWithStencil:sencil];
+    clip.contentSize = self.contentSize;
+    clip.anchorPoint = ccp(0.5, 0.5);
+    clip.position = ccpMult(ccpFromSize(self.contentSize), 0.5);
+    [self addChild:clip];
+    sprite.anchorPoint = ccp(0.5, 0.5);
+    sprite.position = ccpMult(ccpFromSize(clip.contentSize), 0.5);
+    [clip addChild:sprite];
+     return clip;
 }
 
 - (void)conductAround
@@ -66,15 +89,15 @@ class MetalQueryCallback : public b2QueryCallback
     [ILQueryTool queryAround:self callback:&callback];
 }
 
-- (void)visit
-{
-    glEnable(GL_SCISSOR_TEST);
-    float width = self.contentSize.width;
-    float height = self.contentSize.height;
-    glScissor(self.position.x - self.anchorPoint.x * width, self.position.y - self.anchorPoint.y * height, width, height);
-    [super visit];
-    glDisable(GL_SCISSOR_TEST);
-}
+//- (void)visit
+//{
+//    glEnable(GL_SCISSOR_TEST);
+//    float width = self.contentSize.width;
+//    float height = self.contentSize.height;
+//    glScissor(self.position.x - self.anchorPoint.x * width, self.position.y - self.anchorPoint.y * height, width, height);
+//    [super visit];
+//    glDisable(GL_SCISSOR_TEST);
+//}
 
 
 
