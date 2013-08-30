@@ -47,6 +47,16 @@
     }
 }
 
+- (void)fire
+{
+    if (_leftShooter.visible) {
+        [_leftShooter.arm.gun fire];
+    }
+    if (_rightShooter.visible) {
+        [_rightShooter.arm.gun fire];
+    }
+}
+
 - (void)replaceGunType:(NSString *)type
 {
     NSString *const ccbRightFileName = [type stringByAppendingString:@"Right.ccbi"];

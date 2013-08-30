@@ -15,7 +15,35 @@
 - (void)didLoadFromCCB
 {
     _firstButton.delegate = self;
+    _buttonArray = [[NSMutableArray array] retain];
     _foldState = NO;
+    [_secondButton addTarget:self action:@selector(pressedSecondButton:)];
+    [_thirdButton addTarget:self action:@selector(pressedThirdButton:)];
+    [_forthButton addTarget:self action:@selector(pressedForthButton:)];
+    [_buttonArray addObject:_secondButton];
+    [_buttonArray addObject:_thirdButton];
+    [_buttonArray addObject:_forthButton];
+    __block id bself = self;
+    [self.userObject setCompletedAnimationCallbackBlock:^(id sender) {
+        if ([[sender lastCompletedSequenceName] isEqualToString:@"fold"]) {
+            [bself foldCompleted];
+        }
+    }];
+}
+
+- (void)pressedSecondButton:(id)sender
+{
+    [self switchButton:_secondButton];
+}
+
+- (void)pressedThirdButton:(id)sender
+{
+    [self switchButton:_thirdButton];
+}
+
+- (void)pressedForthButton:(id)sender
+{
+    [self switchButton:_forthButton];
 }
 
 - (void)fold
@@ -24,14 +52,34 @@
     [self foldPanel];
 }
 
+- (void)switchButton:(ILUsedOnceButton *)button
+{
+    _currentSelectedButton = button;
+    for (id item in _buttonArray) {
+        if (item != button ) {
+            [item recover];
+        }
+    }
+}
+- (void)hasUsed
+{
+    [_buttonArray removeObject:_currentSelectedButton];
+    _currentSelectedButton = nil;
+    if (_buttonArray.count <= 1) {
+        [self hideMyself];
+    }
+}
+
+- (void)hideMyself
+{
+    _hasHide = YES;
+    [self.userObject runAnimationsForSequenceNamed:@"hide"];
+}
+
 - (void)foldPanel
 {
     [self.userObject runAnimationsForSequenceNamed:@"fold"];
-    [self.userObject setCompletedAnimationCallbackBlock:^(id sender) {
-        if ([[sender lastCompletedSequenceName] isEqualToString:@"fold"]) {
-            [self foldCompleted];
-        }
-    }];
+    
 }
 
 - (void)unfoldPanel
@@ -51,14 +99,14 @@
 
 - (void)pushState
 {
-    if (!_foldState) {
+    if (!_foldState && !_hasHide) {
         [self foldPanel];
     }
 }
 
 - (void)popState
 {
-    if (!_foldState) {
+    if (!_foldState && !_hasHide) {
         [self unfoldPanel];
     }
 }
@@ -74,6 +122,19 @@
     for (CCNode *ch in self.children) {
         ch.visible = YES;
     }
+}
+
+- (void)forbiddenAllButtons
+{
+    _secondButton.button.enabled = NO;
+    _thirdButton.button.enabled = NO;
+    _forthButton.button.enabled = NO;
+}
+
+- (void)dealloc
+{
+    [_buttonArray release], _buttonArray = nil;
+    [super dealloc];
 }
 
 

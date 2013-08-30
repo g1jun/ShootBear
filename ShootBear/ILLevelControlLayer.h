@@ -10,11 +10,13 @@
 #import "ILShrinkPanel.h"
 #import "ILBulletNumberShow.h"
 
+
 @interface ILLevelControlLayer : CCLayer
 {
-    ILShrinkPanel *_shrinkPanel;
-    ILBulletNumberShow *_bulletNumberShow;
 }
+
+@property (assign, nonatomic) ILBulletNumberShow *bulletNumberShow;
+@property (assign, nonatomic) ILShrinkPanel *shrinkPanel;
 
 - (void)hide;
 

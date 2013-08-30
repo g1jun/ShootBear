@@ -50,7 +50,7 @@
 {
     [_bears removeObject:bear];
     [bear removeFromParent];
-    if (_bears.count == 0) {
+    if (_bears.count == 0 && bear != nil) {
         [self.delegate levelCompleted];
     }
 }
@@ -73,6 +73,11 @@
 - (void)switchGunType:(NSString *)gunType
 {
     [_shooter replaceGunType:gunType];
+}
+
+- (void)notificationShooterFire
+{
+    [_shooter fire];
 }
 
 

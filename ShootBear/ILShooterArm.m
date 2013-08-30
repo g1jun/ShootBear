@@ -48,6 +48,18 @@
     return self.gun.lineReference.rotation;
 }
 
+- (void)setAllRotation:(float)rotation
+{
+    if (_isCannon) {
+        self.gun.rotation = rotation - self.gun.rotation - self.gun.lineReference.rotation;
+        [self fixRotaionDegree:self.gun];
+        return;
+    }
+    [super setRotation:(rotation -  self.gun.rotation - self.gun.lineReference.rotation)];
+    [self fixRotaionDegree:self];
+
+}
+
 - (BOOL) hasVisibleParents
 {
     for( CCNode *c = self.parent; c != nil; c = c.parent )
@@ -84,19 +96,20 @@
     }
     if (_isCannon) {
         self.gun.rotation += step;
+        [self fixRotaionDegree:self.gun];
     } else {
         self.rotation += step;
+        [self fixRotaionDegree:self];
     }
-    [self fixRotaionDegree];
 }
 
-- (void)fixRotaionDegree
+- (void)fixRotaionDegree:(CCNode *)node
 {
-    if (self.rotation > 360) {
-        self.rotation -= 360;
+    if (node.rotation > 360) {
+        node.rotation -= 360;
     }
-    if (self.rotation < -360) {
-        self.rotation += 360;
+    if (node.rotation < -360) {
+        node.rotation += 360;
     }
 }
 
@@ -116,12 +129,7 @@
 {
     [self rotationToTouchPoint:touch];
 }
-- (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
-{
-    if ([self hasVisibleParents]) {
-        [self.gun fire];
-    }
-}
+
 
 - (void)replaceGunType:(NSString * )type
 {

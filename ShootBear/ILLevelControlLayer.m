@@ -10,6 +10,12 @@
 
 @implementation ILLevelControlLayer
 
+
+- (void)didLoadFromCCB
+{
+    
+}
+
 - (void)hide
 {
     [_shrinkPanel pushState];
@@ -35,5 +41,7 @@
     [self showSubViews];
     [_shrinkPanel popState];
 }
+
+
 
 @end

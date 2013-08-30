@@ -10,8 +10,13 @@
 #import "CCControlButton.h"
 
 @interface ILUsedOnceButton : CCNode
-{
-    CCControlButton *_button;
-}
+
+@property (assign, nonatomic, readonly)BOOL isSelected;
+@property (assign, nonatomic, readonly) CCControlButton *button;
+
+
+- (void)recover;
+- (void)addTarget:(id)target action:(SEL)action;
+
 
 @end

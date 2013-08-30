@@ -12,8 +12,8 @@
 
 - (void)used
 {
-    _unused.visible = YES;
-    _used.visible = NO;
+    _unused.visible = NO;
+    _used.visible = YES;
 }
 
 @end

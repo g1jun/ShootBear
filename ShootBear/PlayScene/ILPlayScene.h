@@ -12,12 +12,12 @@
 #import "ILBearCollisionDelegate.h"
 #import "ILLevelLayer.h"
 
-@interface ILPlayScene : CCScene <ILLevelCompletedDelegate> {
+@interface ILPlayScene : CCScene <ILLevelCompletedDelegate, ILPlayFailedDelegate> {
     
     @private
     ILLevelLayer *_currentLevel;
-    CCLayer *_levelComplete;
     ILPlayControl *_playControl;
+    NSMutableDictionary *_cacheLayers;
 }
 
 

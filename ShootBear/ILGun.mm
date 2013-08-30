@@ -44,7 +44,7 @@
 
 - (void)fireAnimation
 {
-    CCNode *gunFire = [CCBReader nodeGraphFromFile:@"GunFire.ccbi"];
+    __block CCNode *gunFire = [CCBReader nodeGraphFromFile:@"GunFire.ccbi"];
     [self addChild:gunFire z:10];
     gunFire.position = self.lineReference.position;
     gunFire.rotation = self.lineReference.rotation;

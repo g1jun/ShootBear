@@ -12,16 +12,37 @@
 @protocol ILPlayControlDelegate <NSObject>
 
 - (void)switchGunType:(NSString *)gunType;
+- (void)notificationShooterFire;
 
 @end
 
-@interface ILPlayControl : CCNode
+@protocol ILPlayFailedDelegate <NSObject>
+
+- (void)levelFailed;
+
+@optional
+
+- (void)pressedRetryButton:(id)sender;
+
+- (void)pressedMoreButton:(id)sender;
+
+- (void)pressedShoppingButton:(id)sender;
+
+- (void)pressedHelpButton:(id)sender;
+
+@end
+
+@interface ILPlayControl : CCNode <CCTouchOneByOneDelegate>
 {
     CCLayer *_settingLayer;
     ILLevelControlLayer *_levelControlLayer;
+    NSString *_usedGunType;
+    BOOL _hasRunFailedDelegate;
+    float _passTime;
 }
 
-
 @property (assign, nonatomic) id<ILPlayControlDelegate> delegate;
+@property (assign, nonatomic)BOOL forbiddenTouch;
+@property (assign, nonatomic)id<ILPlayFailedDelegate> failedDelegate;
 
 @end

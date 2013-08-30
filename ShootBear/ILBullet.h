@@ -20,6 +20,8 @@ static NSString* const kElectriGunBullet = @"kElectriGunBullet";
 
 @property (copy, nonatomic) NSString *bulletType;
 
+@property (assign, nonatomic) float age;
+
 - (float)life;
 
 @end

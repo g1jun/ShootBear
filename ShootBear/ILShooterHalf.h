@@ -21,4 +21,6 @@
 
 @property (assign, nonatomic) ILShooterArm *arm;
 
+@property (copy, nonatomic) NSString *gunType;
+
 @end

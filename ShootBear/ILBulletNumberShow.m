@@ -16,6 +16,7 @@
     _bulletArray = [[NSMutableArray array] retain];
     [_bulletArray addObject:_first];
     [_bulletArray addObject:_second];
+    _bulletNumber = 2;
 }
 
 - (void)reduceBullet
@@ -28,11 +29,12 @@
 
 - (void)setBulletNumber:(int)bulletNumber
 {
-    NSAssert(bulletNumber < 3, @"bulletNumber must be > 2");
+    NSAssert(bulletNumber >= 2, @"bulletNumber must be > 2");
+    _bulletNumber = bulletNumber;
     if (bulletNumber > 2) {
         for (int i = 0; i < bulletNumber - 2 ; i++) {
             ILBulletShowUnit *newUnit = (ILBulletShowUnit *)[CCBReader nodeGraphFromFile:@"BulletShowUnit.ccbi"];
-            newUnit.position = ccp(_first.position.x + (_second.position.x - _first.position.x) * i,
+            newUnit.position = ccp(_first.position.x + (_second.position.x - _first.position.x) * (i + 2),
                                    _first.position.y);
             [self addChild:newUnit];
             [_bulletArray addObject:newUnit];

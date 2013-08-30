@@ -307,29 +307,32 @@
 		04B1092B17B37F4000778F8E /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B1090F17B37F4000778F8E /* SSZipArchive.m */; };
 		04B1094B17B3800D00778F8E /* ILShooter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B1094A17B3800D00778F8E /* ILShooter.mm */; };
 		04B83D4417CEC525001C634A /* ILTouchStopLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D4317CEC525001C634A /* ILTouchStopLayer.m */; };
-		04B83D5717CF6337001C634A /* ButtonBack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4617CF6337001C634A /* ButtonBack.ccbi */; };
-		04B83D5817CF6337001C634A /* ButtonBomb.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4717CF6337001C634A /* ButtonBomb.ccbi */; };
-		04B83D5917CF6337001C634A /* ButtonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4817CF6337001C634A /* ButtonFire.ccbi */; };
-		04B83D5A17CF6337001C634A /* ButtonFlash.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4917CF6337001C634A /* ButtonFlash.ccbi */; };
-		04B83D5B17CF6337001C634A /* ButtonHelp.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4A17CF6337001C634A /* ButtonHelp.ccbi */; };
-		04B83D5C17CF6337001C634A /* ButtonHome.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4B17CF6337001C634A /* ButtonHome.ccbi */; };
-		04B83D5D17CF6337001C634A /* ButtonList.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4C17CF6337001C634A /* ButtonList.ccbi */; };
-		04B83D5E17CF6337001C634A /* ButtonMore.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4D17CF6337001C634A /* ButtonMore.ccbi */; };
-		04B83D5F17CF6337001C634A /* ButtonNext.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4E17CF6337001C634A /* ButtonNext.ccbi */; };
-		04B83D6017CF6337001C634A /* ButtonRetry.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D4F17CF6337001C634A /* ButtonRetry.ccbi */; };
-		04B83D6117CF6337001C634A /* ButtonShopping.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D5017CF6337001C634A /* ButtonShopping.ccbi */; };
-		04B83D6217CF6337001C634A /* ButtonShrink.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D5117CF6337001C634A /* ButtonShrink.ccbi */; };
-		04B83D6317CF6337001C634A /* ButtonSound.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D5217CF6337001C634A /* ButtonSound.ccbi */; };
-		04B83D6417CF6337001C634A /* LevelCompletedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D5317CF6337001C634A /* LevelCompletedLayer.ccbi */; };
-		04B83D6517CF6337001C634A /* LevelControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D5417CF6337001C634A /* LevelControlLayer.ccbi */; };
-		04B83D6617CF6337001C634A /* SettingControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D5517CF6337001C634A /* SettingControlLayer.ccbi */; };
-		04B83D6717CF6337001C634A /* ShrinkPanel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04B83D5617CF6337001C634A /* ShrinkPanel.ccbi */; };
 		04B83D6A17CF6813001C634A /* ILShrinkPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6917CF6813001C634A /* ILShrinkPanel.m */; };
 		04B83D6D17CF6E22001C634A /* ILShrinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6C17CF6E22001C634A /* ILShrinkButton.m */; };
 		04B83D7017CF7BC2001C634A /* ILUsedOnceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */; };
-		04B83D7317CF8341001C634A /* ILPlayControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D7217CF8341001C634A /* ILPlayControl.m */; };
+		04B83D7317CF8341001C634A /* ILPlayControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D7217CF8341001C634A /* ILPlayControl.mm */; };
 		04BBBBD317C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBBBD217C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m */; };
 		04C3287917C8C45F00C586C8 /* NSArray+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3287817C8C45F00C586C8 /* NSArray+DeepCopy.m */; };
+		04C32C7117D0A6C4003DD8A2 /* BulletNumberShow.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C5D17D0A6C4003DD8A2 /* BulletNumberShow.ccbi */; };
+		04C32C7217D0A6C4003DD8A2 /* BulletShowUnit.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C5E17D0A6C4003DD8A2 /* BulletShowUnit.ccbi */; };
+		04C32C7317D0A6C4003DD8A2 /* ButtonBack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C5F17D0A6C4003DD8A2 /* ButtonBack.ccbi */; };
+		04C32C7417D0A6C4003DD8A2 /* ButtonBomb.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6017D0A6C4003DD8A2 /* ButtonBomb.ccbi */; };
+		04C32C7517D0A6C4003DD8A2 /* ButtonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6117D0A6C4003DD8A2 /* ButtonFire.ccbi */; };
+		04C32C7617D0A6C4003DD8A2 /* ButtonFlash.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6217D0A6C4003DD8A2 /* ButtonFlash.ccbi */; };
+		04C32C7717D0A6C4003DD8A2 /* ButtonHelp.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6317D0A6C4003DD8A2 /* ButtonHelp.ccbi */; };
+		04C32C7817D0A6C4003DD8A2 /* ButtonHome.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6417D0A6C4003DD8A2 /* ButtonHome.ccbi */; };
+		04C32C7917D0A6C4003DD8A2 /* ButtonList.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6517D0A6C4003DD8A2 /* ButtonList.ccbi */; };
+		04C32C7A17D0A6C4003DD8A2 /* ButtonMore.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6617D0A6C4003DD8A2 /* ButtonMore.ccbi */; };
+		04C32C7B17D0A6C4003DD8A2 /* ButtonNext.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6717D0A6C4003DD8A2 /* ButtonNext.ccbi */; };
+		04C32C7C17D0A6C4003DD8A2 /* ButtonRetry.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6817D0A6C4003DD8A2 /* ButtonRetry.ccbi */; };
+		04C32C7D17D0A6C4003DD8A2 /* ButtonShopping.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6917D0A6C4003DD8A2 /* ButtonShopping.ccbi */; };
+		04C32C7E17D0A6C4003DD8A2 /* ButtonShrink.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6A17D0A6C4003DD8A2 /* ButtonShrink.ccbi */; };
+		04C32C7F17D0A6C4003DD8A2 /* ButtonSound.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6B17D0A6C4003DD8A2 /* ButtonSound.ccbi */; };
+		04C32C8017D0A6C4003DD8A2 /* LevelCompletedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6C17D0A6C4003DD8A2 /* LevelCompletedLayer.ccbi */; };
+		04C32C8117D0A6C4003DD8A2 /* LevelControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6D17D0A6C4003DD8A2 /* LevelControlLayer.ccbi */; };
+		04C32C8217D0A6C4003DD8A2 /* LevelFailedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6E17D0A6C4003DD8A2 /* LevelFailedLayer.ccbi */; };
+		04C32C8317D0A6C4003DD8A2 /* SettingControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C6F17D0A6C4003DD8A2 /* SettingControlLayer.ccbi */; };
+		04C32C8417D0A6C4003DD8A2 /* ShrinkPanel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C32C7017D0A6C4003DD8A2 /* ShrinkPanel.ccbi */; };
 		04D236AE17B777CD007608F4 /* ILGun.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D236AD17B777CD007608F4 /* ILGun.mm */; };
 		04D236B317B79DDF007608F4 /* ILShooterHalf.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D236B217B79DDF007608F4 /* ILShooterHalf.m */; };
 		04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
@@ -926,23 +929,6 @@
 		04B1094A17B3800D00778F8E /* ILShooter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILShooter.mm; sourceTree = "<group>"; };
 		04B83D4217CEC525001C634A /* ILTouchStopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTouchStopLayer.h; sourceTree = "<group>"; };
 		04B83D4317CEC525001C634A /* ILTouchStopLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTouchStopLayer.m; sourceTree = "<group>"; };
-		04B83D4617CF6337001C634A /* ButtonBack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBack.ccbi; sourceTree = "<group>"; };
-		04B83D4717CF6337001C634A /* ButtonBomb.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBomb.ccbi; sourceTree = "<group>"; };
-		04B83D4817CF6337001C634A /* ButtonFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFire.ccbi; sourceTree = "<group>"; };
-		04B83D4917CF6337001C634A /* ButtonFlash.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFlash.ccbi; sourceTree = "<group>"; };
-		04B83D4A17CF6337001C634A /* ButtonHelp.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHelp.ccbi; sourceTree = "<group>"; };
-		04B83D4B17CF6337001C634A /* ButtonHome.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHome.ccbi; sourceTree = "<group>"; };
-		04B83D4C17CF6337001C634A /* ButtonList.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonList.ccbi; sourceTree = "<group>"; };
-		04B83D4D17CF6337001C634A /* ButtonMore.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonMore.ccbi; sourceTree = "<group>"; };
-		04B83D4E17CF6337001C634A /* ButtonNext.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonNext.ccbi; sourceTree = "<group>"; };
-		04B83D4F17CF6337001C634A /* ButtonRetry.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonRetry.ccbi; sourceTree = "<group>"; };
-		04B83D5017CF6337001C634A /* ButtonShopping.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShopping.ccbi; sourceTree = "<group>"; };
-		04B83D5117CF6337001C634A /* ButtonShrink.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShrink.ccbi; sourceTree = "<group>"; };
-		04B83D5217CF6337001C634A /* ButtonSound.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonSound.ccbi; sourceTree = "<group>"; };
-		04B83D5317CF6337001C634A /* LevelCompletedLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelCompletedLayer.ccbi; sourceTree = "<group>"; };
-		04B83D5417CF6337001C634A /* LevelControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelControlLayer.ccbi; sourceTree = "<group>"; };
-		04B83D5517CF6337001C634A /* SettingControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SettingControlLayer.ccbi; sourceTree = "<group>"; };
-		04B83D5617CF6337001C634A /* ShrinkPanel.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShrinkPanel.ccbi; sourceTree = "<group>"; };
 		04B83D6817CF6813001C634A /* ILShrinkPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShrinkPanel.h; sourceTree = "<group>"; };
 		04B83D6917CF6813001C634A /* ILShrinkPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILShrinkPanel.m; sourceTree = "<group>"; };
 		04B83D6B17CF6E22001C634A /* ILShrinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShrinkButton.h; sourceTree = "<group>"; };
@@ -950,11 +936,31 @@
 		04B83D6E17CF7BC2001C634A /* ILUsedOnceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILUsedOnceButton.h; sourceTree = "<group>"; };
 		04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILUsedOnceButton.m; sourceTree = "<group>"; };
 		04B83D7117CF8341001C634A /* ILPlayControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPlayControl.h; sourceTree = "<group>"; };
-		04B83D7217CF8341001C634A /* ILPlayControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILPlayControl.m; sourceTree = "<group>"; };
+		04B83D7217CF8341001C634A /* ILPlayControl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPlayControl.mm; sourceTree = "<group>"; };
 		04BBBBD117C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCBAnimationManager+RmoveDeadNode.h"; sourceTree = "<group>"; };
 		04BBBBD217C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCBAnimationManager+RmoveDeadNode.m"; sourceTree = "<group>"; };
 		04C3287717C8C45F00C586C8 /* NSArray+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DeepCopy.h"; sourceTree = "<group>"; };
 		04C3287817C8C45F00C586C8 /* NSArray+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DeepCopy.m"; sourceTree = "<group>"; };
+		04C32C5D17D0A6C4003DD8A2 /* BulletNumberShow.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletNumberShow.ccbi; sourceTree = "<group>"; };
+		04C32C5E17D0A6C4003DD8A2 /* BulletShowUnit.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletShowUnit.ccbi; sourceTree = "<group>"; };
+		04C32C5F17D0A6C4003DD8A2 /* ButtonBack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBack.ccbi; sourceTree = "<group>"; };
+		04C32C6017D0A6C4003DD8A2 /* ButtonBomb.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBomb.ccbi; sourceTree = "<group>"; };
+		04C32C6117D0A6C4003DD8A2 /* ButtonFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFire.ccbi; sourceTree = "<group>"; };
+		04C32C6217D0A6C4003DD8A2 /* ButtonFlash.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFlash.ccbi; sourceTree = "<group>"; };
+		04C32C6317D0A6C4003DD8A2 /* ButtonHelp.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHelp.ccbi; sourceTree = "<group>"; };
+		04C32C6417D0A6C4003DD8A2 /* ButtonHome.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHome.ccbi; sourceTree = "<group>"; };
+		04C32C6517D0A6C4003DD8A2 /* ButtonList.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonList.ccbi; sourceTree = "<group>"; };
+		04C32C6617D0A6C4003DD8A2 /* ButtonMore.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonMore.ccbi; sourceTree = "<group>"; };
+		04C32C6717D0A6C4003DD8A2 /* ButtonNext.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonNext.ccbi; sourceTree = "<group>"; };
+		04C32C6817D0A6C4003DD8A2 /* ButtonRetry.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonRetry.ccbi; sourceTree = "<group>"; };
+		04C32C6917D0A6C4003DD8A2 /* ButtonShopping.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShopping.ccbi; sourceTree = "<group>"; };
+		04C32C6A17D0A6C4003DD8A2 /* ButtonShrink.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShrink.ccbi; sourceTree = "<group>"; };
+		04C32C6B17D0A6C4003DD8A2 /* ButtonSound.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonSound.ccbi; sourceTree = "<group>"; };
+		04C32C6C17D0A6C4003DD8A2 /* LevelCompletedLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelCompletedLayer.ccbi; sourceTree = "<group>"; };
+		04C32C6D17D0A6C4003DD8A2 /* LevelControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelControlLayer.ccbi; sourceTree = "<group>"; };
+		04C32C6E17D0A6C4003DD8A2 /* LevelFailedLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelFailedLayer.ccbi; sourceTree = "<group>"; };
+		04C32C6F17D0A6C4003DD8A2 /* SettingControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SettingControlLayer.ccbi; sourceTree = "<group>"; };
+		04C32C7017D0A6C4003DD8A2 /* ShrinkPanel.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShrinkPanel.ccbi; sourceTree = "<group>"; };
 		04D236AC17B777CD007608F4 /* ILGun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGun.h; sourceTree = "<group>"; };
 		04D236AD17B777CD007608F4 /* ILGun.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILGun.mm; sourceTree = "<group>"; };
 		04D236B117B79DDF007608F4 /* ILShooterHalf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShooterHalf.h; sourceTree = "<group>"; };
@@ -1156,7 +1162,7 @@
 				04B83D6E17CF7BC2001C634A /* ILUsedOnceButton.h */,
 				04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */,
 				04B83D7117CF8341001C634A /* ILPlayControl.h */,
-				04B83D7217CF8341001C634A /* ILPlayControl.m */,
+				04B83D7217CF8341001C634A /* ILPlayControl.mm */,
 				04E53F2717D0174000AE15A5 /* ILLevelControlLayer.h */,
 				04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */,
 				04E53F2A17D0212D00AE15A5 /* ILBulletShowUnit.h */,
@@ -2026,26 +2032,29 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
-		04B83D4517CF6337001C634A /* Layer */ = {
+		04C32C5C17D0A6C4003DD8A2 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
-				04B83D4617CF6337001C634A /* ButtonBack.ccbi */,
-				04B83D4717CF6337001C634A /* ButtonBomb.ccbi */,
-				04B83D4817CF6337001C634A /* ButtonFire.ccbi */,
-				04B83D4917CF6337001C634A /* ButtonFlash.ccbi */,
-				04B83D4A17CF6337001C634A /* ButtonHelp.ccbi */,
-				04B83D4B17CF6337001C634A /* ButtonHome.ccbi */,
-				04B83D4C17CF6337001C634A /* ButtonList.ccbi */,
-				04B83D4D17CF6337001C634A /* ButtonMore.ccbi */,
-				04B83D4E17CF6337001C634A /* ButtonNext.ccbi */,
-				04B83D4F17CF6337001C634A /* ButtonRetry.ccbi */,
-				04B83D5017CF6337001C634A /* ButtonShopping.ccbi */,
-				04B83D5117CF6337001C634A /* ButtonShrink.ccbi */,
-				04B83D5217CF6337001C634A /* ButtonSound.ccbi */,
-				04B83D5317CF6337001C634A /* LevelCompletedLayer.ccbi */,
-				04B83D5417CF6337001C634A /* LevelControlLayer.ccbi */,
-				04B83D5517CF6337001C634A /* SettingControlLayer.ccbi */,
-				04B83D5617CF6337001C634A /* ShrinkPanel.ccbi */,
+				04C32C5D17D0A6C4003DD8A2 /* BulletNumberShow.ccbi */,
+				04C32C5E17D0A6C4003DD8A2 /* BulletShowUnit.ccbi */,
+				04C32C5F17D0A6C4003DD8A2 /* ButtonBack.ccbi */,
+				04C32C6017D0A6C4003DD8A2 /* ButtonBomb.ccbi */,
+				04C32C6117D0A6C4003DD8A2 /* ButtonFire.ccbi */,
+				04C32C6217D0A6C4003DD8A2 /* ButtonFlash.ccbi */,
+				04C32C6317D0A6C4003DD8A2 /* ButtonHelp.ccbi */,
+				04C32C6417D0A6C4003DD8A2 /* ButtonHome.ccbi */,
+				04C32C6517D0A6C4003DD8A2 /* ButtonList.ccbi */,
+				04C32C6617D0A6C4003DD8A2 /* ButtonMore.ccbi */,
+				04C32C6717D0A6C4003DD8A2 /* ButtonNext.ccbi */,
+				04C32C6817D0A6C4003DD8A2 /* ButtonRetry.ccbi */,
+				04C32C6917D0A6C4003DD8A2 /* ButtonShopping.ccbi */,
+				04C32C6A17D0A6C4003DD8A2 /* ButtonShrink.ccbi */,
+				04C32C6B17D0A6C4003DD8A2 /* ButtonSound.ccbi */,
+				04C32C6C17D0A6C4003DD8A2 /* LevelCompletedLayer.ccbi */,
+				04C32C6D17D0A6C4003DD8A2 /* LevelControlLayer.ccbi */,
+				04C32C6E17D0A6C4003DD8A2 /* LevelFailedLayer.ccbi */,
+				04C32C6F17D0A6C4003DD8A2 /* SettingControlLayer.ccbi */,
+				04C32C7017D0A6C4003DD8A2 /* ShrinkPanel.ccbi */,
 			);
 			path = Layer;
 			sourceTree = "<group>";
@@ -2076,7 +2085,7 @@
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
-				04B83D4517CF6337001C634A /* Layer */,
+				04C32C5C17D0A6C4003DD8A2 /* Layer */,
 				04E9D53F17CDEE5500295FFD /* StaticElement */,
 				04AEBB0A17CDBDEC00BD9D65 /* PlayBackground */,
 				042C397417CB7ED800E255E6 /* Bear */,
@@ -2303,23 +2312,26 @@
 				04E9D57517CDEE5500295FFD /* WoodParticle.ccbi in Resources */,
 				040850CA17CE377F001EF934 /* othres.plist in Resources */,
 				040850CB17CE377F001EF934 /* othres.png in Resources */,
-				04B83D5717CF6337001C634A /* ButtonBack.ccbi in Resources */,
-				04B83D5817CF6337001C634A /* ButtonBomb.ccbi in Resources */,
-				04B83D5917CF6337001C634A /* ButtonFire.ccbi in Resources */,
-				04B83D5A17CF6337001C634A /* ButtonFlash.ccbi in Resources */,
-				04B83D5B17CF6337001C634A /* ButtonHelp.ccbi in Resources */,
-				04B83D5C17CF6337001C634A /* ButtonHome.ccbi in Resources */,
-				04B83D5D17CF6337001C634A /* ButtonList.ccbi in Resources */,
-				04B83D5E17CF6337001C634A /* ButtonMore.ccbi in Resources */,
-				04B83D5F17CF6337001C634A /* ButtonNext.ccbi in Resources */,
-				04B83D6017CF6337001C634A /* ButtonRetry.ccbi in Resources */,
-				04B83D6117CF6337001C634A /* ButtonShopping.ccbi in Resources */,
-				04B83D6217CF6337001C634A /* ButtonShrink.ccbi in Resources */,
-				04B83D6317CF6337001C634A /* ButtonSound.ccbi in Resources */,
-				04B83D6417CF6337001C634A /* LevelCompletedLayer.ccbi in Resources */,
-				04B83D6517CF6337001C634A /* LevelControlLayer.ccbi in Resources */,
-				04B83D6617CF6337001C634A /* SettingControlLayer.ccbi in Resources */,
-				04B83D6717CF6337001C634A /* ShrinkPanel.ccbi in Resources */,
+				04C32C7117D0A6C4003DD8A2 /* BulletNumberShow.ccbi in Resources */,
+				04C32C7217D0A6C4003DD8A2 /* BulletShowUnit.ccbi in Resources */,
+				04C32C7317D0A6C4003DD8A2 /* ButtonBack.ccbi in Resources */,
+				04C32C7417D0A6C4003DD8A2 /* ButtonBomb.ccbi in Resources */,
+				04C32C7517D0A6C4003DD8A2 /* ButtonFire.ccbi in Resources */,
+				04C32C7617D0A6C4003DD8A2 /* ButtonFlash.ccbi in Resources */,
+				04C32C7717D0A6C4003DD8A2 /* ButtonHelp.ccbi in Resources */,
+				04C32C7817D0A6C4003DD8A2 /* ButtonHome.ccbi in Resources */,
+				04C32C7917D0A6C4003DD8A2 /* ButtonList.ccbi in Resources */,
+				04C32C7A17D0A6C4003DD8A2 /* ButtonMore.ccbi in Resources */,
+				04C32C7B17D0A6C4003DD8A2 /* ButtonNext.ccbi in Resources */,
+				04C32C7C17D0A6C4003DD8A2 /* ButtonRetry.ccbi in Resources */,
+				04C32C7D17D0A6C4003DD8A2 /* ButtonShopping.ccbi in Resources */,
+				04C32C7E17D0A6C4003DD8A2 /* ButtonShrink.ccbi in Resources */,
+				04C32C7F17D0A6C4003DD8A2 /* ButtonSound.ccbi in Resources */,
+				04C32C8017D0A6C4003DD8A2 /* LevelCompletedLayer.ccbi in Resources */,
+				04C32C8117D0A6C4003DD8A2 /* LevelControlLayer.ccbi in Resources */,
+				04C32C8217D0A6C4003DD8A2 /* LevelFailedLayer.ccbi in Resources */,
+				04C32C8317D0A6C4003DD8A2 /* SettingControlLayer.ccbi in Resources */,
+				04C32C8417D0A6C4003DD8A2 /* ShrinkPanel.ccbi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2553,7 +2565,7 @@
 				04B83D6A17CF6813001C634A /* ILShrinkPanel.m in Sources */,
 				04B83D6D17CF6E22001C634A /* ILShrinkButton.m in Sources */,
 				04B83D7017CF7BC2001C634A /* ILUsedOnceButton.m in Sources */,
-				04B83D7317CF8341001C634A /* ILPlayControl.m in Sources */,
+				04B83D7317CF8341001C634A /* ILPlayControl.mm in Sources */,
 				04E53F2917D0174000AE15A5 /* ILLevelControlLayer.m in Sources */,
 				04E53F2C17D0212D00AE15A5 /* ILBulletShowUnit.m in Sources */,
 				04E53F2F17D0226000AE15A5 /* ILBulletNumberShow.m in Sources */,

@@ -11,11 +11,6 @@
 #import "CCControlExtension.h"
 #import "ILGun.h"
 
-@protocol ILShooterFireDelegate <NSObject>
-
-- (void)fire:(NSString *)gunType;
-
-@end
 
 @interface ILShooterArm : CCNode <CCTouchOneByOneDelegate>
 {
@@ -29,5 +24,7 @@
 - (void)replaceGunType:(NSString * )type;
 
 - (void)stopAccpetTouch;
+
+- (void)setAllRotation:(float)rotation;
 
 @end

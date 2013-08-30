@@ -20,15 +20,20 @@
     return self;
 }
 
+- (void)didLoadFromCCB
+{
+    [self.userObject runAnimationsForSequenceNamed:@"init"];
+}
+
 - (void)pressedShrink:(id)sender
 {
     CCBAnimationManager *manager = self.userObject;
     if (_isFold) {
         [self.delegate unfold];
-        [manager runAnimationsForSequenceNamed:@"turnRight"];
+        [manager runAnimationsForSequenceNamed:@"turnLeft"];
     } else {
         [self.delegate fold];
-        [manager runAnimationsForSequenceNamed:@"turnLeft"];
+        [manager runAnimationsForSequenceNamed:@"turnRight"];
     }
     _isFold = !_isFold;
 }

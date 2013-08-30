@@ -30,11 +30,11 @@
 - (id)init {
     self = [super init];
     if(self) {
+        _cacheLayers = [[NSMutableDictionary dictionary] retain];
         [self configBox2d];
         [self configSubLayers];
         [self loadLayer:0];
         [self loadControl];
-        [self scheduleUpdate];
         
     }
     return self;
@@ -48,6 +48,7 @@
     }
     _playControl = [[ILPlayControl node] retain];
     _playControl.delegate = _currentLevel;
+    _playControl.failedDelegate = self;
     [self addChild:_playControl z:zLevelControl];
 }
 
@@ -63,10 +64,6 @@
 {
     CCNode *bk = [CCBReader nodeGraphFromFile:@"SceneBackground1.ccbi"];
     [self addChild:bk z:zBK];
-    _levelComplete = [(CCLayer *)[CCBReader nodeGraphFromFile:@"LevelCompletedLayer.ccbi" owner:self] retain];
-    _levelComplete.visible = NO;
-    [self addChild:_levelComplete z:zLevelCompleted];
-    
 }
 
 - (void)loadLayer:(int)level
@@ -84,54 +81,67 @@
 
 - (void)dealloc
 {
-    [_levelComplete release],_levelComplete = nil;
+    [_cacheLayers release], _cacheLayers = nil;
     [_currentLevel release], _currentLevel = nil;
     [_playControl release], _playControl = nil;
     [[ILBox2dFactory sharedFactory] releaseB2World];
     [super dealloc];
 }
 
+- (void)levelFailed
+{
+    [self loadLevelFinished:@"LevelFailedLayer.ccbi"];
+
+}
+
 - (void)levelCompleted
 {
-    _levelComplete.visible = YES;
-    CCBAnimationManager *manager = _levelComplete.userObject;
+    [self loadLevelFinished:@"LevelCompletedLayer.ccbi"];
+}
+
+- (void)loadLevelFinished:(NSString *)ccbName
+{
+    if (_cacheLayers[@"levelResult"]) {
+        return;
+    }
+    CCLayer* _tempLayer = (CCLayer *)[CCBReader nodeGraphFromFile:ccbName owner:self];
+    _cacheLayers[@"levelResult"] = _tempLayer;
+    [self addChild:_tempLayer z:zLevelCompleted];
+    CCBAnimationManager *manager = _tempLayer.userObject;
+    _playControl.forbiddenTouch = YES;
     [manager runAnimationsForSequenceNamed:@"first"];
 }
 
-- (void)hideLevelCompletedLevel
+
+- (void)removeTempLayer
 {
-    _levelComplete.visible = NO;
+    id levelResult = _cacheLayers[@"levelResult"];
+    [levelResult removeFromParent];
+    [_cacheLayers removeObjectForKey:@"levelResult"];
 }
 
 - (void)pressedNextButton:(id)sender
 {
-    [self hideLevelCompletedLevel];
+    [self removeTempLayer];
+}
+
+- (void)pressedShoppingButton:(id)sender
+{
+    
 }
 
 - (void)pressedRetryButton:(id)sender
 {
-    [self hideLevelCompletedLevel];
+    [self removeTempLayer];
     [self loadLayer:_currentLevel.levelNo];
     [self loadControl];
 }
 
 - (void)pressedMoreButton:(id)sender
 {
-    [self hideLevelCompletedLevel];
+    [self removeTempLayer];
 
 }
-
-
--(void) update: (ccTime) dt
-{
-	int32 velocityIterations = 1;
-	int32 positionIterations = 10;
-	[ILBox2dFactory sharedFactory].world->Step(dt, velocityIterations, positionIterations);
-}
-
-
-
-
 
 
 @end

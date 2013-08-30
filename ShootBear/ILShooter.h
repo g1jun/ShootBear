@@ -25,4 +25,6 @@ static NSString* const kCannon = @"ShooterCannon";
 
 - (void)replaceGunType:(NSString * )type;
 
+- (void)fire;
+
 @end

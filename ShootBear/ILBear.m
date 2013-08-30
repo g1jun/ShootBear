@@ -31,9 +31,10 @@
 - (void)configEndRule
 {
     CCBAnimationManager *manager = _rightBear.userObject;
+    __block typeof(self) bself = self;
     [manager setCompletedAnimationCallbackBlock:^(id sender) {
-        NSArray *states = [_animationRule componentsSeparatedByString:@";"];
-        [self parseRule:states[1]];
+        NSArray *states = [bself.animationRule componentsSeparatedByString:@";"];
+        [bself parseRule:states[1]];
     }];
 }
 
@@ -94,6 +95,12 @@
     _rightBear.visible = NO;
     _leftBear.visible = YES;
     [self runAnimation];
+}
+
+- (void)dealloc
+{
+    self.animationRule = nil;
+    [super dealloc];
 }
 
 @end

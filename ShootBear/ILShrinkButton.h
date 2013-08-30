@@ -23,4 +23,6 @@
 
 @property (assign, nonatomic) id<ILShrinkButtonDelegate> delegate;
 
+
+
 @end

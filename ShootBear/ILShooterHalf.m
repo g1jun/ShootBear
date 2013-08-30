@@ -16,6 +16,7 @@
 - (void)dealloc
 {
     [_arm stopAccpetTouch];
+    self.gunType = nil;
     _arm = nil;
     [super dealloc];
 }
@@ -32,18 +33,37 @@
 
 - (void)replaceGunType:(NSString * )type
 {
+    float rotation = [self totalRotation];
     if ([type hasPrefix:kCannon]) {
         ILShooterArm *cannonArm = (ILShooterArm *)[CCBReader nodeGraphFromFile:type];
-        CCBAnimationManager *manager = self.userObject;
-        [manager removeDeadNode:self.arm];
-        cannonArm.position = self.arm.position;
-        [self removeChild:self.arm cleanup:YES];
-        [self.arm stopAccpetTouch];
-        self.arm = cannonArm;
-        [self addChild:self.arm];
+        [self changeArm:cannonArm];
+        self.gunType = type;
         return;
     }
+    if ([self.gunType hasPrefix:kCannon]) {
+        NSString *fileName = @"ShooterArmRight.ccbi";
+        if ([type rangeOfString:@"Left"].length != 0) {
+            fileName = @"ShooterArmLeft.ccbi";
+        }
+        ILShooterArm *cannonArm = (ILShooterArm *)[CCBReader nodeGraphFromFile:fileName];
+        [self changeArm:cannonArm];
+    }
     [self.arm replaceGunType:type];
+    [self.arm setAllRotation:rotation];
+    self.gunType = type;
+
+}
+
+- (void)changeArm:(ILShooterArm *)cannonArm
+{
+    CCBAnimationManager *manager = self.userObject;
+    [manager removeDeadNode:self.arm];
+    cannonArm.position = self.arm.position;
+    [cannonArm setAllRotation:[self totalRotation]];
+    [self removeChild:self.arm cleanup:YES];
+    [self.arm stopAccpetTouch];
+    self.arm = cannonArm;
+    [self addChild:self.arm];
 }
 
 
