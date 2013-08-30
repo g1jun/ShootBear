@@ -14,10 +14,11 @@
 #import "ILBullet.h"
 #import "CCBReader.h"
 #import "ILShooter.h"
+#import "CCBAnimationManager.h"
 
 #define BULLET 30
 
-#define BULLET_SPPED 100
+#define BULLET_SPPED 640
 
 @implementation ILGun
 
@@ -38,6 +39,20 @@
     [[self bulletParent] addChild:bullet];
     CGPoint v = [self lineReferenceVector];
     [bullet.entity setSpeed:b2Vec2(v.x, v.y)];
+    [self fireAnimation];
+}
+
+- (void)fireAnimation
+{
+    CCNode *gunFire = [CCBReader nodeGraphFromFile:@"GunFire.ccbi"];
+    [self addChild:gunFire z:10];
+    gunFire.position = self.lineReference.position;
+    gunFire.rotation = self.lineReference.rotation;
+    gunFire.anchorPoint = ccp(0, 0.5);
+    CCBAnimationManager *manager = gunFire.userObject;
+    [manager setCompletedAnimationCallbackBlock:^(id sender) {
+        [gunFire removeFromParent];
+    }];
 }
 
 - (CCNode *)bulletParent
@@ -56,7 +71,7 @@
 {
     float degree = [self lineTotalDegree];
     float radius = -CC_DEGREES_TO_RADIANS(degree);
-    return ccpRotateByAngle(ccp(BULLET_SPPED, 0), ccp(0, 0), radius);
+    return ccpRotateByAngle(ccp(BULLET_SPPED / PIXELS_PER_METER, 0), ccp(0, 0), radius);
 }
 
 - (float)lineTotalDegree

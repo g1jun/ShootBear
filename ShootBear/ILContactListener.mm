@@ -20,9 +20,9 @@ ILContactListener::~ILContactListener() {
 }
 
 void ILContactListener::BeginContact(b2Contact *contact) {
-    if (this->isSensor(contact)) {
-        return;
-    }
+//    if (this->isSensor(contact)) {
+//        return;
+//    }
     id node1 = (id)contact->GetFixtureA()->GetBody()->GetUserData();
     id node2 = (id)contact->GetFixtureB()->GetBody()->GetUserData();
     if (node1 == nil || node2 == nil) {

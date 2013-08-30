@@ -911,16 +911,19 @@
     // Read properties
     int numRegularProps = [self readIntWithSign:NO];
     int numExtraProps = [self readIntWithSign:NO];
-    int numProps = numRegularProps + numExtraProps;
-    
-    for (int i = 0; i < numProps; i++)
-    {
-        BOOL isExtraProp = (i >= numRegularProps);
-        
-        [self readPropertyForNode:node parent:parent isExtraProp:isExtraProp];
+//    int numProps = numRegularProps + numExtraProps;
+//    
+//    for (int i = 0; i < numProps; i++)
+//    {
+//        BOOL isExtraProp = (i >= numRegularProps);
+//        
+//        [self readPropertyForNode:node parent:parent isExtraProp:isExtraProp];
+//    }
+    //load regurlar props
+    for (int i = 0; i < numRegularProps; i++) {
+        [self readPropertyForNode:node parent:parent isExtraProp:NO];
     }
     
-    // Handle sub ccb files (remove middle node)
     if ([node isKindOfClass:[CCBFile class]])
     {
         CCBFile* ccbFileNode = (CCBFile*)node;
@@ -933,13 +936,19 @@
         embeddedNode.tag = ccbFileNode.tag;
         embeddedNode.visible = YES;
         //embeddedNode.ignoreAnchorPointForPosition = ccbFileNode.ignoreAnchorPointForPosition;
-        
         [actionManager moveAnimationsFromNode:ccbFileNode toNode:embeddedNode];
         
         ccbFileNode.ccbFile = NULL;
         
         node = embeddedNode;
     }
+
+    
+    for (int i = 0; i < numExtraProps; i++) {
+        [self readPropertyForNode:node parent:parent isExtraProp:YES];
+    }
+    
+    // Handle sub ccb files (remove middle node)
     
     // Assign to variable (if applicable)
     if (!jsControlled)

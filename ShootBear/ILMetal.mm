@@ -44,22 +44,53 @@ class MetalQueryCallback : public b2QueryCallback
         return;
     }
     self.hasElctric = YES;
-    float randomTime = CCRANDOM_0_1() * 0.2;
-    [self performSelector:@selector(addCCBSprite) withObject:nil afterDelay:randomTime];
+    [self showWithClippingNode];
     [self conductAround];
 }
 
 - (void)addCCBSprite
 {
-    CCSprite *spriteAnimation = (CCSprite *)[CCBReader nodeGraphFromFile:@"MetalLightning.ccbi"];
-    spriteAnimation.position = ccpMult(ccpFromSize(self.contentSize), 0.5f);
-    [self showWithClippingNode:spriteAnimation];
-    CCBAnimationManager *manager = spriteAnimation.userObject;
-    [manager runAnimationsForSequenceNamed:@"lightning"];
+    
+    
     
 }
+- (void)runCCBAnimation:(CCBAnimationManager *)manager
+{
+    [manager runAnimationsForSequenceNamed:@"lightning"];
+}
 
-- (CCNode *)showWithClippingNode: (CCSprite *)sprite
+- (CCNode *)showWithClippingNode
+{
+    
+    CCClippingNode *clip = [CCClippingNode clippingNodeWithStencil:[self sencilNode]];
+    clip.contentSize = self.contentSize;
+    clip.anchorPoint = ccp(0.5, 0.5);
+    clip.position = ccpMult(ccpFromSize(self.contentSize), 0.5);
+    [self addChild:clip];
+    CCSprite *tempSprite = [self CCBMetalLightningSprite];
+    int widthReapt = self.contentSize.width / tempSprite.contentSize.width + 1;
+    for (int i = 0; i < widthReapt; i++) {
+        tempSprite.position = ccpMult(ccpFromSize(self.contentSize), 0.5f);
+        float randomTime = CCRANDOM_0_1() * 0.2;
+        CCBAnimationManager *manager = tempSprite.userObject;
+        [self performSelector:@selector(runCCBAnimation:) withObject:manager afterDelay:randomTime];
+        tempSprite.anchorPoint = ccp(0.5, 0.5);
+        tempSprite.position = ccp(tempSprite.contentSize.width * (i + 0.5), clip.contentSize.height / 2);
+        [clip addChild:tempSprite];
+        if (i < widthReapt - 1) {
+            tempSprite = [self CCBMetalLightningSprite];
+        }
+    }
+     return clip;
+}
+
+- (CCSprite *)CCBMetalLightningSprite
+{
+    return (CCSprite *)[CCBReader nodeGraphFromFile:@"MetalLightning.ccbi"];
+}
+
+
+- (CCNode *)sencilNode
 {
     CCDrawNode *sencil = [CCDrawNode node];
     CGPoint rectangle[4];
@@ -72,15 +103,7 @@ class MetalQueryCallback : public b2QueryCallback
                   borderWidth:0 borderColor:white];
     sencil.position = ccp(0, 0);
     sencil.anchorPoint = ccp(0.5, 0.5);
-    CCClippingNode *clip = [CCClippingNode clippingNodeWithStencil:sencil];
-    clip.contentSize = self.contentSize;
-    clip.anchorPoint = ccp(0.5, 0.5);
-    clip.position = ccpMult(ccpFromSize(self.contentSize), 0.5);
-    [self addChild:clip];
-    sprite.anchorPoint = ccp(0.5, 0.5);
-    sprite.position = ccpMult(ccpFromSize(clip.contentSize), 0.5);
-    [clip addChild:sprite];
-     return clip;
+    return sencil;
 }
 
 - (void)conductAround
@@ -88,18 +111,5 @@ class MetalQueryCallback : public b2QueryCallback
     MetalQueryCallback callback;
     [ILQueryTool queryAround:self callback:&callback];
 }
-
-//- (void)visit
-//{
-//    glEnable(GL_SCISSOR_TEST);
-//    float width = self.contentSize.width;
-//    float height = self.contentSize.height;
-//    glScissor(self.position.x - self.anchorPoint.x * width, self.position.y - self.anchorPoint.y * height, width, height);
-//    [super visit];
-//    glDisable(GL_SCISSOR_TEST);
-//}
-
-
-
 
 @end

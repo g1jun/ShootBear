@@ -16,8 +16,10 @@ static NSString* const kElectriGunBullet = @"kElectriGunBullet";
 
 @interface ILBullet : CCNode
 
-@property (retain, nonatomic) ILBox2dEntity *entity;
+@property (assign, nonatomic) ILBox2dEntity *entity;
 
 @property (copy, nonatomic) NSString *bulletType;
+
+- (float)life;
 
 @end

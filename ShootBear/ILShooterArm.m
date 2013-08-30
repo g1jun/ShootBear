@@ -31,6 +31,7 @@
     self = [super init];
     if (self) {
         _isCannon = NO;
+         [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate:self priority:10 swallowsTouches:NO];
     }
     return self;
 }
@@ -38,7 +39,7 @@
 - (void)didLoadFromCCB
 {
    
-     [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate:self priority:0 swallowsTouches:NO];
+    
 }
 
 

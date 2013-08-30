@@ -253,7 +253,9 @@ public:
 
 - (void)setPTMRatio:(float)ptmRatio
 {
-    ptmRatio_ = ptmRatio;
+    CCNode *tempNode = [CCNode node];
+    float resolutionScale = 2 - [tempNode resolutionScale] + 1;
+    ptmRatio_ = ptmRatio * resolutionScale;
 }
 
 - (float)localPTMRatio:(NSString *)shape

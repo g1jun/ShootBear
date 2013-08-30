@@ -10,9 +10,14 @@
 #import "cocos2d.h"
 #import "ILShootBear.h"
 #import "ILBearCollisionDelegate.h"
+#import "ILLevelLayer.h"
 
-@interface ILPlayScene : CCScene <ILBearCollisionDelegate> {
-        
+@interface ILPlayScene : CCScene <ILLevelCompletedDelegate> {
+    
+    @private
+    ILLevelLayer *_currentLevel;
+    CCLayer *_levelComplete;
+    ILPlayControl *_playControl;
 }
 
 

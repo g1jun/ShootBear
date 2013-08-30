@@ -15,6 +15,7 @@
 
 - (void)dealloc
 {
+    [_arm stopAccpetTouch];
     _arm = nil;
     [super dealloc];
 }

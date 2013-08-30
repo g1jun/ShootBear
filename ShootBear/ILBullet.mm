@@ -13,9 +13,30 @@
 {
 }
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        [self scheduleOnce:@selector(destroyMe) delay:[self life]];
+    }
+    return self;
+}
+
+- (void)destroyMe
+{
+    [self removeFromParent];
+}
+
 - (void)dealloc
 {
     self.entity = nil;
+    self.bulletType = nil;
     [super dealloc];
 }
+
+- (float)life
+{
+    return 4;
+}
+
 @end

@@ -12,7 +12,7 @@
 #import "ILCollisionParameter.h"
 #import "Box2D.h"
 
-@interface ILBox2dFactory : NSObject
+@interface ILBox2dFactory : CCNode
 
 @property (assign, nonatomic, readonly) b2World *world;
 

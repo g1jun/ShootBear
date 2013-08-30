@@ -11,6 +11,12 @@
 #import "CCControlExtension.h"
 #import "ILGun.h"
 
+@protocol ILShooterFireDelegate <NSObject>
+
+- (void)fire:(NSString *)gunType;
+
+@end
+
 @interface ILShooterArm : CCNode <CCTouchOneByOneDelegate>
 {
     BOOL _isCannon;
