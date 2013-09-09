@@ -4,62 +4,10 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>bear_arm_inner.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{177,93},{69,69}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{69,69}}</string>
-                <key>sourceSize</key>
-                <string>{69,69}</string>
-            </dict>
-            <key>bear_arm_outter.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{177,164},{68,65}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{68,65}}</string>
-                <key>sourceSize</key>
-                <string>{68,65}</string>
-            </dict>
-            <key>bear_body.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,86},{106,173}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{106,173}}</string>
-                <key>sourceSize</key>
-                <string>{106,173}</string>
-            </dict>
-            <key>bear_body_elbow.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{77,194},{46,54}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{46,54}}</string>
-                <key>sourceSize</key>
-                <string>{46,54}</string>
-            </dict>
             <key>bear_eye.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{175,231},{9,9}}</string>
+                <string>{{2,494},{9,9}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -69,10 +17,62 @@
                 <key>sourceSize</key>
                 <string>{9,9}</string>
             </dict>
-            <key>bear_head.png</key>
+            <key>black_bear_arm_inner.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{178,2},{89,76}}</string>
+                <string>{{257,423},{69,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{69,69}}</string>
+                <key>sourceSize</key>
+                <string>{69,69}</string>
+            </dict>
+            <key>black_bear_arm_outter.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{390,352},{68,65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,65}}</string>
+                <key>sourceSize</key>
+                <string>{68,65}</string>
+            </dict>
+            <key>black_bear_body.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{77,352},{106,173}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{106,173}}</string>
+                <key>sourceSize</key>
+                <string>{106,173}</string>
+            </dict>
+            <key>black_bear_body_elbow.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{77,296},{46,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,54}}</string>
+                <key>sourceSize</key>
+                <string>{46,54}</string>
+            </dict>
+            <key>black_bear_head.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{307,168},{89,76}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -82,23 +82,114 @@
                 <key>sourceSize</key>
                 <string>{89,76}</string>
             </dict>
-            <key>bear_leg_inner.png</key>
+            <key>black_bear_leg_inner.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{77,242},{49,44}}</string>
+                <string>{{169,460},{49,44}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{49,44}}</string>
                 <key>sourceSize</key>
                 <string>{49,44}</string>
             </dict>
-            <key>bear_leg_outter.png</key>
+            <key>black_bear_leg_outter.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{133,194},{49,40}}</string>
+                <string>{{167,296},{49,40}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,40}}</string>
+                <key>sourceSize</key>
+                <string>{49,40}</string>
+            </dict>
+            <key>brown_bear_arm_inner.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{252,352},{69,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{69,69}}</string>
+                <key>sourceSize</key>
+                <string>{69,69}</string>
+            </dict>
+            <key>brown_bear_arm_outter.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{328,422},{68,65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,65}}</string>
+                <key>sourceSize</key>
+                <string>{68,65}</string>
+            </dict>
+            <key>brown_bear_body.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{385,177},{106,173}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{106,173}}</string>
+                <key>sourceSize</key>
+                <string>{106,173}</string>
+            </dict>
+            <key>brown_bear_body_elbow.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,240},{46,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,54}}</string>
+                <key>sourceSize</key>
+                <string>{46,54}</string>
+            </dict>
+            <key>brown_bear_head.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{307,77},{89,76}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{89,76}}</string>
+                <key>sourceSize</key>
+                <string>{89,76}</string>
+            </dict>
+            <key>brown_bear_leg_inner.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{123,460},{49,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,44}}</string>
+                <key>sourceSize</key>
+                <string>{49,44}</string>
+            </dict>
+            <key>brown_bear_leg_outter.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{125,296},{49,40}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,20 +202,20 @@
             <key>defend_net.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{82,174}}</string>
+                <string>{{80,77},{105,225}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{82,174}}</string>
+                <string>{{0,0},{105,225}}</string>
                 <key>sourceSize</key>
-                <string>{82,174}</string>
+                <string>{105,225}</string>
             </dict>
             <key>floor.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,194},{315,73}}</string>
+                <string>{{2,177},{315,73}}</string>
                 <key>offset</key>
                 <string>{-1,1}</string>
                 <key>rotated</key>
@@ -134,6 +225,110 @@
                 <key>sourceSize</key>
                 <string>{317,75}</string>
             </dict>
+            <key>platform.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{392,73}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{392,73}}</string>
+                <key>sourceSize</key>
+                <string>{394,75}</string>
+            </dict>
+            <key>yellow_bear_arm_inner.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{305,259},{69,69}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{69,69}}</string>
+                <key>sourceSize</key>
+                <string>{69,69}</string>
+            </dict>
+            <key>yellow_bear_arm_outter.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{323,352},{68,65}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{68,65}}</string>
+                <key>sourceSize</key>
+                <string>{68,65}</string>
+            </dict>
+            <key>yellow_bear_body.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{396,2},{106,173}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{106,173}}</string>
+                <key>sourceSize</key>
+                <string>{106,173}</string>
+            </dict>
+            <key>yellow_bear_body_elbow.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,184},{46,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{46,54}}</string>
+                <key>sourceSize</key>
+                <string>{46,54}</string>
+            </dict>
+            <key>yellow_bear_head.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,77},{89,76}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{89,76}}</string>
+                <key>sourceSize</key>
+                <string>{89,76}</string>
+            </dict>
+            <key>yellow_bear_leg_inner.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{77,460},{49,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,44}}</string>
+                <key>sourceSize</key>
+                <string>{49,44}</string>
+            </dict>
+            <key>yellow_bear_leg_outter.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{215,460},{49,40}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{49,40}}</string>
+                <key>sourceSize</key>
+                <string>{49,40}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -142,9 +337,9 @@
             <key>realTextureFileName</key>
             <string>bear.png</string>
             <key>size</key>
-            <string>{256,512}</string>
+            <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:290da5126d160e6eddadfb87f345c0e7$</string>
+            <string>$TexturePacker:SmartUpdate:b6a2da15c1301c62150525ae69165649$</string>
             <key>textureFileName</key>
             <string>bear.png</string>
         </dict>

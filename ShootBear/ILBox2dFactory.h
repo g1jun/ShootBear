@@ -27,6 +27,8 @@
 
 - (void)setBearCollisionDelegate:(id<ILBearCollisionDelegate>)delegate;
 
+- (void)removeAllDelegate;
+
 - (void)runTarget:(ILCollisionParameter *)param;
 
 + (ILBox2dFactory *)sharedFactory;

@@ -145,12 +145,19 @@
         [self.delegate notificationShooterFire];
         [_levelControlLayer.bulletNumberShow reduceBullet];
     }
-    if (_levelControlLayer.bulletNumberShow.bulletNumber <= 0 && !_hasRunFailedDelegate) {
-        [_levelControlLayer.shrinkPanel forbiddenAllButtons];
+    if (_levelControlLayer.bulletNumberShow.bulletNumber == 0 && !_hasRunFailedDelegate) {
+        [_levelControlLayer.shrinkPanel hideMyself];
         _passTime = 4;
+        [_levelControlLayer.bulletNumberShow reduceBullet];
+
     }
     _usedGunType = nil;
 
+}
+
+- (void)pause
+{
+    [self unscheduleUpdate];
 }
 
 

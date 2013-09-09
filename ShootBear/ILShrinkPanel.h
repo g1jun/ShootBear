@@ -30,4 +30,6 @@
 
 - (void)forbiddenAllButtons;
 
+- (void)hideMyself;
+
 @end

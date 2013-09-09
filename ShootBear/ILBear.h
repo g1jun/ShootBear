@@ -46,11 +46,16 @@
 {
     CCNode *_leftBear;
     CCNode *_rightBear;
-//    NSString *_animationRule;
     NSString *_leftTowardAnimationName;
     NSString *_rightTowardAnimationName;
+    float _previousX;
+    CCNode *_explisionNode;
 }
 
 @property (copy, nonatomic)NSString *animationRule;
+
+- (CGPoint)explisionPosition;
+
+- (void)dead;
 
 @end

@@ -21,6 +21,8 @@
     NSDictionary *dic = @{
                           kCollisionBullet :
                               [NSValue valueWithPointer:@selector(headCollision:bullet:)],
+                          kCollisionWood :
+                              [NSValue valueWithPointer:@selector(headCollision:bullet:)],
                           
                           };
     return (SEL)[dic[type] pointerValue];

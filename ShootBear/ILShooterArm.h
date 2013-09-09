@@ -27,4 +27,7 @@
 
 - (void)setAllRotation:(float)rotation;
 
+- (CGPoint)rotationCenterPosition;
+
+
 @end

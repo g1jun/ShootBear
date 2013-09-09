@@ -42,6 +42,15 @@
     
 }
 
+- (CGPoint)rotationCenterPosition
+{
+    if (_isCannon) {
+        return [self.gun.parent convertToWorldSpace:self.gun.position];
+    }
+    
+    return [self.parent convertToWorldSpace:self.position];
+}
+
 
 - (float)lineDegree
 {

@@ -24,8 +24,8 @@
 
 - (void)dealloc
 {
-    self.imageName = nil;
     [ILBox2dFactory sharedFactory].world->DestroyBody(self.b2Body);
+    self.imageName = nil;
     _b2Body = NULL;
     [super dealloc];
 }

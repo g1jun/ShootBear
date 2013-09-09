@@ -72,8 +72,17 @@
 
 - (void)hideMyself
 {
+    if (_hasHide) {
+        return;
+    }
+    if (_foldState) {
+        [self.userObject runAnimationsForSequenceNamed:@"hideScaleOnly"];
+
+    } else {
+        [self.userObject runAnimationsForSequenceNamed:@"hide"];
+    }
     _hasHide = YES;
-    [self.userObject runAnimationsForSequenceNamed:@"hide"];
+
 }
 
 - (void)foldPanel

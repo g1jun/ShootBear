@@ -38,7 +38,7 @@ enum {
 	
 	// 'layer' is an autorelease object.
 	HelloWorldLayer *layer = [HelloWorldLayer node];
-	
+	layer.contentSize;
 	// add layer as a child to scene
 	[scene addChild: layer];
 	

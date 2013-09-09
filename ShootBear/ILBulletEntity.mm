@@ -31,6 +31,7 @@
 {
     [super setB2Body:b2Body];
     super.b2Body->SetGravityScale(0);
+    super.b2Body->SetBullet(true);
 }
 
 

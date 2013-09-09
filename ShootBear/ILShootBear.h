@@ -10,7 +10,6 @@
 
 //PlayScene
 #import "ILPlayScene.h"
-#import "ILTMXLayer.h"
 
 //Box2d
 #import "ILBox2dConfig.h"

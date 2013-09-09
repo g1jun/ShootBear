@@ -9,6 +9,9 @@
 #import "ILBox2dEntity.h"
 
 @interface ILWood : ILBox2dEntity
+{
+    CCParticleSystemQuad *_particle;
+}
 
 @property(assign, nonatomic) BOOL isBurning;
 

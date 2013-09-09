@@ -8,7 +8,7 @@
 
 #import "ILBear.h"
 #import "CCBAnimationManager.h"
-
+#import "ILBox2dTools.h"
 
 @implementation ILBear
 - (void)didLoadFromCCB
@@ -16,7 +16,11 @@
     _leftBear.visible = NO;
     _rightBear.visible = NO;
     [self parseRule];
+    _previousX = self.position.x;
+    [self scheduleUpdate];
 }
+
+
 
 - (void)parseRule
 {
@@ -43,10 +47,10 @@
 {
     NSArray *rules = [state componentsSeparatedByString:@":"];
     NSArray *states = [rules[1] componentsSeparatedByString:@"."];
-    SEL selector = [[self stateSEL][states[0]] pointerValue];
+    SEL selector = (SEL)[[self stateSEL][states[0]] pointerValue];
     [self performSelector:selector];
-    SEL turnSEL = [[self turnTowardSEL][states[1]] pointerValue];
-    float delay = CCRANDOM_0_1();
+    SEL turnSEL = (SEL)[[self turnTowardSEL][states[1]] pointerValue];
+    float delay = CCRANDOM_0_1() / 2;
     [self performSelector:turnSEL withObject:nil afterDelay:delay];
 }
 
@@ -77,8 +81,31 @@
 
 - (void)turnRight
 {
+    if (_rightBear.visible) {
+        return;
+    }
+    [ILBox2dTools  changeCategoryBit:_rightBear bit:1 << 1];
+    [ILBox2dTools changeCategoryBit:_leftBear bit:1 << 15];
     _rightBear.visible = YES;
     _leftBear.visible = NO;
+    [self runAnimation];
+}
+
+- (void)dead
+{
+    [ILBox2dTools changeCategoryBit:_leftBear bit:1 << 15];
+    [ILBox2dTools changeCategoryBit:_rightBear bit:1 << 15];
+}
+
+- (void)turnLeft
+{
+    if (_leftBear.visible) {
+        return;
+    }
+    _rightBear.visible = NO;
+    _leftBear.visible = YES;
+    [ILBox2dTools changeCategoryBit:_leftBear bit:1 << 1];
+    [ILBox2dTools changeCategoryBit:_rightBear bit:1 << 15];
     [self runAnimation];
 }
 
@@ -90,15 +117,31 @@
     [leftManager runAnimationsForSequenceNamed:_rightTowardAnimationName];
 }
 
-- (void)turnLeft
+- (CGPoint)explisionPosition
 {
-    _rightBear.visible = NO;
-    _leftBear.visible = YES;
-    [self runAnimation];
+    return [self convertToWorldSpace:_explisionNode.position];
+}
+
+
+
+- (void)autoTurn
+{
+    if (self.position.x - _previousX > 0.0001) {
+        [self turnRight];
+    } else if(_previousX - self.position.x   > 0.0001) {
+        [self turnLeft];
+    }
+    _previousX = self.position.x;
+}
+
+- (void)update:(ccTime)delta
+{
+    [self autoTurn];
 }
 
 - (void)dealloc
 {
+    [self unscheduleUpdate];
     self.animationRule = nil;
     [super dealloc];
 }

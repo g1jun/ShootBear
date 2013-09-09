@@ -8,6 +8,9 @@
 
 #import "ILLevelLayer.h"
 #import "ILBox2dFactory.h"
+#import "CCBAnimationManager+RmoveDeadNode.h"
+#import "CCBAnimationManager.h"
+#import "CCBReader.h"
 
 @implementation ILLevelLayer
 
@@ -48,10 +51,19 @@
 
 - (void)removeBear:(ILBear *)bear
 {
+    [bear dead];
     [_bears removeObject:bear];
-    [bear removeFromParent];
+    CGPoint explisionPosition = [bear explisionPosition];
+    CCNode *explisionNode = [CCBReader nodeGraphFromFile:@"BearDeadParticle.ccbi"];
+    explisionNode.position = explisionPosition;
+    [self addChild:explisionNode];
+    [explisionNode.userObject setCompletedAnimationCallbackBlock:^(id sender) {
+        [explisionNode removeFromParent];
+    }];
+    [self.userObject removeDeadNode:bear];
+    [bear removeFromParentAndCleanup:YES];
     if (_bears.count == 0 && bear != nil) {
-        [self.delegate levelCompleted];
+        [(id)self.delegate performSelector:@selector(levelCompleted) withObject:nil afterDelay:1];
     }
 }
 
@@ -78,6 +90,13 @@
 - (void)notificationShooterFire
 {
     [_shooter fire];
+}
+
+- (void)onExit
+{
+    [super onExit];
+    [[ILBox2dFactory sharedFactory] removeAllDelegate];
+
 }
 
 

@@ -13,8 +13,11 @@
 
 - (void)didLoadFromCCB
 {
-    [self turnRight];
-    [self scheduleUpdate];
+//    [self turnRight];
+//    [self scheduleUpdate];
+    _leftShooter.visible = YES;
+    _rightShooter.visible = YES;
+    [self syncPosition];
 }
 
 - (void)turnRight
@@ -23,15 +26,24 @@
     _rightShooter.visible = YES;
 }
 
+- (void)syncPosition
+{
+    CGPoint leftTargetPosition = [_leftShooter.arm rotationCenterPosition];
+    CGPoint rightPosition = [_rightShooter.arm rotationCenterPosition];
+    CGPoint offset = ccpSub(leftTargetPosition, rightPosition);
+    CGPoint targetPosition = ccpAdd(offset, _rightShooter.position);
+    _rightShooter.position = targetPosition;
+}
+
 - (void)turnLeft
 {
-    if (_rightShooter.visible) {
-        CGPoint firePoint = [_rightShooter firePointGL];
-        CGPoint firePoint2 = [_leftShooter firePointGL];
-        CGPoint ret = ccpSub(firePoint, firePoint2);
-        CGPoint position = ccp(ret.x + _leftShooter.position.x, _leftShooter.position.y);
-        _leftShooter.position = position;
-    }
+//    if (_rightShooter.visible) {
+//        CGPoint firePoint = [_rightShooter firePointGL];
+//        CGPoint firePoint2 = [_leftShooter firePointGL];
+//        CGPoint ret = ccpSub(firePoint, firePoint2);
+//        CGPoint position = ccp(ret.x + _leftShooter.position.x, _leftShooter.position.y);
+//        _leftShooter.position = position;
+//    }
     _leftShooter.visible = YES;
     _rightShooter.visible = NO;
 }
@@ -63,6 +75,7 @@
     [_rightShooter replaceGunType:ccbRightFileName];
     NSString *const ccbLeftFileName = [type stringByAppendingString:@"Left.ccbi"];
     [_leftShooter replaceGunType:ccbLeftFileName];
+    [self syncPosition];
 }
 
 @end

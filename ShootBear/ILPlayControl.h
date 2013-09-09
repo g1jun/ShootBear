@@ -45,4 +45,6 @@
 @property (assign, nonatomic)BOOL forbiddenTouch;
 @property (assign, nonatomic)id<ILPlayFailedDelegate> failedDelegate;
 
+- (void)pause;
+
 @end

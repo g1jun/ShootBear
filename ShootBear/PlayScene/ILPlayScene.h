@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "ILShootBear.h"
 #import "ILBearCollisionDelegate.h"
 #import "ILLevelLayer.h"
+#import "ILBox2dFactory.h"
+#import "ILStruct.h"
+
+
 
 @interface ILPlayScene : CCScene <ILLevelCompletedDelegate, ILPlayFailedDelegate> {
     
@@ -18,7 +21,10 @@
     ILLevelLayer *_currentLevel;
     ILPlayControl *_playControl;
     NSMutableDictionary *_cacheLayers;
+    Level _currentLevelNO;
 }
+
+- (id)initWithLevel:(Level) level;
 
 
 @end

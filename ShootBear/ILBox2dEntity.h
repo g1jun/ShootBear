@@ -12,7 +12,6 @@
 
 @interface ILBox2dEntity : ILSpriteBase
 
-
 - (void)setSpeed:(b2Vec2) speed;
 
 - (void)syncAnchor;

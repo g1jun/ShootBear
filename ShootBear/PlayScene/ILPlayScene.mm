@@ -13,6 +13,7 @@
 #import "CCBAnimationManager.h"
 #import "ILShapeCache.h"
 #import "ILShooter.h"
+#import "ILMenuScene.h"
 #import "ILPlayControl.h"
 
 
@@ -27,13 +28,14 @@
 
 @implementation ILPlayScene
 
-- (id)init {
+- (id)initWithLevel:(Level)level
+{
     self = [super init];
     if(self) {
         _cacheLayers = [[NSMutableDictionary dictionary] retain];
         [self configBox2d];
         [self configSubLayers];
-        [self loadLayer:0];
+        [self loadLayer:level];
         [self loadControl];
         
     }
@@ -55,9 +57,12 @@
 - (void)configBox2d
 {
     [[ILBox2dFactory sharedFactory] prepareB2World];
+#ifdef BOX2D_DEBUG
     ILBox2dDebug *debug = [[ILBox2dDebug alloc] init];
     [self addChild:debug z:100];
     [debug release];
+#endif
+
 }
 
 - (void)configSubLayers
@@ -66,14 +71,15 @@
     [self addChild:bk z:zBK];
 }
 
-- (void)loadLayer:(int)level
+- (void)loadLayer:(Level)level
 {
+    _currentLevelNO = level;
     if (_currentLevel != nil) {
         [_currentLevel removeFromParent];
         [_currentLevel release], _currentLevel = nil;
     }
-    NSString *fileName = [NSString stringWithFormat:@"level%i.ccbi",level];
-    _currentLevel = [(ILLevelLayer *)[CCBReader nodeGraphFromFile:fileName] retain];
+    NSString *levelFileName = [NSString stringWithFormat:@"Level%i-%i", level.page, level.levelNo];
+    _currentLevel = [(ILLevelLayer *)[CCBReader nodeGraphFromFile:levelFileName] retain];
     _currentLevel.position = ccp(0, 0);
     _currentLevel.delegate = self;
     [self addChild:_currentLevel z:zLevel];
@@ -81,6 +87,7 @@
 
 - (void)dealloc
 {
+    [self removeAllChildrenWithCleanup:YES];
     [_cacheLayers release], _cacheLayers = nil;
     [_currentLevel release], _currentLevel = nil;
     [_playControl release], _playControl = nil;
@@ -90,12 +97,14 @@
 
 - (void)levelFailed
 {
+    [_playControl pause];
     [self loadLevelFinished:@"LevelFailedLayer.ccbi"];
 
 }
 
 - (void)levelCompleted
 {
+    [_playControl pause];
     [self loadLevelFinished:@"LevelCompletedLayer.ccbi"];
 }
 
@@ -120,9 +129,17 @@
     [_cacheLayers removeObjectForKey:@"levelResult"];
 }
 
+- (void)nextLevel
+{
+    _currentLevelNO.levelNo++;
+}
+
 - (void)pressedNextButton:(id)sender
 {
+    [self nextLevel];
     [self removeTempLayer];
+    [self loadLayer:_currentLevelNO];
+    [self loadControl];
 }
 
 - (void)pressedShoppingButton:(id)sender
@@ -133,14 +150,13 @@
 - (void)pressedRetryButton:(id)sender
 {
     [self removeTempLayer];
-    [self loadLayer:_currentLevel.levelNo];
+    [self loadLayer:_currentLevelNO];
     [self loadControl];
 }
 
 - (void)pressedMoreButton:(id)sender
 {
-    [self removeTempLayer];
-
+    [[CCDirector sharedDirector] replaceScene:[ILMenuScene node]];
 }
 
 

@@ -111,7 +111,12 @@
                              line.start.y / PIXELS_PER_METER),
                       b2Vec2(line.end.x / PIXELS_PER_METER,
                              line.end.y / PIXELS_PER_METER));
-        body->CreateFixture(&groundBox,0);
+        b2FixtureDef fixtureDef;
+        fixtureDef.shape = &groundBox;
+        fixtureDef.density = 0;
+        fixtureDef.filter.maskBits = 0xffff;
+        fixtureDef.filter.categoryBits = 1;
+        body->CreateFixture(&fixtureDef);
     }
     return body;
 }
@@ -142,13 +147,23 @@
 #pragma mark collision delegate
 - (void)setBearCollisionDelegate:(id<ILBearCollisionDelegate>)delegate
 {
-    self.collisionDelegates[kILBearCollisionDelegate] = delegate;
+    NSValue *value = [NSValue valueWithPointer:delegate];
+    self.collisionDelegates[kILBearCollisionDelegate] = value;
+}
+
+- (void)removeAllDelegate
+{
+    [self.collisionDelegates removeAllObjects];
 }
 
 - (void)runTarget:(ILCollisionParameter *)param
 {
+    if (param == nil) {
+        return;
+    }
     [param retain];
-    id target = self.collisionDelegates[param.delegateKey];
+    NSValue *value = self.collisionDelegates[param.delegateKey];
+    id target = (id)[value pointerValue];
     if ([target respondsToSelector:param.selector]) {
         [target performSelector:param.selector withObject:param.meReference withObject:param.anotherReference];
     }

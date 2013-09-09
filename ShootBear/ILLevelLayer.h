@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 mac. All rights reserved.
 //
 
+#import "ILStruct.h"
 #import "CCLayer.h"
 #import "ILShooter.h"
 #import "ILBear.h"
@@ -27,6 +28,6 @@
 }
 
 @property (assign, nonatomic) id<ILLevelCompletedDelegate> delegate;
-@property (assign, nonatomic) int levelNo;
+//@property (nonatomic, readwrite)Level level;
 
 @end

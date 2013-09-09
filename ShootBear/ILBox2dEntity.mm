@@ -20,6 +20,7 @@
     CGPoint position = super.position;
     super.b2Body->SetUserData(self);
     [self setPosition:position];
+    [self setRotation:super.rotation];
 }
 
 - (void)setSpeed:(b2Vec2)speed
@@ -58,23 +59,24 @@
     }
 }
 
--(float)rotation
-{
-    if (super.b2Body == NULL) {
-        return 0;
-    }
-    return (super.ignoreBodyRotation ? super.rotation :
-                   CC_RADIANS_TO_DEGREES( super.b2Body->GetAngle() ) );
-}
+//-(float)rotation
+//{
+//    if (super.b2Body == NULL) {
+//        return 0;
+//    }
+//    return (super.ignoreBodyRotation ? super.rotation :
+//                   CC_RADIANS_TO_DEGREES( super.b2Body->GetAngle() ) );
+//}
 
 -(void)setRotation:(float)rotation
 {
     [super setRotation:rotation];
     if(super.ignoreBodyRotation){
-		self.rotation = rotation;
+		return;
 	} else if(super.b2Body != NULL) {
 		b2Vec2 p = super.b2Body->GetPosition();
-		float radians = CC_DEGREES_TO_RADIANS(rotation);
+        float r = [ILTools rotationTotal:self.parent] + rotation;
+		float radians = -CC_DEGREES_TO_RADIANS(r);
 		super.b2Body->SetTransform( p, radians);
 	}
 }
@@ -92,7 +94,8 @@
         x += _anchorPointInPoints.x;
         y += _anchorPointInPoints.y;
     }
-    float radians = super.b2Body->GetAngle();
+//    float radians = super.b2Body->GetAngle();
+    float radians = CC_DEGREES_TO_RADIANS(super.rotation);
     float c = cosf(radians);
     float s = sinf(radians);
     if( ! CGPointEqualToPoint(_anchorPointInPoints, CGPointZero) ){

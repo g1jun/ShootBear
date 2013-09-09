@@ -11,6 +11,9 @@
 #import "CCBReader.h"
 #import "CCNode+CCBRelativePositioning.h"
 #import "ILQueryTool.h"
+#import "ILTools.h"
+#import "ILBox2dTools.h"
+
 class WoodQueryCallback : public b2QueryCallback
 {
     bool ReportFixture(b2Fixture* fixture) {
@@ -38,34 +41,28 @@ class WoodQueryCallback : public b2QueryCallback
     
 }
 
+
 - (void)burning
 {
     if (self.isBurning) {
         return;
     }
     self.isBurning = YES;
-    CCParticleSystemQuad *particle = (CCParticleSystemQuad *)[CCBReader nodeGraphFromFile:@"WoodParticle"];
-    particle.sourcePosition = ccpMult(ccpFromSize(self.contentSize), 0.5);
-    particle.posVar = ccpMult(ccpFromSize(self.contentSize), 0.5f);
-    particle.emissionRate *= 1 / [self resolutionScale];
-    [self addChild:particle];
+    _particle = (CCParticleSystemQuad *)[CCBReader nodeGraphFromFile:@"WoodParticle"];
+    _particle.sourcePosition = ccpMult(ccpFromSize(self.contentSize), 0.5);
+    _particle.posVar = ccpMult(ccpFromSize(self.contentSize), 0.5f);
+    _particle.emissionRate *= 1 / [self resolutionScale];
+    float total = [ILTools rotationTotal:self];
+    [_particle setAngle: total + 90];
+    [_particle setEmissionRate:10];
+    [_particle setTotalParticles:20];
+    [self addChild:_particle];
+    [ILBox2dTools changeCategoryBit:self bit:1 << 3];
     [self burnAroundWood];
 }
 
 - (void)burnAroundWood
 {
-//    b2World *world = self.b2Body->GetWorld();
-//    CGRect rect = self.boundingBox;
-//    float offset = MIN(self.contentSize.width, self.contentSize.height) * 0.1f;
-//    b2AABB querAABB;
-//    float lowerX = (rect.origin.x - offset) / PIXELS_PER_METER;
-//    float lowerY = (rect.origin.y - offset) / PIXELS_PER_METER;
-//    float upperX = (rect.origin.x + rect.size.width + offset) / PIXELS_PER_METER;
-//    float upperY = (rect.origin.y + rect.size.height + offset) / PIXELS_PER_METER;
-//    querAABB.lowerBound = b2Vec2(lowerX, lowerY);
-//    querAABB.upperBound = b2Vec2(upperX, upperY);
-//    WoodQueryCallback callback;
-//    world->QueryAABB(&callback, querAABB);
     WoodQueryCallback callback;
     [ILQueryTool queryAround:self callback:&callback];
 }

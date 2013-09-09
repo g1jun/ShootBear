@@ -45,7 +45,7 @@ typedef enum {
 //	CC_GL_SCISSOR_TEST = 1 << 0,
 //	CC_GL_STENCIL_TEST = 1 << 1,
 //	CC_GL_DEPTH_TEST = 1 << 2,
-//	CC_GL_BLEND = 1 << 3,
+	CC_GL_BLEND = 1 << 3,
 //	CC_GL_DITHER = 1 << 4,
 
 //	CC_GL_ALL = ( CC_GL_SCISSOR_TEST | CC_GL_STENCIL_TEST | CC_GL_DEPTH_TEST | CC_GL_BLEND | CC_GL_DITHER ),
