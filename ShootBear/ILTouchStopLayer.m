@@ -21,7 +21,8 @@
 
 - (BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    if (!self.visible) {
+    CGPoint touchPoint = [self convertTouchToNodeSpace:touch];
+    if (!self.visible || !CGRectContainsPoint(self.boundingBox, touchPoint)) {
         return NO;
     }
     return YES;

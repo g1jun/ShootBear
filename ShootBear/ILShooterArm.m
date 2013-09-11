@@ -10,6 +10,7 @@
 #import "CCControlExtension.h"
 #import "CCBReader.h"
 #import "CCBAnimationManager+RmoveDeadNode.h"
+#import "CCNode+CCBRelativePositioning.h"
 
 #define ANGLE_STEP 0.0001
 
@@ -38,7 +39,6 @@
 
 - (void)didLoadFromCCB
 {
-   
     
 }
 
@@ -95,10 +95,11 @@
 - (void)rotationToTouchPoint:(UITouch *)touch
 {
     CGPoint glPoint = [[CCDirector sharedDirector] convertTouchToGL:touch];
-    CGPoint centerPoint = _isCannon ? [self.gun.lineReference.parent convertToWorldSpace:self.gun.lineReference.position] : [self.parent convertToWorldSpace:self.position];
+    CGPoint centerPoint = _isCannon ? [self.gun.parent convertToWorldSpace:self.gun.position]
+     : [self.parent convertToWorldSpace:self.position];
     CGPoint targetVector = ccpSub(glPoint, centerPoint);
     float radians = ccpToAngle(targetVector);
-    float angle = -CC_RADIANS_TO_DEGREES(radians);
+    float angle = -CC_RADIANS_TO_DEGREES(radians); 
     float step = angle  - [self currentDegree];
     if (fabs(step) < ANGLE_STEP) {
         return;
@@ -137,6 +138,17 @@
 - (void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
     [self rotationToTouchPoint:touch];
+}
+
+- (BOOL)touchNOResponseArea:(UITouch *)touch
+{
+    CGPoint noResponseCenter = _isCannon ? self.gun.position : CGPointZero;
+    const float offset = 10 * [self resolutionScale];
+    CGRect area = CGRectMake(noResponseCenter.x - offset, noResponseCenter.y - offset, 2 * offset, 2 * offset);
+    if (CGRectContainsPoint(area, [self convertTouchToNodeSpace:touch])) {
+        return YES;
+    }
+    return NO;
 }
 
 

@@ -13,10 +13,8 @@
 
 - (void)didLoadFromCCB
 {
-//    [self turnRight];
-//    [self scheduleUpdate];
-    _leftShooter.visible = YES;
-    _rightShooter.visible = YES;
+    [self turnRight];
+    [self scheduleUpdate];
     [self syncPosition];
 }
 
@@ -52,7 +50,14 @@
 - (void)update:(ccTime)delta
 {
     float leftDegree = [_leftShooter totalRotation];
-    if (180 >fabs(leftDegree) && fabs(leftDegree) > 90) {
+//    NSLog(@"left-->%f", leftDegree);
+//    NSLog(@"right-->%f", [_rightShooter totalRotation]);
+//    CGPoint leftTargetPosition = [_leftShooter.arm rotationCenterPosition];
+//    CGPoint rightPosition = [_rightShooter.arm rotationCenterPosition];
+//    NSLog(@"leftPos-->%@", NSStringFromCGPoint(leftTargetPosition));
+//    NSLog(@"rightPos-->%@", NSStringFromCGPoint(rightPosition));
+
+    if (270 >fabs(leftDegree) && fabs(leftDegree) > 90) {
         [self turnLeft];
     } else {
         [self turnRight];

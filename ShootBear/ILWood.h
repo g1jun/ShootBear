@@ -15,6 +15,8 @@
 
 @property(assign, nonatomic) BOOL isBurning;
 
+@property (assign, nonatomic)BOOL isStatic;
+
 - (void)burning;
 
 @end

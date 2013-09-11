@@ -28,14 +28,39 @@ class WoodQueryCallback : public b2QueryCallback
 
 @implementation ILWood
 
+- (void)didLoadFromCCB
+{
+    [super didLoadFromCCB];
+    if (_isBurning) {
+        [self burnWood];
+    }
+}
+
+
 - (NSString *)collisionType
 {
     return kCollisionWood;
 }
 
+- (BOOL) isFireBullet:(id)another
+{
+    return [[another collisionType] isEqualToString:kCollisionBullet] && [[[another collisionCCNode] bulletType] isEqualToString:kFireGunBullet];
+}
+
+- (BOOL)isBurningWood:(id)another
+{
+    if ([[another collisionType] isEqualToString:kCollisionWood]) {
+        ILWood *wood = [another collisionCCNode];
+        if (wood.isBurning) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 - (void)collisionDealWith:(id<ILCollisionDelegate>)another
 {
-    if ([[another collisionType] isEqualToString:kCollisionBullet] && [[[another collisionCCNode] bulletType] isEqualToString:kFireGunBullet]) {
+    if ([self isFireBullet:another] || [self isBurningWood:another]) {
         [self burning];
     }
     
@@ -47,15 +72,27 @@ class WoodQueryCallback : public b2QueryCallback
     if (self.isBurning) {
         return;
     }
+    [self burnWood];
+}
+
+- (void)burnWood
+{
     self.isBurning = YES;
     _particle = (CCParticleSystemQuad *)[CCBReader nodeGraphFromFile:@"WoodParticle"];
-    _particle.sourcePosition = ccpMult(ccpFromSize(self.contentSize), 0.5);
-    _particle.posVar = ccpMult(ccpFromSize(self.contentSize), 0.5f);
-    _particle.emissionRate *= 1 / [self resolutionScale];
-    float total = [ILTools rotationTotal:self];
-    [_particle setAngle: total + 90];
-    [_particle setEmissionRate:10];
-    [_particle setTotalParticles:20];
+    _particle.positionType = kCCPositionTypeRelative; 
+    if (self.b2Body->GetType() == b2_staticBody) {
+        _particle.sourcePosition = ccpMult(ccpFromSize(self.contentSize), 0.5);
+        _particle.posVar = ccpMult(ccpFromSize(self.contentSize), 0.5f);
+        _particle.emissionRate *= 1 / [self resolutionScale];
+        float total = [ILTools rotationTotal:self];
+        [_particle setAngle: total + 90];
+        [_particle setEmissionRate:10];
+        [_particle setTotalParticles:20];
+    } else {
+        [_particle setAngleVar:360];
+        _particle.position = ccp(self.contentSize.width * self.anchorPoint.x, self.contentSize.height * self.anchorPoint.y);
+    }
+    
     [self addChild:_particle];
     [ILBox2dTools changeCategoryBit:self bit:1 << 3];
     [self burnAroundWood];

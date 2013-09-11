@@ -30,6 +30,14 @@ class MetalQueryCallback : public b2QueryCallback
     return kCollisionMetal;
 }
 
+- (void)didLoadFromCCB
+{
+    [super didLoadFromCCB];
+    if (_hasElctric) {
+        [self electricity];
+    }
+}
+
 - (void)collisionDealWith:(id<ILCollisionDelegate>)another
 {
     if ([[another collisionType]isEqualToString:kCollisionBullet] &&
@@ -43,6 +51,11 @@ class MetalQueryCallback : public b2QueryCallback
     if (self.hasElctric) {
         return;
     }
+    [self electricity];
+}
+
+- (void)electricity
+{
     self.hasElctric = YES;
     [self showWithClippingNode];
     [self conductAround];
