@@ -8,8 +8,8 @@
 
 #import "CCNode.h"
 #import "ILShooterArm.h"
-
-@interface ILShooterHalf : CCNode
+//ccnode
+@interface ILShooterHalf : ILSprite
 
 - (float)totalRotation;
 

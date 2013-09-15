@@ -11,8 +11,8 @@
 #import "CCControlExtension.h"
 #import "ILGun.h"
 
-
-@interface ILShooterArm : CCNode <CCTouchOneByOneDelegate>
+//ccnode
+@interface ILShooterArm : ILSprite <CCTouchOneByOneDelegate>
 {
     BOOL _isCannon;
 }

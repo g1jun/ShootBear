@@ -109,7 +109,7 @@ public:
 -(void) addFixturesToBody:(b2Body*)body forPhysicsSprite:(ILSpriteBase *)sprite
 {
     CGPoint moveVector = [self moveVector:sprite];
-    NSDictionary *dic = [[self applayVector:moveVector forShape:sprite.imageName] retain];
+    NSDictionary *dic = [[self applayVector:moveVector forShape:sprite.imageName sprite:sprite] retain];
     BodyDef *so = [self createBodyDefWithName:dic];
     [dic release];
     [self configFixture:body bodyDef:so];
@@ -118,9 +118,7 @@ public:
 
 - (CGPoint)moveVector:(ILSpriteBase *)sprite
 {
-    float scale = [self spriteScale:sprite];
-    CGPoint size = ccpFromSize(sprite.contentSize);
-    CGPoint imageSize = ccpMult(size, scale);
+    CGPoint imageSize = [self imageSize:sprite];
     CGPoint imageAnchor = [self anchorPointForShape:sprite.imageName];
     CGPoint spriteAnchor = sprite.anchorPoint;
     CGPoint vector = ccpSub(imageAnchor, spriteAnchor);
@@ -128,7 +126,16 @@ public:
     return moveVector;
 }
 
-- (NSMutableDictionary *)applayVector:(CGPoint)moveVector forShape:(NSString *)shapeName;
+- (CGPoint)imageSize:(ILSpriteBase *)sprite
+{
+    float scale = [self spriteScale:sprite];
+    CGPoint size = ccpFromSize(sprite.contentSize);
+    CGPoint imageSize = ccpMult(size, scale);
+    return imageSize;
+}
+
+- (NSMutableDictionary *)applayVector:(CGPoint)moveVector forShape:(NSString *)shapeName
+                               sprite:(ILSpriteBase *)sprite
 {
     NSMutableDictionary *dic = [shapeDic_[shapeName] deepMutableCopy];
     NSMutableArray *fixtures = dic[@"fixtures"];
@@ -139,8 +146,24 @@ public:
                 for (int i = 0; i < item.count; i++) {
                     NSString *pString = item[i];
                     CGPoint p = CGPointFromString_(pString);
-                    item[i] = NSStringFromCGPoint(ccpAdd(p, moveVector));
+                    CGPoint result = ccpAdd(p, moveVector);
+                    if (sprite.flipX) {
+                        float sub = (0.5 - sprite.anchorPoint.x) * 2;
+                        CGPoint size = [self imageSize:sprite];
+                        result.x = -result.x + size.x * sub;
+                        
+                    }
+                    item[i] = NSStringFromCGPoint(result);
                     
+                }
+                if (sprite.flipX) {
+                    NSMutableArray *array = [NSMutableArray array];
+                    NSEnumerator *enumer = [item reverseObjectEnumerator];
+                    for (NSString *key in enumer) {
+                        [array addObject:key];
+                    }
+                    [item removeAllObjects];
+                    [item addObjectsFromArray:array];
                 }
             }
             

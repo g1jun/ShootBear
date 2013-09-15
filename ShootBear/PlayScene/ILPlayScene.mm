@@ -78,7 +78,7 @@
         [_currentLevel removeFromParent];
         [_currentLevel release], _currentLevel = nil;
     }
-    NSString *levelFileName = [NSString stringWithFormat:@"Level%i-%i", level.page, level.levelNo];
+    NSString *levelFileName = [NSString stringWithFormat:@"Level%i-%i.ccbi", level.page, level.levelNo];
     _currentLevel = [(ILLevelLayer *)[CCBReader nodeGraphFromFile:levelFileName] retain];
     _currentLevel.position = ccp(0, 0);
     _currentLevel.delegate = self;
@@ -157,6 +157,32 @@
 - (void)pressedMoreButton:(id)sender
 {
     [[CCDirector sharedDirector] replaceScene:[ILMenuScene node]];
+}
+
+- (void)pause
+{
+    [self pause:_currentLevel];
+}
+
+- (void)pause:(CCNode *)node
+{
+    [[CCDirector sharedDirector].actionManager pauseTarget:node];
+    for (id ch in node.children) {
+        [self pause:ch];
+    }
+}
+
+- (void)resume
+{
+    [self resume:_currentLevel];
+}
+
+- (void)resume:(CCNode *)node
+{
+    [[CCDirector sharedDirector].actionManager resumeTarget:node];
+    for (id ch in node.children) {
+        [self resume:ch];
+    }
 }
 
 

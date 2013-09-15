@@ -9,18 +9,19 @@
 #import "CCSprite.h"
 #import "Box2D.h"
 #import "ILCollisionDelegate.h"
+#import "ILSprite.h"
 
 enum PhysicsMode {
     Box2dMode,
     AnimationMode,
 };
 
-@interface ILSpriteBase : CCSprite <ILCollisionDelegate>
+@interface ILSpriteBase : ILSprite <ILCollisionDelegate>
 {
     b2Body *_b2Body;
 }
 
-@property (copy, nonatomic) NSString *imageName;
+
 
 @property(nonatomic, assign) b2Body *b2Body;
 
@@ -37,5 +38,7 @@ enum PhysicsMode {
 - (void)box2dMode;
 
 - (void)animationMode;
+
+- (void)configBody;
 
 @end

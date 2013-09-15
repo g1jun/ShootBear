@@ -160,6 +160,7 @@
     newGun.position = self.gun.position;
     [self removeChild:self.gun];
     self.gun = newGun;
+    [self.gun setTexture:self.textureAtlas.texture];
     [self addChild:self.gun z:-1];
 }
 

@@ -63,6 +63,7 @@
     [self removeChild:self.arm cleanup:YES];
     [self.arm stopAccpetTouch];
     self.arm = cannonArm;
+    [self.arm setTexture:self.textureAtlas.texture];
     [self addChild:self.arm];
 }
 

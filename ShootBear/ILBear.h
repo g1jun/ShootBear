@@ -41,15 +41,20 @@
  */
 
 #import "CCNode.h"
+#import "ILBearHalf.h"
+#import "ILDefendNet.h"
 
 @interface ILBear : CCNode
 {
-    CCNode *_leftBear;
-    CCNode *_rightBear;
+    ILBearHalf *_leftBear;
+    ILBearHalf *_rightBear;
     NSString *_leftTowardAnimationName;
     NSString *_rightTowardAnimationName;
     float _previousX;
     CCNode *_explisionNode;
+    CCSpriteBatchNode *_batchNode;
+    ILDefendNet *_thing;
+    BOOL _thingUpdate;
 }
 
 @property (copy, nonatomic)NSString *animationRule;
@@ -57,5 +62,7 @@
 - (CGPoint)explisionPosition;
 
 - (void)dead;
+
+- (CCNode *)pickUp:(CCNode *)node;
 
 @end

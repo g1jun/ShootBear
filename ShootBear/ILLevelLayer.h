@@ -12,6 +12,7 @@
 #import "ILBear.h"
 #import "ILBearCollisionDelegate.h"
 #import "ILPlayControl.h"
+#import "ILClippingNode.h"
 
 @protocol ILLevelCompletedDelegate <NSObject>
 
@@ -25,9 +26,17 @@
 {
     ILShooter *_shooter;
     NSMutableArray *_bears;
+    CCParticleBatchNode *_particleBatchNode;
+    CCSpriteBatchNode *_electricBatchNode;
+    ILClippingNode *_clippingNode;
 }
 
 @property (assign, nonatomic) id<ILLevelCompletedDelegate> delegate;
+
+- (void)addToFireParticleBatchNode:(CCParticleSystem *)particle;
+
+- (void)addToElectricBatchNode:(CCSprite *)sprite clipSprite:(CCSprite *)clipSrptie;
+
 //@property (nonatomic, readwrite)Level level;
 
 @end

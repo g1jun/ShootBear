@@ -12,10 +12,10 @@
 
 @implementation ILLinePoint
 
+
 - (id)initWithAcc:(float) acc age:(float)time;
 {
-    CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:@"ccbParticleDot.png"];
-    self = [super initWithTexture:texture];
+    self = [super initWithSpriteFrameName:@"line_dot.png"];
     if (self) {
         self.speed = BEGIN_SPEED;
         self.acceleration = acc;
@@ -25,6 +25,8 @@
     }
     return self;
 }
+
+
 
 - (void)reset
 {

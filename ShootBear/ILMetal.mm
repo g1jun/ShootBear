@@ -11,6 +11,7 @@
 #import "ILQueryTool.h"
 #import "CCBAnimationManager.h"
 #import "ILBullet.h"
+#import "ILLevelLayer.h"
 
 class MetalQueryCallback : public b2QueryCallback
 {
@@ -30,10 +31,10 @@ class MetalQueryCallback : public b2QueryCallback
     return kCollisionMetal;
 }
 
-- (void)didLoadFromCCB
+- (void)onEnter
 {
-    [super didLoadFromCCB];
-    if (_hasElctric) {
+    [super onEnter];
+    if (_hasElctric && _animationSprite == nil) {
         [self electricity];
     }
 }
@@ -61,40 +62,61 @@ class MetalQueryCallback : public b2QueryCallback
     [self conductAround];
 }
 
-- (void)addCCBSprite
-{
-    
-    
-    
-}
 - (void)runCCBAnimation:(CCBAnimationManager *)manager
 {
     [manager runAnimationsForSequenceNamed:@"lightning"];
 }
 
-- (CCNode *)showWithClippingNode
+- (CCAnimation *)animation
 {
-    
-    CCClippingNode *clip = [CCClippingNode clippingNodeWithStencil:[self sencilNode]];
-    clip.contentSize = self.contentSize;
-    clip.anchorPoint = ccp(0.5, 0.5);
-    clip.position = ccpMult(ccpFromSize(self.contentSize), 0.5);
-    [self addChild:clip];
-    CCSprite *tempSprite = [self CCBMetalLightningSprite];
+    CCAnimation *animation = [[CCAnimationCache sharedAnimationCache] animationByName:@"lightning"];
+    if (animation == nil) {
+        NSMutableArray *frames = [NSMutableArray array];
+        for (int i = 1; i < 7; i ++) {
+            NSString *frameNmae = [NSString stringWithFormat:@"lightning%i.png", i];
+//            CCSpriteFrame *frame = [CCSpriteFrame frameWithTextureFilename:@"people.png" rect:CGRectMake(0, 0, 256, 256)];
+            CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:frameNmae];
+            [frames addObject:frame];
+        }
+        animation = [CCAnimation animationWithSpriteFrames:frames delay:0.1];
+        [[CCAnimationCache sharedAnimationCache] addAnimation:animation name:@"lightning"];
+    }
+    return animation;
+}
+
+- (CCSprite *)lightningSprite
+{
+    CCSprite *ret = [CCSprite spriteWithSpriteFrameName:@"lightning1.png"];
+    [ret runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:[self animation]]]];
+    return ret;
+}
+
+- (ILLevelLayer *)layer
+{
+    CCNode *temp = self;
+    while (temp.parent) {
+        temp = temp.parent;
+        if ([temp isKindOfClass:[ILLevelLayer class]]) {
+            return (ILLevelLayer *)temp;
+        }
+    }
+    return nil;
+}
+
+- (void)showWithClippingNode
+{
+
+    CCSprite *tempSprite = [self lightningSprite];
     int widthReapt = self.contentSize.width / tempSprite.contentSize.width + 1;
     for (int i = 0; i < widthReapt; i++) {
         tempSprite.position = ccpMult(ccpFromSize(self.contentSize), 0.5f);
-        float randomTime = CCRANDOM_0_1() * 0.2;
-        CCBAnimationManager *manager = tempSprite.userObject;
-        [self performSelector:@selector(runCCBAnimation:) withObject:manager afterDelay:randomTime];
-        tempSprite.anchorPoint = ccp(0.5, 0.5);
-        tempSprite.position = ccp(tempSprite.contentSize.width * (i + 0.5), clip.contentSize.height / 2);
-        [clip addChild:tempSprite];
+        tempSprite.anchorPoint = self.anchorPoint;
+        tempSprite.position = [self.parent convertToWorldSpace:self.position];
+        [[self layer] addToElectricBatchNode:tempSprite clipSprite:self];
         if (i < widthReapt - 1) {
-            tempSprite = [self CCBMetalLightningSprite];
+            tempSprite = [self lightningSprite];
         }
     }
-     return clip;
 }
 
 - (CCSprite *)CCBMetalLightningSprite
@@ -103,21 +125,6 @@ class MetalQueryCallback : public b2QueryCallback
 }
 
 
-- (CCNode *)sencilNode
-{
-    CCDrawNode *sencil = [CCDrawNode node];
-    CGPoint rectangle[4];
-    rectangle[0] = ccp(0, 0);
-    rectangle[1] = ccp(self.contentSize.width, 0);
-    rectangle[2] = ccpFromSize(self.contentSize);
-    rectangle[3] = ccp(0, self.contentSize.height);
-    ccColor4F white = {1, 1, 1, 1};
-    [sencil drawPolyWithVerts:rectangle count:4 fillColor:white
-                  borderWidth:0 borderColor:white];
-    sencil.position = ccp(0, 0);
-    sencil.anchorPoint = ccp(0.5, 0.5);
-    return sencil;
-}
 
 - (void)conductAround
 {

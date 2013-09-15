@@ -39,12 +39,16 @@
 - (void)dealloc
 {
     [ILBox2dFactory sharedFactory].world->DestroyBody(self.b2Body);
-    self.imageName = nil;
     _b2Body = NULL;
     [super dealloc];
 }
 
 - (void)didLoadFromCCB
+{
+    [self configBody];
+}
+
+- (void)configBody
 {
     b2BodyDef bodyDef;
     bodyDef.type = _isStatic ? b2_staticBody : b2_dynamicBody;
@@ -64,12 +68,7 @@
     return self;
 }
 
-- (void)setDisplayFrame:(CCSpriteFrame *)newFrame
-{
-    [super setDisplayFrame:newFrame];
-    NSString *name = [[CCSpriteFrameCache sharedSpriteFrameCache] nameBySpriteFrame:newFrame];
-    self.imageName = [name stringByDeletingPathExtension];
-}
+
 
 #pragma - mark mode
 
@@ -234,6 +233,11 @@
 - (float)getTotalRotation
 {
     return [ILTools rotationTotal:self];
+}
+
+- (BOOL)dirty
+{
+    return YES;
 }
 
 

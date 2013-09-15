@@ -8,8 +8,8 @@
 
 #import "CCNode.h"
 #import "ILLineReference.h"
-
-@interface ILGun : CCNode
+//ccnode
+@interface ILGun : ILSprite
 {
     NSString *_bulletCCBName;
 }

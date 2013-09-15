@@ -9,6 +9,8 @@
 #import "ILPhysicsBearBase.h"
 #import "ILBear.h"
 #import "ILBearCollisionDelegate.h"
+#import "ILBox2dTools.h"
+#import "ILDefendNet.h"
 
 @implementation ILPhysicsBearBase
 
@@ -25,6 +27,15 @@
 
 - (ILCollisionParameter *)collisionResponse:(id<ILCollisionDelegate>)another
 {
+    if ([[another collisionType] isEqualToString:kCollisionDefendNet]) {
+        ILDefendNet *net = [another collisionCCNode];
+        if (!net.hasElctric) {
+            ILBear *bear = [self collisionCCNode];
+            [bear pickUp:net];
+            [ILBox2dTools changeCategoryBit:net bit:1 << 2];
+            return nil;
+        }
+    }
     ILCollisionParameter *param = [ILCollisionParameter new];
     param.delegateKey = kILBearCollisionDelegate;
     param.selector = [self selectorWithType:[another collisionType]];

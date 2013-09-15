@@ -407,6 +407,19 @@
                 <key>sourceSize</key>
                 <string>{4,4}</string>
             </dict>
+            <key>line_dot.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{95,72},{13,13}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{13,13}}</string>
+                <key>sourceSize</key>
+                <string>{13,13}</string>
+            </dict>
             <key>people_arm.png</key>
             <dict>
                 <key>frame</key>
@@ -521,7 +534,7 @@
             <key>size</key>
             <string>{128,128}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:207ab09fb11209bfff985fbe1ab72dd5$</string>
+            <string>$TexturePacker:SmartUpdate:726bd4493c06e8ba8460afd20a4c077f$</string>
             <key>textureFileName</key>
             <string>people.png</string>
         </dict>

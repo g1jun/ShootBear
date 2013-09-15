@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04001B6817BCCDDF00E1332A /* ILCollisionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04001B6717BCCDDF00E1332A /* ILCollisionParameter.m */; };
+		0401611017E4B36100A7FB67 /* ILClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401610F17E4B36100A7FB67 /* ILClippingNode.m */; };
+		0401611117E4B36100A7FB67 /* ILClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401610F17E4B36100A7FB67 /* ILClippingNode.m */; };
 		0403DF3E17C74C950044DFCF /* BulletTrack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0403DF2117C74C950044DFCF /* BulletTrack.ccbi */; };
 		0403DF3F17C74C950044DFCF /* CannonBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0403DF2217C74C950044DFCF /* CannonBodyLeft.ccbi */; };
 		0403DF4017C74C950044DFCF /* CannonBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0403DF2317C74C950044DFCF /* CannonBodyRight.ccbi */; };
@@ -47,6 +49,26 @@
 		0411DAC917AE76800023BD39 /* ILBox2dFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAC817AE76800023BD39 /* ILBox2dFactory.mm */; };
 		0411DACC17AE76B70023BD39 /* ILTMXToBox2d.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACB17AE76B70023BD39 /* ILTMXToBox2d.mm */; };
 		0411DAD017AE82AC0023BD39 /* ILBox2dConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */; };
+		0411F0BD17E2C3E10083E639 /* ILOptimalPerformance.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411F0BC17E2C3E10083E639 /* ILOptimalPerformance.mm */; };
+		0411F0BE17E2C3E10083E639 /* ILOptimalPerformance.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411F0BC17E2C3E10083E639 /* ILOptimalPerformance.mm */; };
+		0411F0C117E2CED00083E639 /* ILSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411F0C017E2CED00083E639 /* ILSprite.m */; };
+		0411F0C217E2CED00083E639 /* ILSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411F0C017E2CED00083E639 /* ILSprite.m */; };
+		0412D5ED17E540CE00EDFEE0 /* lightning1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E617E540CE00EDFEE0 /* lightning1.png */; };
+		0412D5EE17E540CE00EDFEE0 /* lightning1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E617E540CE00EDFEE0 /* lightning1.png */; };
+		0412D5EF17E540CE00EDFEE0 /* lightning2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E717E540CE00EDFEE0 /* lightning2.png */; };
+		0412D5F017E540CE00EDFEE0 /* lightning2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E717E540CE00EDFEE0 /* lightning2.png */; };
+		0412D5F117E540CE00EDFEE0 /* lightning3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E817E540CE00EDFEE0 /* lightning3.png */; };
+		0412D5F217E540CE00EDFEE0 /* lightning3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E817E540CE00EDFEE0 /* lightning3.png */; };
+		0412D5F317E540CE00EDFEE0 /* lightning4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E917E540CE00EDFEE0 /* lightning4.png */; };
+		0412D5F417E540CE00EDFEE0 /* lightning4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5E917E540CE00EDFEE0 /* lightning4.png */; };
+		0412D5F517E540CE00EDFEE0 /* lightning5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5EA17E540CE00EDFEE0 /* lightning5.png */; };
+		0412D5F617E540CE00EDFEE0 /* lightning5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5EA17E540CE00EDFEE0 /* lightning5.png */; };
+		0412D5F717E540CE00EDFEE0 /* lightning6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5EB17E540CE00EDFEE0 /* lightning6.png */; };
+		0412D5F817E540CE00EDFEE0 /* lightning6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5EB17E540CE00EDFEE0 /* lightning6.png */; };
+		0412D5F917E540CE00EDFEE0 /* lightning7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5EC17E540CE00EDFEE0 /* lightning7.png */; };
+		0412D5FA17E540CE00EDFEE0 /* lightning7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0412D5EC17E540CE00EDFEE0 /* lightning7.png */; };
+		0412D5FD17E5435600EDFEE0 /* ILLightning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412D5FC17E5435600EDFEE0 /* ILLightning.m */; };
+		0412D5FE17E5435600EDFEE0 /* ILLightning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412D5FC17E5435600EDFEE0 /* ILLightning.m */; };
 		0413619017AF1BFF0097E87F /* ILLineSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0413618F17AF1BFF0097E87F /* ILLineSegment.mm */; };
 		0422A78C17BF5A0000AD03D2 /* ILSpriteBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0422A78B17BF5A0000AD03D2 /* ILSpriteBase.mm */; };
 		0422A79417BF631600AD03D2 /* CCSpriteFrameCache+ILSpriteNameSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422A79317BF631600AD03D2 /* CCSpriteFrameCache+ILSpriteNameSearch.m */; };
@@ -328,7 +350,7 @@
 		0453ECBE17DD814500B72CB7 /* ILBearHead.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828A717BD066B00CF0006 /* ILBearHead.mm */; };
 		0453ECBF17DD814500B72CB7 /* ILBearLeg.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828AA17BD068800CF0006 /* ILBearLeg.mm */; };
 		0453ECC017DD814500B72CB7 /* ILBearBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828AD17BD069700CF0006 /* ILBearBody.mm */; };
-		0453ECC117DD814500B72CB7 /* ILBear.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E828B717BD07A000CF0006 /* ILBear.m */; };
+		0453ECC117DD814500B72CB7 /* ILBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828B717BD07A000CF0006 /* ILBear.mm */; };
 		0453ECC217DD814500B72CB7 /* ILPhysicsBearBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */; };
 		0453ECC317DD814500B72CB7 /* ILBulletEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BD17BD194100CF0006 /* ILBulletEntity.mm */; };
 		0453ECC417DD814500B72CB7 /* ILSpriteBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0422A78B17BF5A0000AD03D2 /* ILSpriteBase.mm */; };
@@ -451,7 +473,6 @@
 		0453ED5617DD814500B72CB7 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0017DB12CB003E1C20 /* bear.plist */; };
 		0453ED5717DD814500B72CB7 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0117DB12CB003E1C20 /* bear.png */; };
 		0453ED5817DD814500B72CB7 /* ccbParticleBone.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0217DB12CB003E1C20 /* ccbParticleBone.png */; };
-		0453ED5917DD814500B72CB7 /* ccbParticleDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0317DB12CB003E1C20 /* ccbParticleDot.png */; };
 		0453ED5A17DD814500B72CB7 /* ccbParticleFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0417DB12CB003E1C20 /* ccbParticleFire.png */; };
 		0453ED5B17DD814500B72CB7 /* ccbParticleSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0517DB12CB003E1C20 /* ccbParticleSmoke.png */; };
 		0453ED5C17DD814500B72CB7 /* ccbParticleSnow.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0617DB12CB003E1C20 /* ccbParticleSnow.png */; };
@@ -527,7 +548,6 @@
 		04797C1517DB12CB003E1C20 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0017DB12CB003E1C20 /* bear.plist */; };
 		04797C1617DB12CB003E1C20 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0117DB12CB003E1C20 /* bear.png */; };
 		04797C1717DB12CB003E1C20 /* ccbParticleBone.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0217DB12CB003E1C20 /* ccbParticleBone.png */; };
-		04797C1817DB12CB003E1C20 /* ccbParticleDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0317DB12CB003E1C20 /* ccbParticleDot.png */; };
 		04797C1917DB12CB003E1C20 /* ccbParticleFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0417DB12CB003E1C20 /* ccbParticleFire.png */; };
 		04797C1A17DB12CB003E1C20 /* ccbParticleSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0517DB12CB003E1C20 /* ccbParticleSmoke.png */; };
 		04797C1B17DB12CB003E1C20 /* ccbParticleSnow.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0617DB12CB003E1C20 /* ccbParticleSnow.png */; };
@@ -729,6 +749,12 @@
 		049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */; };
 		049EF6FF17B8ABBB00A9D1B7 /* ILTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EF6FE17B8ABBB00A9D1B7 /* ILTools.m */; };
 		049EF70517B8D74900A9D1B7 /* ILShapeCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049EF70417B8D74800A9D1B7 /* ILShapeCache.mm */; };
+		04A1BA3017E0613B0003777E /* ILDefendNet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BA2F17E0613B0003777E /* ILDefendNet.mm */; };
+		04A1BA3117E0613B0003777E /* ILDefendNet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BA2F17E0613B0003777E /* ILDefendNet.mm */; };
+		04A1BA3417E069090003777E /* ILBearArmOutter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BA3317E069090003777E /* ILBearArmOutter.mm */; };
+		04A1BA3517E069090003777E /* ILBearArmOutter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BA3317E069090003777E /* ILBearArmOutter.mm */; };
+		04A1BA3817E06B6C0003777E /* ILBearHalf.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BA3717E06B6C0003777E /* ILBearHalf.mm */; };
+		04A1BA3917E06B6C0003777E /* ILBearHalf.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04A1BA3717E06B6C0003777E /* ILBearHalf.mm */; };
 		04AEBB0917CDBDAD00BD9D65 /* SceneBackground1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04AEBB0817CDBDAD00BD9D65 /* SceneBackground1.ccbi */; };
 		04AEBB0C17CDBDEC00BD9D65 /* SceneBackground1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04AEBB0B17CDBDEC00BD9D65 /* SceneBackground1.ccbi */; };
 		04B1091017B37F4000778F8E /* CCBAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B108D417B37F4000778F8E /* CCBAnimationManager.m */; };
@@ -791,7 +817,7 @@
 		04E828A817BD066B00CF0006 /* ILBearHead.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828A717BD066B00CF0006 /* ILBearHead.mm */; };
 		04E828AB17BD068800CF0006 /* ILBearLeg.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828AA17BD068800CF0006 /* ILBearLeg.mm */; };
 		04E828AE17BD069700CF0006 /* ILBearBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828AD17BD069700CF0006 /* ILBearBody.mm */; };
-		04E828B817BD07A000CF0006 /* ILBear.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E828B717BD07A000CF0006 /* ILBear.m */; };
+		04E828B817BD07A000CF0006 /* ILBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828B717BD07A000CF0006 /* ILBear.mm */; };
 		04E828BB17BD0E4000CF0006 /* ILPhysicsBearBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */; };
 		04E828BE17BD194100CF0006 /* ILBulletEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BD17BD194100CF0006 /* ILBulletEntity.mm */; };
 		04EE6F9917DD539100C185B8 /* Level0-0.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EE6F8A17DD539100C185B8 /* Level0-0.ccbi */; };
@@ -882,6 +908,8 @@
 		04001B6617BCCDDF00E1332A /* ILCollisionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILCollisionParameter.h; sourceTree = "<group>"; };
 		04001B6717BCCDDF00E1332A /* ILCollisionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILCollisionParameter.m; sourceTree = "<group>"; };
 		04001B6917BCDAB700E1332A /* ILBearCollisionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILBearCollisionDelegate.h; sourceTree = "<group>"; };
+		0401610E17E4B36100A7FB67 /* ILClippingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILClippingNode.h; sourceTree = "<group>"; };
+		0401610F17E4B36100A7FB67 /* ILClippingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILClippingNode.m; sourceTree = "<group>"; };
 		0403DF2117C74C950044DFCF /* BulletTrack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletTrack.ccbi; sourceTree = "<group>"; };
 		0403DF2217C74C950044DFCF /* CannonBodyLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBodyLeft.ccbi; sourceTree = "<group>"; };
 		0403DF2317C74C950044DFCF /* CannonBodyRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBodyRight.ccbi; sourceTree = "<group>"; };
@@ -930,6 +958,19 @@
 		0411DACB17AE76B70023BD39 /* ILTMXToBox2d.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILTMXToBox2d.mm; sourceTree = "<group>"; };
 		0411DACE17AE82AC0023BD39 /* ILBox2dConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBox2dConfig.h; sourceTree = "<group>"; };
 		0411DACF17AE82AC0023BD39 /* ILBox2dConfig.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBox2dConfig.mm; sourceTree = "<group>"; };
+		0411F0BB17E2C3E10083E639 /* ILOptimalPerformance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILOptimalPerformance.h; sourceTree = "<group>"; };
+		0411F0BC17E2C3E10083E639 /* ILOptimalPerformance.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILOptimalPerformance.mm; sourceTree = "<group>"; };
+		0411F0BF17E2CED00083E639 /* ILSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSprite.h; sourceTree = "<group>"; };
+		0411F0C017E2CED00083E639 /* ILSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSprite.m; sourceTree = "<group>"; };
+		0412D5E617E540CE00EDFEE0 /* lightning1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning1.png; sourceTree = "<group>"; };
+		0412D5E717E540CE00EDFEE0 /* lightning2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning2.png; sourceTree = "<group>"; };
+		0412D5E817E540CE00EDFEE0 /* lightning3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning3.png; sourceTree = "<group>"; };
+		0412D5E917E540CE00EDFEE0 /* lightning4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning4.png; sourceTree = "<group>"; };
+		0412D5EA17E540CE00EDFEE0 /* lightning5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning5.png; sourceTree = "<group>"; };
+		0412D5EB17E540CE00EDFEE0 /* lightning6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning6.png; sourceTree = "<group>"; };
+		0412D5EC17E540CE00EDFEE0 /* lightning7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning7.png; sourceTree = "<group>"; };
+		0412D5FB17E5435600EDFEE0 /* ILLightning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLightning.h; sourceTree = "<group>"; };
+		0412D5FC17E5435600EDFEE0 /* ILLightning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLightning.m; sourceTree = "<group>"; };
 		0413618E17AF1BFF0097E87F /* ILLineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLineSegment.h; sourceTree = "<group>"; };
 		0413618F17AF1BFF0097E87F /* ILLineSegment.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILLineSegment.mm; sourceTree = "<group>"; };
 		0422A78A17BF5A0000AD03D2 /* ILSpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSpriteBase.h; sourceTree = "<group>"; };
@@ -1023,7 +1064,6 @@
 		04797C0017DB12CB003E1C20 /* bear.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bear.plist; sourceTree = "<group>"; };
 		04797C0117DB12CB003E1C20 /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
 		04797C0217DB12CB003E1C20 /* ccbParticleBone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbParticleBone.png; sourceTree = "<group>"; };
-		04797C0317DB12CB003E1C20 /* ccbParticleDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbParticleDot.png; sourceTree = "<group>"; };
 		04797C0417DB12CB003E1C20 /* ccbParticleFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbParticleFire.png; sourceTree = "<group>"; };
 		04797C0517DB12CB003E1C20 /* ccbParticleSmoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbParticleSmoke.png; sourceTree = "<group>"; };
 		04797C0617DB12CB003E1C20 /* ccbParticleSnow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbParticleSnow.png; sourceTree = "<group>"; };
@@ -1426,6 +1466,12 @@
 		049EF6FE17B8ABBB00A9D1B7 /* ILTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTools.m; sourceTree = "<group>"; };
 		049EF70317B8D74800A9D1B7 /* ILShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShapeCache.h; sourceTree = "<group>"; };
 		049EF70417B8D74800A9D1B7 /* ILShapeCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILShapeCache.mm; sourceTree = "<group>"; };
+		04A1BA2E17E0613B0003777E /* ILDefendNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDefendNet.h; sourceTree = "<group>"; };
+		04A1BA2F17E0613B0003777E /* ILDefendNet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILDefendNet.mm; sourceTree = "<group>"; };
+		04A1BA3217E069090003777E /* ILBearArmOutter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBearArmOutter.h; sourceTree = "<group>"; };
+		04A1BA3317E069090003777E /* ILBearArmOutter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBearArmOutter.mm; sourceTree = "<group>"; };
+		04A1BA3617E06B6C0003777E /* ILBearHalf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBearHalf.h; sourceTree = "<group>"; };
+		04A1BA3717E06B6C0003777E /* ILBearHalf.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBearHalf.mm; sourceTree = "<group>"; };
 		04AEBB0817CDBDAD00BD9D65 /* SceneBackground1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SceneBackground1.ccbi; sourceTree = "<group>"; };
 		04AEBB0B17CDBDEC00BD9D65 /* SceneBackground1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SceneBackground1.ccbi; sourceTree = "<group>"; };
 		04B108D317B37F4000778F8E /* CCBAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBAnimationManager.h; sourceTree = "<group>"; };
@@ -1533,7 +1579,7 @@
 		04E828AC17BD069700CF0006 /* ILBearBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBearBody.h; sourceTree = "<group>"; };
 		04E828AD17BD069700CF0006 /* ILBearBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBearBody.mm; sourceTree = "<group>"; };
 		04E828B617BD07A000CF0006 /* ILBear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBear.h; sourceTree = "<group>"; };
-		04E828B717BD07A000CF0006 /* ILBear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILBear.m; sourceTree = "<group>"; };
+		04E828B717BD07A000CF0006 /* ILBear.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBear.mm; sourceTree = "<group>"; };
 		04E828B917BD0E4000CF0006 /* ILPhysicsBearBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPhysicsBearBase.h; sourceTree = "<group>"; };
 		04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsBearBase.mm; sourceTree = "<group>"; };
 		04E828BC17BD194100CF0006 /* ILBulletEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletEntity.h; sourceTree = "<group>"; };
@@ -1636,12 +1682,16 @@
 			children = (
 				04E828A617BD066B00CF0006 /* ILBearHead.h */,
 				04E828A717BD066B00CF0006 /* ILBearHead.mm */,
+				04A1BA3217E069090003777E /* ILBearArmOutter.h */,
+				04A1BA3317E069090003777E /* ILBearArmOutter.mm */,
+				04A1BA3617E06B6C0003777E /* ILBearHalf.h */,
+				04A1BA3717E06B6C0003777E /* ILBearHalf.mm */,
 				04E828A917BD068800CF0006 /* ILBearLeg.h */,
 				04E828AA17BD068800CF0006 /* ILBearLeg.mm */,
 				04E828AC17BD069700CF0006 /* ILBearBody.h */,
 				04E828AD17BD069700CF0006 /* ILBearBody.mm */,
 				04E828B617BD07A000CF0006 /* ILBear.h */,
-				04E828B717BD07A000CF0006 /* ILBear.m */,
+				04E828B717BD07A000CF0006 /* ILBear.mm */,
 				04001B6917BCDAB700E1332A /* ILBearCollisionDelegate.h */,
 				04E828B917BD0E4000CF0006 /* ILPhysicsBearBase.h */,
 				04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */,
@@ -1652,10 +1702,16 @@
 		0403DF0217C74BF80044DFCF /* CCBResources */ = {
 			isa = PBXGroup;
 			children = (
+				0412D5E617E540CE00EDFEE0 /* lightning1.png */,
+				0412D5E717E540CE00EDFEE0 /* lightning2.png */,
+				0412D5E817E540CE00EDFEE0 /* lightning3.png */,
+				0412D5E917E540CE00EDFEE0 /* lightning4.png */,
+				0412D5EA17E540CE00EDFEE0 /* lightning5.png */,
+				0412D5EB17E540CE00EDFEE0 /* lightning6.png */,
+				0412D5EC17E540CE00EDFEE0 /* lightning7.png */,
 				04797C0017DB12CB003E1C20 /* bear.plist */,
 				04797C0117DB12CB003E1C20 /* bear.png */,
 				04797C0217DB12CB003E1C20 /* ccbParticleBone.png */,
-				04797C0317DB12CB003E1C20 /* ccbParticleDot.png */,
 				04797C0417DB12CB003E1C20 /* ccbParticleFire.png */,
 				04797C0517DB12CB003E1C20 /* ccbParticleSmoke.png */,
 				04797C0617DB12CB003E1C20 /* ccbParticleSnow.png */,
@@ -1717,10 +1773,14 @@
 			children = (
 				040D9FCF17C9C1C30053BBCA /* ILWood.h */,
 				040D9FD017C9C1C30053BBCA /* ILWood.mm */,
+				0412D5FB17E5435600EDFEE0 /* ILLightning.h */,
+				0412D5FC17E5435600EDFEE0 /* ILLightning.m */,
 				040D9FCC17C9C1A20053BBCA /* ILMetal.h */,
 				040D9FCD17C9C1A20053BBCA /* ILMetal.mm */,
 				040D9FFF17C9F2180053BBCA /* ILQueryTool.h */,
 				040DA00017C9F2180053BBCA /* ILQueryTool.mm */,
+				04A1BA2E17E0613B0003777E /* ILDefendNet.h */,
+				04A1BA2F17E0613B0003777E /* ILDefendNet.mm */,
 			);
 			name = Element;
 			sourceTree = "<group>";
@@ -1734,6 +1794,10 @@
 				0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */,
 				04E7FF7717CCDE25006F1881 /* ILLevelLayer.h */,
 				04E7FF7817CCDE25006F1881 /* ILLevelLayer.mm */,
+				0401610E17E4B36100A7FB67 /* ILClippingNode.h */,
+				0401610F17E4B36100A7FB67 /* ILClippingNode.m */,
+				0411F0BB17E2C3E10083E639 /* ILOptimalPerformance.h */,
+				0411F0BC17E2C3E10083E639 /* ILOptimalPerformance.mm */,
 				04B83D4217CEC525001C634A /* ILTouchStopLayer.h */,
 				04B83D4317CEC525001C634A /* ILTouchStopLayer.m */,
 				04B83D6817CF6813001C634A /* ILShrinkPanel.h */,
@@ -1763,6 +1827,8 @@
 				04001B6717BCCDDF00E1332A /* ILCollisionParameter.m */,
 				0422A78A17BF5A0000AD03D2 /* ILSpriteBase.h */,
 				0422A78B17BF5A0000AD03D2 /* ILSpriteBase.mm */,
+				0411F0BF17E2CED00083E639 /* ILSprite.h */,
+				0411F0C017E2CED00083E639 /* ILSprite.m */,
 				04FCDCC517BAFD9D005D151B /* ILBox2dEntity.h */,
 				04FCDCC617BAFD9D005D151B /* ILBox2dEntity.mm */,
 				04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */,
@@ -2977,7 +3043,6 @@
 				0453ED5617DD814500B72CB7 /* bear.plist in Resources */,
 				0453ED5717DD814500B72CB7 /* bear.png in Resources */,
 				0453ED5817DD814500B72CB7 /* ccbParticleBone.png in Resources */,
-				0453ED5917DD814500B72CB7 /* ccbParticleDot.png in Resources */,
 				0453ED5A17DD814500B72CB7 /* ccbParticleFire.png in Resources */,
 				0453ED5B17DD814500B72CB7 /* ccbParticleSmoke.png in Resources */,
 				0453ED5C17DD814500B72CB7 /* ccbParticleSnow.png in Resources */,
@@ -3081,6 +3146,13 @@
 				04F40E8D17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8F17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
 				04F40E9117DF72CF00B493C9 /* WoodParticle.ccbi in Resources */,
+				0412D5EE17E540CE00EDFEE0 /* lightning1.png in Resources */,
+				0412D5F017E540CE00EDFEE0 /* lightning2.png in Resources */,
+				0412D5F217E540CE00EDFEE0 /* lightning3.png in Resources */,
+				0412D5F417E540CE00EDFEE0 /* lightning4.png in Resources */,
+				0412D5F617E540CE00EDFEE0 /* lightning5.png in Resources */,
+				0412D5F817E540CE00EDFEE0 /* lightning6.png in Resources */,
+				0412D5FA17E540CE00EDFEE0 /* lightning7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3174,7 +3246,6 @@
 				04797C1517DB12CB003E1C20 /* bear.plist in Resources */,
 				04797C1617DB12CB003E1C20 /* bear.png in Resources */,
 				04797C1717DB12CB003E1C20 /* ccbParticleBone.png in Resources */,
-				04797C1817DB12CB003E1C20 /* ccbParticleDot.png in Resources */,
 				04797C1917DB12CB003E1C20 /* ccbParticleFire.png in Resources */,
 				04797C1A17DB12CB003E1C20 /* ccbParticleSmoke.png in Resources */,
 				04797C1B17DB12CB003E1C20 /* ccbParticleSnow.png in Resources */,
@@ -3278,6 +3349,13 @@
 				04F40E8C17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8E17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
 				04F40E9017DF72CF00B493C9 /* WoodParticle.ccbi in Resources */,
+				0412D5ED17E540CE00EDFEE0 /* lightning1.png in Resources */,
+				0412D5EF17E540CE00EDFEE0 /* lightning2.png in Resources */,
+				0412D5F117E540CE00EDFEE0 /* lightning3.png in Resources */,
+				0412D5F317E540CE00EDFEE0 /* lightning4.png in Resources */,
+				0412D5F517E540CE00EDFEE0 /* lightning5.png in Resources */,
+				0412D5F717E540CE00EDFEE0 /* lightning6.png in Resources */,
+				0412D5F917E540CE00EDFEE0 /* lightning7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3495,7 +3573,7 @@
 				0453ECBE17DD814500B72CB7 /* ILBearHead.mm in Sources */,
 				0453ECBF17DD814500B72CB7 /* ILBearLeg.mm in Sources */,
 				0453ECC017DD814500B72CB7 /* ILBearBody.mm in Sources */,
-				0453ECC117DD814500B72CB7 /* ILBear.m in Sources */,
+				0453ECC117DD814500B72CB7 /* ILBear.mm in Sources */,
 				0453ECC217DD814500B72CB7 /* ILPhysicsBearBase.mm in Sources */,
 				0453ECC317DD814500B72CB7 /* ILBulletEntity.mm in Sources */,
 				0453ECC417DD814500B72CB7 /* ILSpriteBase.mm in Sources */,
@@ -3521,6 +3599,13 @@
 				0453ECD817DD814500B72CB7 /* ILMenuButton.m in Sources */,
 				0453ECD917DD814500B72CB7 /* ILMenuItem.m in Sources */,
 				0453ECDA17DD814500B72CB7 /* ILBox2dTools.mm in Sources */,
+				04A1BA3117E0613B0003777E /* ILDefendNet.mm in Sources */,
+				04A1BA3517E069090003777E /* ILBearArmOutter.mm in Sources */,
+				04A1BA3917E06B6C0003777E /* ILBearHalf.mm in Sources */,
+				0411F0BE17E2C3E10083E639 /* ILOptimalPerformance.mm in Sources */,
+				0411F0C217E2CED00083E639 /* ILSprite.m in Sources */,
+				0401611117E4B36100A7FB67 /* ILClippingNode.m in Sources */,
+				0412D5FE17E5435600EDFEE0 /* ILLightning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3735,7 +3820,7 @@
 				04E828A817BD066B00CF0006 /* ILBearHead.mm in Sources */,
 				04E828AB17BD068800CF0006 /* ILBearLeg.mm in Sources */,
 				04E828AE17BD069700CF0006 /* ILBearBody.mm in Sources */,
-				04E828B817BD07A000CF0006 /* ILBear.m in Sources */,
+				04E828B817BD07A000CF0006 /* ILBear.mm in Sources */,
 				04E828BB17BD0E4000CF0006 /* ILPhysicsBearBase.mm in Sources */,
 				04E828BE17BD194100CF0006 /* ILBulletEntity.mm in Sources */,
 				0422A78C17BF5A0000AD03D2 /* ILSpriteBase.mm in Sources */,
@@ -3761,6 +3846,13 @@
 				049B5C7D17D5D33100F67159 /* ILMenuButton.m in Sources */,
 				049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */,
 				0448DF1417DC8A0E00BEF8B1 /* ILBox2dTools.mm in Sources */,
+				04A1BA3017E0613B0003777E /* ILDefendNet.mm in Sources */,
+				04A1BA3417E069090003777E /* ILBearArmOutter.mm in Sources */,
+				04A1BA3817E06B6C0003777E /* ILBearHalf.mm in Sources */,
+				0411F0BD17E2C3E10083E639 /* ILOptimalPerformance.mm in Sources */,
+				0411F0C117E2CED00083E639 /* ILSprite.m in Sources */,
+				0401611017E4B36100A7FB67 /* ILClippingNode.m in Sources */,
+				0412D5FD17E5435600EDFEE0 /* ILLightning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

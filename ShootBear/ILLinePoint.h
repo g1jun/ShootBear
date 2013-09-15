@@ -7,8 +7,10 @@
 //
 
 #import "CCNode.h"
+#import "ILSprite.h"
+#import "CCSprite.h"
 
-@interface ILLinePoint : CCSprite
+@interface ILLinePoint : ILSprite
 
 @property (assign, nonatomic)float speed;
 @property (assign, nonatomic)float acceleration;
@@ -16,5 +18,4 @@
 - (id)initWithAcc:(float) acc age:(float)time;
 
 - (void)reset;
-
 @end

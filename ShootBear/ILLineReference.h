@@ -7,7 +7,8 @@
 //
 
 #import "CCNode.h"
-
-@interface ILLineReference : CCNode
+#import "ILSprite.h"
+//ccnode
+@interface ILLineReference : ILSprite
 
 @end

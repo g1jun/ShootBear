@@ -12,7 +12,9 @@
 #import "CCNode+CCBRelativePositioning.h"
 #import "ILQueryTool.h"
 #import "ILTools.h"
+#import "ILLevelLayer.h"
 #import "ILBox2dTools.h"
+
 
 class WoodQueryCallback : public b2QueryCallback
 {
@@ -28,13 +30,6 @@ class WoodQueryCallback : public b2QueryCallback
 
 @implementation ILWood
 
-- (void)didLoadFromCCB
-{
-    [super didLoadFromCCB];
-    if (_isBurning) {
-        [self burnWood];
-    }
-}
 
 
 - (NSString *)collisionType
@@ -66,6 +61,22 @@ class WoodQueryCallback : public b2QueryCallback
     
 }
 
+- (void)onEnter
+{
+    [super onEnter];
+    if (_isBurning && _particle == nil) {
+        [self burnWood];
+    }
+    if (!self.isStatic) {
+        [self schedule:@selector(updateParticlePosition:)];
+    }
+}
+
+- (void)updateParticlePosition:(ccTime)delta
+{
+    CGPoint point = ccp(-self.contentSize.width * self.anchorPoint.x,- self.contentSize.height * self.anchorPoint.y);;
+    _particle.position =  ccpAdd(point, [self.parent convertToWorldSpace:self.position]); 
+}
 
 - (void)burning
 {
@@ -79,9 +90,9 @@ class WoodQueryCallback : public b2QueryCallback
 {
     self.isBurning = YES;
     _particle = (CCParticleSystemQuad *)[CCBReader nodeGraphFromFile:@"WoodParticle"];
-    _particle.positionType = kCCPositionTypeRelative; 
+    _particle.positionType = kCCPositionTypeGrouped;
+    _particle.sourcePosition = ccpMult(ccpFromSize(self.contentSize), 0.5);
     if (self.b2Body->GetType() == b2_staticBody) {
-        _particle.sourcePosition = ccpMult(ccpFromSize(self.contentSize), 0.5);
         _particle.posVar = ccpMult(ccpFromSize(self.contentSize), 0.5f);
         _particle.emissionRate *= 1 / [self resolutionScale];
         float total = [ILTools rotationTotal:self];
@@ -90,18 +101,44 @@ class WoodQueryCallback : public b2QueryCallback
         [_particle setTotalParticles:20];
     } else {
         [_particle setAngleVar:360];
-        _particle.position = ccp(self.contentSize.width * self.anchorPoint.x, self.contentSize.height * self.anchorPoint.y);
+        [_particle setEmissionRate:100];
+        [_particle setTotalParticles:500];
+
+        _particle.position = ccp(-self.contentSize.width * self.anchorPoint.x,- self.contentSize.height * self.anchorPoint.y);
     }
-    
-    [self addChild:_particle];
+    _particle.position = ccpAdd(_particle.position, [self.parent convertToWorldSpace:self.position]) ;
+    _particle.anchorPoint = self.anchorPoint;
+    if (self.isStatic) {
+        [[self layer] addToFireParticleBatchNode:_particle];
+    } else {
+        [[self layer] addChild:_particle z:10000];
+    }
     [ILBox2dTools changeCategoryBit:self bit:1 << 3];
     [self burnAroundWood];
+}
+
+
+- (ILLevelLayer *)layer
+{
+    CCNode *temp = self;
+    while (temp.parent) {
+        temp = temp.parent;
+        if ([temp isKindOfClass:[ILLevelLayer class]]) {
+            return (ILLevelLayer *)temp;
+        }
+    }
+    return nil;
 }
 
 - (void)burnAroundWood
 {
     WoodQueryCallback callback;
     [ILQueryTool queryAround:self callback:&callback];
+}
+
+- (BOOL)dirty
+{
+    return YES;
 }
 
 @end

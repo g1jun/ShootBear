@@ -8,6 +8,7 @@
 
 #import "ILBox2dEntity.h"
 
+
 @interface ILWood : ILBox2dEntity
 {
     CCParticleSystemQuad *_particle;

@@ -11,11 +11,34 @@
 
 @implementation ILShooter
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"people.png"];
+        [super addChild:_batchNode];
+    }
+    return self;
+}
+
+- (void)addChild:(CCNode *)node
+{
+    CCSprite *sprite = (CCSprite *)node;
+    [sprite setTexture:_batchNode.textureAtlas.texture];
+    [_batchNode addChild:sprite];
+}
+
 - (void)didLoadFromCCB
 {
     [self turnRight];
     [self scheduleUpdate];
     [self syncPosition];
+}
+
+- (void)onEnter
+{
+    [super onEnter];
+    
 }
 
 - (void)turnRight

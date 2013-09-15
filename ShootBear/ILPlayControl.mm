@@ -51,6 +51,8 @@
             [_levelControlLayer show];
             [[NSNotificationCenter defaultCenter] postNotificationName:@"continue" object:nil];
             [self scheduleUpdate];
+            [self.failedDelegate resume];
+
         }
     }];
 }
@@ -87,7 +89,8 @@
     if (self.forbiddenTouch) {
         return;
     }
-    [self unscheduleUpdate];
+    [self pause];
+    [self.failedDelegate pause];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"pause" object:nil];
     [_levelControlLayer hide];
     [_settingLayer.userObject runAnimationsForSequenceNamed:@"enter"];

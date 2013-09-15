@@ -599,9 +599,9 @@
 				<array>
 
 					<dict>
-                        <key>density</key> <real>2</real>
-                        <key>friction</key> <real>0</real>
-                        <key>restitution</key> <real>0</real>
+                        <key>density</key> <real>4</real>
+                        <key>friction</key> <real>0.8</real>
+                        <key>restitution</key> <real>0.4</real>
                         <key>filter_categoryBits</key> <integer>8</integer>
                         <key>filter_groupIndex</key> <integer>0</integer>
                         <key>filter_maskBits</key> <integer>32767</integer>
@@ -673,8 +673,8 @@
 
 					<dict>
                         <key>density</key> <real>2</real>
-                        <key>friction</key> <real>0</real>
-                        <key>restitution</key> <real>0</real>
+                        <key>friction</key> <real>0.3</real>
+                        <key>restitution</key> <real>0.4</real>
                         <key>filter_categoryBits</key> <integer>4</integer>
                         <key>filter_groupIndex</key> <integer>0</integer>
                         <key>filter_maskBits</key> <integer>32767</integer>

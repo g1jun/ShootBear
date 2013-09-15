@@ -20,6 +20,7 @@ static NSString* const kCannon = @"ShooterCannon";
     
     ILShooterHalf *_leftShooter;
     ILShooterHalf *_rightShooter;
+    CCSpriteBatchNode *_batchNode;
     
 }
 

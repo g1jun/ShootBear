@@ -9,8 +9,29 @@
 #import "ILBear.h"
 #import "CCBAnimationManager.h"
 #import "ILBox2dTools.h"
+#import "CCBAnimationManager+RmoveDeadNode.h"
+#import "ILBox2dFactory.h"
+#import "ILTools.h"
 
 @implementation ILBear
+
+- (id)init
+{
+    self = [super init];
+    if (self ) {
+        _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"bear.png"];
+        [super addChild:_batchNode];
+    }
+    return self;
+}
+
+- (void)addChild:(CCNode *)node
+{
+    CCSprite *sprite = (CCSprite *)node;
+    [sprite setTexture:_batchNode.textureAtlas.texture];
+    [_batchNode addChild:node];
+}
+
 - (void)didLoadFromCCB
 {
     _leftBear.visible = NO;
@@ -137,10 +158,47 @@
 - (void)update:(ccTime)delta
 {
     [self autoTurn];
+    [self autoShowThing];
 }
+
+
+- (CCNode *)pickUp:(CCNode *)node
+{
+    if (_thing) {
+        [_thing release];
+    }
+    _thing = (ILDefendNet *)[node retain];
+    [node removeFromParent];
+    [node.userObject removeDeadNode:node];
+    return node;
+}
+
+- (void)autoShowThing
+{
+    if (_thing == nil) {
+        return;
+    }
+    if (_thing.parent && _thing.isLeft == _rightBear.visible) {
+        return;
+    }
+    [_thing removeFromParent];
+    if (_rightBear.visible) {
+        [_thing leftAnchor];
+        float degree = [ILTools rotationTotal:_rightBear.armOutter.palm ];
+        _thing.rotation = -degree;
+        [_rightBear.armOutter.palm addChild:_thing z:-1];
+    }  else {
+        float degree = [ILTools rotationTotal:_leftBear.armOutter.palm];
+        _thing.rotation = -degree;
+        [_thing rightAnchor];
+        [_leftBear.armOutter.palm addChild:_thing z:-1];
+    }
+}
+
 
 - (void)dealloc
 {
+    [_thing release];
     [self unscheduleUpdate];
     self.animationRule = nil;
     [super dealloc];

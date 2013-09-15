@@ -30,6 +30,10 @@
 
 - (void)pressedHelpButton:(id)sender;
 
+- (void)pause;
+
+- (void)resume;
+
 @end
 
 @interface ILPlayControl : CCNode <CCTouchOneByOneDelegate>
