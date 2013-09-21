@@ -14,7 +14,7 @@
 {
     NSValue *temp = nil;
     for (NSValue *ptr in nodeSequences) {
-        id tempNode = [ptr pointerValue];
+        id tempNode = (id)[ptr pointerValue];
         if (tempNode == node) {
             temp = ptr;
         }

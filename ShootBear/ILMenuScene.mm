@@ -37,7 +37,7 @@
 {
     CGSize winSize = [CCDirector sharedDirector].winSize;
     NSMutableArray *layers = [NSMutableArray array];
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 3; i++) {
         ILMenuLayer *layer = (ILMenuLayer *)[CCBReader nodeGraphFromFile:@"MenuLayer.ccbi"];
         NSString *groupFile = [NSString stringWithFormat:@"MenuGroup%i.ccbi", i + 1];
         layer.menuGroup = [CCBReader nodeGraphFromFile:groupFile owner:self];

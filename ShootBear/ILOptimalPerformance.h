@@ -15,6 +15,8 @@
     CCNode *_node;
 }
 
+@property(retain, nonatomic)CCSpriteBatchNode *electricBatchNode;
+
 - (id)initWithCCNode:(CCNode *)node;
 
 - (void)executeOptimized;

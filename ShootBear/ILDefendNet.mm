@@ -11,6 +11,7 @@
 #import "ILShapeCache.h"
 #import "ILBox2dFactory.h"
 #import "ILTools.h"
+#import "ILLightning.h"
 
 @implementation ILDefendNet
 
@@ -41,6 +42,11 @@
     
 }
 
+- (void)elctricEffect
+{
+    [[self layer] addStencil:self];
+}
+
 - (void)leftAnchor
 {
     [self animationMode];
@@ -59,20 +65,24 @@
 
 }
 
+- (void)onExit
+{
+    [super onExit];
+    [[self layer] removeStencil:self];
+}
+
 - (NSString *)collisionType
 {
     return kCollisionDefendNet;
-}
-
-- (void)collisionDealWith:(id<ILCollisionDelegate>)another
-{
-    
 }
 
 - (void)update:(ccTime)delta
 {
     [super update:delta];
     [self changeState];
+    if (!self.visible) {
+        [[self layer] removeStencil:self];
+    }
 }
 
 

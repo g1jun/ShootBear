@@ -12,6 +12,7 @@
 #import "CCBAnimationManager.h"
 #import "ILBullet.h"
 #import "ILLevelLayer.h"
+#import "ILBox2dTools.h"
 
 class MetalQueryCallback : public b2QueryCallback
 {
@@ -31,18 +32,32 @@ class MetalQueryCallback : public b2QueryCallback
     return kCollisionMetal;
 }
 
-- (void)onEnter
+- (void)didFromCCB
 {
-    [super onEnter];
-    if (_hasElctric && _animationSprite == nil) {
+    if (_hasElctric) {
         [self electricity];
     }
 }
 
+- (void)onEnter
+{
+    [super onEnter];
+}
+
+- (BOOL)isElectriBullet:(id)another
+{
+    return [[another collisionType]isEqualToString:kCollisionBullet] &&
+    [[[another collisionCCNode] bulletType] isEqualToString:kElectriGunBullet];
+}
+
+- (BOOL)isEcectricMetal:(id)another
+{
+    return [[another collisionType] isEqualToString:kCollisionMetal] && [[another collisionCCNode] hasElctric];
+}
+
 - (void)collisionDealWith:(id<ILCollisionDelegate>)another
 {
-    if ([[another collisionType]isEqualToString:kCollisionBullet] &&
-        [[[another collisionCCNode] bulletType] isEqualToString:kElectriGunBullet]) {
+    if ([self isElectriBullet:another] || [self isEcectricMetal:another]) {
         [self conductElectricity];
     }
 }
@@ -58,38 +73,12 @@ class MetalQueryCallback : public b2QueryCallback
 - (void)electricity
 {
     self.hasElctric = YES;
-    [self showWithClippingNode];
+    [ILBox2dTools changeCategoryBit:self bit:1 << 3];
+    [self elctricEffect];
     [self conductAround];
 }
 
-- (void)runCCBAnimation:(CCBAnimationManager *)manager
-{
-    [manager runAnimationsForSequenceNamed:@"lightning"];
-}
 
-- (CCAnimation *)animation
-{
-    CCAnimation *animation = [[CCAnimationCache sharedAnimationCache] animationByName:@"lightning"];
-    if (animation == nil) {
-        NSMutableArray *frames = [NSMutableArray array];
-        for (int i = 1; i < 7; i ++) {
-            NSString *frameNmae = [NSString stringWithFormat:@"lightning%i.png", i];
-//            CCSpriteFrame *frame = [CCSpriteFrame frameWithTextureFilename:@"people.png" rect:CGRectMake(0, 0, 256, 256)];
-            CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:frameNmae];
-            [frames addObject:frame];
-        }
-        animation = [CCAnimation animationWithSpriteFrames:frames delay:0.1];
-        [[CCAnimationCache sharedAnimationCache] addAnimation:animation name:@"lightning"];
-    }
-    return animation;
-}
-
-- (CCSprite *)lightningSprite
-{
-    CCSprite *ret = [CCSprite spriteWithSpriteFrameName:@"lightning1.png"];
-    [ret runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:[self animation]]]];
-    return ret;
-}
 
 - (ILLevelLayer *)layer
 {
@@ -103,26 +92,11 @@ class MetalQueryCallback : public b2QueryCallback
     return nil;
 }
 
-- (void)showWithClippingNode
+- (void)elctricEffect
 {
-
-    CCSprite *tempSprite = [self lightningSprite];
-    int widthReapt = self.contentSize.width / tempSprite.contentSize.width + 1;
-    for (int i = 0; i < widthReapt; i++) {
-        tempSprite.position = ccpMult(ccpFromSize(self.contentSize), 0.5f);
-        tempSprite.anchorPoint = self.anchorPoint;
-        tempSprite.position = [self.parent convertToWorldSpace:self.position];
-        [[self layer] addToElectricBatchNode:tempSprite clipSprite:self];
-        if (i < widthReapt - 1) {
-            tempSprite = [self lightningSprite];
-        }
-    }
+    [[self layer] switchMetalParent:self];
 }
 
-- (CCSprite *)CCBMetalLightningSprite
-{
-    return (CCSprite *)[CCBReader nodeGraphFromFile:@"MetalLightning.ccbi"];
-}
 
 
 

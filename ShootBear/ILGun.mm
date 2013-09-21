@@ -18,7 +18,7 @@
 
 #define BULLET 30
 
-#define BULLET_SPPED 640
+#define BULLET_SPPED 5
 
 @implementation ILGun
 
@@ -28,24 +28,48 @@
     [super dealloc];
 }
 
-
-- (void)fire
+- (ILBullet *)bulletInstance
 {
     NSString *bulletFileName = [_bulletCCBName stringByAppendingString:@".ccbi"];
     ILBullet *bullet = (ILBullet *)[CCBReader nodeGraphFromFile:bulletFileName];
-    [bullet.entity setPTMRatio:PIXELS_PER_METER];
-    CGPoint glPoint = [self.lineReference.parent convertToWorldSpace:self.lineReference.position];
-    [bullet.entity setPosition:glPoint];
-    [[self bulletParent] addChild:bullet];
-    CGPoint v = [self lineReferenceVector];
-    [bullet.entity setSpeed:b2Vec2(v.x, v.y)];
+    return bullet;
+}
+
+
+- (void)fire
+{
+    ILBullet *bullet = [self bulletInstance];
+    if ([bullet.bulletType isEqual:kFireGunBullet]) {
+        [self configBullet:[self bulletInstance] degreeOffset:-5];
+        [self configBullet:[self bulletInstance] degreeOffset:5];
+    }
+    [self configBullet:bullet degreeOffset:0];
     [self fireAnimation];
+}
+
+- (void)configBullet:(ILBullet *)bullet degreeOffset:(float)offset
+{
+    CGPoint glPoint = [self.lineReference.parent convertToWorldSpace:self.lineReference.position];
+    [bullet setBulletPosition:glPoint];
+    [[self bulletParent] addChild:bullet];
+    CGPoint v = [self lineReferenceVector:offset];
+    [bullet setSpeedVector:v];
+}
+
+- (CGPoint)lineReferenceVector:(float)offset
+{
+    float degree = [self lineTotalDegree] + offset;
+    float radius = -CC_DEGREES_TO_RADIANS(degree);
+    if (_cannonIndicator) {
+        float spped = [_cannonIndicator cannonSpeed];
+        return ccpRotateByAngle(ccp(spped, 0), ccp(0, 0), radius);
+    }
+    return ccpRotateByAngle(ccp(5, 0), ccp(0, 0), radius);
 }
 
 - (void)fireAnimation
 {
     __block CCSprite *gunFire = (CCSprite *)[CCBReader nodeGraphFromFile:@"GunFire.ccbi"];
-    [gunFire setTexture:self.textureAtlas.texture];
     [self addChild:gunFire z:10];
     gunFire.position = self.lineReference.position;
     gunFire.rotation = self.lineReference.rotation;
@@ -68,12 +92,7 @@
     return nil;
 }
 
-- (CGPoint)lineReferenceVector
-{
-    float degree = [self lineTotalDegree];
-    float radius = -CC_DEGREES_TO_RADIANS(degree);
-    return ccpRotateByAngle(ccp(BULLET_SPPED / PIXELS_PER_METER, 0), ccp(0, 0), radius);
-}
+
 
 - (float)lineTotalDegree
 {

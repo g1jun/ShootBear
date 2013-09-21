@@ -8,6 +8,7 @@
 
 #import "ILSpriteBase.h"
 #import "ILMetal.h"
+#import "CCClippingNode.h"
 
 @interface ILDefendNet : ILMetal
 

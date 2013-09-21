@@ -339,11 +339,14 @@ static void setProgram(CCNode *n, CCGLProgram *p) {
     // (according to the stencil test func/op and alpha (or alpha shader) test)
     kmGLPushMatrix();
     [self transform];
-    for (id stencil in _stencils) {
+    for (CCNode* stencil in _stencils) {
+        CGPoint temp =  stencil.position;
+        stencil.position = [stencil.parent convertToWorldSpace:stencil.position];
         if ([stencil visible]) {
             [stencil visit];
 
         }
+        stencil.position = temp;
     }
     kmGLPopMatrix();
     

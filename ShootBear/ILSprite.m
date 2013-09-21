@@ -25,4 +25,15 @@
     self.imageName = [name stringByDeletingPathExtension];
 }
 
+- (CCTexture2D *)texture
+{
+    CCTexture2D *ret = [super texture];
+    if (ret ==nil) {
+        return [[self.children objectAtIndex:0] texture];
+    } else {
+        return ret;
+    }
+    return nil;
+}
+
 @end

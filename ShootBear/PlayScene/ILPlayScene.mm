@@ -122,6 +122,12 @@
 }
 
 
+- (NSDictionary *)levelGroupNumber
+{
+    return @{@"0":@15,@"1":@18,@"2":@16};
+}
+
+
 - (void)removeTempLayer
 {
     id levelResult = _cacheLayers[@"levelResult"];
@@ -131,6 +137,12 @@
 
 - (void)nextLevel
 {
+    NSString *key = [NSString stringWithFormat:@"%i", _currentLevelNO.page];
+    int max = [[self levelGroupNumber][key] intValue];
+    if (_currentLevelNO.levelNo == max - 1) {
+        _currentLevelNO.page ++;
+        _currentLevelNO.levelNo = 0;
+    }
     _currentLevelNO.levelNo++;
 }
 

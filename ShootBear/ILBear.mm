@@ -15,22 +15,7 @@
 
 @implementation ILBear
 
-- (id)init
-{
-    self = [super init];
-    if (self ) {
-        _batchNode = [CCSpriteBatchNode batchNodeWithFile:@"bear.png"];
-        [super addChild:_batchNode];
-    }
-    return self;
-}
 
-- (void)addChild:(CCNode *)node
-{
-    CCSprite *sprite = (CCSprite *)node;
-    [sprite setTexture:_batchNode.textureAtlas.texture];
-    [_batchNode addChild:node];
-}
 
 - (void)didLoadFromCCB
 {
@@ -86,6 +71,8 @@
     _leftTowardAnimationName  = @"dynamic";
     _rightTowardAnimationName = @"dynamic";
 }
+
+
 
 - (NSDictionary *)stateSEL
 {

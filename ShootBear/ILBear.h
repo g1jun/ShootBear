@@ -44,6 +44,7 @@
 #import "ILBearHalf.h"
 #import "ILDefendNet.h"
 
+@class ILDefendNet;
 @interface ILBear : CCNode
 {
     ILBearHalf *_leftBear;
@@ -52,8 +53,7 @@
     NSString *_rightTowardAnimationName;
     float _previousX;
     CCNode *_explisionNode;
-    CCSpriteBatchNode *_batchNode;
-    ILDefendNet *_thing;
+     ILDefendNet* _thing;
     BOOL _thingUpdate;
 }
 

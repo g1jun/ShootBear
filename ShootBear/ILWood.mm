@@ -92,17 +92,18 @@ class WoodQueryCallback : public b2QueryCallback
     _particle = (CCParticleSystemQuad *)[CCBReader nodeGraphFromFile:@"WoodParticle"];
     _particle.positionType = kCCPositionTypeGrouped;
     _particle.sourcePosition = ccpMult(ccpFromSize(self.contentSize), 0.5);
+    _particle.posVar = ccpMult(ccpFromSize(self.contentSize), 0.5f);
+    float scale = [self resolutionScale];
     if (self.b2Body->GetType() == b2_staticBody) {
-        _particle.posVar = ccpMult(ccpFromSize(self.contentSize), 0.5f);
         _particle.emissionRate *= 1 / [self resolutionScale];
         float total = [ILTools rotationTotal:self];
         [_particle setAngle: total + 90];
-        [_particle setEmissionRate:10];
-        [_particle setTotalParticles:20];
+        [_particle setEmissionRate:5 * scale];
+        [_particle setTotalParticles:10 * scale];
     } else {
         [_particle setAngleVar:360];
-        [_particle setEmissionRate:100];
-        [_particle setTotalParticles:500];
+        [_particle setEmissionRate:50 * scale];
+        [_particle setTotalParticles:250 * scale];
 
         _particle.position = ccp(-self.contentSize.width * self.anchorPoint.x,- self.contentSize.height * self.anchorPoint.y);
     }

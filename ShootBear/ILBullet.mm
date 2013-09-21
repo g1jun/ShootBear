@@ -7,60 +7,56 @@
 //
 
 #import "ILBullet.h"
+#import "CCNode+CCBRelativePositioning.h"
+#import "ILBulletEntityBase.h"
+
 @implementation ILBullet
 
 - (void)didLoadFromCCB
 {
+    _particle.positionType = kCCPositionTypeFree;
+    _particle.position = CGPointZero;
 }
 
-- (id)init
+- (void)onEnter
 {
-    self = [super init];
-    if (self) {
-        [self scheduleUpdate];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pause) name:@"pause" object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(continuePlay) name:@"continue" object:nil];
-        _age = 0;
-        
-    }
-    return self;
+    [super onEnter];
+    [self lifeStart];
 }
+
+
+
+- (void)setSpeedVector:(CGPoint)speed
+{
+    [super setSpeedVector:speed];
+    _speed = ccpLength(speed) * [self resolutionScale];
+}
+
+
+
+
 
 - (void)update:(ccTime)delta
 {
-    _age += delta;
-    if (_age > [self life]) {
-        [self destroyMe];
+    [super update:delta];
+    if (_particle) {
+        _particle.sourcePosition = ccpMult(self.entity.position, 1 / [self resolutionScale]);
     }
+    b2Vec2 vec = self.entity.b2Body->GetLinearVelocity();
+    vec.Normalize();
+    vec.operator*=(_speed);
+    self.entity.b2Body->SetLinearVelocity(vec);
 }
 
-- (void)pause
-{
-    [self unscheduleUpdate];
-}
 
-- (void)continuePlay
-{
-    [self scheduleUpdate];
-}
 
-- (void)destroyMe
+- (void)lifeEnd
 {
     [self unscheduleUpdate];
     [self removeFromParent];
 }
 
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    self.entity = nil;
-    self.bulletType = nil;
-    [super dealloc];
-}
 
-- (float)life
-{
-    return 4;
-}
+
 
 @end

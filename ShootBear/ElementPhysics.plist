@@ -942,8 +942,8 @@
 
 					<dict>
                         <key>density</key> <real>20</real>
-                        <key>friction</key> <real>0</real>
-                        <key>restitution</key> <real>1</real>
+                        <key>friction</key> <real>0.8</real>
+                        <key>restitution</key> <real>0.4</real>
                         <key>filter_categoryBits</key> <integer>16</integer>
                         <key>filter_groupIndex</key> <integer>0</integer>
                         <key>filter_maskBits</key> <integer>32767</integer>
@@ -955,23 +955,6 @@
                          <dict>
                              <key>radius</key> <real>60.133</real>
                              <key>position</key> <string>{ 59.663,59.663 }</string>
-                         </dict>
-                    </dict>
-					<dict>
-                        <key>density</key> <real>0.1</real>
-                        <key>friction</key> <real>0</real>
-                        <key>restitution</key> <real>0</real>
-                        <key>filter_categoryBits</key> <integer>64</integer>
-                        <key>filter_groupIndex</key> <integer>0</integer>
-                        <key>filter_maskBits</key> <integer>1040</integer>
-                        <key>isSensor</key> <true/>
-                        <key>id</key> <string></string>
-                        <key>fixture_type</key> <string>CIRCLE</string>
-
-                         <key>circle</key>
-                         <dict>
-                             <key>radius</key> <real>254.026</real>
-                             <key>position</key> <string>{ 61.000,61.000 }</string>
                          </dict>
                     </dict>
 				</array>

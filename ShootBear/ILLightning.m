@@ -36,7 +36,8 @@
     ILSprite *sprite = [ILSprite spriteWithTexture:texture];
     sprite.imageName = fileName;
     sprite.pngFileName = fileName;
-    sprite.contentSize = [CCDirector sharedDirector].winSize;
+    CGSize size = [CCDirector sharedDirector].winSize;
+    [sprite setTextureRect:CGRectMake(0, 0, size.width, size.height)];
     sprite.anchorPoint = CGPointZero;
     sprite.position = CGPointZero;
     ccTexParams tp = {GL_LINEAR, GL_LINEAR, GL_REPEAT, GL_REPEAT};

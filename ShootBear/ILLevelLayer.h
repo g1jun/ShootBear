@@ -5,12 +5,11 @@
 //  Created by mac on 13-8-27.
 //  Copyright (c) 2013年 mac. All rights reserved.
 //
-
+#import "ILBearCollisionDelegate.h"
 #import "ILStruct.h"
 #import "CCLayer.h"
 #import "ILShooter.h"
 #import "ILBear.h"
-#import "ILBearCollisionDelegate.h"
 #import "ILPlayControl.h"
 #import "ILClippingNode.h"
 
@@ -21,7 +20,8 @@
 
 @end
 
-
+@class ILMetal;
+@class ILBearCollisionDelegate;
 @interface ILLevelLayer : CCLayer <ILBearCollisionDelegate, ILPlayControlDelegate>
 {
     ILShooter *_shooter;
@@ -37,6 +37,8 @@
 
 - (void)addToElectricBatchNode:(CCSprite *)sprite clipSprite:(CCSprite *)clipSrptie;
 
-//@property (nonatomic, readwrite)Level level;
+- (void)switchMetalParent:(ILMetal *)metal;
 
+- (void)addStencil:(CCNode *)node;
+- (void)removeStencil:(CCNode *)node;
 @end

@@ -25,6 +25,16 @@
     return nil;
 }
 
+- (void)animationMode
+{
+    if (self.b2Body) {
+        self.b2Body->SetType(b2_dynamicBody);
+    }
+    self.isStatic = NO;
+    self.mode = AnimationMode;
+    [self scheduleUpdate];
+}
+
 - (ILCollisionParameter *)collisionResponse:(id<ILCollisionDelegate>)another
 {
     if ([[another collisionType] isEqualToString:kCollisionDefendNet]) {
@@ -36,6 +46,12 @@
             return nil;
         }
     }
+//    } else if ([[another collisionType] isEqual:kCollisionBullet]) {
+//        ILBulletBase *base = (ILBulletBase *)[another collisionCCNode];
+//        if ([[base bulletType] isEqual:kCannonBullet]) {
+//            return nil;
+//        }
+//    }
     ILCollisionParameter *param = [ILCollisionParameter new];
     param.delegateKey = kILBearCollisionDelegate;
     param.selector = [self selectorWithType:[another collisionType]];

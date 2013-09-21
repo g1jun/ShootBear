@@ -32,6 +32,10 @@
 
 - (void)animationMode
 {
+    if (self.b2Body) {
+        self.b2Body->SetType(b2_staticBody);
+    }
+    self.isStatic = YES;
     _mode = AnimationMode;
     [self scheduleUpdate];
 }

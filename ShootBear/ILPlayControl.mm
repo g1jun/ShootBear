@@ -174,7 +174,7 @@
         }
         
     }
-	int32 velocityIterations = 1;
+	int32 velocityIterations = 10;
 	int32 positionIterations = 10;
 	[ILBox2dFactory sharedFactory].world->Step(dt, velocityIterations, positionIterations);
 }

@@ -14,4 +14,5 @@
 
 + (void)queryAround:(ILSpriteBase *)sprite callback:(b2QueryCallback *)callback;
 
++ (void)queryAround:(ILSpriteBase *)sprite callback:(b2QueryCallback *)callback scale:(float)scale;
 @end

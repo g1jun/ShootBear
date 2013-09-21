@@ -8,10 +8,12 @@
 
 #import "CCNode.h"
 #import "ILLineReference.h"
+#import "ILCannonIndicator.h"
 //ccnode
 @interface ILGun : ILSprite
 {
     NSString *_bulletCCBName;
+    ILCannonIndicator *_cannonIndicator;
 }
 
 @property (assign, nonatomic) ILLineReference *lineReference;
@@ -22,6 +24,6 @@
 
 - (float)lineTotalDegree;
 
-- (CGPoint)lineReferenceVector;
+//- (CGPoint)lineReferenceVector;
 
 @end

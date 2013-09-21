@@ -20,6 +20,7 @@
     ILUsedOnceButton *_currentSelectedButton;
     BOOL _foldState;
     BOOL _hasHide;
+    int _usedTimes;
 }
 
 - (void)pushState;

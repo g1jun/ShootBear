@@ -11,27 +11,12 @@
 
 @implementation ILBulletEntity
 
-- (NSString *)collisionType
-{
-    return kCollisionBullet;
-}
-
-- (id)collisionCCNode
-{
-    CCNode *temp = self;
-    do {
-        if ([temp isKindOfClass:[ILBullet class]]) {
-            return temp;
-        }
-    } while ((temp = temp.parent));
-    return nil;
-}
 
 - (void)setB2Body:(b2Body *)b2Body
 {
     [super setB2Body:b2Body];
     super.b2Body->SetGravityScale(0);
-    super.b2Body->SetBullet(true);
+    super.b2Body->SetBullet(YES);
 }
 
 

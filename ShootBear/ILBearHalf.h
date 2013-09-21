@@ -10,6 +10,10 @@
 #import "ILBearArmOutter.h"
 //todo ccnode
 @interface ILBearHalf : CCSprite
+{
+    CCSpriteBatchNode *_batch;
+
+}
 
 @property (assign, nonatomic) ILBearArmOutter *armOutter;
 

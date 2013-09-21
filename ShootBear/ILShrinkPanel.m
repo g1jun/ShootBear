@@ -61,13 +61,26 @@
         }
     }
 }
+
+- (void)recoverAll
+{
+    for (id item in _buttonArray) {
+        [item recover];
+    }
+}
+
 - (void)hasUsed
 {
-    [_buttonArray removeObject:_currentSelectedButton];
-    _currentSelectedButton = nil;
-    if (_buttonArray.count <= 1) {
+    [self recoverAll];
+    _usedTimes ++;
+    if (_usedTimes > 1) {
         [self hideMyself];
     }
+//    [_buttonArray removeObject:_currentSelectedButton];
+//    _currentSelectedButton = nil;
+//    if (_buttonArray.count <= 1) {
+//        [self hideMyself];
+//    }
 }
 
 - (void)hideMyself
@@ -76,6 +89,7 @@
         return;
     }
     if (_foldState) {
+        [self foldCompleted];
         [self.userObject runAnimationsForSequenceNamed:@"hideScaleOnly"];
 
     } else {

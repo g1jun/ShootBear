@@ -9,6 +9,7 @@
 #import "ILOptimalPerformance.h"
 #import "ILTools.h"
 #import "ILBox2dEntity.h"
+#import "ILMetal.h"
 
 @implementation ILOptimalPerformance
 
@@ -16,8 +17,11 @@
 {
     self = [super init];
     if (self) {
+        _electricBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"element.png"];
         _dic = [[NSMutableDictionary dictionary] retain];
         _node = node;
+        [_node addChild:_electricBatchNode];
+
         
     }
     return self;
@@ -33,14 +37,19 @@
 {
     NSMutableArray *batchNodes = [NSMutableArray array];
     [self classified:_node];
-    for (NSString *key in _dic) {
+//    for (NSString *key in _dic) {
+        NSString *key = @"element.png";
         CCSpriteBatchNode *batchNode = [CCSpriteBatchNode batchNodeWithFile:key];
         for (CCSprite *sprite in _dic[key]) {
             [sprite removeFromParent];
-            [batchNode addChild:sprite];
+            if ([sprite isKindOfClass:[ILMetal class]] && [key isEqualToString:@"element.png"] && [(ILMetal *)sprite hasElctric]) {
+                [_electricBatchNode addChild:sprite];
+            } else {
+                [batchNode addChild:sprite];
+            }
         }
         [batchNodes addObject:batchNode];
-    }
+//    }
     for (CCSpriteBatchNode * ch in batchNodes) {
         ch.position = CGPointZero;
         ch.anchorPoint = CGPointZero;

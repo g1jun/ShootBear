@@ -8,20 +8,21 @@
 
 #import "CCNode.h"
 #import "ILBox2dEntity.h"
+#import "ILBulletBase.h"
 
-static NSString* const kHandGunBullet = @"kHandGunBullet";
-static NSString* const kFireGunBullet = @"kFireGunBullet";
-static NSString* const kCannonBullet = @"kCannonBullet";
-static NSString* const kElectriGunBullet = @"kElectriGunBullet";
 
-@interface ILBullet : CCNode
 
-@property (assign, nonatomic) ILBox2dEntity *entity;
+@interface ILBullet : ILBulletBase 
+{
+    float _speed;
+    CCParticleSystemQuad* _particle;
 
-@property (copy, nonatomic) NSString *bulletType;
+}
 
-@property (assign, nonatomic) float age;
 
-- (float)life;
+
+
+
+
 
 @end

@@ -156,6 +156,15 @@
     [self.collisionDelegates removeAllObjects];
 }
 
+- (void)bearDead:(ILBear *)bear
+{
+    NSValue *value = self.collisionDelegates[kILBearCollisionDelegate];
+    id target = (id)[value pointerValue];
+    if ([target respondsToSelector:@selector(headCollision:bullet:)]) {
+        [target performSelector:@selector(headCollision:bullet:) withObject:bear withObject:nil];
+    }
+}
+
 - (void)runTarget:(ILCollisionParameter *)param
 {
     if (param == nil) {

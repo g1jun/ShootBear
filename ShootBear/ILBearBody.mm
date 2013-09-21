@@ -23,6 +23,8 @@
                               [NSValue valueWithPointer:@selector(bodyCollision:bullet:)],
                           kCollisionWood :
                               [NSValue valueWithPointer:@selector(bodyCollision:bullet:)],
+                          kCollisionMetal :
+                              [NSValue valueWithPointer:@selector(bodyCollision:bullet:)],
                           
                           };
     return (SEL)[dic[type] pointerValue];

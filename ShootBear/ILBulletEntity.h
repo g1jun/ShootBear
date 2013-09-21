@@ -7,7 +7,9 @@
 //
 
 #import "ILBox2dEntity.h"
+#import "ILBulletEntityBase.h"
 
-@interface ILBulletEntity : ILBox2dEntity
+@interface ILBulletEntity : ILBulletEntityBase
+
 
 @end

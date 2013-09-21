@@ -14,17 +14,23 @@
 
 + (void)queryAround:(ILSpriteBase *)sprite callback:(b2QueryCallback *)callback;
 {
+    [ILQueryTool queryAround:sprite callback:callback scale:1.5];
+}
+
++ (void)queryAround:(ILSpriteBase *)sprite callback:(b2QueryCallback *)callback scale:(float)scale
+{
     b2World *world = sprite.b2Body->GetWorld();
     CGSize size = sprite.contentSize;
     CGPoint origin = [sprite.parent convertToWorldSpace:sprite.position];
     origin.x -= sprite.anchorPoint.x * size.width;
     origin.y -= sprite.anchorPoint.y * size.height;
-    float offset = MIN(size.width, size.height) * 0.2;
+    float offsetX = size.width * scale / 2;
+    float offsetY = size.height * scale / 2;
     b2AABB querAABB;
-    float lowerX = (origin.x - offset) / PIXELS_PER_METER;
-    float lowerY = (origin.y - offset) / PIXELS_PER_METER;
-    float upperX = (origin.x + size.width + offset) / PIXELS_PER_METER;
-    float upperY = (origin.y + size.height + offset) / PIXELS_PER_METER;
+    float lowerX = (origin.x - offsetX) / PIXELS_PER_METER;
+    float lowerY = (origin.y - offsetY) / PIXELS_PER_METER;
+    float upperX = (origin.x + offsetX) / PIXELS_PER_METER;
+    float upperY = (origin.y + offsetY) / PIXELS_PER_METER;
     querAABB.lowerBound = b2Vec2(lowerX, lowerY);
     querAABB.upperBound = b2Vec2(upperX, upperY);
     world->QueryAABB(callback, querAABB);

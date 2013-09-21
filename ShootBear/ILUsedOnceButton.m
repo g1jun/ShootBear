@@ -29,7 +29,7 @@
         if ([node isKindOfClass:[CCSprite class]]) {
             CCSprite *sprite = (CCSprite *)node;
             [sprite setColor:ccc3(0, 0, 0)];
-            [sprite setOpacity:100];
+            [sprite setOpacity:50];
         }
     }
 }

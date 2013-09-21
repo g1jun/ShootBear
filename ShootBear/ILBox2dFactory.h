@@ -31,6 +31,8 @@
 
 - (void)runTarget:(ILCollisionParameter *)param;
 
+- (void)bearDead:(ILBear*)bear;
+
 + (ILBox2dFactory *)sharedFactory;
 
 @end

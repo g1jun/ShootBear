@@ -37,9 +37,13 @@
     return self;
 }
 
-- (void)didLoadFromCCB
+
+- (void)onEnter
 {
-    
+    [super onEnter];
+    if (_isCannon) {
+        self.gun.lineReference.visible = NO;
+    }
 }
 
 - (CGPoint)rotationCenterPosition
@@ -123,11 +127,6 @@
     }
 }
 
-- (void)onEnter
-{
-    [super onEnter];
-   
-}
 
 - (void)stopAccpetTouch
 {
@@ -160,7 +159,7 @@
     newGun.position = self.gun.position;
     [self removeChild:self.gun];
     self.gun = newGun;
-    [self.gun setTexture:self.textureAtlas.texture];
+//    [self.gun setTexture:self.textureAtlas.texture];
     [self addChild:self.gun z:-1];
 }
 
