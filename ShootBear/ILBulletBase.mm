@@ -50,7 +50,7 @@
 
 - (void)continuePlay
 {
-    [self scheduleUpdate];
+    [[CCDirector sharedDirector].scheduler resumeTarget:self];
 }
 
 - (void)lifeEnd
@@ -69,6 +69,7 @@
 
 - (void)dealloc
 {
+    [self unscheduleAllSelectors];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     self.entity = nil;
     self.bulletType = nil;

@@ -51,6 +51,7 @@
     _playControl = [[ILPlayControl node] retain];
     _playControl.delegate = _currentLevel;
     _playControl.failedDelegate = self;
+    _playControl.level = _currentLevelNO;
     [self addChild:_playControl z:zLevelControl];
 }
 

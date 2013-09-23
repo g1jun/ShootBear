@@ -127,7 +127,7 @@
 
 - (CGPoint)explisionPosition
 {
-    return [self convertToWorldSpace:_explisionNode.position];
+    return [_explisionNode.parent convertToWorldSpace:_explisionNode.position];
 }
 
 

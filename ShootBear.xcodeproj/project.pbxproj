@@ -10,6 +10,74 @@
 		04001B6817BCCDDF00E1332A /* ILCollisionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04001B6717BCCDDF00E1332A /* ILCollisionParameter.m */; };
 		0401611017E4B36100A7FB67 /* ILClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401610F17E4B36100A7FB67 /* ILClippingNode.m */; };
 		0401611117E4B36100A7FB67 /* ILClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401610F17E4B36100A7FB67 /* ILClippingNode.m */; };
+		0406043F17EE6D6A002B6E8B /* BulletTrack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406041D17EE6D6A002B6E8B /* BulletTrack.ccbi */; };
+		0406044017EE6D6A002B6E8B /* BulletTrack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406041D17EE6D6A002B6E8B /* BulletTrack.ccbi */; };
+		0406044117EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406041E17EE6D6A002B6E8B /* CannonBodyLeft.ccbi */; };
+		0406044217EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406041E17EE6D6A002B6E8B /* CannonBodyLeft.ccbi */; };
+		0406044317EE6D6A002B6E8B /* CannonBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406041F17EE6D6A002B6E8B /* CannonBodyRight.ccbi */; };
+		0406044417EE6D6A002B6E8B /* CannonBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406041F17EE6D6A002B6E8B /* CannonBodyRight.ccbi */; };
+		0406044517EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042017EE6D6A002B6E8B /* CannonBullet.ccbi */; };
+		0406044617EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042017EE6D6A002B6E8B /* CannonBullet.ccbi */; };
+		0406044717EE6D6A002B6E8B /* CannonExplosion.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042117EE6D6A002B6E8B /* CannonExplosion.ccbi */; };
+		0406044817EE6D6A002B6E8B /* CannonExplosion.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042117EE6D6A002B6E8B /* CannonExplosion.ccbi */; };
+		0406044917EE6D6A002B6E8B /* CannonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042217EE6D6A002B6E8B /* CannonFire.ccbi */; };
+		0406044A17EE6D6A002B6E8B /* CannonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042217EE6D6A002B6E8B /* CannonFire.ccbi */; };
+		0406044B17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042317EE6D6A002B6E8B /* CannonIndicator.ccbi */; };
+		0406044C17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042317EE6D6A002B6E8B /* CannonIndicator.ccbi */; };
+		0406044D17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042417EE6D6A002B6E8B /* CannonLeft.ccbi */; };
+		0406044E17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042417EE6D6A002B6E8B /* CannonLeft.ccbi */; };
+		0406044F17EE6D6A002B6E8B /* CannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042517EE6D6A002B6E8B /* CannonRight.ccbi */; };
+		0406045017EE6D6A002B6E8B /* CannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042517EE6D6A002B6E8B /* CannonRight.ccbi */; };
+		0406045117EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042617EE6D6A002B6E8B /* ElectricBullet.ccbi */; };
+		0406045217EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042617EE6D6A002B6E8B /* ElectricBullet.ccbi */; };
+		0406045317EE6D6A002B6E8B /* FireBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042717EE6D6A002B6E8B /* FireBullet.ccbi */; };
+		0406045417EE6D6A002B6E8B /* FireBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042717EE6D6A002B6E8B /* FireBullet.ccbi */; };
+		0406045517EE6D6A002B6E8B /* Gun0Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042817EE6D6A002B6E8B /* Gun0Left.ccbi */; };
+		0406045617EE6D6A002B6E8B /* Gun0Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042817EE6D6A002B6E8B /* Gun0Left.ccbi */; };
+		0406045717EE6D6A002B6E8B /* Gun0Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042917EE6D6A002B6E8B /* Gun0Right.ccbi */; };
+		0406045817EE6D6A002B6E8B /* Gun0Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042917EE6D6A002B6E8B /* Gun0Right.ccbi */; };
+		0406045917EE6D6A002B6E8B /* Gun1Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042A17EE6D6A002B6E8B /* Gun1Left.ccbi */; };
+		0406045A17EE6D6A002B6E8B /* Gun1Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042A17EE6D6A002B6E8B /* Gun1Left.ccbi */; };
+		0406045B17EE6D6A002B6E8B /* Gun1Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042B17EE6D6A002B6E8B /* Gun1Right.ccbi */; };
+		0406045C17EE6D6A002B6E8B /* Gun1Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042B17EE6D6A002B6E8B /* Gun1Right.ccbi */; };
+		0406045D17EE6D6A002B6E8B /* Gun2Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042C17EE6D6A002B6E8B /* Gun2Left.ccbi */; };
+		0406045E17EE6D6A002B6E8B /* Gun2Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042C17EE6D6A002B6E8B /* Gun2Left.ccbi */; };
+		0406045F17EE6D6A002B6E8B /* Gun2Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042D17EE6D6A002B6E8B /* Gun2Right.ccbi */; };
+		0406046017EE6D6A002B6E8B /* Gun2Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042D17EE6D6A002B6E8B /* Gun2Right.ccbi */; };
+		0406046117EE6D6A002B6E8B /* GunFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042E17EE6D6A002B6E8B /* GunFire.ccbi */; };
+		0406046217EE6D6A002B6E8B /* GunFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042E17EE6D6A002B6E8B /* GunFire.ccbi */; };
+		0406046317EE6D6A002B6E8B /* HandBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042F17EE6D6A002B6E8B /* HandBullet.ccbi */; };
+		0406046417EE6D6A002B6E8B /* HandBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406042F17EE6D6A002B6E8B /* HandBullet.ccbi */; };
+		0406046517EE6D6A002B6E8B /* HeadGood.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043017EE6D6A002B6E8B /* HeadGood.ccbi */; };
+		0406046617EE6D6A002B6E8B /* HeadGood.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043017EE6D6A002B6E8B /* HeadGood.ccbi */; };
+		0406046717EE6D6A002B6E8B /* LegGood.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043117EE6D6A002B6E8B /* LegGood.ccbi */; };
+		0406046817EE6D6A002B6E8B /* LegGood.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043117EE6D6A002B6E8B /* LegGood.ccbi */; };
+		0406046917EE6D6A002B6E8B /* LineReference.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043217EE6D6A002B6E8B /* LineReference.ccbi */; };
+		0406046A17EE6D6A002B6E8B /* LineReference.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043217EE6D6A002B6E8B /* LineReference.ccbi */; };
+		0406046B17EE6D6A002B6E8B /* Shooter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043317EE6D6A002B6E8B /* Shooter.ccbi */; };
+		0406046C17EE6D6A002B6E8B /* Shooter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043317EE6D6A002B6E8B /* Shooter.ccbi */; };
+		0406046D17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043417EE6D6A002B6E8B /* ShooterArmLeft.ccbi */; };
+		0406046E17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043417EE6D6A002B6E8B /* ShooterArmLeft.ccbi */; };
+		0406046F17EE6D6A002B6E8B /* ShooterArmRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043517EE6D6A002B6E8B /* ShooterArmRight.ccbi */; };
+		0406047017EE6D6A002B6E8B /* ShooterArmRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043517EE6D6A002B6E8B /* ShooterArmRight.ccbi */; };
+		0406047117EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043617EE6D6A002B6E8B /* ShooterBodyLeft.ccbi */; };
+		0406047217EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043617EE6D6A002B6E8B /* ShooterBodyLeft.ccbi */; };
+		0406047317EE6D6A002B6E8B /* ShooterBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043717EE6D6A002B6E8B /* ShooterBodyRight.ccbi */; };
+		0406047417EE6D6A002B6E8B /* ShooterBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043717EE6D6A002B6E8B /* ShooterBodyRight.ccbi */; };
+		0406047517EE6D6A002B6E8B /* ShooterCannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043817EE6D6A002B6E8B /* ShooterCannonLeft.ccbi */; };
+		0406047617EE6D6A002B6E8B /* ShooterCannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043817EE6D6A002B6E8B /* ShooterCannonLeft.ccbi */; };
+		0406047717EE6D6A002B6E8B /* ShooterCannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043917EE6D6A002B6E8B /* ShooterCannonRight.ccbi */; };
+		0406047817EE6D6A002B6E8B /* ShooterCannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043917EE6D6A002B6E8B /* ShooterCannonRight.ccbi */; };
+		0406047917EE6D6A002B6E8B /* ShooterHeadLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043A17EE6D6A002B6E8B /* ShooterHeadLeft.ccbi */; };
+		0406047A17EE6D6A002B6E8B /* ShooterHeadLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043A17EE6D6A002B6E8B /* ShooterHeadLeft.ccbi */; };
+		0406047B17EE6D6A002B6E8B /* ShooterHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043B17EE6D6A002B6E8B /* ShooterHeadRight.ccbi */; };
+		0406047C17EE6D6A002B6E8B /* ShooterHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043B17EE6D6A002B6E8B /* ShooterHeadRight.ccbi */; };
+		0406047D17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043C17EE6D6A002B6E8B /* ShooterLeft.ccbi */; };
+		0406047E17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043C17EE6D6A002B6E8B /* ShooterLeft.ccbi */; };
+		0406047F17EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043D17EE6D6A002B6E8B /* ShooterRight.ccbi */; };
+		0406048017EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043D17EE6D6A002B6E8B /* ShooterRight.ccbi */; };
+		0406048117EE6D6A002B6E8B /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043E17EE6D6A002B6E8B /* TestScene.ccbi */; };
+		0406048217EE6D6A002B6E8B /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043E17EE6D6A002B6E8B /* TestScene.ccbi */; };
 		040D9FCE17C9C1A20053BBCA /* ILMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FCD17C9C1A20053BBCA /* ILMetal.mm */; };
 		040D9FD117C9C1C30053BBCA /* ILWood.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FD017C9C1C30053BBCA /* ILWood.mm */; };
 		040DA00117C9F2180053BBCA /* ILQueryTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040DA00017C9F2180053BBCA /* ILQueryTool.mm */; };
@@ -689,8 +757,6 @@
 		04886E3D17ACB20E005D8DB9 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 04886E3C17ACB20E005D8DB9 /* blocks.png */; };
 		049B5C7D17D5D33100F67159 /* ILMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7C17D5D33100F67159 /* ILMenuButton.m */; };
 		049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */; };
-		049B83F617E6B64700A61446 /* SceneBackground1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 049B83F517E6B64700A61446 /* SceneBackground1.ccbi */; };
-		049B83F717E6B64700A61446 /* SceneBackground1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 049B83F517E6B64700A61446 /* SceneBackground1.ccbi */; };
 		049B83FA17E6D60F00A61446 /* ILBulletEntityBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049B83F917E6D60F00A61446 /* ILBulletEntityBase.mm */; };
 		049B83FB17E6D60F00A61446 /* ILBulletEntityBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049B83F917E6D60F00A61446 /* ILBulletEntityBase.mm */; };
 		049EF6FF17B8ABBB00A9D1B7 /* ILTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EF6FE17B8ABBB00A9D1B7 /* ILTools.m */; };
@@ -754,70 +820,6 @@
 		04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
 		04DCE28D17B4E1010036CA68 /* ILPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */; };
 		04E0832017B50901007F5486 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0831F17B50901007F5486 /* libobjc.A.dylib */; };
-		04E1DB4817E8AE8900581B3B /* BulletTrack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2817E8AE8900581B3B /* BulletTrack.ccbi */; };
-		04E1DB4917E8AE8900581B3B /* BulletTrack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2817E8AE8900581B3B /* BulletTrack.ccbi */; };
-		04E1DB4A17E8AE8900581B3B /* CannonBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2917E8AE8900581B3B /* CannonBodyLeft.ccbi */; };
-		04E1DB4B17E8AE8900581B3B /* CannonBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2917E8AE8900581B3B /* CannonBodyLeft.ccbi */; };
-		04E1DB4C17E8AE8900581B3B /* CannonBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2A17E8AE8900581B3B /* CannonBodyRight.ccbi */; };
-		04E1DB4D17E8AE8900581B3B /* CannonBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2A17E8AE8900581B3B /* CannonBodyRight.ccbi */; };
-		04E1DB4E17E8AE8900581B3B /* CannonBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2B17E8AE8900581B3B /* CannonBullet.ccbi */; };
-		04E1DB4F17E8AE8900581B3B /* CannonBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2B17E8AE8900581B3B /* CannonBullet.ccbi */; };
-		04E1DB5017E8AE8900581B3B /* CannonExplosion.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2C17E8AE8900581B3B /* CannonExplosion.ccbi */; };
-		04E1DB5117E8AE8900581B3B /* CannonExplosion.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2C17E8AE8900581B3B /* CannonExplosion.ccbi */; };
-		04E1DB5217E8AE8900581B3B /* CannonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2D17E8AE8900581B3B /* CannonFire.ccbi */; };
-		04E1DB5317E8AE8900581B3B /* CannonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2D17E8AE8900581B3B /* CannonFire.ccbi */; };
-		04E1DB5417E8AE8900581B3B /* CannonIndicator.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2E17E8AE8900581B3B /* CannonIndicator.ccbi */; };
-		04E1DB5517E8AE8900581B3B /* CannonIndicator.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2E17E8AE8900581B3B /* CannonIndicator.ccbi */; };
-		04E1DB5617E8AE8900581B3B /* CannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2F17E8AE8900581B3B /* CannonLeft.ccbi */; };
-		04E1DB5717E8AE8900581B3B /* CannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB2F17E8AE8900581B3B /* CannonLeft.ccbi */; };
-		04E1DB5817E8AE8900581B3B /* CannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3017E8AE8900581B3B /* CannonRight.ccbi */; };
-		04E1DB5917E8AE8900581B3B /* CannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3017E8AE8900581B3B /* CannonRight.ccbi */; };
-		04E1DB5A17E8AE8900581B3B /* ElectricBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3117E8AE8900581B3B /* ElectricBullet.ccbi */; };
-		04E1DB5B17E8AE8900581B3B /* ElectricBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3117E8AE8900581B3B /* ElectricBullet.ccbi */; };
-		04E1DB5C17E8AE8900581B3B /* FireBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3217E8AE8900581B3B /* FireBullet.ccbi */; };
-		04E1DB5D17E8AE8900581B3B /* FireBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3217E8AE8900581B3B /* FireBullet.ccbi */; };
-		04E1DB5E17E8AE8900581B3B /* Gun0Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3317E8AE8900581B3B /* Gun0Left.ccbi */; };
-		04E1DB5F17E8AE8900581B3B /* Gun0Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3317E8AE8900581B3B /* Gun0Left.ccbi */; };
-		04E1DB6017E8AE8900581B3B /* Gun0Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3417E8AE8900581B3B /* Gun0Right.ccbi */; };
-		04E1DB6117E8AE8900581B3B /* Gun0Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3417E8AE8900581B3B /* Gun0Right.ccbi */; };
-		04E1DB6217E8AE8900581B3B /* Gun1Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3517E8AE8900581B3B /* Gun1Left.ccbi */; };
-		04E1DB6317E8AE8900581B3B /* Gun1Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3517E8AE8900581B3B /* Gun1Left.ccbi */; };
-		04E1DB6417E8AE8900581B3B /* Gun1Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3617E8AE8900581B3B /* Gun1Right.ccbi */; };
-		04E1DB6517E8AE8900581B3B /* Gun1Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3617E8AE8900581B3B /* Gun1Right.ccbi */; };
-		04E1DB6617E8AE8900581B3B /* Gun2Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3717E8AE8900581B3B /* Gun2Left.ccbi */; };
-		04E1DB6717E8AE8900581B3B /* Gun2Left.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3717E8AE8900581B3B /* Gun2Left.ccbi */; };
-		04E1DB6817E8AE8900581B3B /* Gun2Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3817E8AE8900581B3B /* Gun2Right.ccbi */; };
-		04E1DB6917E8AE8900581B3B /* Gun2Right.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3817E8AE8900581B3B /* Gun2Right.ccbi */; };
-		04E1DB6A17E8AE8900581B3B /* GunFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3917E8AE8900581B3B /* GunFire.ccbi */; };
-		04E1DB6B17E8AE8900581B3B /* GunFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3917E8AE8900581B3B /* GunFire.ccbi */; };
-		04E1DB6C17E8AE8900581B3B /* HandBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3A17E8AE8900581B3B /* HandBullet.ccbi */; };
-		04E1DB6D17E8AE8900581B3B /* HandBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3A17E8AE8900581B3B /* HandBullet.ccbi */; };
-		04E1DB6E17E8AE8900581B3B /* LineReference.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3B17E8AE8900581B3B /* LineReference.ccbi */; };
-		04E1DB6F17E8AE8900581B3B /* LineReference.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3B17E8AE8900581B3B /* LineReference.ccbi */; };
-		04E1DB7017E8AE8900581B3B /* Shooter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3C17E8AE8900581B3B /* Shooter.ccbi */; };
-		04E1DB7117E8AE8900581B3B /* Shooter.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3C17E8AE8900581B3B /* Shooter.ccbi */; };
-		04E1DB7217E8AE8900581B3B /* ShooterArmLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3D17E8AE8900581B3B /* ShooterArmLeft.ccbi */; };
-		04E1DB7317E8AE8900581B3B /* ShooterArmLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3D17E8AE8900581B3B /* ShooterArmLeft.ccbi */; };
-		04E1DB7417E8AE8900581B3B /* ShooterArmRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3E17E8AE8900581B3B /* ShooterArmRight.ccbi */; };
-		04E1DB7517E8AE8900581B3B /* ShooterArmRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3E17E8AE8900581B3B /* ShooterArmRight.ccbi */; };
-		04E1DB7617E8AE8900581B3B /* ShooterBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3F17E8AE8900581B3B /* ShooterBodyLeft.ccbi */; };
-		04E1DB7717E8AE8900581B3B /* ShooterBodyLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB3F17E8AE8900581B3B /* ShooterBodyLeft.ccbi */; };
-		04E1DB7817E8AE8900581B3B /* ShooterBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4017E8AE8900581B3B /* ShooterBodyRight.ccbi */; };
-		04E1DB7917E8AE8900581B3B /* ShooterBodyRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4017E8AE8900581B3B /* ShooterBodyRight.ccbi */; };
-		04E1DB7A17E8AE8900581B3B /* ShooterCannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4117E8AE8900581B3B /* ShooterCannonLeft.ccbi */; };
-		04E1DB7B17E8AE8900581B3B /* ShooterCannonLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4117E8AE8900581B3B /* ShooterCannonLeft.ccbi */; };
-		04E1DB7C17E8AE8900581B3B /* ShooterCannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4217E8AE8900581B3B /* ShooterCannonRight.ccbi */; };
-		04E1DB7D17E8AE8900581B3B /* ShooterCannonRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4217E8AE8900581B3B /* ShooterCannonRight.ccbi */; };
-		04E1DB7E17E8AE8900581B3B /* ShooterHeadLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4317E8AE8900581B3B /* ShooterHeadLeft.ccbi */; };
-		04E1DB7F17E8AE8900581B3B /* ShooterHeadLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4317E8AE8900581B3B /* ShooterHeadLeft.ccbi */; };
-		04E1DB8017E8AE8900581B3B /* ShooterHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4417E8AE8900581B3B /* ShooterHeadRight.ccbi */; };
-		04E1DB8117E8AE8900581B3B /* ShooterHeadRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4417E8AE8900581B3B /* ShooterHeadRight.ccbi */; };
-		04E1DB8217E8AE8900581B3B /* ShooterLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4517E8AE8900581B3B /* ShooterLeft.ccbi */; };
-		04E1DB8317E8AE8900581B3B /* ShooterLeft.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4517E8AE8900581B3B /* ShooterLeft.ccbi */; };
-		04E1DB8417E8AE8900581B3B /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4617E8AE8900581B3B /* ShooterRight.ccbi */; };
-		04E1DB8517E8AE8900581B3B /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4617E8AE8900581B3B /* ShooterRight.ccbi */; };
-		04E1DB8617E8AE8900581B3B /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4717E8AE8900581B3B /* TestScene.ccbi */; };
-		04E1DB8717E8AE8900581B3B /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04E1DB4717E8AE8900581B3B /* TestScene.ccbi */; };
 		04E53F2917D0174000AE15A5 /* ILLevelControlLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */; };
 		04E53F2C17D0212D00AE15A5 /* ILBulletShowUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2B17D0212D00AE15A5 /* ILBulletShowUnit.m */; };
 		04E53F2F17D0226000AE15A5 /* ILBulletNumberShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2E17D0226000AE15A5 /* ILBulletNumberShow.m */; };
@@ -911,6 +913,8 @@
 		04F05AF817E9C10400D4F6B8 /* Level2-8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F05AD917E9C10400D4F6B8 /* Level2-8.ccbi */; };
 		04F05AF917E9C10400D4F6B8 /* Level2-9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */; };
 		04F05AFA17E9C10400D4F6B8 /* Level2-9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */; };
+		04F2E22D17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */; };
+		04F2E22E17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */; };
 		04F40E5217DF72CF00B493C9 /* MetalLightning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */; };
 		04F40E5317DF72CF00B493C9 /* MetalLightning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */; };
 		04F40E5417DF72CF00B493C9 /* StaticMetal1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3317DF72CF00B493C9 /* StaticMetal1.ccbi */; };
@@ -992,6 +996,40 @@
 		04001B6917BCDAB700E1332A /* ILBearCollisionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILBearCollisionDelegate.h; sourceTree = "<group>"; };
 		0401610E17E4B36100A7FB67 /* ILClippingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILClippingNode.h; sourceTree = "<group>"; };
 		0401610F17E4B36100A7FB67 /* ILClippingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILClippingNode.m; sourceTree = "<group>"; };
+		0406041D17EE6D6A002B6E8B /* BulletTrack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletTrack.ccbi; sourceTree = "<group>"; };
+		0406041E17EE6D6A002B6E8B /* CannonBodyLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBodyLeft.ccbi; sourceTree = "<group>"; };
+		0406041F17EE6D6A002B6E8B /* CannonBodyRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBodyRight.ccbi; sourceTree = "<group>"; };
+		0406042017EE6D6A002B6E8B /* CannonBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBullet.ccbi; sourceTree = "<group>"; };
+		0406042117EE6D6A002B6E8B /* CannonExplosion.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonExplosion.ccbi; sourceTree = "<group>"; };
+		0406042217EE6D6A002B6E8B /* CannonFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonFire.ccbi; sourceTree = "<group>"; };
+		0406042317EE6D6A002B6E8B /* CannonIndicator.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonIndicator.ccbi; sourceTree = "<group>"; };
+		0406042417EE6D6A002B6E8B /* CannonLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonLeft.ccbi; sourceTree = "<group>"; };
+		0406042517EE6D6A002B6E8B /* CannonRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonRight.ccbi; sourceTree = "<group>"; };
+		0406042617EE6D6A002B6E8B /* ElectricBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectricBullet.ccbi; sourceTree = "<group>"; };
+		0406042717EE6D6A002B6E8B /* FireBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = FireBullet.ccbi; sourceTree = "<group>"; };
+		0406042817EE6D6A002B6E8B /* Gun0Left.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun0Left.ccbi; sourceTree = "<group>"; };
+		0406042917EE6D6A002B6E8B /* Gun0Right.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun0Right.ccbi; sourceTree = "<group>"; };
+		0406042A17EE6D6A002B6E8B /* Gun1Left.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun1Left.ccbi; sourceTree = "<group>"; };
+		0406042B17EE6D6A002B6E8B /* Gun1Right.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun1Right.ccbi; sourceTree = "<group>"; };
+		0406042C17EE6D6A002B6E8B /* Gun2Left.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun2Left.ccbi; sourceTree = "<group>"; };
+		0406042D17EE6D6A002B6E8B /* Gun2Right.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun2Right.ccbi; sourceTree = "<group>"; };
+		0406042E17EE6D6A002B6E8B /* GunFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = GunFire.ccbi; sourceTree = "<group>"; };
+		0406042F17EE6D6A002B6E8B /* HandBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = HandBullet.ccbi; sourceTree = "<group>"; };
+		0406043017EE6D6A002B6E8B /* HeadGood.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = HeadGood.ccbi; sourceTree = "<group>"; };
+		0406043117EE6D6A002B6E8B /* LegGood.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LegGood.ccbi; sourceTree = "<group>"; };
+		0406043217EE6D6A002B6E8B /* LineReference.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LineReference.ccbi; sourceTree = "<group>"; };
+		0406043317EE6D6A002B6E8B /* Shooter.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shooter.ccbi; sourceTree = "<group>"; };
+		0406043417EE6D6A002B6E8B /* ShooterArmLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmLeft.ccbi; sourceTree = "<group>"; };
+		0406043517EE6D6A002B6E8B /* ShooterArmRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmRight.ccbi; sourceTree = "<group>"; };
+		0406043617EE6D6A002B6E8B /* ShooterBodyLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyLeft.ccbi; sourceTree = "<group>"; };
+		0406043717EE6D6A002B6E8B /* ShooterBodyRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyRight.ccbi; sourceTree = "<group>"; };
+		0406043817EE6D6A002B6E8B /* ShooterCannonLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterCannonLeft.ccbi; sourceTree = "<group>"; };
+		0406043917EE6D6A002B6E8B /* ShooterCannonRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterCannonRight.ccbi; sourceTree = "<group>"; };
+		0406043A17EE6D6A002B6E8B /* ShooterHeadLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadLeft.ccbi; sourceTree = "<group>"; };
+		0406043B17EE6D6A002B6E8B /* ShooterHeadRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadRight.ccbi; sourceTree = "<group>"; };
+		0406043C17EE6D6A002B6E8B /* ShooterLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterLeft.ccbi; sourceTree = "<group>"; };
+		0406043D17EE6D6A002B6E8B /* ShooterRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterRight.ccbi; sourceTree = "<group>"; };
+		0406043E17EE6D6A002B6E8B /* TestScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScene.ccbi; sourceTree = "<group>"; };
 		040D9FCC17C9C1A20053BBCA /* ILMetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMetal.h; sourceTree = "<group>"; };
 		040D9FCD17C9C1A20053BBCA /* ILMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILMetal.mm; sourceTree = "<group>"; };
 		040D9FCF17C9C1C30053BBCA /* ILWood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILWood.h; sourceTree = "<group>"; };
@@ -1616,38 +1654,6 @@
 		04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPhysicsSprite.h; sourceTree = "<group>"; };
 		04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsSprite.mm; sourceTree = "<group>"; };
 		04E0831F17B50901007F5486 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
-		04E1DB2817E8AE8900581B3B /* BulletTrack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletTrack.ccbi; sourceTree = "<group>"; };
-		04E1DB2917E8AE8900581B3B /* CannonBodyLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBodyLeft.ccbi; sourceTree = "<group>"; };
-		04E1DB2A17E8AE8900581B3B /* CannonBodyRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBodyRight.ccbi; sourceTree = "<group>"; };
-		04E1DB2B17E8AE8900581B3B /* CannonBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonBullet.ccbi; sourceTree = "<group>"; };
-		04E1DB2C17E8AE8900581B3B /* CannonExplosion.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonExplosion.ccbi; sourceTree = "<group>"; };
-		04E1DB2D17E8AE8900581B3B /* CannonFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonFire.ccbi; sourceTree = "<group>"; };
-		04E1DB2E17E8AE8900581B3B /* CannonIndicator.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonIndicator.ccbi; sourceTree = "<group>"; };
-		04E1DB2F17E8AE8900581B3B /* CannonLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonLeft.ccbi; sourceTree = "<group>"; };
-		04E1DB3017E8AE8900581B3B /* CannonRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CannonRight.ccbi; sourceTree = "<group>"; };
-		04E1DB3117E8AE8900581B3B /* ElectricBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectricBullet.ccbi; sourceTree = "<group>"; };
-		04E1DB3217E8AE8900581B3B /* FireBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = FireBullet.ccbi; sourceTree = "<group>"; };
-		04E1DB3317E8AE8900581B3B /* Gun0Left.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun0Left.ccbi; sourceTree = "<group>"; };
-		04E1DB3417E8AE8900581B3B /* Gun0Right.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun0Right.ccbi; sourceTree = "<group>"; };
-		04E1DB3517E8AE8900581B3B /* Gun1Left.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun1Left.ccbi; sourceTree = "<group>"; };
-		04E1DB3617E8AE8900581B3B /* Gun1Right.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun1Right.ccbi; sourceTree = "<group>"; };
-		04E1DB3717E8AE8900581B3B /* Gun2Left.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun2Left.ccbi; sourceTree = "<group>"; };
-		04E1DB3817E8AE8900581B3B /* Gun2Right.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gun2Right.ccbi; sourceTree = "<group>"; };
-		04E1DB3917E8AE8900581B3B /* GunFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = GunFire.ccbi; sourceTree = "<group>"; };
-		04E1DB3A17E8AE8900581B3B /* HandBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = HandBullet.ccbi; sourceTree = "<group>"; };
-		04E1DB3B17E8AE8900581B3B /* LineReference.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LineReference.ccbi; sourceTree = "<group>"; };
-		04E1DB3C17E8AE8900581B3B /* Shooter.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shooter.ccbi; sourceTree = "<group>"; };
-		04E1DB3D17E8AE8900581B3B /* ShooterArmLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmLeft.ccbi; sourceTree = "<group>"; };
-		04E1DB3E17E8AE8900581B3B /* ShooterArmRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterArmRight.ccbi; sourceTree = "<group>"; };
-		04E1DB3F17E8AE8900581B3B /* ShooterBodyLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyLeft.ccbi; sourceTree = "<group>"; };
-		04E1DB4017E8AE8900581B3B /* ShooterBodyRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterBodyRight.ccbi; sourceTree = "<group>"; };
-		04E1DB4117E8AE8900581B3B /* ShooterCannonLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterCannonLeft.ccbi; sourceTree = "<group>"; };
-		04E1DB4217E8AE8900581B3B /* ShooterCannonRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterCannonRight.ccbi; sourceTree = "<group>"; };
-		04E1DB4317E8AE8900581B3B /* ShooterHeadLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadLeft.ccbi; sourceTree = "<group>"; };
-		04E1DB4417E8AE8900581B3B /* ShooterHeadRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterHeadRight.ccbi; sourceTree = "<group>"; };
-		04E1DB4517E8AE8900581B3B /* ShooterLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterLeft.ccbi; sourceTree = "<group>"; };
-		04E1DB4617E8AE8900581B3B /* ShooterRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterRight.ccbi; sourceTree = "<group>"; };
-		04E1DB4717E8AE8900581B3B /* TestScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScene.ccbi; sourceTree = "<group>"; };
 		04E53F2717D0174000AE15A5 /* ILLevelControlLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLevelControlLayer.h; sourceTree = "<group>"; };
 		04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLevelControlLayer.m; sourceTree = "<group>"; };
 		04E53F2A17D0212D00AE15A5 /* ILBulletShowUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletShowUnit.h; sourceTree = "<group>"; };
@@ -1717,6 +1723,7 @@
 		04F05AD817E9C10400D4F6B8 /* Level2-7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-7.ccbi"; sourceTree = "<group>"; };
 		04F05AD917E9C10400D4F6B8 /* Level2-8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-8.ccbi"; sourceTree = "<group>"; };
 		04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-9.ccbi"; sourceTree = "<group>"; };
+		04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinCollection.ccbi; sourceTree = "<group>"; };
 		04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalLightning.ccbi; sourceTree = "<group>"; };
 		04F40E3317DF72CF00B493C9 /* StaticMetal1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal1.ccbi; sourceTree = "<group>"; };
 		04F40E3417DF72CF00B493C9 /* StaticMetal2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal2.ccbi; sourceTree = "<group>"; };
@@ -1856,6 +1863,47 @@
 			name = CCBResources;
 			sourceTree = "<group>";
 		};
+		0406041C17EE6D6A002B6E8B /* Shooter */ = {
+			isa = PBXGroup;
+			children = (
+				0406041D17EE6D6A002B6E8B /* BulletTrack.ccbi */,
+				0406041E17EE6D6A002B6E8B /* CannonBodyLeft.ccbi */,
+				0406041F17EE6D6A002B6E8B /* CannonBodyRight.ccbi */,
+				0406042017EE6D6A002B6E8B /* CannonBullet.ccbi */,
+				0406042117EE6D6A002B6E8B /* CannonExplosion.ccbi */,
+				0406042217EE6D6A002B6E8B /* CannonFire.ccbi */,
+				0406042317EE6D6A002B6E8B /* CannonIndicator.ccbi */,
+				0406042417EE6D6A002B6E8B /* CannonLeft.ccbi */,
+				0406042517EE6D6A002B6E8B /* CannonRight.ccbi */,
+				0406042617EE6D6A002B6E8B /* ElectricBullet.ccbi */,
+				0406042717EE6D6A002B6E8B /* FireBullet.ccbi */,
+				0406042817EE6D6A002B6E8B /* Gun0Left.ccbi */,
+				0406042917EE6D6A002B6E8B /* Gun0Right.ccbi */,
+				0406042A17EE6D6A002B6E8B /* Gun1Left.ccbi */,
+				0406042B17EE6D6A002B6E8B /* Gun1Right.ccbi */,
+				0406042C17EE6D6A002B6E8B /* Gun2Left.ccbi */,
+				0406042D17EE6D6A002B6E8B /* Gun2Right.ccbi */,
+				0406042E17EE6D6A002B6E8B /* GunFire.ccbi */,
+				0406042F17EE6D6A002B6E8B /* HandBullet.ccbi */,
+				0406043017EE6D6A002B6E8B /* HeadGood.ccbi */,
+				0406043117EE6D6A002B6E8B /* LegGood.ccbi */,
+				0406043217EE6D6A002B6E8B /* LineReference.ccbi */,
+				0406043317EE6D6A002B6E8B /* Shooter.ccbi */,
+				0406043417EE6D6A002B6E8B /* ShooterArmLeft.ccbi */,
+				0406043517EE6D6A002B6E8B /* ShooterArmRight.ccbi */,
+				0406043617EE6D6A002B6E8B /* ShooterBodyLeft.ccbi */,
+				0406043717EE6D6A002B6E8B /* ShooterBodyRight.ccbi */,
+				0406043817EE6D6A002B6E8B /* ShooterCannonLeft.ccbi */,
+				0406043917EE6D6A002B6E8B /* ShooterCannonRight.ccbi */,
+				0406043A17EE6D6A002B6E8B /* ShooterHeadLeft.ccbi */,
+				0406043B17EE6D6A002B6E8B /* ShooterHeadRight.ccbi */,
+				0406043C17EE6D6A002B6E8B /* ShooterLeft.ccbi */,
+				0406043D17EE6D6A002B6E8B /* ShooterRight.ccbi */,
+				0406043E17EE6D6A002B6E8B /* TestScene.ccbi */,
+			);
+			path = Shooter;
+			sourceTree = "<group>";
+		};
 		040D9FCB17C9C1920053BBCA /* Element */ = {
 			isa = PBXGroup;
 			children = (
@@ -1991,6 +2039,7 @@
 			children = (
 				04382BB317D3788600257293 /* BulletNumberShow.ccbi */,
 				04382BB417D3788600257293 /* BulletShowUnit.ccbi */,
+				04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */,
 				04382BB517D3788600257293 /* ButtonBack.ccbi */,
 				04382BB617D3788600257293 /* ButtonBomb.ccbi */,
 				04382BB717D3788600257293 /* ButtonFire.ccbi */,
@@ -2896,9 +2945,9 @@
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
+				0406041C17EE6D6A002B6E8B /* Shooter */,
 				04F05ACA17E9C10400D4F6B8 /* LevelGroup2 */,
 				04F05A9317E9C0FE00D4F6B8 /* LevelGroup1 */,
-				04E1DB2717E8AE8900581B3B /* Shooter */,
 				049B83F417E6B64700A61446 /* PlayBackground */,
 				04F40E3117DF72CF00B493C9 /* StaticElement */,
 				04EE6F8917DD539100C185B8 /* LevelGroup0 */,
@@ -2918,45 +2967,6 @@
 				04DCE28517B4D61A0036CA68 /* BearPhysics.plist */,
 			);
 			name = Physics;
-			sourceTree = "<group>";
-		};
-		04E1DB2717E8AE8900581B3B /* Shooter */ = {
-			isa = PBXGroup;
-			children = (
-				04E1DB2817E8AE8900581B3B /* BulletTrack.ccbi */,
-				04E1DB2917E8AE8900581B3B /* CannonBodyLeft.ccbi */,
-				04E1DB2A17E8AE8900581B3B /* CannonBodyRight.ccbi */,
-				04E1DB2B17E8AE8900581B3B /* CannonBullet.ccbi */,
-				04E1DB2C17E8AE8900581B3B /* CannonExplosion.ccbi */,
-				04E1DB2D17E8AE8900581B3B /* CannonFire.ccbi */,
-				04E1DB2E17E8AE8900581B3B /* CannonIndicator.ccbi */,
-				04E1DB2F17E8AE8900581B3B /* CannonLeft.ccbi */,
-				04E1DB3017E8AE8900581B3B /* CannonRight.ccbi */,
-				04E1DB3117E8AE8900581B3B /* ElectricBullet.ccbi */,
-				04E1DB3217E8AE8900581B3B /* FireBullet.ccbi */,
-				04E1DB3317E8AE8900581B3B /* Gun0Left.ccbi */,
-				04E1DB3417E8AE8900581B3B /* Gun0Right.ccbi */,
-				04E1DB3517E8AE8900581B3B /* Gun1Left.ccbi */,
-				04E1DB3617E8AE8900581B3B /* Gun1Right.ccbi */,
-				04E1DB3717E8AE8900581B3B /* Gun2Left.ccbi */,
-				04E1DB3817E8AE8900581B3B /* Gun2Right.ccbi */,
-				04E1DB3917E8AE8900581B3B /* GunFire.ccbi */,
-				04E1DB3A17E8AE8900581B3B /* HandBullet.ccbi */,
-				04E1DB3B17E8AE8900581B3B /* LineReference.ccbi */,
-				04E1DB3C17E8AE8900581B3B /* Shooter.ccbi */,
-				04E1DB3D17E8AE8900581B3B /* ShooterArmLeft.ccbi */,
-				04E1DB3E17E8AE8900581B3B /* ShooterArmRight.ccbi */,
-				04E1DB3F17E8AE8900581B3B /* ShooterBodyLeft.ccbi */,
-				04E1DB4017E8AE8900581B3B /* ShooterBodyRight.ccbi */,
-				04E1DB4117E8AE8900581B3B /* ShooterCannonLeft.ccbi */,
-				04E1DB4217E8AE8900581B3B /* ShooterCannonRight.ccbi */,
-				04E1DB4317E8AE8900581B3B /* ShooterHeadLeft.ccbi */,
-				04E1DB4417E8AE8900581B3B /* ShooterHeadRight.ccbi */,
-				04E1DB4517E8AE8900581B3B /* ShooterLeft.ccbi */,
-				04E1DB4617E8AE8900581B3B /* ShooterRight.ccbi */,
-				04E1DB4717E8AE8900581B3B /* TestScene.ccbi */,
-			);
-			path = Shooter;
 			sourceTree = "<group>";
 		};
 		04EE6F8917DD539100C185B8 /* LevelGroup0 */ = {
@@ -3112,7 +3122,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IL;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = mac;
 			};
 			buildConfigurationList = 04886BF017ACB1F5005D8DB9 /* Build configuration list for PBXProject "ShootBear" */;
@@ -3145,6 +3155,7 @@
 				0453ECEC17DD814500B72CB7 /* Icon-72.png in Resources */,
 				0453ECED17DD814500B72CB7 /* Icon-Small-50.png in Resources */,
 				0453ECEE17DD814500B72CB7 /* Icon-Small.png in Resources */,
+				0406045E17EE6D6A002B6E8B /* Gun2Left.ccbi in Resources */,
 				0453ECEF17DD814500B72CB7 /* Icon-Small@2x.png in Resources */,
 				0453ECF017DD814500B72CB7 /* Icon.png in Resources */,
 				0453ECF117DD814500B72CB7 /* Icon@2x.png in Resources */,
@@ -3154,23 +3165,34 @@
 				0453ECF517DD814500B72CB7 /* collision.txt in Resources */,
 				0453ECF617DD814500B72CB7 /* README.md in Resources */,
 				0453ECF817DD814500B72CB7 /* LICENSE in Resources */,
+				0406046C17EE6D6A002B6E8B /* Shooter.ccbi in Resources */,
 				0453ECF917DD814500B72CB7 /* BearPhysics.plist in Resources */,
 				0453ECFA17DD814500B72CB7 /* ElementPhysics.plist in Resources */,
 				0453ED1917DD814500B72CB7 /* SceneBackground1.ccbi in Resources */,
+				0406044C17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
 				0453ED3517DD814500B72CB7 /* BulletNumberShow.ccbi in Resources */,
 				0453ED3617DD814500B72CB7 /* BulletShowUnit.ccbi in Resources */,
 				0453ED3717DD814500B72CB7 /* ButtonBack.ccbi in Resources */,
+				0406044E17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
 				0453ED3817DD814500B72CB7 /* ButtonBomb.ccbi in Resources */,
 				0453ED3917DD814500B72CB7 /* ButtonFire.ccbi in Resources */,
+				0406045417EE6D6A002B6E8B /* FireBullet.ccbi in Resources */,
 				0453ED3A17DD814500B72CB7 /* ButtonFlash.ccbi in Resources */,
+				0406047C17EE6D6A002B6E8B /* ShooterHeadRight.ccbi in Resources */,
 				0453ED3B17DD814500B72CB7 /* ButtonHelp.ccbi in Resources */,
 				0453ED3C17DD814500B72CB7 /* ButtonHome.ccbi in Resources */,
+				0406046017EE6D6A002B6E8B /* Gun2Right.ccbi in Resources */,
 				0453ED3D17DD814500B72CB7 /* ButtonList.ccbi in Resources */,
+				0406044017EE6D6A002B6E8B /* BulletTrack.ccbi in Resources */,
+				0406047A17EE6D6A002B6E8B /* ShooterHeadLeft.ccbi in Resources */,
+				0406045C17EE6D6A002B6E8B /* Gun1Right.ccbi in Resources */,
 				0453ED3E17DD814500B72CB7 /* ButtonMore.ccbi in Resources */,
 				0453ED3F17DD814500B72CB7 /* ButtonNext.ccbi in Resources */,
 				0453ED4017DD814500B72CB7 /* ButtonRetry.ccbi in Resources */,
 				0453ED4117DD814500B72CB7 /* ButtonShopping.ccbi in Resources */,
+				0406047417EE6D6A002B6E8B /* ShooterBodyRight.ccbi in Resources */,
 				0453ED4217DD814500B72CB7 /* ButtonShrink.ccbi in Resources */,
+				0406044417EE6D6A002B6E8B /* CannonBodyRight.ccbi in Resources */,
 				0453ED4317DD814500B72CB7 /* ButtonSound.ccbi in Resources */,
 				0453ED4417DD814500B72CB7 /* LevelCompletedLayer.ccbi in Resources */,
 				0453ED4517DD814500B72CB7 /* LevelControlLayer.ccbi in Resources */,
@@ -3180,22 +3202,27 @@
 				0453ED4917DD814500B72CB7 /* ShrinkPanel.ccbi in Resources */,
 				0453ED4A17DD814500B72CB7 /* HomeLayer.ccbi in Resources */,
 				0453ED4B17DD814500B72CB7 /* MenuButton.ccbi in Resources */,
+				0406048217EE6D6A002B6E8B /* TestScene.ccbi in Resources */,
 				0453ED4C17DD814500B72CB7 /* MenuGroup1.ccbi in Resources */,
 				0453ED4D17DD814500B72CB7 /* MenuGroup2.ccbi in Resources */,
 				0453ED4E17DD814500B72CB7 /* MenuGroup3.ccbi in Resources */,
 				0453ED4F17DD814500B72CB7 /* MenuGroup4.ccbi in Resources */,
 				0453ED5017DD814500B72CB7 /* MenuGroup5.ccbi in Resources */,
 				0453ED5117DD814500B72CB7 /* MenuGroup6.ccbi in Resources */,
+				0406047E17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				0453ED5217DD814500B72CB7 /* MenuGroup7.ccbi in Resources */,
 				0453ED5317DD814500B72CB7 /* MenuItem1.ccbi in Resources */,
 				0453ED5417DD814500B72CB7 /* MenuLayer.ccbi in Resources */,
 				0453ED5517DD814500B72CB7 /* MenuTheme.ccbi in Resources */,
+				0406045217EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
 				0453ED5617DD814500B72CB7 /* bear.plist in Resources */,
 				0453ED5717DD814500B72CB7 /* bear.png in Resources */,
+				0406044217EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				0453ED5817DD814500B72CB7 /* ccbParticleBone.png in Resources */,
 				0453ED5A17DD814500B72CB7 /* ccbParticleFire.png in Resources */,
 				0453ED5B17DD814500B72CB7 /* ccbParticleSmoke.png in Resources */,
 				0453ED5C17DD814500B72CB7 /* ccbParticleSnow.png in Resources */,
+				0406044817EE6D6A002B6E8B /* CannonExplosion.ccbi in Resources */,
 				0453ED5D17DD814500B72CB7 /* ccbParticleStars.png in Resources */,
 				0453ED5E17DD814500B72CB7 /* element.plist in Resources */,
 				0453ED5F17DD814500B72CB7 /* element.png in Resources */,
@@ -3205,15 +3232,18 @@
 				0453ED6317DD814500B72CB7 /* othres.png in Resources */,
 				0453ED6417DD814500B72CB7 /* people.plist in Resources */,
 				0453ED6517DD814500B72CB7 /* people.png in Resources */,
+				0406044617EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */,
 				0453ED6617DD814500B72CB7 /* play_bk1.png in Resources */,
 				0453ED6717DD814500B72CB7 /* resources-ipad in Resources */,
 				0453ED6817DD814500B72CB7 /* resources-ipadhd in Resources */,
 				0453ED6917DD814500B72CB7 /* resources-iphonehd in Resources */,
 				0453ED6A17DD814500B72CB7 /* BearDeadParticle.ccbi in Resources */,
+				0406047017EE6D6A002B6E8B /* ShooterArmRight.ccbi in Resources */,
 				0453ED6B17DD814500B72CB7 /* BlackBear.ccbi in Resources */,
 				0453ED6C17DD814500B72CB7 /* BlackBearLeft.ccbi in Resources */,
 				0453ED6D17DD814500B72CB7 /* BlackBearLeftArmOutter.ccbi in Resources */,
 				0453ED6E17DD814500B72CB7 /* BlackBearLeftHead.ccbi in Resources */,
+				0406046A17EE6D6A002B6E8B /* LineReference.ccbi in Resources */,
 				0453ED6F17DD814500B72CB7 /* BlackBearLeftLegOutter.ccbi in Resources */,
 				0453ED7017DD814500B72CB7 /* BlackBearRight.ccbi in Resources */,
 				0453ED7117DD814500B72CB7 /* BlackBearRightArmOutter.ccbi in Resources */,
@@ -3243,6 +3273,7 @@
 				0453ED8917DD814500B72CB7 /* MetalCircle.ccbi in Resources */,
 				0453ED8A17DD814500B72CB7 /* MetalRectangle.ccbi in Resources */,
 				0453ED8B17DD814500B72CB7 /* Platform.ccbi in Resources */,
+				0406045617EE6D6A002B6E8B /* Gun0Left.ccbi in Resources */,
 				0453ED8C17DD814500B72CB7 /* StoneBox.ccbi in Resources */,
 				0453ED8D17DD814500B72CB7 /* StoneCircle.ccbi in Resources */,
 				0453ED8E17DD814500B72CB7 /* StoneRectangle.ccbi in Resources */,
@@ -3253,33 +3284,40 @@
 				0453ED9317DD814500B72CB7 /* Level0-1.ccbi in Resources */,
 				0453ED9417DD814500B72CB7 /* Level0-10.ccbi in Resources */,
 				0453ED9517DD814500B72CB7 /* Level0-11.ccbi in Resources */,
+				0406045017EE6D6A002B6E8B /* CannonRight.ccbi in Resources */,
 				0453ED9617DD814500B72CB7 /* Level0-12.ccbi in Resources */,
 				0453ED9717DD814500B72CB7 /* Level0-13.ccbi in Resources */,
 				0453ED9817DD814500B72CB7 /* Level0-14.ccbi in Resources */,
 				0453ED9917DD814500B72CB7 /* Level0-2.ccbi in Resources */,
 				0453ED9A17DD814500B72CB7 /* Level0-3.ccbi in Resources */,
 				0453ED9B17DD814500B72CB7 /* Level0-4.ccbi in Resources */,
+				0406046E17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */,
 				0453ED9C17DD814500B72CB7 /* Level0-5.ccbi in Resources */,
 				0453ED9D17DD814500B72CB7 /* Level0-6.ccbi in Resources */,
 				0453ED9E17DD814500B72CB7 /* Level0-7.ccbi in Resources */,
+				0406046217EE6D6A002B6E8B /* GunFire.ccbi in Resources */,
 				0453ED9F17DD814500B72CB7 /* Level0-8.ccbi in Resources */,
 				0453EDA017DD814500B72CB7 /* Level0-9.ccbi in Resources */,
 				04F40E5317DF72CF00B493C9 /* MetalLightning.ccbi in Resources */,
 				04F40E5517DF72CF00B493C9 /* StaticMetal1.ccbi in Resources */,
 				04F40E5717DF72CF00B493C9 /* StaticMetal2.ccbi in Resources */,
+				0406047817EE6D6A002B6E8B /* ShooterCannonRight.ccbi in Resources */,
 				04F40E5917DF72CF00B493C9 /* StaticMetal3.ccbi in Resources */,
 				04F40E5B17DF72CF00B493C9 /* StaticMetal4.ccbi in Resources */,
 				04F40E5D17DF72CF00B493C9 /* StaticMetal5.ccbi in Resources */,
+				0406046617EE6D6A002B6E8B /* HeadGood.ccbi in Resources */,
 				04F40E5F17DF72CF00B493C9 /* StaticMetal6.ccbi in Resources */,
 				04F40E6117DF72CF00B493C9 /* StaticMetal7.ccbi in Resources */,
 				04F40E6317DF72CF00B493C9 /* StaticMetal8.ccbi in Resources */,
 				04F40E6517DF72CF00B493C9 /* StaticMetal9.ccbi in Resources */,
+				0406047617EE6D6A002B6E8B /* ShooterCannonLeft.ccbi in Resources */,
 				04F40E6717DF72CF00B493C9 /* StaticMetalUnit.ccbi in Resources */,
 				04F40E6917DF72CF00B493C9 /* StaticMetalUnit1.ccbi in Resources */,
 				04F40E6B17DF72CF00B493C9 /* StaticMetalUnit2.ccbi in Resources */,
 				04F40E6D17DF72CF00B493C9 /* StaticMetalUnit3.ccbi in Resources */,
 				04F40E6F17DF72CF00B493C9 /* StaticStone1.ccbi in Resources */,
 				04F40E7117DF72CF00B493C9 /* StaticStone2.ccbi in Resources */,
+				0406046417EE6D6A002B6E8B /* HandBullet.ccbi in Resources */,
 				04F40E7317DF72CF00B493C9 /* StaticStone3.ccbi in Resources */,
 				04F40E7517DF72CF00B493C9 /* StaticStone4.ccbi in Resources */,
 				04F40E7717DF72CF00B493C9 /* StaticStoneUnit.ccbi in Resources */,
@@ -3288,10 +3326,13 @@
 				04F40E7D17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
 				04F40E7F17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
 				04F40E8117DF72CF00B493C9 /* StaticWood5.ccbi in Resources */,
+				0406047217EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */,
 				04F40E8317DF72CF00B493C9 /* StaticWood6.ccbi in Resources */,
 				04F40E8517DF72CF00B493C9 /* StaticWood7.ccbi in Resources */,
 				04F40E8717DF72CF00B493C9 /* StaticWood8.ccbi in Resources */,
+				0406045A17EE6D6A002B6E8B /* Gun1Left.ccbi in Resources */,
 				04F40E8917DF72CF00B493C9 /* StaticWood9.ccbi in Resources */,
+				0406045817EE6D6A002B6E8B /* Gun0Right.ccbi in Resources */,
 				04F40E8B17DF72CF00B493C9 /* StaticWoodUnit1.ccbi in Resources */,
 				04F40E8D17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8F17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
@@ -3299,49 +3340,18 @@
 				0412D5EE17E540CE00EDFEE0 /* lightning1.png in Resources */,
 				0412D5F017E540CE00EDFEE0 /* lightning2.png in Resources */,
 				0412D5F217E540CE00EDFEE0 /* lightning3.png in Resources */,
+				0406046817EE6D6A002B6E8B /* LegGood.ccbi in Resources */,
 				0412D5F417E540CE00EDFEE0 /* lightning4.png in Resources */,
 				0412D5F617E540CE00EDFEE0 /* lightning5.png in Resources */,
 				0412D5F817E540CE00EDFEE0 /* lightning6.png in Resources */,
 				0412D5FA17E540CE00EDFEE0 /* lightning7.png in Resources */,
-				049B83F717E6B64700A61446 /* SceneBackground1.ccbi in Resources */,
-				04E1DB4917E8AE8900581B3B /* BulletTrack.ccbi in Resources */,
-				04E1DB4B17E8AE8900581B3B /* CannonBodyLeft.ccbi in Resources */,
-				04E1DB4D17E8AE8900581B3B /* CannonBodyRight.ccbi in Resources */,
-				04E1DB4F17E8AE8900581B3B /* CannonBullet.ccbi in Resources */,
-				04E1DB5117E8AE8900581B3B /* CannonExplosion.ccbi in Resources */,
-				04E1DB5317E8AE8900581B3B /* CannonFire.ccbi in Resources */,
-				04E1DB5517E8AE8900581B3B /* CannonIndicator.ccbi in Resources */,
-				04E1DB5717E8AE8900581B3B /* CannonLeft.ccbi in Resources */,
-				04E1DB5917E8AE8900581B3B /* CannonRight.ccbi in Resources */,
-				04E1DB5B17E8AE8900581B3B /* ElectricBullet.ccbi in Resources */,
-				04E1DB5D17E8AE8900581B3B /* FireBullet.ccbi in Resources */,
-				04E1DB5F17E8AE8900581B3B /* Gun0Left.ccbi in Resources */,
-				04E1DB6117E8AE8900581B3B /* Gun0Right.ccbi in Resources */,
-				04E1DB6317E8AE8900581B3B /* Gun1Left.ccbi in Resources */,
-				04E1DB6517E8AE8900581B3B /* Gun1Right.ccbi in Resources */,
-				04E1DB6717E8AE8900581B3B /* Gun2Left.ccbi in Resources */,
-				04E1DB6917E8AE8900581B3B /* Gun2Right.ccbi in Resources */,
-				04E1DB6B17E8AE8900581B3B /* GunFire.ccbi in Resources */,
-				04E1DB6D17E8AE8900581B3B /* HandBullet.ccbi in Resources */,
-				04E1DB6F17E8AE8900581B3B /* LineReference.ccbi in Resources */,
-				04E1DB7117E8AE8900581B3B /* Shooter.ccbi in Resources */,
-				04E1DB7317E8AE8900581B3B /* ShooterArmLeft.ccbi in Resources */,
-				04E1DB7517E8AE8900581B3B /* ShooterArmRight.ccbi in Resources */,
-				04E1DB7717E8AE8900581B3B /* ShooterBodyLeft.ccbi in Resources */,
-				04E1DB7917E8AE8900581B3B /* ShooterBodyRight.ccbi in Resources */,
-				04E1DB7B17E8AE8900581B3B /* ShooterCannonLeft.ccbi in Resources */,
-				04E1DB7D17E8AE8900581B3B /* ShooterCannonRight.ccbi in Resources */,
-				04E1DB7F17E8AE8900581B3B /* ShooterHeadLeft.ccbi in Resources */,
-				04E1DB8117E8AE8900581B3B /* ShooterHeadRight.ccbi in Resources */,
-				04E1DB8317E8AE8900581B3B /* ShooterLeft.ccbi in Resources */,
-				04E1DB8517E8AE8900581B3B /* ShooterRight.ccbi in Resources */,
-				04E1DB8717E8AE8900581B3B /* TestScene.ccbi in Resources */,
 				04F05AA717E9C0FE00D4F6B8 /* Level1-0.ccbi in Resources */,
 				04F05AA917E9C0FE00D4F6B8 /* Level1-1.ccbi in Resources */,
 				04F05AAB17E9C0FE00D4F6B8 /* Level1-10.ccbi in Resources */,
 				04F05AAD17E9C0FE00D4F6B8 /* Level1-11.ccbi in Resources */,
 				04F05AAF17E9C0FE00D4F6B8 /* Level1-12.ccbi in Resources */,
 				04F05AB117E9C0FE00D4F6B8 /* Level1-13.ccbi in Resources */,
+				0406048017EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */,
 				04F05AB317E9C0FE00D4F6B8 /* Level1-14.ccbi in Resources */,
 				04F05AB517E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
 				04F05AB717E9C0FE00D4F6B8 /* Level1-16.ccbi in Resources */,
@@ -3365,9 +3375,11 @@
 				04F05AEC17E9C10400D4F6B8 /* Level2-2.ccbi in Resources */,
 				04F05AEE17E9C10400D4F6B8 /* Level2-3.ccbi in Resources */,
 				04F05AF017E9C10400D4F6B8 /* Level2-4.ccbi in Resources */,
+				0406044A17EE6D6A002B6E8B /* CannonFire.ccbi in Resources */,
 				04F05AF217E9C10400D4F6B8 /* Level2-5.ccbi in Resources */,
 				04F05AF417E9C10400D4F6B8 /* Level2-6.ccbi in Resources */,
 				04F05AF617E9C10400D4F6B8 /* Level2-7.ccbi in Resources */,
+				04F2E22E17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */,
 				04F05AF817E9C10400D4F6B8 /* Level2-8.ccbi in Resources */,
 				04F05AFA17E9C10400D4F6B8 /* Level2-9.ccbi in Resources */,
 			);
@@ -3384,6 +3396,7 @@
 				04886C1717ACB1F6005D8DB9 /* Icon-72.png in Resources */,
 				04886C1917ACB1F6005D8DB9 /* Icon-Small-50.png in Resources */,
 				04886C1B17ACB1F6005D8DB9 /* Icon-Small.png in Resources */,
+				0406045D17EE6D6A002B6E8B /* Gun2Left.ccbi in Resources */,
 				04886C1D17ACB1F6005D8DB9 /* Icon-Small@2x.png in Resources */,
 				04886C1F17ACB1F7005D8DB9 /* Icon.png in Resources */,
 				04886C2117ACB1F7005D8DB9 /* Icon@2x.png in Resources */,
@@ -3393,23 +3406,34 @@
 				0411DAC517AE74690023BD39 /* collision.txt in Resources */,
 				04B1092317B37F4000778F8E /* README.md in Resources */,
 				04B1092617B37F4000778F8E /* LICENSE in Resources */,
+				0406046B17EE6D6A002B6E8B /* Shooter.ccbi in Resources */,
 				04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */,
 				043C2D5817C5EEE600E81CA6 /* ElementPhysics.plist in Resources */,
 				04AEBB0C17CDBDEC00BD9D65 /* SceneBackground1.ccbi in Resources */,
+				0406044B17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
 				04382BC817D3788600257293 /* BulletNumberShow.ccbi in Resources */,
 				04382BC917D3788600257293 /* BulletShowUnit.ccbi in Resources */,
 				04382BCA17D3788600257293 /* ButtonBack.ccbi in Resources */,
+				0406044D17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
 				04382BCB17D3788600257293 /* ButtonBomb.ccbi in Resources */,
 				04382BCC17D3788600257293 /* ButtonFire.ccbi in Resources */,
+				0406045317EE6D6A002B6E8B /* FireBullet.ccbi in Resources */,
 				04382BCD17D3788600257293 /* ButtonFlash.ccbi in Resources */,
+				0406047B17EE6D6A002B6E8B /* ShooterHeadRight.ccbi in Resources */,
 				04382BCE17D3788600257293 /* ButtonHelp.ccbi in Resources */,
 				04382BCF17D3788600257293 /* ButtonHome.ccbi in Resources */,
+				0406045F17EE6D6A002B6E8B /* Gun2Right.ccbi in Resources */,
 				04382BD017D3788600257293 /* ButtonList.ccbi in Resources */,
+				0406043F17EE6D6A002B6E8B /* BulletTrack.ccbi in Resources */,
+				0406047917EE6D6A002B6E8B /* ShooterHeadLeft.ccbi in Resources */,
+				0406045B17EE6D6A002B6E8B /* Gun1Right.ccbi in Resources */,
 				04382BD117D3788600257293 /* ButtonMore.ccbi in Resources */,
 				04382BD217D3788600257293 /* ButtonNext.ccbi in Resources */,
 				04382BD317D3788600257293 /* ButtonRetry.ccbi in Resources */,
 				04382BD417D3788600257293 /* ButtonShopping.ccbi in Resources */,
+				0406047317EE6D6A002B6E8B /* ShooterBodyRight.ccbi in Resources */,
 				04382BD517D3788600257293 /* ButtonShrink.ccbi in Resources */,
+				0406044317EE6D6A002B6E8B /* CannonBodyRight.ccbi in Resources */,
 				04382BD617D3788600257293 /* ButtonSound.ccbi in Resources */,
 				04382BD717D3788600257293 /* LevelCompletedLayer.ccbi in Resources */,
 				04382BD817D3788600257293 /* LevelControlLayer.ccbi in Resources */,
@@ -3419,22 +3443,27 @@
 				04382BDC17D3788600257293 /* ShrinkPanel.ccbi in Resources */,
 				04D7A83417D9B55200072F4D /* HomeLayer.ccbi in Resources */,
 				04D7A83517D9B55200072F4D /* MenuButton.ccbi in Resources */,
+				0406048117EE6D6A002B6E8B /* TestScene.ccbi in Resources */,
 				04D7A83617D9B55200072F4D /* MenuGroup1.ccbi in Resources */,
 				04D7A83717D9B55200072F4D /* MenuGroup2.ccbi in Resources */,
 				04D7A83817D9B55200072F4D /* MenuGroup3.ccbi in Resources */,
 				04D7A83917D9B55200072F4D /* MenuGroup4.ccbi in Resources */,
 				04D7A83A17D9B55200072F4D /* MenuGroup5.ccbi in Resources */,
 				04D7A83B17D9B55200072F4D /* MenuGroup6.ccbi in Resources */,
+				0406047D17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				04D7A83C17D9B55200072F4D /* MenuGroup7.ccbi in Resources */,
 				04D7A83D17D9B55200072F4D /* MenuItem1.ccbi in Resources */,
 				04D7A83E17D9B55200072F4D /* MenuLayer.ccbi in Resources */,
 				04D7A83F17D9B55200072F4D /* MenuTheme.ccbi in Resources */,
+				0406045117EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
 				04797C1517DB12CB003E1C20 /* bear.plist in Resources */,
 				04797C1617DB12CB003E1C20 /* bear.png in Resources */,
+				0406044117EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				04797C1717DB12CB003E1C20 /* ccbParticleBone.png in Resources */,
 				04797C1917DB12CB003E1C20 /* ccbParticleFire.png in Resources */,
 				04797C1A17DB12CB003E1C20 /* ccbParticleSmoke.png in Resources */,
 				04797C1B17DB12CB003E1C20 /* ccbParticleSnow.png in Resources */,
+				0406044717EE6D6A002B6E8B /* CannonExplosion.ccbi in Resources */,
 				04797C1C17DB12CB003E1C20 /* ccbParticleStars.png in Resources */,
 				04797C1D17DB12CB003E1C20 /* element.plist in Resources */,
 				04797C1E17DB12CB003E1C20 /* element.png in Resources */,
@@ -3444,15 +3473,18 @@
 				04797C2217DB12CB003E1C20 /* othres.png in Resources */,
 				04797C2317DB12CB003E1C20 /* people.plist in Resources */,
 				04797C2417DB12CB003E1C20 /* people.png in Resources */,
+				0406044517EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */,
 				04797C2517DB12CB003E1C20 /* play_bk1.png in Resources */,
 				04797C2617DB12CB003E1C20 /* resources-ipad in Resources */,
 				04797C2717DB12CB003E1C20 /* resources-ipadhd in Resources */,
 				04797C2817DB12CB003E1C20 /* resources-iphonehd in Resources */,
 				0448DEED17DC747E00BEF8B1 /* BearDeadParticle.ccbi in Resources */,
+				0406046F17EE6D6A002B6E8B /* ShooterArmRight.ccbi in Resources */,
 				0448DEEE17DC747E00BEF8B1 /* BlackBear.ccbi in Resources */,
 				0448DEEF17DC747E00BEF8B1 /* BlackBearLeft.ccbi in Resources */,
 				0448DEF017DC747E00BEF8B1 /* BlackBearLeftArmOutter.ccbi in Resources */,
 				0448DEF117DC747E00BEF8B1 /* BlackBearLeftHead.ccbi in Resources */,
+				0406046917EE6D6A002B6E8B /* LineReference.ccbi in Resources */,
 				0448DEF217DC747E00BEF8B1 /* BlackBearLeftLegOutter.ccbi in Resources */,
 				0448DEF317DC747E00BEF8B1 /* BlackBearRight.ccbi in Resources */,
 				0448DEF417DC747E00BEF8B1 /* BlackBearRightArmOutter.ccbi in Resources */,
@@ -3482,6 +3514,7 @@
 				0448DF2517DC92ED00BEF8B1 /* MetalCircle.ccbi in Resources */,
 				0448DF2617DC92ED00BEF8B1 /* MetalRectangle.ccbi in Resources */,
 				0448DF2717DC92ED00BEF8B1 /* Platform.ccbi in Resources */,
+				0406045517EE6D6A002B6E8B /* Gun0Left.ccbi in Resources */,
 				0448DF2817DC92ED00BEF8B1 /* StoneBox.ccbi in Resources */,
 				0448DF2917DC92ED00BEF8B1 /* StoneCircle.ccbi in Resources */,
 				0448DF2A17DC92ED00BEF8B1 /* StoneRectangle.ccbi in Resources */,
@@ -3492,33 +3525,40 @@
 				04EE6F9A17DD539100C185B8 /* Level0-1.ccbi in Resources */,
 				04EE6F9B17DD539100C185B8 /* Level0-10.ccbi in Resources */,
 				04EE6F9C17DD539100C185B8 /* Level0-11.ccbi in Resources */,
+				0406044F17EE6D6A002B6E8B /* CannonRight.ccbi in Resources */,
 				04EE6F9D17DD539100C185B8 /* Level0-12.ccbi in Resources */,
 				04EE6F9E17DD539100C185B8 /* Level0-13.ccbi in Resources */,
 				04EE6F9F17DD539100C185B8 /* Level0-14.ccbi in Resources */,
 				04EE6FA017DD539100C185B8 /* Level0-2.ccbi in Resources */,
 				04EE6FA117DD539100C185B8 /* Level0-3.ccbi in Resources */,
 				04EE6FA217DD539100C185B8 /* Level0-4.ccbi in Resources */,
+				0406046D17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */,
 				04EE6FA317DD539100C185B8 /* Level0-5.ccbi in Resources */,
 				04EE6FA417DD539100C185B8 /* Level0-6.ccbi in Resources */,
 				04EE6FA517DD539100C185B8 /* Level0-7.ccbi in Resources */,
+				0406046117EE6D6A002B6E8B /* GunFire.ccbi in Resources */,
 				04EE6FA617DD539100C185B8 /* Level0-8.ccbi in Resources */,
 				04EE6FA717DD539100C185B8 /* Level0-9.ccbi in Resources */,
 				04F40E5217DF72CF00B493C9 /* MetalLightning.ccbi in Resources */,
 				04F40E5417DF72CF00B493C9 /* StaticMetal1.ccbi in Resources */,
 				04F40E5617DF72CF00B493C9 /* StaticMetal2.ccbi in Resources */,
+				0406047717EE6D6A002B6E8B /* ShooterCannonRight.ccbi in Resources */,
 				04F40E5817DF72CF00B493C9 /* StaticMetal3.ccbi in Resources */,
 				04F40E5A17DF72CF00B493C9 /* StaticMetal4.ccbi in Resources */,
 				04F40E5C17DF72CF00B493C9 /* StaticMetal5.ccbi in Resources */,
+				0406046517EE6D6A002B6E8B /* HeadGood.ccbi in Resources */,
 				04F40E5E17DF72CF00B493C9 /* StaticMetal6.ccbi in Resources */,
 				04F40E6017DF72CF00B493C9 /* StaticMetal7.ccbi in Resources */,
 				04F40E6217DF72CF00B493C9 /* StaticMetal8.ccbi in Resources */,
 				04F40E6417DF72CF00B493C9 /* StaticMetal9.ccbi in Resources */,
+				0406047517EE6D6A002B6E8B /* ShooterCannonLeft.ccbi in Resources */,
 				04F40E6617DF72CF00B493C9 /* StaticMetalUnit.ccbi in Resources */,
 				04F40E6817DF72CF00B493C9 /* StaticMetalUnit1.ccbi in Resources */,
 				04F40E6A17DF72CF00B493C9 /* StaticMetalUnit2.ccbi in Resources */,
 				04F40E6C17DF72CF00B493C9 /* StaticMetalUnit3.ccbi in Resources */,
 				04F40E6E17DF72CF00B493C9 /* StaticStone1.ccbi in Resources */,
 				04F40E7017DF72CF00B493C9 /* StaticStone2.ccbi in Resources */,
+				0406046317EE6D6A002B6E8B /* HandBullet.ccbi in Resources */,
 				04F40E7217DF72CF00B493C9 /* StaticStone3.ccbi in Resources */,
 				04F40E7417DF72CF00B493C9 /* StaticStone4.ccbi in Resources */,
 				04F40E7617DF72CF00B493C9 /* StaticStoneUnit.ccbi in Resources */,
@@ -3527,10 +3567,13 @@
 				04F40E7C17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
 				04F40E7E17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
 				04F40E8017DF72CF00B493C9 /* StaticWood5.ccbi in Resources */,
+				0406047117EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */,
 				04F40E8217DF72CF00B493C9 /* StaticWood6.ccbi in Resources */,
 				04F40E8417DF72CF00B493C9 /* StaticWood7.ccbi in Resources */,
 				04F40E8617DF72CF00B493C9 /* StaticWood8.ccbi in Resources */,
+				0406045917EE6D6A002B6E8B /* Gun1Left.ccbi in Resources */,
 				04F40E8817DF72CF00B493C9 /* StaticWood9.ccbi in Resources */,
+				0406045717EE6D6A002B6E8B /* Gun0Right.ccbi in Resources */,
 				04F40E8A17DF72CF00B493C9 /* StaticWoodUnit1.ccbi in Resources */,
 				04F40E8C17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8E17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
@@ -3538,49 +3581,18 @@
 				0412D5ED17E540CE00EDFEE0 /* lightning1.png in Resources */,
 				0412D5EF17E540CE00EDFEE0 /* lightning2.png in Resources */,
 				0412D5F117E540CE00EDFEE0 /* lightning3.png in Resources */,
+				0406046717EE6D6A002B6E8B /* LegGood.ccbi in Resources */,
 				0412D5F317E540CE00EDFEE0 /* lightning4.png in Resources */,
 				0412D5F517E540CE00EDFEE0 /* lightning5.png in Resources */,
 				0412D5F717E540CE00EDFEE0 /* lightning6.png in Resources */,
 				0412D5F917E540CE00EDFEE0 /* lightning7.png in Resources */,
-				049B83F617E6B64700A61446 /* SceneBackground1.ccbi in Resources */,
-				04E1DB4817E8AE8900581B3B /* BulletTrack.ccbi in Resources */,
-				04E1DB4A17E8AE8900581B3B /* CannonBodyLeft.ccbi in Resources */,
-				04E1DB4C17E8AE8900581B3B /* CannonBodyRight.ccbi in Resources */,
-				04E1DB4E17E8AE8900581B3B /* CannonBullet.ccbi in Resources */,
-				04E1DB5017E8AE8900581B3B /* CannonExplosion.ccbi in Resources */,
-				04E1DB5217E8AE8900581B3B /* CannonFire.ccbi in Resources */,
-				04E1DB5417E8AE8900581B3B /* CannonIndicator.ccbi in Resources */,
-				04E1DB5617E8AE8900581B3B /* CannonLeft.ccbi in Resources */,
-				04E1DB5817E8AE8900581B3B /* CannonRight.ccbi in Resources */,
-				04E1DB5A17E8AE8900581B3B /* ElectricBullet.ccbi in Resources */,
-				04E1DB5C17E8AE8900581B3B /* FireBullet.ccbi in Resources */,
-				04E1DB5E17E8AE8900581B3B /* Gun0Left.ccbi in Resources */,
-				04E1DB6017E8AE8900581B3B /* Gun0Right.ccbi in Resources */,
-				04E1DB6217E8AE8900581B3B /* Gun1Left.ccbi in Resources */,
-				04E1DB6417E8AE8900581B3B /* Gun1Right.ccbi in Resources */,
-				04E1DB6617E8AE8900581B3B /* Gun2Left.ccbi in Resources */,
-				04E1DB6817E8AE8900581B3B /* Gun2Right.ccbi in Resources */,
-				04E1DB6A17E8AE8900581B3B /* GunFire.ccbi in Resources */,
-				04E1DB6C17E8AE8900581B3B /* HandBullet.ccbi in Resources */,
-				04E1DB6E17E8AE8900581B3B /* LineReference.ccbi in Resources */,
-				04E1DB7017E8AE8900581B3B /* Shooter.ccbi in Resources */,
-				04E1DB7217E8AE8900581B3B /* ShooterArmLeft.ccbi in Resources */,
-				04E1DB7417E8AE8900581B3B /* ShooterArmRight.ccbi in Resources */,
-				04E1DB7617E8AE8900581B3B /* ShooterBodyLeft.ccbi in Resources */,
-				04E1DB7817E8AE8900581B3B /* ShooterBodyRight.ccbi in Resources */,
-				04E1DB7A17E8AE8900581B3B /* ShooterCannonLeft.ccbi in Resources */,
-				04E1DB7C17E8AE8900581B3B /* ShooterCannonRight.ccbi in Resources */,
-				04E1DB7E17E8AE8900581B3B /* ShooterHeadLeft.ccbi in Resources */,
-				04E1DB8017E8AE8900581B3B /* ShooterHeadRight.ccbi in Resources */,
-				04E1DB8217E8AE8900581B3B /* ShooterLeft.ccbi in Resources */,
-				04E1DB8417E8AE8900581B3B /* ShooterRight.ccbi in Resources */,
-				04E1DB8617E8AE8900581B3B /* TestScene.ccbi in Resources */,
 				04F05AA617E9C0FE00D4F6B8 /* Level1-0.ccbi in Resources */,
 				04F05AA817E9C0FE00D4F6B8 /* Level1-1.ccbi in Resources */,
 				04F05AAA17E9C0FE00D4F6B8 /* Level1-10.ccbi in Resources */,
 				04F05AAC17E9C0FE00D4F6B8 /* Level1-11.ccbi in Resources */,
 				04F05AAE17E9C0FE00D4F6B8 /* Level1-12.ccbi in Resources */,
 				04F05AB017E9C0FE00D4F6B8 /* Level1-13.ccbi in Resources */,
+				0406047F17EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */,
 				04F05AB217E9C0FE00D4F6B8 /* Level1-14.ccbi in Resources */,
 				04F05AB417E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
 				04F05AB617E9C0FE00D4F6B8 /* Level1-16.ccbi in Resources */,
@@ -3604,9 +3616,11 @@
 				04F05AEB17E9C10400D4F6B8 /* Level2-2.ccbi in Resources */,
 				04F05AED17E9C10400D4F6B8 /* Level2-3.ccbi in Resources */,
 				04F05AEF17E9C10400D4F6B8 /* Level2-4.ccbi in Resources */,
+				0406044917EE6D6A002B6E8B /* CannonFire.ccbi in Resources */,
 				04F05AF117E9C10400D4F6B8 /* Level2-5.ccbi in Resources */,
 				04F05AF317E9C10400D4F6B8 /* Level2-6.ccbi in Resources */,
 				04F05AF517E9C10400D4F6B8 /* Level2-7.ccbi in Resources */,
+				04F2E22D17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */,
 				04F05AF717E9C10400D4F6B8 /* Level2-8.ccbi in Resources */,
 				04F05AF917E9C10400D4F6B8 /* Level2-9.ccbi in Resources */,
 			);
@@ -4181,8 +4195,9 @@
 		04886E3E17ACB20E005D8DB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -4195,10 +4210,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4207,8 +4226,9 @@
 		04886E3F17ACB20E005D8DB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -4219,8 +4239,11 @@
 					"NS_BLOCK_ASSERTIONS=1",
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;

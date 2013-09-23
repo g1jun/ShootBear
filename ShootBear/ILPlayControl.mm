@@ -42,6 +42,12 @@
     [[CCDirector sharedDirector].touchDispatcher removeDelegate:self];
 }
 
+- (void)onEnter
+{
+    [super onEnter];
+    _levelNO.string = [NSString stringWithFormat:@"Level:%i-%i", _level.page + 1, _level.levelNo + 1];
+
+}
 
 - (void)configSwitch
 {

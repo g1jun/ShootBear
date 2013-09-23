@@ -108,6 +108,13 @@
 
 - (void)headCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
+    CGPoint position = bear.explisionPosition;
+    CCNode *headGood = [CCBReader nodeGraphFromFile:@"HeadGood.ccbi"];
+    [headGood.userObject setCompletedAnimationCallbackBlock:^(id sender) {
+        [headGood removeFromParent];
+    }];
+    headGood.position = position;
+    [self addChild:headGood];
     [self removeBear:bear];
 }
 
@@ -118,6 +125,13 @@
 
 - (void)legCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
+    CGPoint position = bear.explisionPosition;
+    CCNode *legGood = [CCBReader nodeGraphFromFile:@"LegGood.ccbi"];
+    [legGood.userObject setCompletedAnimationCallbackBlock:^(id sender) {
+        [legGood removeFromParent];
+    }];
+    legGood.position = position;
+    [self addChild:legGood];
     [self removeBear:bear];
 }
 

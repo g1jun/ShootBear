@@ -30,6 +30,8 @@
 
 - (void)didLoadFromCCB
 {
+    [_leftShooter.arm setAllRotation:-18];
+    [_rightShooter.arm setAllRotation:-18];
     [self turnRight];
     [self scheduleUpdate];
     [self syncPosition];

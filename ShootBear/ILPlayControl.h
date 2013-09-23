@@ -8,6 +8,7 @@
 
 #import "CCNode.h"
 #import "ILLevelControlLayer.h"
+#import "ILStruct.h"
 
 @protocol ILPlayControlDelegate <NSObject>
 
@@ -43,11 +44,14 @@
     NSString *_usedGunType;
     BOOL _hasRunFailedDelegate;
     float _passTime;
+    CCLabelTTF *_levelNO;
 }
 
 @property (assign, nonatomic) id<ILPlayControlDelegate> delegate;
 @property (assign, nonatomic)BOOL forbiddenTouch;
 @property (assign, nonatomic)id<ILPlayFailedDelegate> failedDelegate;
+
+@property (assign, nonatomic)Level level;
 
 - (void)pause;
 
