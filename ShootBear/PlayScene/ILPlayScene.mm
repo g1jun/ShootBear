@@ -15,6 +15,7 @@
 #import "ILShooter.h"
 #import "ILMenuScene.h"
 #import "ILPlayControl.h"
+#import "ILDataSimpleSave.h"
 
 
 #define zBK 0

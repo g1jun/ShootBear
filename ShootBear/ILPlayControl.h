@@ -45,6 +45,7 @@
     BOOL _hasRunFailedDelegate;
     float _passTime;
     CCLabelTTF *_levelNO;
+    CCLabelTTF *_coinLabel;
 }
 
 @property (assign, nonatomic) id<ILPlayControlDelegate> delegate;
@@ -54,5 +55,8 @@
 @property (assign, nonatomic)Level level;
 
 - (void)pause;
+
+- (void)coinIncrease:(float)amount;
+
 
 @end

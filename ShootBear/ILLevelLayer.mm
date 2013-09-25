@@ -116,11 +116,20 @@
     headGood.position = position;
     [self addChild:headGood];
     [self removeBear:bear];
+    [self postMessage:@"head"];
+}
+
+- (void)postMessage:(NSString *)message
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"coin_increase" object:nil userInfo:@{@"bear" : message}];
+
 }
 
 - (void)bodyCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
     [self removeBear:bear];
+    [self postMessage:@"body"];
+
 }
 
 - (void)legCollision:(ILBear *)bear bullet:(ILBullet *)bullet
@@ -133,6 +142,7 @@
     legGood.position = position;
     [self addChild:legGood];
     [self removeBear:bear];
+    [self postMessage:@"leg"];
 }
 
 - (void)switchGunType:(NSString *)gunType

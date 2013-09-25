@@ -915,6 +915,8 @@
 		04F05AFA17E9C10400D4F6B8 /* Level2-9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */; };
 		04F2E22D17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */; };
 		04F2E22E17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */; };
+		04F2E23517EFD5870009EB21 /* ILDataSimpleSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */; };
+		04F2E23617EFD5870009EB21 /* ILDataSimpleSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */; };
 		04F40E5217DF72CF00B493C9 /* MetalLightning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */; };
 		04F40E5317DF72CF00B493C9 /* MetalLightning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */; };
 		04F40E5417DF72CF00B493C9 /* StaticMetal1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3317DF72CF00B493C9 /* StaticMetal1.ccbi */; };
@@ -1724,6 +1726,8 @@
 		04F05AD917E9C10400D4F6B8 /* Level2-8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-8.ccbi"; sourceTree = "<group>"; };
 		04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-9.ccbi"; sourceTree = "<group>"; };
 		04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinCollection.ccbi; sourceTree = "<group>"; };
+		04F2E23317EFD5870009EB21 /* ILDataSimpleSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDataSimpleSave.h; sourceTree = "<group>"; };
+		04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDataSimpleSave.m; sourceTree = "<group>"; };
 		04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalLightning.ccbi; sourceTree = "<group>"; };
 		04F40E3317DF72CF00B493C9 /* StaticMetal1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal1.ccbi; sourceTree = "<group>"; };
 		04F40E3417DF72CF00B493C9 /* StaticMetal2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal2.ccbi; sourceTree = "<group>"; };
@@ -1926,10 +1930,10 @@
 			children = (
 				0411DAB117AE606D0023BD39 /* ILPlayScene.h */,
 				0411DAB217AE606D0023BD39 /* ILPlayScene.mm */,
-				0411DAB817AE60E50023BD39 /* ILTMXLayer.h */,
-				0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */,
 				04E7FF7717CCDE25006F1881 /* ILLevelLayer.h */,
 				04E7FF7817CCDE25006F1881 /* ILLevelLayer.mm */,
+				04B83D7117CF8341001C634A /* ILPlayControl.h */,
+				04B83D7217CF8341001C634A /* ILPlayControl.mm */,
 				0401610E17E4B36100A7FB67 /* ILClippingNode.h */,
 				0401610F17E4B36100A7FB67 /* ILClippingNode.m */,
 				0411F0BB17E2C3E10083E639 /* ILOptimalPerformance.h */,
@@ -1942,8 +1946,6 @@
 				04B83D6C17CF6E22001C634A /* ILShrinkButton.m */,
 				04B83D6E17CF7BC2001C634A /* ILUsedOnceButton.h */,
 				04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */,
-				04B83D7117CF8341001C634A /* ILPlayControl.h */,
-				04B83D7217CF8341001C634A /* ILPlayControl.mm */,
 				04E53F2717D0174000AE15A5 /* ILLevelControlLayer.h */,
 				04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */,
 				04E53F2A17D0212D00AE15A5 /* ILBulletShowUnit.h */,
@@ -1951,6 +1953,8 @@
 				04E53F2D17D0226000AE15A5 /* ILBulletNumberShow.h */,
 				04E53F2E17D0226000AE15A5 /* ILBulletNumberShow.m */,
 				0475DDD317D9DBC6000BC749 /* ILStruct.h */,
+				0411DAB817AE60E50023BD39 /* ILTMXLayer.h */,
+				0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */,
 			);
 			name = PlayScene;
 			sourceTree = "<group>";
@@ -2754,6 +2758,8 @@
 			children = (
 				049EF6FD17B8ABBB00A9D1B7 /* ILTools.h */,
 				049EF6FE17B8ABBB00A9D1B7 /* ILTools.m */,
+				04F2E23317EFD5870009EB21 /* ILDataSimpleSave.h */,
+				04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -3725,6 +3731,7 @@
 				0453EC4B17DD814500B72CB7 /* CDAudioManager.m in Sources */,
 				0453EC4C17DD814500B72CB7 /* CDOpenALSupport.m in Sources */,
 				0453EC4D17DD814500B72CB7 /* CDXMacOSXSupport.m in Sources */,
+				04F2E23617EFD5870009EB21 /* ILDataSimpleSave.m in Sources */,
 				0453EC4E17DD814500B72CB7 /* CDXPropertyModifierAction.m in Sources */,
 				0453EC4F17DD814500B72CB7 /* CocosDenshion.m in Sources */,
 				0453EC5017DD814500B72CB7 /* SimpleAudioEngine.m in Sources */,
@@ -3977,6 +3984,7 @@
 				04886D5417ACB203005D8DB9 /* CDAudioManager.m in Sources */,
 				04886D5817ACB203005D8DB9 /* CDOpenALSupport.m in Sources */,
 				04886D5B17ACB204005D8DB9 /* CDXMacOSXSupport.m in Sources */,
+				04F2E23517EFD5870009EB21 /* ILDataSimpleSave.m in Sources */,
 				04886D5E17ACB204005D8DB9 /* CDXPropertyModifierAction.m in Sources */,
 				04886D6117ACB204005D8DB9 /* CocosDenshion.m in Sources */,
 				04886D6517ACB204005D8DB9 /* SimpleAudioEngine.m in Sources */,

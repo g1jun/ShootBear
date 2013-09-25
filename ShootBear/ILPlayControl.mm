@@ -11,6 +11,11 @@
 #import "ILShooter.h"
 #import "CCBAnimationManager.h"
 #import "ILBox2dFactory.h"
+#import "ILDataSimpleSave.h"
+
+#define BULLET_NUMBER 4;
+
+static NSString* const kCoinAmount = @"coin_amount";
 
 @implementation ILPlayControl
 - (id)init
@@ -19,7 +24,7 @@
     if (self) {
         [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate:self priority:10 swallowsTouches:NO];
         _levelControlLayer = (ILLevelControlLayer *)[CCBReader nodeGraphFromFile:@"LevelControlLayer.ccbi" owner:self];
-        _levelControlLayer.bulletNumberShow.bulletNumber = 5;
+        _levelControlLayer.bulletNumberShow.bulletNumber = BULLET_NUMBER;
         _passTime = -1;
         [self addChild:_levelControlLayer];
         _settingLayer = (CCLayer *)[CCBReader nodeGraphFromFile:@"SettingControlLayer.ccbi" owner:self];
@@ -27,10 +32,38 @@
         [self addChild:_settingLayer];
         [self configSwitch];
         [self scheduleUpdate];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageReceive:) name:@"coin_increase" object:nil];
 
         
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super dealloc];
+}
+
+- (void)messageReceive:(NSNotification *)notification
+{
+    NSDictionary *dic = notification.userInfo;
+    NSString *message = dic[@"bear"];
+    if ([message isEqualToString:@"head"]) {
+        [self coinIncrease:1];
+    } else if ([message isEqualToString:@"body"]) {
+        [self coinIncrease:0.1];
+    } else if ([message isEqualToString:@"leg"]) {
+        [self coinIncrease:0.5];
+    }
+}
+
+- (void)coinIncrease:(float)amount
+{
+    float coins = [[ILDataSimpleSave sharedDataSave] floatWithKey:kCoinAmount];
+    coins += amount;
+    [[ILDataSimpleSave sharedDataSave] saveFloat:coins forKey:kCoinAmount];
+    [self updateCoinLabel];
 }
 
 
@@ -42,11 +75,17 @@
     [[CCDirector sharedDirector].touchDispatcher removeDelegate:self];
 }
 
+- (void)updateCoinLabel
+{
+    float coins = [[ILDataSimpleSave sharedDataSave] floatWithKey:kCoinAmount];
+    _coinLabel.string = [NSString stringWithFormat:@"%.1f", coins];
+}
+
 - (void)onEnter
 {
     [super onEnter];
-    _levelNO.string = [NSString stringWithFormat:@"Level:%i-%i", _level.page + 1, _level.levelNo + 1];
-
+    _levelNO.string = [NSString stringWithFormat:@"%i-%i", _level.page + 1, _level.levelNo + 1];
+    [self updateCoinLabel];
 }
 
 - (void)configSwitch
@@ -156,7 +195,7 @@
     }
     if (_levelControlLayer.bulletNumberShow.bulletNumber == 0 && !_hasRunFailedDelegate) {
         [_levelControlLayer.shrinkPanel hideMyself];
-        _passTime = 4;
+        _passTime = 5;
         [_levelControlLayer.bulletNumberShow reduceBullet];
 
     }
