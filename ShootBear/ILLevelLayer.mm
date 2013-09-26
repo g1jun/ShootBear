@@ -106,12 +106,36 @@
     }
 }
 
+- (void)runCoinAddAnimation:(CGPoint )position coin:(float)number
+{
+    NSString *coinNumber = [NSString stringWithFormat:@"+%.1f", number];
+    position.y -= 30;
+    CCLabelTTF *label = [CCLabelTTF labelWithString:coinNumber fontName:@"Helvetica" fontSize:18];
+    [label setColor:ccYELLOW];
+    label.position = position;
+    [self addChild:label];
+    id animationSub1 = [CCFadeOut actionWithDuration:2];
+    id animationSub2 = [CCMoveBy actionWithDuration:2 position:ccp(0, 30)];
+    id animation1 = [CCSpawn actions:animationSub1, animationSub2, nil];
+    id animation2 = [CCCallFuncN actionWithTarget:self selector:@selector(removeLabelFromParent:)];
+    id seq = [CCSequence actions:animation1, animation2, nil];
+    [label runAction:seq];
+}
+
+- (void)removeLabelFromParent:(id)sender
+{
+    [sender removeFromParent];
+}
+
 - (void)headCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
     CGPoint position = bear.explisionPosition;
-    CCNode *headGood = [CCBReader nodeGraphFromFile:@"HeadGood.ccbi"];
+    __block CCNode *headGood = [CCBReader nodeGraphFromFile:@"HeadGood.ccbi"];
+    typeof(self) bself = self;
     [headGood.userObject setCompletedAnimationCallbackBlock:^(id sender) {
         [headGood removeFromParent];
+        [bself runCoinAddAnimation:position coin:1];
+        [headGood.userObject setCompletedAnimationCallbackBlock:nil];
     }];
     headGood.position = position;
     [self addChild:headGood];
@@ -127,22 +151,28 @@
 
 - (void)bodyCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
+    CGPoint position = bear.explisionPosition;
     [self removeBear:bear];
     [self postMessage:@"body"];
+    [self runCoinAddAnimation:position coin:0.1];
+
 
 }
 
 - (void)legCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
     CGPoint position = bear.explisionPosition;
-    CCNode *legGood = [CCBReader nodeGraphFromFile:@"LegGood.ccbi"];
+    __block CCNode *legGood = [CCBReader nodeGraphFromFile:@"LegGood.ccbi"];
     [legGood.userObject setCompletedAnimationCallbackBlock:^(id sender) {
         [legGood removeFromParent];
+        [legGood.userObject setCompletedAnimationCallbackBlock:nil];
     }];
     legGood.position = position;
     [self addChild:legGood];
     [self removeBear:bear];
     [self postMessage:@"leg"];
+    [self runCoinAddAnimation:position coin:0.5];
+    
 }
 
 - (void)switchGunType:(NSString *)gunType

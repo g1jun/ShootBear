@@ -22,6 +22,7 @@
 #define zLevel 1
 #define zLevelControl 9
 #define zLevelCompleted 10
+#define zShopping 11
 
 @interface ILPlayScene ()
 
@@ -158,7 +159,8 @@
 
 - (void)pressedShoppingButton:(id)sender
 {
-    
+    CCNode *shopping = [CCBReader nodeGraphFromFile:@"ShoppingLayer.ccbi"];
+    [self addChild:shopping z:zShopping];
 }
 
 - (void)pressedRetryButton:(id)sender
