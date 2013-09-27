@@ -8,16 +8,16 @@
 
 #import "CCNode.h"
 #import "ILShrinkButton.h"
-#import "ILUsedOnceButton.h"
+#import "ILGunSwitchControl.h"
 
 @interface ILShrinkPanel : CCNode <ILShrinkButtonDelegate>
 {
     ILShrinkButton *_firstButton;
-    ILUsedOnceButton *_secondButton;
-    ILUsedOnceButton *_thirdButton;
-    ILUsedOnceButton *_forthButton;
+    ILGunSwitchControl *_secondButton;
+    ILGunSwitchControl *_thirdButton;
+    ILGunSwitchControl *_forthButton;
     NSMutableArray *_buttonArray;
-    ILUsedOnceButton *_currentSelectedButton;
+    ILGunSwitchControl *_currentSelectedButton;
     BOOL _foldState;
     BOOL _hasHide;
     int _usedTimes;

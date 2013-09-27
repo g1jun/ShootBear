@@ -10,8 +10,8 @@
 #import "CCBReader.h"
 #import "CCScrollLayer.h"
 #import "ILMenuLayer.h"
-#import "ILMenuButton.h"
 #import "ILPlayScene.h"
+#import "ILMenuItem.h"
 
 @implementation ILMenuScene
 
@@ -44,6 +44,8 @@
         layer.menuGroup = [CCBReader nodeGraphFromFile:groupFile owner:self];
         layer.position = ccp(winSize.width * i, 0);
         [layers addObject:layer];
+        layer.groupIndex = i;
+
 
     }
     CCScrollLayer *scroll = [[CCScrollLayer alloc] initWithLayers:layers widthOffset:0];
@@ -55,7 +57,7 @@
 
 - (void)pressedMenuItem:(id)sender
 {
-    ILMenuItem *item = [sender menuItem];
+    ILMenuItem *item = (ILMenuItem *)[sender parent];
     Level level;
     level.levelNo = item.levelNO;
     level.page = self.currentPage;

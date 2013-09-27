@@ -13,10 +13,12 @@
 {
     CCSprite *_lockSprite;
     CCLabelTTF *_label;
+    CCControlButton *_button;
 }
 
 @property (assign, nonatomic, readonly) int levelNO;
 @property (assign, nonatomic, readonly) BOOL hasOpen;
+@property (assign, nonatomic,)int groupIndex;
 
 - (void)open;
 

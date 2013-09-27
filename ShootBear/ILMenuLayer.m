@@ -7,6 +7,7 @@
 //
 
 #import "ILMenuLayer.h"
+#import "ILMenuItem.h"
 
 @implementation ILMenuLayer
 
@@ -18,6 +19,16 @@
     [_menuGroup removeFromParent];
     _menuGroup = menuGroup;
     [self addChild:_menuGroup];
+}
+
+- (void)setGroupIndex:(int)groupIndex
+{
+    _groupIndex = groupIndex;
+    for (id ch in self.menuGroup.children) {
+        if ([ch isKindOfClass:[ILMenuItem class]]) {
+            [ch setGroupIndex:groupIndex];
+        }
+    }
 }
 
 - (void)setMenuTheme:(CCNode *)menuTheme

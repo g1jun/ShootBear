@@ -404,7 +404,7 @@
 		0453ECCD17DD814500B72CB7 /* ILTouchStopLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D4317CEC525001C634A /* ILTouchStopLayer.m */; };
 		0453ECCE17DD814500B72CB7 /* ILShrinkPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6917CF6813001C634A /* ILShrinkPanel.m */; };
 		0453ECCF17DD814500B72CB7 /* ILShrinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6C17CF6E22001C634A /* ILShrinkButton.m */; };
-		0453ECD017DD814500B72CB7 /* ILUsedOnceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */; };
+		0453ECD017DD814500B72CB7 /* ILGunSwitchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6F17CF7BC2001C634A /* ILGunSwitchControl.m */; };
 		0453ECD117DD814500B72CB7 /* ILPlayControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D7217CF8341001C634A /* ILPlayControl.mm */; };
 		0453ECD217DD814500B72CB7 /* ILLevelControlLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */; };
 		0453ECD317DD814500B72CB7 /* ILBulletShowUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2B17D0212D00AE15A5 /* ILBulletShowUnit.m */; };
@@ -412,7 +412,6 @@
 		0453ECD517DD814500B72CB7 /* ILMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04382BAD17D3755B00257293 /* ILMenuLayer.m */; };
 		0453ECD617DD814500B72CB7 /* ILMenuScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04382BB017D3771900257293 /* ILMenuScene.mm */; };
 		0453ECD717DD814500B72CB7 /* CCScrollLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04382BF817D38FD800257293 /* CCScrollLayer.m */; };
-		0453ECD817DD814500B72CB7 /* ILMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7C17D5D33100F67159 /* ILMenuButton.m */; };
 		0453ECD917DD814500B72CB7 /* ILMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */; };
 		0453ECDA17DD814500B72CB7 /* ILBox2dTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0448DF1317DC8A0E00BEF8B1 /* ILBox2dTools.mm */; };
 		0453ECDC17DD814500B72CB7 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0831F17B50901007F5486 /* libobjc.A.dylib */; };
@@ -467,7 +466,6 @@
 		0453ED4817DD814500B72CB7 /* SettingControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC617D3788600257293 /* SettingControlLayer.ccbi */; };
 		0453ED4917DD814500B72CB7 /* ShrinkPanel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC717D3788600257293 /* ShrinkPanel.ccbi */; };
 		0453ED4A17DD814500B72CB7 /* HomeLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82817D9B55200072F4D /* HomeLayer.ccbi */; };
-		0453ED4B17DD814500B72CB7 /* MenuButton.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82917D9B55200072F4D /* MenuButton.ccbi */; };
 		0453ED4C17DD814500B72CB7 /* MenuGroup1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82A17D9B55200072F4D /* MenuGroup1.ccbi */; };
 		0453ED4D17DD814500B72CB7 /* MenuGroup2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82B17D9B55200072F4D /* MenuGroup2.ccbi */; };
 		0453ED4E17DD814500B72CB7 /* MenuGroup3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82C17D9B55200072F4D /* MenuGroup3.ccbi */; };
@@ -755,7 +753,6 @@
 		04886E3817ACB20E005D8DB9 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3717ACB20E005D8DB9 /* IntroLayer.mm */; };
 		04886E3B17ACB20E005D8DB9 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */; };
 		04886E3D17ACB20E005D8DB9 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 04886E3C17ACB20E005D8DB9 /* blocks.png */; };
-		049B5C7D17D5D33100F67159 /* ILMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7C17D5D33100F67159 /* ILMenuButton.m */; };
 		049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */; };
 		049B83FA17E6D60F00A61446 /* ILBulletEntityBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049B83F917E6D60F00A61446 /* ILBulletEntityBase.mm */; };
 		049B83FB17E6D60F00A61446 /* ILBulletEntityBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049B83F917E6D60F00A61446 /* ILBulletEntityBase.mm */; };
@@ -799,14 +796,13 @@
 		04B83D4417CEC525001C634A /* ILTouchStopLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D4317CEC525001C634A /* ILTouchStopLayer.m */; };
 		04B83D6A17CF6813001C634A /* ILShrinkPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6917CF6813001C634A /* ILShrinkPanel.m */; };
 		04B83D6D17CF6E22001C634A /* ILShrinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6C17CF6E22001C634A /* ILShrinkButton.m */; };
-		04B83D7017CF7BC2001C634A /* ILUsedOnceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */; };
+		04B83D7017CF7BC2001C634A /* ILGunSwitchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D6F17CF7BC2001C634A /* ILGunSwitchControl.m */; };
 		04B83D7317CF8341001C634A /* ILPlayControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D7217CF8341001C634A /* ILPlayControl.mm */; };
 		04BBBBD317C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBBBD217C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m */; };
 		04C3287917C8C45F00C586C8 /* NSArray+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3287817C8C45F00C586C8 /* NSArray+DeepCopy.m */; };
 		04D236AE17B777CD007608F4 /* ILGun.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D236AD17B777CD007608F4 /* ILGun.mm */; };
 		04D236B317B79DDF007608F4 /* ILShooterHalf.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D236B217B79DDF007608F4 /* ILShooterHalf.m */; };
 		04D7A83417D9B55200072F4D /* HomeLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82817D9B55200072F4D /* HomeLayer.ccbi */; };
-		04D7A83517D9B55200072F4D /* MenuButton.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82917D9B55200072F4D /* MenuButton.ccbi */; };
 		04D7A83617D9B55200072F4D /* MenuGroup1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82A17D9B55200072F4D /* MenuGroup1.ccbi */; };
 		04D7A83717D9B55200072F4D /* MenuGroup2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82B17D9B55200072F4D /* MenuGroup2.ccbi */; };
 		04D7A83817D9B55200072F4D /* MenuGroup3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82C17D9B55200072F4D /* MenuGroup3.ccbi */; };
@@ -945,6 +941,8 @@
 		04F2E22E17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */; };
 		04F2E23517EFD5870009EB21 /* ILDataSimpleSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */; };
 		04F2E23617EFD5870009EB21 /* ILDataSimpleSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */; };
+		04F3CD6D17F5274C00477BD5 /* ILShoppingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3CD6C17F5274C00477BD5 /* ILShoppingControl.m */; };
+		04F3CD6E17F5274C00477BD5 /* ILShoppingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3CD6C17F5274C00477BD5 /* ILShoppingControl.m */; };
 		04F40E5217DF72CF00B493C9 /* MetalLightning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */; };
 		04F40E5317DF72CF00B493C9 /* MetalLightning.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */; };
 		04F40E5417DF72CF00B493C9 /* StaticMetal1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E3317DF72CF00B493C9 /* StaticMetal1.ccbi */; };
@@ -1577,8 +1575,6 @@
 		04886E3917ACB20E005D8DB9 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		04886E3C17ACB20E005D8DB9 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
-		049B5C7B17D5D33100F67159 /* ILMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMenuButton.h; sourceTree = "<group>"; };
-		049B5C7C17D5D33100F67159 /* ILMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMenuButton.m; sourceTree = "<group>"; };
 		049B5C7E17D5D3CD00F67159 /* ILMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMenuItem.h; sourceTree = "<group>"; };
 		049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMenuItem.m; sourceTree = "<group>"; };
 		049B83F517E6B64700A61446 /* SceneBackground1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SceneBackground1.ccbi; sourceTree = "<group>"; };
@@ -1656,8 +1652,8 @@
 		04B83D6917CF6813001C634A /* ILShrinkPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILShrinkPanel.m; sourceTree = "<group>"; };
 		04B83D6B17CF6E22001C634A /* ILShrinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShrinkButton.h; sourceTree = "<group>"; };
 		04B83D6C17CF6E22001C634A /* ILShrinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILShrinkButton.m; sourceTree = "<group>"; };
-		04B83D6E17CF7BC2001C634A /* ILUsedOnceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILUsedOnceButton.h; sourceTree = "<group>"; };
-		04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILUsedOnceButton.m; sourceTree = "<group>"; };
+		04B83D6E17CF7BC2001C634A /* ILGunSwitchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGunSwitchControl.h; sourceTree = "<group>"; };
+		04B83D6F17CF7BC2001C634A /* ILGunSwitchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGunSwitchControl.m; sourceTree = "<group>"; };
 		04B83D7117CF8341001C634A /* ILPlayControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPlayControl.h; sourceTree = "<group>"; };
 		04B83D7217CF8341001C634A /* ILPlayControl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPlayControl.mm; sourceTree = "<group>"; };
 		04BBBBD117C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCBAnimationManager+RmoveDeadNode.h"; sourceTree = "<group>"; };
@@ -1669,7 +1665,6 @@
 		04D236B117B79DDF007608F4 /* ILShooterHalf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShooterHalf.h; sourceTree = "<group>"; };
 		04D236B217B79DDF007608F4 /* ILShooterHalf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILShooterHalf.m; sourceTree = "<group>"; };
 		04D7A82817D9B55200072F4D /* HomeLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = HomeLayer.ccbi; sourceTree = "<group>"; };
-		04D7A82917D9B55200072F4D /* MenuButton.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuButton.ccbi; sourceTree = "<group>"; };
 		04D7A82A17D9B55200072F4D /* MenuGroup1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuGroup1.ccbi; sourceTree = "<group>"; };
 		04D7A82B17D9B55200072F4D /* MenuGroup2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuGroup2.ccbi; sourceTree = "<group>"; };
 		04D7A82C17D9B55200072F4D /* MenuGroup3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuGroup3.ccbi; sourceTree = "<group>"; };
@@ -1770,6 +1765,8 @@
 		04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinCollection.ccbi; sourceTree = "<group>"; };
 		04F2E23317EFD5870009EB21 /* ILDataSimpleSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDataSimpleSave.h; sourceTree = "<group>"; };
 		04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDataSimpleSave.m; sourceTree = "<group>"; };
+		04F3CD6B17F5274C00477BD5 /* ILShoppingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShoppingControl.h; sourceTree = "<group>"; };
+		04F3CD6C17F5274C00477BD5 /* ILShoppingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILShoppingControl.m; sourceTree = "<group>"; };
 		04F40E3217DF72CF00B493C9 /* MetalLightning.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalLightning.ccbi; sourceTree = "<group>"; };
 		04F40E3317DF72CF00B493C9 /* StaticMetal1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal1.ccbi; sourceTree = "<group>"; };
 		04F40E3417DF72CF00B493C9 /* StaticMetal2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticMetal2.ccbi; sourceTree = "<group>"; };
@@ -1986,8 +1983,8 @@
 				04B83D6917CF6813001C634A /* ILShrinkPanel.m */,
 				04B83D6B17CF6E22001C634A /* ILShrinkButton.h */,
 				04B83D6C17CF6E22001C634A /* ILShrinkButton.m */,
-				04B83D6E17CF7BC2001C634A /* ILUsedOnceButton.h */,
-				04B83D6F17CF7BC2001C634A /* ILUsedOnceButton.m */,
+				04B83D6E17CF7BC2001C634A /* ILGunSwitchControl.h */,
+				04B83D6F17CF7BC2001C634A /* ILGunSwitchControl.m */,
 				04E53F2717D0174000AE15A5 /* ILLevelControlLayer.h */,
 				04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */,
 				04E53F2A17D0212D00AE15A5 /* ILBulletShowUnit.h */,
@@ -2072,8 +2069,6 @@
 				04382BAD17D3755B00257293 /* ILMenuLayer.m */,
 				04382BAF17D3771900257293 /* ILMenuScene.h */,
 				04382BB017D3771900257293 /* ILMenuScene.mm */,
-				049B5C7B17D5D33100F67159 /* ILMenuButton.h */,
-				049B5C7C17D5D33100F67159 /* ILMenuButton.m */,
 				049B5C7E17D5D3CD00F67159 /* ILMenuItem.h */,
 				049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */,
 			);
@@ -2211,6 +2206,7 @@
 		04886C0C17ACB1F6005D8DB9 /* ShootBear */ = {
 			isa = PBXGroup;
 			children = (
+				04DBE38D17F46622005DE5D3 /* Shopping */,
 				04382BAB17D36B7400257293 /* Menu */,
 				040D9FCB17C9C1920053BBCA /* Element */,
 				0422A78D17BF62B200AD03D2 /* Category */,
@@ -2975,7 +2971,6 @@
 			isa = PBXGroup;
 			children = (
 				04D7A82817D9B55200072F4D /* HomeLayer.ccbi */,
-				04D7A82917D9B55200072F4D /* MenuButton.ccbi */,
 				04D7A82A17D9B55200072F4D /* MenuGroup1.ccbi */,
 				04D7A82B17D9B55200072F4D /* MenuGroup2.ccbi */,
 				04D7A82C17D9B55200072F4D /* MenuGroup3.ccbi */,
@@ -3009,6 +3004,15 @@
 				04DBE37017F45DFA005DE5D3 /* ShoppingLayer.ccbi */,
 			);
 			path = Shopping;
+			sourceTree = "<group>";
+		};
+		04DBE38D17F46622005DE5D3 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				04F3CD6B17F5274C00477BD5 /* ILShoppingControl.h */,
+				04F3CD6C17F5274C00477BD5 /* ILShoppingControl.m */,
+			);
+			name = Shopping;
 			sourceTree = "<group>";
 		};
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
@@ -3274,7 +3278,6 @@
 				0453ED4817DD814500B72CB7 /* SettingControlLayer.ccbi in Resources */,
 				0453ED4917DD814500B72CB7 /* ShrinkPanel.ccbi in Resources */,
 				0453ED4A17DD814500B72CB7 /* HomeLayer.ccbi in Resources */,
-				0453ED4B17DD814500B72CB7 /* MenuButton.ccbi in Resources */,
 				0406048217EE6D6A002B6E8B /* TestScene.ccbi in Resources */,
 				0453ED4C17DD814500B72CB7 /* MenuGroup1.ccbi in Resources */,
 				0453ED4D17DD814500B72CB7 /* MenuGroup2.ccbi in Resources */,
@@ -3529,7 +3532,6 @@
 				04382BDB17D3788600257293 /* SettingControlLayer.ccbi in Resources */,
 				04382BDC17D3788600257293 /* ShrinkPanel.ccbi in Resources */,
 				04D7A83417D9B55200072F4D /* HomeLayer.ccbi in Resources */,
-				04D7A83517D9B55200072F4D /* MenuButton.ccbi in Resources */,
 				0406048117EE6D6A002B6E8B /* TestScene.ccbi in Resources */,
 				04D7A83617D9B55200072F4D /* MenuGroup1.ccbi in Resources */,
 				04D7A83717D9B55200072F4D /* MenuGroup2.ccbi in Resources */,
@@ -3874,6 +3876,7 @@
 				0453EC7D17DD814500B72CB7 /* b2PolygonAndCircleContact.cpp in Sources */,
 				0453EC7E17DD814500B72CB7 /* b2PolygonContact.cpp in Sources */,
 				0453EC7F17DD814500B72CB7 /* b2DistanceJoint.cpp in Sources */,
+				04F3CD6E17F5274C00477BD5 /* ILShoppingControl.m in Sources */,
 				0453EC8017DD814500B72CB7 /* b2FrictionJoint.cpp in Sources */,
 				0453EC8117DD814500B72CB7 /* b2GearJoint.cpp in Sources */,
 				0453EC8217DD814500B72CB7 /* b2Joint.cpp in Sources */,
@@ -3954,7 +3957,7 @@
 				0453ECCD17DD814500B72CB7 /* ILTouchStopLayer.m in Sources */,
 				0453ECCE17DD814500B72CB7 /* ILShrinkPanel.m in Sources */,
 				0453ECCF17DD814500B72CB7 /* ILShrinkButton.m in Sources */,
-				0453ECD017DD814500B72CB7 /* ILUsedOnceButton.m in Sources */,
+				0453ECD017DD814500B72CB7 /* ILGunSwitchControl.m in Sources */,
 				0453ECD117DD814500B72CB7 /* ILPlayControl.mm in Sources */,
 				0453ECD217DD814500B72CB7 /* ILLevelControlLayer.m in Sources */,
 				0453ECD317DD814500B72CB7 /* ILBulletShowUnit.m in Sources */,
@@ -3962,7 +3965,6 @@
 				0453ECD517DD814500B72CB7 /* ILMenuLayer.m in Sources */,
 				0453ECD617DD814500B72CB7 /* ILMenuScene.mm in Sources */,
 				0453ECD717DD814500B72CB7 /* CCScrollLayer.m in Sources */,
-				0453ECD817DD814500B72CB7 /* ILMenuButton.m in Sources */,
 				0453ECD917DD814500B72CB7 /* ILMenuItem.m in Sources */,
 				0453ECDA17DD814500B72CB7 /* ILBox2dTools.mm in Sources */,
 				04A1BA3117E0613B0003777E /* ILDefendNet.mm in Sources */,
@@ -4127,6 +4129,7 @@
 				04886E0017ACB20B005D8DB9 /* b2PolygonAndCircleContact.cpp in Sources */,
 				04886E0317ACB20B005D8DB9 /* b2PolygonContact.cpp in Sources */,
 				04886E0717ACB20B005D8DB9 /* b2DistanceJoint.cpp in Sources */,
+				04F3CD6D17F5274C00477BD5 /* ILShoppingControl.m in Sources */,
 				04886E0A17ACB20B005D8DB9 /* b2FrictionJoint.cpp in Sources */,
 				04886E0D17ACB20C005D8DB9 /* b2GearJoint.cpp in Sources */,
 				04886E1017ACB20C005D8DB9 /* b2Joint.cpp in Sources */,
@@ -4207,7 +4210,7 @@
 				04B83D4417CEC525001C634A /* ILTouchStopLayer.m in Sources */,
 				04B83D6A17CF6813001C634A /* ILShrinkPanel.m in Sources */,
 				04B83D6D17CF6E22001C634A /* ILShrinkButton.m in Sources */,
-				04B83D7017CF7BC2001C634A /* ILUsedOnceButton.m in Sources */,
+				04B83D7017CF7BC2001C634A /* ILGunSwitchControl.m in Sources */,
 				04B83D7317CF8341001C634A /* ILPlayControl.mm in Sources */,
 				04E53F2917D0174000AE15A5 /* ILLevelControlLayer.m in Sources */,
 				04E53F2C17D0212D00AE15A5 /* ILBulletShowUnit.m in Sources */,
@@ -4215,7 +4218,6 @@
 				04382BAE17D3755B00257293 /* ILMenuLayer.m in Sources */,
 				04382BB117D3771900257293 /* ILMenuScene.mm in Sources */,
 				04382BF917D38FD900257293 /* CCScrollLayer.m in Sources */,
-				049B5C7D17D5D33100F67159 /* ILMenuButton.m in Sources */,
 				049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */,
 				0448DF1417DC8A0E00BEF8B1 /* ILBox2dTools.mm in Sources */,
 				04A1BA3017E0613B0003777E /* ILDefendNet.mm in Sources */,

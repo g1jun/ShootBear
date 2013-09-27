@@ -12,10 +12,10 @@
 #import "CCBAnimationManager.h"
 #import "ILBox2dFactory.h"
 #import "ILDataSimpleSave.h"
+#import "ILGunSwitchControl.h"
 
 #define BULLET_NUMBER 4;
 
-static NSString* const kCoinAmount = @"coin_amount";
 
 @implementation ILPlayControl
 - (id)init
@@ -110,14 +110,30 @@ static NSString* const kCoinAmount = @"coin_amount";
     }
 }
 
+- (BOOL)bulletUsedUp:(id)sender
+{
+    ILGunSwitchControl *switchControl = (ILGunSwitchControl *)[sender parent];
+    if(switchControl.quantityBullet == 0) {
+        [self.failedDelegate pressedShoppingButton:sender];
+        return YES;
+    }
+    return NO;
+}
+
 - (void)pressedFireButton:(id)sender
 {
+    if ([self bulletUsedUp:sender]) {
+        return;
+    }
     _usedGunType = kFireGun;
     [self.delegate switchGunType:kFireGun];
 }
 
 - (void)pressedBombButton:(id)sender
 {
+    if ([self bulletUsedUp:sender]) {
+        return;
+    }
     _usedGunType = kCannon;
     [self.delegate switchGunType:kCannon];
 }
@@ -125,6 +141,9 @@ static NSString* const kCoinAmount = @"coin_amount";
 
 - (void)pressedFlashButton:(id)sender
 {
+    if ([self bulletUsedUp:sender]) {
+        return;
+    }
     _usedGunType = kElectriGun;
     [self.delegate switchGunType:kElectriGun];
 }
@@ -164,6 +183,7 @@ static NSString* const kCoinAmount = @"coin_amount";
 
 - (void)pressedShoppingButton:(id)sender
 {
+    [_settingLayer.userObject runAnimationsForSequenceNamed:@"exit"];
     [self.failedDelegate pressedShoppingButton:sender];
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "ILDataSimpleSave.h"
+#import "NSDictionary+DeepCopy.h"
 
 static ILDataSimpleSave *_dataSimpleSave = nil;
 
@@ -23,6 +24,7 @@ static ILDataSimpleSave *_dataSimpleSave = nil;
 
 - (void)dealloc
 {
+    [_dataSave synchronize];
     [_dataSave release];
     [super dealloc];
 }
@@ -65,6 +67,18 @@ static ILDataSimpleSave *_dataSimpleSave = nil;
 
 }
 
+- (NSString *)keyStringWithLevel:(Level)level
+{
+    return [NSString stringWithFormat:@"level_pass_state-%i-%i", level.page, level.levelNo];
+}
+
+- (void)saveLevelPass:(Level)level
+{
+    NSString *key = [self keyStringWithLevel:level];
+    [_dataSave setBool:YES forKey:key];
+    [_dataSave synchronize];
+}
+
 - (NSString *)stringWithKey:(NSString *)key
 {
     return [_dataSave stringForKey:key];
@@ -82,6 +96,13 @@ static ILDataSimpleSave *_dataSimpleSave = nil;
 
 - (BOOL)boolWithKey:(NSString *)key
 {
+    return [_dataSave boolForKey:key];
+}
+
+
+- (BOOL)levelState:(Level)leve
+{
+    NSString *key = [self keyStringWithLevel:leve];
     return [_dataSave boolForKey:key];
 }
 

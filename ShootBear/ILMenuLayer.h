@@ -14,4 +14,6 @@
 @property (assign, nonatomic) CCNode *menuTheme;
 @property (assign, nonatomic)CCNode *menuGroup;
 
+@property (assign, nonatomic)int groupIndex;
+
 @end

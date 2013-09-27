@@ -52,7 +52,7 @@
     [self foldPanel];
 }
 
-- (void)switchButton:(ILUsedOnceButton *)button
+- (void)switchButton:(ILGunSwitchControl *)button
 {
     _currentSelectedButton = button;
     for (id item in _buttonArray) {

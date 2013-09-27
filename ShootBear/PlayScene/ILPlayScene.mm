@@ -16,6 +16,7 @@
 #import "ILMenuScene.h"
 #import "ILPlayControl.h"
 #import "ILDataSimpleSave.h"
+#import "ILShoppingControl.h"
 
 
 #define zBK 0
@@ -107,6 +108,8 @@
 
 - (void)levelCompleted
 {
+    Level next = [self nextLevel];
+    [[ILDataSimpleSave sharedDataSave] saveLevelPass:next];
     [_playControl pause];
     [self loadLevelFinished:@"LevelCompletedLayer.ccbi"];
 }
@@ -138,20 +141,23 @@
     [_cacheLayers removeObjectForKey:@"levelResult"];
 }
 
-- (void)nextLevel
+- (Level)nextLevel
 {
-    NSString *key = [NSString stringWithFormat:@"%i", _currentLevelNO.page];
+    Level temp = _currentLevelNO;
+    NSString *key = [NSString stringWithFormat:@"%i", temp.page];
     int max = [[self levelGroupNumber][key] intValue];
-    if (_currentLevelNO.levelNo == max - 1) {
-        _currentLevelNO.page ++;
-        _currentLevelNO.levelNo = 0;
+    if (temp.levelNo == max - 1) {
+        temp.page ++;
+        temp.levelNo = 0;
+    } else {
+        temp.levelNo++;
     }
-    _currentLevelNO.levelNo++;
+    return temp;
 }
 
 - (void)pressedNextButton:(id)sender
 {
-    [self nextLevel];
+    _currentLevelNO = [self nextLevel];
     [self removeTempLayer];
     [self loadLayer:_currentLevelNO];
     [self loadControl];
@@ -159,7 +165,7 @@
 
 - (void)pressedShoppingButton:(id)sender
 {
-    CCNode *shopping = [CCBReader nodeGraphFromFile:@"ShoppingLayer.ccbi"];
+    ILShoppingControl *shopping = [ILShoppingControl node];
     [self addChild:shopping z:zShopping];
 }
 

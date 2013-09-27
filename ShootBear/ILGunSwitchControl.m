@@ -6,14 +6,23 @@
 //  Copyright (c) 2013年 mac. All rights reserved.
 //
 
-#import "ILUsedOnceButton.h"
+#import "ILGunSwitchControl.h"
+#import "ILDataSimpleSave.h"
 
-@implementation ILUsedOnceButton
+@implementation ILGunSwitchControl
 
 - (void)didLoadFromCCB
 {
     [_button addTarget:self action:@selector(used:) forControlEvents:CCControlEventTouchUpInside];
     _isSelected = NO;
+    if ([self quantityBullet] == 0) {
+        _label.visible = NO;
+    }
+}
+
+- (int)quantityBullet
+{
+    return [[ILDataSimpleSave sharedDataSave] intWithKey:_gunType];
 }
 
 - (void)addTarget:(id)target action:(SEL)action
@@ -23,6 +32,9 @@
 
 - (void)used:(id)sender
 {
+    if ([self quantityBullet] == 0) {
+        return;
+    }
     _isSelected = YES;
     _button.enabled = NO;
     for (id node in self.children) {

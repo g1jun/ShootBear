@@ -12,3 +12,6 @@ typedef struct {
     int page;
     int levelNo;
 } Level;
+
+
+static NSString* const kCoinAmount = @"coin_amount";
