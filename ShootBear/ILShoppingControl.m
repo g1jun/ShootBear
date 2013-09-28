@@ -9,6 +9,7 @@
 #import "ILShoppingControl.h"
 #import "CCBReader.h"
 #import "ILDataSimpleSave.h"
+#import "ILShoppingCard.h"
 
 @implementation ILShoppingControl
 
@@ -40,6 +41,34 @@
 - (void)pressedBackButton:(id)sender
 {
     [self removeFromParent];
+}
+
+- (void)consumeCoins:(float)coins
+{
+    
+}
+
+- (void)consumeMoney:(float)money
+{
+    
+}
+
+- (void)dealWithPrice:(NSString *)labelString
+{
+    if ([labelString hasPrefix:@"$"]) {
+        NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"$ "];
+        NSString *temp = [labelString stringByTrimmingCharactersInSet:set];
+        [self consumeMoney:[temp floatValue]];
+    }
+    [self consumeCoins:[labelString floatValue]];
+}
+
+
+- (void)pressedBuyButton:(id)sender
+{
+    ILShoppingCard *card = (ILShoppingCard *)[[sender parent] parent];
+    [card buy];
+    [self dealWithPrice:card.priceLabel.string];
 }
 
 @end

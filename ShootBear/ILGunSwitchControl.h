@@ -23,5 +23,7 @@
 - (void)addTarget:(id)target action:(SEL)action;
 - (int)quantityBullet;
 
+- (void)bulletHasUsed;
+
 
 @end

@@ -800,6 +800,38 @@
 		04B83D7317CF8341001C634A /* ILPlayControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B83D7217CF8341001C634A /* ILPlayControl.mm */; };
 		04BBBBD317C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBBBD217C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m */; };
 		04C3287917C8C45F00C586C8 /* NSArray+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C3287817C8C45F00C586C8 /* NSArray+DeepCopy.m */; };
+		04C430CD17F6C29F00FA47C6 /* ILShoppingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C430CC17F6C29F00FA47C6 /* ILShoppingCard.m */; };
+		04C430CE17F6C29F00FA47C6 /* ILShoppingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C430CC17F6C29F00FA47C6 /* ILShoppingCard.m */; };
+		04C430DF17F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D017F6D8F800FA47C6 /* BuyBullet.ccbi */; };
+		04C430E017F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D017F6D8F800FA47C6 /* BuyBullet.ccbi */; };
+		04C430E117F6D8F800FA47C6 /* BuyButton.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D117F6D8F800FA47C6 /* BuyButton.ccbi */; };
+		04C430E217F6D8F800FA47C6 /* BuyButton.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D117F6D8F800FA47C6 /* BuyButton.ccbi */; };
+		04C430E317F6D8F800FA47C6 /* BuyCannon.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D217F6D8F800FA47C6 /* BuyCannon.ccbi */; };
+		04C430E417F6D8F800FA47C6 /* BuyCannon.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D217F6D8F800FA47C6 /* BuyCannon.ccbi */; };
+		04C430E517F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D317F6D8F800FA47C6 /* BuyElectricGun.ccbi */; };
+		04C430E617F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D317F6D8F800FA47C6 /* BuyElectricGun.ccbi */; };
+		04C430E717F6D8F800FA47C6 /* BuyFireGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D417F6D8F800FA47C6 /* BuyFireGun.ccbi */; };
+		04C430E817F6D8F800FA47C6 /* BuyFireGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D417F6D8F800FA47C6 /* BuyFireGun.ccbi */; };
+		04C430E917F6D8F800FA47C6 /* BuyGameTheme.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D517F6D8F800FA47C6 /* BuyGameTheme.ccbi */; };
+		04C430EA17F6D8F800FA47C6 /* BuyGameTheme.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D517F6D8F800FA47C6 /* BuyGameTheme.ccbi */; };
+		04C430EB17F6D8F800FA47C6 /* BuyGuns.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D617F6D8F800FA47C6 /* BuyGuns.ccbi */; };
+		04C430EC17F6D8F800FA47C6 /* BuyGuns.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D617F6D8F800FA47C6 /* BuyGuns.ccbi */; };
+		04C430ED17F6D8F800FA47C6 /* BuyTime.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D717F6D8F800FA47C6 /* BuyTime.ccbi */; };
+		04C430EE17F6D8F800FA47C6 /* BuyTime.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D717F6D8F800FA47C6 /* BuyTime.ccbi */; };
+		04C430EF17F6D8F800FA47C6 /* CoinBuy1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D817F6D8F800FA47C6 /* CoinBuy1.ccbi */; };
+		04C430F017F6D8F800FA47C6 /* CoinBuy1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D817F6D8F800FA47C6 /* CoinBuy1.ccbi */; };
+		04C430F117F6D8F800FA47C6 /* CoinBuy2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D917F6D8F800FA47C6 /* CoinBuy2.ccbi */; };
+		04C430F217F6D8F800FA47C6 /* CoinBuy2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430D917F6D8F800FA47C6 /* CoinBuy2.ccbi */; };
+		04C430F317F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DA17F6D8F800FA47C6 /* CoinBuy3.ccbi */; };
+		04C430F417F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DA17F6D8F800FA47C6 /* CoinBuy3.ccbi */; };
+		04C430F517F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DB17F6D8F800FA47C6 /* CoinBuy4.ccbi */; };
+		04C430F617F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DB17F6D8F800FA47C6 /* CoinBuy4.ccbi */; };
+		04C430F717F6D8F800FA47C6 /* ShoppingBuy.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DC17F6D8F800FA47C6 /* ShoppingBuy.ccbi */; };
+		04C430F817F6D8F800FA47C6 /* ShoppingBuy.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DC17F6D8F800FA47C6 /* ShoppingBuy.ccbi */; };
+		04C430F917F6D8F800FA47C6 /* ShoppingCoin.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DD17F6D8F800FA47C6 /* ShoppingCoin.ccbi */; };
+		04C430FA17F6D8F800FA47C6 /* ShoppingCoin.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DD17F6D8F800FA47C6 /* ShoppingCoin.ccbi */; };
+		04C430FB17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DE17F6D8F800FA47C6 /* ShoppingLayer.ccbi */; };
+		04C430FC17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DE17F6D8F800FA47C6 /* ShoppingLayer.ccbi */; };
 		04D236AE17B777CD007608F4 /* ILGun.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D236AD17B777CD007608F4 /* ILGun.mm */; };
 		04D236B317B79DDF007608F4 /* ILShooterHalf.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D236B217B79DDF007608F4 /* ILShooterHalf.m */; };
 		04D7A83417D9B55200072F4D /* HomeLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82817D9B55200072F4D /* HomeLayer.ccbi */; };
@@ -813,34 +845,6 @@
 		04D7A83D17D9B55200072F4D /* MenuItem1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A83117D9B55200072F4D /* MenuItem1.ccbi */; };
 		04D7A83E17D9B55200072F4D /* MenuLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A83217D9B55200072F4D /* MenuLayer.ccbi */; };
 		04D7A83F17D9B55200072F4D /* MenuTheme.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A83317D9B55200072F4D /* MenuTheme.ccbi */; };
-		04DBE37117F45DFA005DE5D3 /* BugBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36317F45DFA005DE5D3 /* BugBullet.ccbi */; };
-		04DBE37217F45DFA005DE5D3 /* BugBullet.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36317F45DFA005DE5D3 /* BugBullet.ccbi */; };
-		04DBE37317F45DFA005DE5D3 /* BugCannon.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36417F45DFA005DE5D3 /* BugCannon.ccbi */; };
-		04DBE37417F45DFA005DE5D3 /* BugCannon.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36417F45DFA005DE5D3 /* BugCannon.ccbi */; };
-		04DBE37517F45DFA005DE5D3 /* BugElectricGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36517F45DFA005DE5D3 /* BugElectricGun.ccbi */; };
-		04DBE37617F45DFA005DE5D3 /* BugElectricGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36517F45DFA005DE5D3 /* BugElectricGun.ccbi */; };
-		04DBE37717F45DFA005DE5D3 /* BugFireGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36617F45DFA005DE5D3 /* BugFireGun.ccbi */; };
-		04DBE37817F45DFA005DE5D3 /* BugFireGun.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36617F45DFA005DE5D3 /* BugFireGun.ccbi */; };
-		04DBE37917F45DFA005DE5D3 /* BugGameTheme.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36717F45DFA005DE5D3 /* BugGameTheme.ccbi */; };
-		04DBE37A17F45DFA005DE5D3 /* BugGameTheme.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36717F45DFA005DE5D3 /* BugGameTheme.ccbi */; };
-		04DBE37B17F45DFA005DE5D3 /* BugGuns.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36817F45DFA005DE5D3 /* BugGuns.ccbi */; };
-		04DBE37C17F45DFA005DE5D3 /* BugGuns.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36817F45DFA005DE5D3 /* BugGuns.ccbi */; };
-		04DBE37D17F45DFA005DE5D3 /* BugTime.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36917F45DFA005DE5D3 /* BugTime.ccbi */; };
-		04DBE37E17F45DFA005DE5D3 /* BugTime.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36917F45DFA005DE5D3 /* BugTime.ccbi */; };
-		04DBE37F17F45DFA005DE5D3 /* CoinBuy1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36A17F45DFA005DE5D3 /* CoinBuy1.ccbi */; };
-		04DBE38017F45DFA005DE5D3 /* CoinBuy1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36A17F45DFA005DE5D3 /* CoinBuy1.ccbi */; };
-		04DBE38117F45DFA005DE5D3 /* CoinBuy2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36B17F45DFA005DE5D3 /* CoinBuy2.ccbi */; };
-		04DBE38217F45DFA005DE5D3 /* CoinBuy2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36B17F45DFA005DE5D3 /* CoinBuy2.ccbi */; };
-		04DBE38317F45DFA005DE5D3 /* CoinBuy3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36C17F45DFA005DE5D3 /* CoinBuy3.ccbi */; };
-		04DBE38417F45DFA005DE5D3 /* CoinBuy3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36C17F45DFA005DE5D3 /* CoinBuy3.ccbi */; };
-		04DBE38517F45DFA005DE5D3 /* CoinBuy4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36D17F45DFA005DE5D3 /* CoinBuy4.ccbi */; };
-		04DBE38617F45DFA005DE5D3 /* CoinBuy4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36D17F45DFA005DE5D3 /* CoinBuy4.ccbi */; };
-		04DBE38717F45DFA005DE5D3 /* ShoppingBuy.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36E17F45DFA005DE5D3 /* ShoppingBuy.ccbi */; };
-		04DBE38817F45DFA005DE5D3 /* ShoppingBuy.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36E17F45DFA005DE5D3 /* ShoppingBuy.ccbi */; };
-		04DBE38917F45DFA005DE5D3 /* ShoppingCoin.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36F17F45DFA005DE5D3 /* ShoppingCoin.ccbi */; };
-		04DBE38A17F45DFA005DE5D3 /* ShoppingCoin.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE36F17F45DFA005DE5D3 /* ShoppingCoin.ccbi */; };
-		04DBE38B17F45DFA005DE5D3 /* ShoppingLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE37017F45DFA005DE5D3 /* ShoppingLayer.ccbi */; };
-		04DBE38C17F45DFA005DE5D3 /* ShoppingLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04DBE37017F45DFA005DE5D3 /* ShoppingLayer.ccbi */; };
 		04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
 		04DCE28D17B4E1010036CA68 /* ILPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */; };
 		04E0832017B50901007F5486 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0831F17B50901007F5486 /* libobjc.A.dylib */; };
@@ -1660,6 +1664,23 @@
 		04BBBBD217C35BF40060C9F0 /* CCBAnimationManager+RmoveDeadNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCBAnimationManager+RmoveDeadNode.m"; sourceTree = "<group>"; };
 		04C3287717C8C45F00C586C8 /* NSArray+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DeepCopy.h"; sourceTree = "<group>"; };
 		04C3287817C8C45F00C586C8 /* NSArray+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DeepCopy.m"; sourceTree = "<group>"; };
+		04C430CB17F6C29F00FA47C6 /* ILShoppingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShoppingCard.h; sourceTree = "<group>"; };
+		04C430CC17F6C29F00FA47C6 /* ILShoppingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILShoppingCard.m; sourceTree = "<group>"; };
+		04C430D017F6D8F800FA47C6 /* BuyBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyBullet.ccbi; sourceTree = "<group>"; };
+		04C430D117F6D8F800FA47C6 /* BuyButton.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyButton.ccbi; sourceTree = "<group>"; };
+		04C430D217F6D8F800FA47C6 /* BuyCannon.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyCannon.ccbi; sourceTree = "<group>"; };
+		04C430D317F6D8F800FA47C6 /* BuyElectricGun.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyElectricGun.ccbi; sourceTree = "<group>"; };
+		04C430D417F6D8F800FA47C6 /* BuyFireGun.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyFireGun.ccbi; sourceTree = "<group>"; };
+		04C430D517F6D8F800FA47C6 /* BuyGameTheme.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyGameTheme.ccbi; sourceTree = "<group>"; };
+		04C430D617F6D8F800FA47C6 /* BuyGuns.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyGuns.ccbi; sourceTree = "<group>"; };
+		04C430D717F6D8F800FA47C6 /* BuyTime.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuyTime.ccbi; sourceTree = "<group>"; };
+		04C430D817F6D8F800FA47C6 /* CoinBuy1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy1.ccbi; sourceTree = "<group>"; };
+		04C430D917F6D8F800FA47C6 /* CoinBuy2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy2.ccbi; sourceTree = "<group>"; };
+		04C430DA17F6D8F800FA47C6 /* CoinBuy3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy3.ccbi; sourceTree = "<group>"; };
+		04C430DB17F6D8F800FA47C6 /* CoinBuy4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy4.ccbi; sourceTree = "<group>"; };
+		04C430DC17F6D8F800FA47C6 /* ShoppingBuy.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingBuy.ccbi; sourceTree = "<group>"; };
+		04C430DD17F6D8F800FA47C6 /* ShoppingCoin.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingCoin.ccbi; sourceTree = "<group>"; };
+		04C430DE17F6D8F800FA47C6 /* ShoppingLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingLayer.ccbi; sourceTree = "<group>"; };
 		04D236AC17B777CD007608F4 /* ILGun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGun.h; sourceTree = "<group>"; };
 		04D236AD17B777CD007608F4 /* ILGun.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILGun.mm; sourceTree = "<group>"; };
 		04D236B117B79DDF007608F4 /* ILShooterHalf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShooterHalf.h; sourceTree = "<group>"; };
@@ -1675,20 +1696,6 @@
 		04D7A83117D9B55200072F4D /* MenuItem1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuItem1.ccbi; sourceTree = "<group>"; };
 		04D7A83217D9B55200072F4D /* MenuLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuLayer.ccbi; sourceTree = "<group>"; };
 		04D7A83317D9B55200072F4D /* MenuTheme.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuTheme.ccbi; sourceTree = "<group>"; };
-		04DBE36317F45DFA005DE5D3 /* BugBullet.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BugBullet.ccbi; sourceTree = "<group>"; };
-		04DBE36417F45DFA005DE5D3 /* BugCannon.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BugCannon.ccbi; sourceTree = "<group>"; };
-		04DBE36517F45DFA005DE5D3 /* BugElectricGun.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BugElectricGun.ccbi; sourceTree = "<group>"; };
-		04DBE36617F45DFA005DE5D3 /* BugFireGun.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BugFireGun.ccbi; sourceTree = "<group>"; };
-		04DBE36717F45DFA005DE5D3 /* BugGameTheme.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BugGameTheme.ccbi; sourceTree = "<group>"; };
-		04DBE36817F45DFA005DE5D3 /* BugGuns.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BugGuns.ccbi; sourceTree = "<group>"; };
-		04DBE36917F45DFA005DE5D3 /* BugTime.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BugTime.ccbi; sourceTree = "<group>"; };
-		04DBE36A17F45DFA005DE5D3 /* CoinBuy1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy1.ccbi; sourceTree = "<group>"; };
-		04DBE36B17F45DFA005DE5D3 /* CoinBuy2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy2.ccbi; sourceTree = "<group>"; };
-		04DBE36C17F45DFA005DE5D3 /* CoinBuy3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy3.ccbi; sourceTree = "<group>"; };
-		04DBE36D17F45DFA005DE5D3 /* CoinBuy4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinBuy4.ccbi; sourceTree = "<group>"; };
-		04DBE36E17F45DFA005DE5D3 /* ShoppingBuy.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingBuy.ccbi; sourceTree = "<group>"; };
-		04DBE36F17F45DFA005DE5D3 /* ShoppingCoin.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingCoin.ccbi; sourceTree = "<group>"; };
-		04DBE37017F45DFA005DE5D3 /* ShoppingLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingLayer.ccbi; sourceTree = "<group>"; };
 		04DCE28517B4D61A0036CA68 /* BearPhysics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BearPhysics.plist; sourceTree = "<group>"; };
 		04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPhysicsSprite.h; sourceTree = "<group>"; };
 		04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsSprite.mm; sourceTree = "<group>"; };
@@ -2934,6 +2941,28 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
+		04C430CF17F6D8F800FA47C6 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				04C430D017F6D8F800FA47C6 /* BuyBullet.ccbi */,
+				04C430D117F6D8F800FA47C6 /* BuyButton.ccbi */,
+				04C430D217F6D8F800FA47C6 /* BuyCannon.ccbi */,
+				04C430D317F6D8F800FA47C6 /* BuyElectricGun.ccbi */,
+				04C430D417F6D8F800FA47C6 /* BuyFireGun.ccbi */,
+				04C430D517F6D8F800FA47C6 /* BuyGameTheme.ccbi */,
+				04C430D617F6D8F800FA47C6 /* BuyGuns.ccbi */,
+				04C430D717F6D8F800FA47C6 /* BuyTime.ccbi */,
+				04C430D817F6D8F800FA47C6 /* CoinBuy1.ccbi */,
+				04C430D917F6D8F800FA47C6 /* CoinBuy2.ccbi */,
+				04C430DA17F6D8F800FA47C6 /* CoinBuy3.ccbi */,
+				04C430DB17F6D8F800FA47C6 /* CoinBuy4.ccbi */,
+				04C430DC17F6D8F800FA47C6 /* ShoppingBuy.ccbi */,
+				04C430DD17F6D8F800FA47C6 /* ShoppingCoin.ccbi */,
+				04C430DE17F6D8F800FA47C6 /* ShoppingLayer.ccbi */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
 		04D236B417B79F24007608F4 /* Shooter */ = {
 			isa = PBXGroup;
 			children = (
@@ -2985,32 +3014,13 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
-		04DBE36217F45DFA005DE5D3 /* Shopping */ = {
-			isa = PBXGroup;
-			children = (
-				04DBE36317F45DFA005DE5D3 /* BugBullet.ccbi */,
-				04DBE36417F45DFA005DE5D3 /* BugCannon.ccbi */,
-				04DBE36517F45DFA005DE5D3 /* BugElectricGun.ccbi */,
-				04DBE36617F45DFA005DE5D3 /* BugFireGun.ccbi */,
-				04DBE36717F45DFA005DE5D3 /* BugGameTheme.ccbi */,
-				04DBE36817F45DFA005DE5D3 /* BugGuns.ccbi */,
-				04DBE36917F45DFA005DE5D3 /* BugTime.ccbi */,
-				04DBE36A17F45DFA005DE5D3 /* CoinBuy1.ccbi */,
-				04DBE36B17F45DFA005DE5D3 /* CoinBuy2.ccbi */,
-				04DBE36C17F45DFA005DE5D3 /* CoinBuy3.ccbi */,
-				04DBE36D17F45DFA005DE5D3 /* CoinBuy4.ccbi */,
-				04DBE36E17F45DFA005DE5D3 /* ShoppingBuy.ccbi */,
-				04DBE36F17F45DFA005DE5D3 /* ShoppingCoin.ccbi */,
-				04DBE37017F45DFA005DE5D3 /* ShoppingLayer.ccbi */,
-			);
-			path = Shopping;
-			sourceTree = "<group>";
-		};
 		04DBE38D17F46622005DE5D3 /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
 				04F3CD6B17F5274C00477BD5 /* ILShoppingControl.h */,
 				04F3CD6C17F5274C00477BD5 /* ILShoppingControl.m */,
+				04C430CB17F6C29F00FA47C6 /* ILShoppingCard.h */,
+				04C430CC17F6C29F00FA47C6 /* ILShoppingCard.m */,
 			);
 			name = Shopping;
 			sourceTree = "<group>";
@@ -3018,7 +3028,7 @@
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
-				04DBE36217F45DFA005DE5D3 /* Shopping */,
+				04C430CF17F6D8F800FA47C6 /* Shopping */,
 				0406041C17EE6D6A002B6E8B /* Shooter */,
 				04F05ACA17E9C10400D4F6B8 /* LevelGroup2 */,
 				04F05A9317E9C0FE00D4F6B8 /* LevelGroup1 */,
@@ -3228,19 +3238,19 @@
 				0453ECEB17DD814500B72CB7 /* Default-Landscape~ipad.png in Resources */,
 				0453ECEC17DD814500B72CB7 /* Icon-72.png in Resources */,
 				0453ECED17DD814500B72CB7 /* Icon-Small-50.png in Resources */,
-				04DBE38A17F45DFA005DE5D3 /* ShoppingCoin.ccbi in Resources */,
+				04C430FA17F6D8F800FA47C6 /* ShoppingCoin.ccbi in Resources */,
 				0453ECEE17DD814500B72CB7 /* Icon-Small.png in Resources */,
 				0406045E17EE6D6A002B6E8B /* Gun2Left.ccbi in Resources */,
 				0453ECEF17DD814500B72CB7 /* Icon-Small@2x.png in Resources */,
 				0453ECF017DD814500B72CB7 /* Icon.png in Resources */,
 				0453ECF117DD814500B72CB7 /* Icon@2x.png in Resources */,
 				0453ECF217DD814500B72CB7 /* iTunesArtwork in Resources */,
-				04DBE38617F45DFA005DE5D3 /* CoinBuy4.ccbi in Resources */,
+				04C430F617F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */,
 				0453ECF317DD814500B72CB7 /* ChangeLog in Resources */,
 				0453ECF417DD814500B72CB7 /* blocks.png in Resources */,
 				0453ECF517DD814500B72CB7 /* collision.txt in Resources */,
 				0453ECF617DD814500B72CB7 /* README.md in Resources */,
-				04DBE38817F45DFA005DE5D3 /* ShoppingBuy.ccbi in Resources */,
+				04C430F817F6D8F800FA47C6 /* ShoppingBuy.ccbi in Resources */,
 				0453ECF817DD814500B72CB7 /* LICENSE in Resources */,
 				0406046C17EE6D6A002B6E8B /* Shooter.ccbi in Resources */,
 				0453ECF917DD814500B72CB7 /* BearPhysics.plist in Resources */,
@@ -3248,6 +3258,7 @@
 				0453ED1917DD814500B72CB7 /* SceneBackground1.ccbi in Resources */,
 				0406044C17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
 				0453ED3517DD814500B72CB7 /* BulletNumberShow.ccbi in Resources */,
+				04C430E617F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */,
 				0453ED3617DD814500B72CB7 /* BulletShowUnit.ccbi in Resources */,
 				0453ED3717DD814500B72CB7 /* ButtonBack.ccbi in Resources */,
 				0406044E17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
@@ -3288,12 +3299,11 @@
 				0406047E17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				0453ED5217DD814500B72CB7 /* MenuGroup7.ccbi in Resources */,
 				0453ED5317DD814500B72CB7 /* MenuItem1.ccbi in Resources */,
-				04DBE38417F45DFA005DE5D3 /* CoinBuy3.ccbi in Resources */,
+				04C430F417F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */,
 				0453ED5417DD814500B72CB7 /* MenuLayer.ccbi in Resources */,
 				0453ED5517DD814500B72CB7 /* MenuTheme.ccbi in Resources */,
 				0406045217EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
 				0453ED5617DD814500B72CB7 /* bear.plist in Resources */,
-				04DBE37617F45DFA005DE5D3 /* BugElectricGun.ccbi in Resources */,
 				0453ED5717DD814500B72CB7 /* bear.png in Resources */,
 				0406044217EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				0453ED5817DD814500B72CB7 /* ccbParticleBone.png in Resources */,
@@ -3305,6 +3315,7 @@
 				0453ED5E17DD814500B72CB7 /* element.plist in Resources */,
 				0453ED5F17DD814500B72CB7 /* element.png in Resources */,
 				0453ED6017DD814500B72CB7 /* menu_bk.png in Resources */,
+				04C430E417F6D8F800FA47C6 /* BuyCannon.ccbi in Resources */,
 				0453ED6117DD814500B72CB7 /* menu.png in Resources */,
 				0453ED6217DD814500B72CB7 /* othres.plist in Resources */,
 				0453ED6317DD814500B72CB7 /* othres.png in Resources */,
@@ -3313,6 +3324,8 @@
 				0406044617EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */,
 				0453ED6617DD814500B72CB7 /* play_bk1.png in Resources */,
 				0453ED6717DD814500B72CB7 /* resources-ipad in Resources */,
+				04C430EC17F6D8F800FA47C6 /* BuyGuns.ccbi in Resources */,
+				04C430E817F6D8F800FA47C6 /* BuyFireGun.ccbi in Resources */,
 				0453ED6817DD814500B72CB7 /* resources-ipadhd in Resources */,
 				0453ED6917DD814500B72CB7 /* resources-iphonehd in Resources */,
 				0453ED6A17DD814500B72CB7 /* BearDeadParticle.ccbi in Resources */,
@@ -3345,9 +3358,9 @@
 				0453ED8317DD814500B72CB7 /* YellowBearRightArmOutter.ccbi in Resources */,
 				0453ED8417DD814500B72CB7 /* YellowBearRightHead.ccbi in Resources */,
 				0453ED8517DD814500B72CB7 /* YellowBearRightLegOutter.ccbi in Resources */,
+				04C430FC17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */,
 				0453ED8617DD814500B72CB7 /* DefendNet.ccbi in Resources */,
 				0453ED8717DD814500B72CB7 /* Ladder.ccbi in Resources */,
-				04DBE38C17F45DFA005DE5D3 /* ShoppingLayer.ccbi in Resources */,
 				0453ED8817DD814500B72CB7 /* MetalBox.ccbi in Resources */,
 				0453ED8917DD814500B72CB7 /* MetalCircle.ccbi in Resources */,
 				0453ED8A17DD814500B72CB7 /* MetalRectangle.ccbi in Resources */,
@@ -3360,8 +3373,6 @@
 				0453ED9017DD814500B72CB7 /* WoodCircle.ccbi in Resources */,
 				0453ED9117DD814500B72CB7 /* WoodRectangle.ccbi in Resources */,
 				0453ED9217DD814500B72CB7 /* Level0-0.ccbi in Resources */,
-				04DBE37C17F45DFA005DE5D3 /* BugGuns.ccbi in Resources */,
-				04DBE37A17F45DFA005DE5D3 /* BugGameTheme.ccbi in Resources */,
 				0453ED9317DD814500B72CB7 /* Level0-1.ccbi in Resources */,
 				0453ED9417DD814500B72CB7 /* Level0-10.ccbi in Resources */,
 				0453ED9517DD814500B72CB7 /* Level0-11.ccbi in Resources */,
@@ -3375,6 +3386,7 @@
 				0406046E17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */,
 				0453ED9C17DD814500B72CB7 /* Level0-5.ccbi in Resources */,
 				0453ED9D17DD814500B72CB7 /* Level0-6.ccbi in Resources */,
+				04C430EE17F6D8F800FA47C6 /* BuyTime.ccbi in Resources */,
 				0453ED9E17DD814500B72CB7 /* Level0-7.ccbi in Resources */,
 				0406046217EE6D6A002B6E8B /* GunFire.ccbi in Resources */,
 				0453ED9F17DD814500B72CB7 /* Level0-8.ccbi in Resources */,
@@ -3405,22 +3417,22 @@
 				04F40E7917DF72CF00B493C9 /* StaticWood1.ccbi in Resources */,
 				04F40E7B17DF72CF00B493C9 /* StaticWood2.ccbi in Resources */,
 				04F40E7D17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
-				04DBE37417F45DFA005DE5D3 /* BugCannon.ccbi in Resources */,
+				04C430E017F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */,
 				04F40E7F17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
 				04F40E8117DF72CF00B493C9 /* StaticWood5.ccbi in Resources */,
 				0406047217EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */,
 				04F40E8317DF72CF00B493C9 /* StaticWood6.ccbi in Resources */,
 				04F40E8517DF72CF00B493C9 /* StaticWood7.ccbi in Resources */,
 				04F40E8717DF72CF00B493C9 /* StaticWood8.ccbi in Resources */,
+				04C430E217F6D8F800FA47C6 /* BuyButton.ccbi in Resources */,
 				0406045A17EE6D6A002B6E8B /* Gun1Left.ccbi in Resources */,
 				04F40E8917DF72CF00B493C9 /* StaticWood9.ccbi in Resources */,
 				0406045817EE6D6A002B6E8B /* Gun0Right.ccbi in Resources */,
 				04F40E8B17DF72CF00B493C9 /* StaticWoodUnit1.ccbi in Resources */,
 				04F40E8D17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8F17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
+				04C430F217F6D8F800FA47C6 /* CoinBuy2.ccbi in Resources */,
 				04F40E9117DF72CF00B493C9 /* WoodParticle.ccbi in Resources */,
-				04DBE37217F45DFA005DE5D3 /* BugBullet.ccbi in Resources */,
-				04DBE38217F45DFA005DE5D3 /* CoinBuy2.ccbi in Resources */,
 				0412D5EE17E540CE00EDFEE0 /* lightning1.png in Resources */,
 				0412D5F017E540CE00EDFEE0 /* lightning2.png in Resources */,
 				0412D5F217E540CE00EDFEE0 /* lightning3.png in Resources */,
@@ -3431,7 +3443,6 @@
 				0412D5FA17E540CE00EDFEE0 /* lightning7.png in Resources */,
 				04F05AA717E9C0FE00D4F6B8 /* Level1-0.ccbi in Resources */,
 				04F05AA917E9C0FE00D4F6B8 /* Level1-1.ccbi in Resources */,
-				04DBE37E17F45DFA005DE5D3 /* BugTime.ccbi in Resources */,
 				04F05AAB17E9C0FE00D4F6B8 /* Level1-10.ccbi in Resources */,
 				04F05AAD17E9C0FE00D4F6B8 /* Level1-11.ccbi in Resources */,
 				04F05AAF17E9C0FE00D4F6B8 /* Level1-12.ccbi in Resources */,
@@ -3441,10 +3452,11 @@
 				04F05AB517E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
 				04F05AB717E9C0FE00D4F6B8 /* Level1-16.ccbi in Resources */,
 				04F05AB917E9C0FE00D4F6B8 /* Level1-17.ccbi in Resources */,
-				04DBE38017F45DFA005DE5D3 /* CoinBuy1.ccbi in Resources */,
+				04C430F017F6D8F800FA47C6 /* CoinBuy1.ccbi in Resources */,
 				04F05ABB17E9C0FE00D4F6B8 /* Level1-2.ccbi in Resources */,
 				04F05ABD17E9C0FE00D4F6B8 /* Level1-3.ccbi in Resources */,
 				04F05ABF17E9C0FE00D4F6B8 /* Level1-4.ccbi in Resources */,
+				04C430EA17F6D8F800FA47C6 /* BuyGameTheme.ccbi in Resources */,
 				04F05AC117E9C0FE00D4F6B8 /* Level1-5.ccbi in Resources */,
 				04F05AC317E9C0FE00D4F6B8 /* Level1-6.ccbi in Resources */,
 				04F05AC517E9C0FE00D4F6B8 /* Level1-7.ccbi in Resources */,
@@ -3455,7 +3467,6 @@
 				04F05AE017E9C10400D4F6B8 /* Level2-10.ccbi in Resources */,
 				04F05AE217E9C10400D4F6B8 /* Level2-11.ccbi in Resources */,
 				04F05AE417E9C10400D4F6B8 /* Level2-12.ccbi in Resources */,
-				04DBE37817F45DFA005DE5D3 /* BugFireGun.ccbi in Resources */,
 				04F05AE617E9C10400D4F6B8 /* Level2-13.ccbi in Resources */,
 				04F05AE817E9C10400D4F6B8 /* Level2-14.ccbi in Resources */,
 				04F05AEA17E9C10400D4F6B8 /* Level2-15.ccbi in Resources */,
@@ -3482,19 +3493,19 @@
 				04886C1517ACB1F6005D8DB9 /* Default-Landscape~ipad.png in Resources */,
 				04886C1717ACB1F6005D8DB9 /* Icon-72.png in Resources */,
 				04886C1917ACB1F6005D8DB9 /* Icon-Small-50.png in Resources */,
-				04DBE38917F45DFA005DE5D3 /* ShoppingCoin.ccbi in Resources */,
+				04C430F917F6D8F800FA47C6 /* ShoppingCoin.ccbi in Resources */,
 				04886C1B17ACB1F6005D8DB9 /* Icon-Small.png in Resources */,
 				0406045D17EE6D6A002B6E8B /* Gun2Left.ccbi in Resources */,
 				04886C1D17ACB1F6005D8DB9 /* Icon-Small@2x.png in Resources */,
 				04886C1F17ACB1F7005D8DB9 /* Icon.png in Resources */,
 				04886C2117ACB1F7005D8DB9 /* Icon@2x.png in Resources */,
 				04886C2417ACB1F7005D8DB9 /* iTunesArtwork in Resources */,
-				04DBE38517F45DFA005DE5D3 /* CoinBuy4.ccbi in Resources */,
+				04C430F517F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */,
 				04886D7D17ACB205005D8DB9 /* ChangeLog in Resources */,
 				04886E3D17ACB20E005D8DB9 /* blocks.png in Resources */,
 				0411DAC517AE74690023BD39 /* collision.txt in Resources */,
 				04B1092317B37F4000778F8E /* README.md in Resources */,
-				04DBE38717F45DFA005DE5D3 /* ShoppingBuy.ccbi in Resources */,
+				04C430F717F6D8F800FA47C6 /* ShoppingBuy.ccbi in Resources */,
 				04B1092617B37F4000778F8E /* LICENSE in Resources */,
 				0406046B17EE6D6A002B6E8B /* Shooter.ccbi in Resources */,
 				04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */,
@@ -3502,6 +3513,7 @@
 				04AEBB0C17CDBDEC00BD9D65 /* SceneBackground1.ccbi in Resources */,
 				0406044B17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
 				04382BC817D3788600257293 /* BulletNumberShow.ccbi in Resources */,
+				04C430E517F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */,
 				04382BC917D3788600257293 /* BulletShowUnit.ccbi in Resources */,
 				04382BCA17D3788600257293 /* ButtonBack.ccbi in Resources */,
 				0406044D17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
@@ -3542,12 +3554,11 @@
 				0406047D17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				04D7A83C17D9B55200072F4D /* MenuGroup7.ccbi in Resources */,
 				04D7A83D17D9B55200072F4D /* MenuItem1.ccbi in Resources */,
-				04DBE38317F45DFA005DE5D3 /* CoinBuy3.ccbi in Resources */,
+				04C430F317F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */,
 				04D7A83E17D9B55200072F4D /* MenuLayer.ccbi in Resources */,
 				04D7A83F17D9B55200072F4D /* MenuTheme.ccbi in Resources */,
 				0406045117EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
 				04797C1517DB12CB003E1C20 /* bear.plist in Resources */,
-				04DBE37517F45DFA005DE5D3 /* BugElectricGun.ccbi in Resources */,
 				04797C1617DB12CB003E1C20 /* bear.png in Resources */,
 				0406044117EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				04797C1717DB12CB003E1C20 /* ccbParticleBone.png in Resources */,
@@ -3559,6 +3570,7 @@
 				04797C1D17DB12CB003E1C20 /* element.plist in Resources */,
 				04797C1E17DB12CB003E1C20 /* element.png in Resources */,
 				04797C1F17DB12CB003E1C20 /* menu_bk.png in Resources */,
+				04C430E317F6D8F800FA47C6 /* BuyCannon.ccbi in Resources */,
 				04797C2017DB12CB003E1C20 /* menu.png in Resources */,
 				04797C2117DB12CB003E1C20 /* othres.plist in Resources */,
 				04797C2217DB12CB003E1C20 /* othres.png in Resources */,
@@ -3567,6 +3579,8 @@
 				0406044517EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */,
 				04797C2517DB12CB003E1C20 /* play_bk1.png in Resources */,
 				04797C2617DB12CB003E1C20 /* resources-ipad in Resources */,
+				04C430EB17F6D8F800FA47C6 /* BuyGuns.ccbi in Resources */,
+				04C430E717F6D8F800FA47C6 /* BuyFireGun.ccbi in Resources */,
 				04797C2717DB12CB003E1C20 /* resources-ipadhd in Resources */,
 				04797C2817DB12CB003E1C20 /* resources-iphonehd in Resources */,
 				0448DEED17DC747E00BEF8B1 /* BearDeadParticle.ccbi in Resources */,
@@ -3599,9 +3613,9 @@
 				0448DF0617DC747E00BEF8B1 /* YellowBearRightArmOutter.ccbi in Resources */,
 				0448DF0717DC747E00BEF8B1 /* YellowBearRightHead.ccbi in Resources */,
 				0448DF0817DC747E00BEF8B1 /* YellowBearRightLegOutter.ccbi in Resources */,
+				04C430FB17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */,
 				0448DF2217DC92ED00BEF8B1 /* DefendNet.ccbi in Resources */,
 				0448DF2317DC92ED00BEF8B1 /* Ladder.ccbi in Resources */,
-				04DBE38B17F45DFA005DE5D3 /* ShoppingLayer.ccbi in Resources */,
 				0448DF2417DC92ED00BEF8B1 /* MetalBox.ccbi in Resources */,
 				0448DF2517DC92ED00BEF8B1 /* MetalCircle.ccbi in Resources */,
 				0448DF2617DC92ED00BEF8B1 /* MetalRectangle.ccbi in Resources */,
@@ -3614,8 +3628,6 @@
 				0448DF2C17DC92ED00BEF8B1 /* WoodCircle.ccbi in Resources */,
 				0448DF2D17DC92ED00BEF8B1 /* WoodRectangle.ccbi in Resources */,
 				04EE6F9917DD539100C185B8 /* Level0-0.ccbi in Resources */,
-				04DBE37B17F45DFA005DE5D3 /* BugGuns.ccbi in Resources */,
-				04DBE37917F45DFA005DE5D3 /* BugGameTheme.ccbi in Resources */,
 				04EE6F9A17DD539100C185B8 /* Level0-1.ccbi in Resources */,
 				04EE6F9B17DD539100C185B8 /* Level0-10.ccbi in Resources */,
 				04EE6F9C17DD539100C185B8 /* Level0-11.ccbi in Resources */,
@@ -3629,6 +3641,7 @@
 				0406046D17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */,
 				04EE6FA317DD539100C185B8 /* Level0-5.ccbi in Resources */,
 				04EE6FA417DD539100C185B8 /* Level0-6.ccbi in Resources */,
+				04C430ED17F6D8F800FA47C6 /* BuyTime.ccbi in Resources */,
 				04EE6FA517DD539100C185B8 /* Level0-7.ccbi in Resources */,
 				0406046117EE6D6A002B6E8B /* GunFire.ccbi in Resources */,
 				04EE6FA617DD539100C185B8 /* Level0-8.ccbi in Resources */,
@@ -3659,22 +3672,22 @@
 				04F40E7817DF72CF00B493C9 /* StaticWood1.ccbi in Resources */,
 				04F40E7A17DF72CF00B493C9 /* StaticWood2.ccbi in Resources */,
 				04F40E7C17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
-				04DBE37317F45DFA005DE5D3 /* BugCannon.ccbi in Resources */,
+				04C430DF17F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */,
 				04F40E7E17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
 				04F40E8017DF72CF00B493C9 /* StaticWood5.ccbi in Resources */,
 				0406047117EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */,
 				04F40E8217DF72CF00B493C9 /* StaticWood6.ccbi in Resources */,
 				04F40E8417DF72CF00B493C9 /* StaticWood7.ccbi in Resources */,
 				04F40E8617DF72CF00B493C9 /* StaticWood8.ccbi in Resources */,
+				04C430E117F6D8F800FA47C6 /* BuyButton.ccbi in Resources */,
 				0406045917EE6D6A002B6E8B /* Gun1Left.ccbi in Resources */,
 				04F40E8817DF72CF00B493C9 /* StaticWood9.ccbi in Resources */,
 				0406045717EE6D6A002B6E8B /* Gun0Right.ccbi in Resources */,
 				04F40E8A17DF72CF00B493C9 /* StaticWoodUnit1.ccbi in Resources */,
 				04F40E8C17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8E17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
+				04C430F117F6D8F800FA47C6 /* CoinBuy2.ccbi in Resources */,
 				04F40E9017DF72CF00B493C9 /* WoodParticle.ccbi in Resources */,
-				04DBE37117F45DFA005DE5D3 /* BugBullet.ccbi in Resources */,
-				04DBE38117F45DFA005DE5D3 /* CoinBuy2.ccbi in Resources */,
 				0412D5ED17E540CE00EDFEE0 /* lightning1.png in Resources */,
 				0412D5EF17E540CE00EDFEE0 /* lightning2.png in Resources */,
 				0412D5F117E540CE00EDFEE0 /* lightning3.png in Resources */,
@@ -3685,7 +3698,6 @@
 				0412D5F917E540CE00EDFEE0 /* lightning7.png in Resources */,
 				04F05AA617E9C0FE00D4F6B8 /* Level1-0.ccbi in Resources */,
 				04F05AA817E9C0FE00D4F6B8 /* Level1-1.ccbi in Resources */,
-				04DBE37D17F45DFA005DE5D3 /* BugTime.ccbi in Resources */,
 				04F05AAA17E9C0FE00D4F6B8 /* Level1-10.ccbi in Resources */,
 				04F05AAC17E9C0FE00D4F6B8 /* Level1-11.ccbi in Resources */,
 				04F05AAE17E9C0FE00D4F6B8 /* Level1-12.ccbi in Resources */,
@@ -3695,10 +3707,11 @@
 				04F05AB417E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
 				04F05AB617E9C0FE00D4F6B8 /* Level1-16.ccbi in Resources */,
 				04F05AB817E9C0FE00D4F6B8 /* Level1-17.ccbi in Resources */,
-				04DBE37F17F45DFA005DE5D3 /* CoinBuy1.ccbi in Resources */,
+				04C430EF17F6D8F800FA47C6 /* CoinBuy1.ccbi in Resources */,
 				04F05ABA17E9C0FE00D4F6B8 /* Level1-2.ccbi in Resources */,
 				04F05ABC17E9C0FE00D4F6B8 /* Level1-3.ccbi in Resources */,
 				04F05ABE17E9C0FE00D4F6B8 /* Level1-4.ccbi in Resources */,
+				04C430E917F6D8F800FA47C6 /* BuyGameTheme.ccbi in Resources */,
 				04F05AC017E9C0FE00D4F6B8 /* Level1-5.ccbi in Resources */,
 				04F05AC217E9C0FE00D4F6B8 /* Level1-6.ccbi in Resources */,
 				04F05AC417E9C0FE00D4F6B8 /* Level1-7.ccbi in Resources */,
@@ -3709,7 +3722,6 @@
 				04F05ADF17E9C10400D4F6B8 /* Level2-10.ccbi in Resources */,
 				04F05AE117E9C10400D4F6B8 /* Level2-11.ccbi in Resources */,
 				04F05AE317E9C10400D4F6B8 /* Level2-12.ccbi in Resources */,
-				04DBE37717F45DFA005DE5D3 /* BugFireGun.ccbi in Resources */,
 				04F05AE517E9C10400D4F6B8 /* Level2-13.ccbi in Resources */,
 				04F05AE717E9C10400D4F6B8 /* Level2-14.ccbi in Resources */,
 				04F05AE917E9C10400D4F6B8 /* Level2-15.ccbi in Resources */,
@@ -3965,6 +3977,7 @@
 				0453ECD517DD814500B72CB7 /* ILMenuLayer.m in Sources */,
 				0453ECD617DD814500B72CB7 /* ILMenuScene.mm in Sources */,
 				0453ECD717DD814500B72CB7 /* CCScrollLayer.m in Sources */,
+				04C430CE17F6C29F00FA47C6 /* ILShoppingCard.m in Sources */,
 				0453ECD917DD814500B72CB7 /* ILMenuItem.m in Sources */,
 				0453ECDA17DD814500B72CB7 /* ILBox2dTools.mm in Sources */,
 				04A1BA3117E0613B0003777E /* ILDefendNet.mm in Sources */,
@@ -4218,6 +4231,7 @@
 				04382BAE17D3755B00257293 /* ILMenuLayer.m in Sources */,
 				04382BB117D3771900257293 /* ILMenuScene.mm in Sources */,
 				04382BF917D38FD900257293 /* CCScrollLayer.m in Sources */,
+				04C430CD17F6C29F00FA47C6 /* ILShoppingCard.m in Sources */,
 				049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */,
 				0448DF1417DC8A0E00BEF8B1 /* ILBox2dTools.mm in Sources */,
 				04A1BA3017E0613B0003777E /* ILDefendNet.mm in Sources */,

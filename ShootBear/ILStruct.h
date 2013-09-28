@@ -15,3 +15,10 @@ typedef struct {
 
 
 static NSString* const kCoinAmount = @"coin_amount";
+static NSString* const kBulletQuantity = @"bullet_quantity";
+static NSString* const kBulletTime = @"bullet_time";
+
+static NSString* const kHandGun = @"Gun0";
+static NSString* const kFireGun = @"Gun2";
+static NSString* const kElectriGun = @"Gun1";
+static NSString* const kCannon = @"ShooterCannon";

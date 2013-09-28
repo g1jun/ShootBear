@@ -15,14 +15,33 @@
 {
     [_button addTarget:self action:@selector(used:) forControlEvents:CCControlEventTouchUpInside];
     _isSelected = NO;
-    if ([self quantityBullet] == 0) {
-        _label.visible = NO;
-    }
+    [self updateLabel];
+}
+
+- (void)updateLabel
+{
+    _label.string = [NSString stringWithFormat:@"%i", [self quantityBullet]];
+
 }
 
 - (int)quantityBullet
 {
-    return [[ILDataSimpleSave sharedDataSave] intWithKey:_gunType];
+    int ret = [[ILDataSimpleSave sharedDataSave] intWithKey:_gunType];
+    if (ret == 0) {
+        _label.visible = NO;
+    }
+    return ret;
+}
+
+- (void)bulletHasUsed
+{
+    int temp = [[ILDataSimpleSave sharedDataSave] intWithKey:_gunType];
+    if (temp > 0) {
+        temp--;
+    }
+    [[ILDataSimpleSave sharedDataSave] saveInt:temp forKey:_gunType];
+    [self updateLabel];
+    
 }
 
 - (void)addTarget:(id)target action:(SEL)action

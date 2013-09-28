@@ -14,6 +14,7 @@
 #import "ILOptimalPerformance.h"
 #import "ILClippingNode.h"
 #import "ILLightning.h"
+#import "CCNode+CCBRelativePositioning.h"
 
 @implementation ILLevelLayer
 
@@ -110,7 +111,7 @@
 {
     NSString *coinNumber = [NSString stringWithFormat:@"+%.1f", number];
     position.y -= 30;
-    CCLabelTTF *label = [CCLabelTTF labelWithString:coinNumber fontName:@"Helvetica" fontSize:18];
+    CCLabelTTF *label = [CCLabelTTF labelWithString:coinNumber fontName:@"Helvetica" fontSize:18 * [self resolutionScale]];
     [label setColor:ccYELLOW];
     label.position = position;
     [self addChild:label];

@@ -71,6 +71,7 @@
 
 - (void)hasUsed
 {
+    [_currentSelectedButton bulletHasUsed];
     [self recoverAll];
     _usedTimes ++;
     if (_usedTimes > 1) {

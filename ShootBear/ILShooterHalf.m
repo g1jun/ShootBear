@@ -10,6 +10,7 @@
 #import "ILShooter.h"
 #import "CCBReader.h"
 #import "CCBAnimationManager+RmoveDeadNode.h"
+#import "ILStruct.h"
 
 @implementation ILShooterHalf
 

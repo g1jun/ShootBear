@@ -110,7 +110,7 @@
     }
 }
 
-- (BOOL)bulletUsedUp:(id)sender
+- (BOOL)isOthersGunUsedUp:(id)sender
 {
     ILGunSwitchControl *switchControl = (ILGunSwitchControl *)[sender parent];
     if(switchControl.quantityBullet == 0) {
@@ -122,7 +122,7 @@
 
 - (void)pressedFireButton:(id)sender
 {
-    if ([self bulletUsedUp:sender]) {
+    if ([self isOthersGunUsedUp:sender]) {
         return;
     }
     _usedGunType = kFireGun;
@@ -131,7 +131,7 @@
 
 - (void)pressedBombButton:(id)sender
 {
-    if ([self bulletUsedUp:sender]) {
+    if ([self isOthersGunUsedUp:sender]) {
         return;
     }
     _usedGunType = kCannon;
@@ -141,7 +141,7 @@
 
 - (void)pressedFlashButton:(id)sender
 {
-    if ([self bulletUsedUp:sender]) {
+    if ([self isOthersGunUsedUp:sender]) {
         return;
     }
     _usedGunType = kElectriGun;
