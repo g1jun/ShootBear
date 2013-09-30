@@ -17,6 +17,7 @@
 
 @property (assign, nonatomic) ILBulletNumberShow *bulletNumberShow;
 @property (assign, nonatomic) ILShrinkPanel *shrinkPanel;
+@property (assign, nonatomic)CCNode *coinNode;
 
 - (void)hide;
 

@@ -15,6 +15,7 @@
 #import "CCBReader.h"
 #import "ILShooter.h"
 #import "CCBAnimationManager.h"
+#import "SimpleAudioEngine.h"
 
 #define BULLET 30
 
@@ -27,6 +28,10 @@
     _lineReference = nil;
     [super dealloc];
 }
+- (void)didLoadFromCCB
+{
+    [self loadMusic];
+}
 
 - (ILBullet *)bulletInstance
 {
@@ -35,6 +40,27 @@
     return bullet;
 }
 
+- (void)loadMusic
+{
+    NSDictionary *dic = [self musicEffect];
+    for (NSString *key in dic) {
+        [[SimpleAudioEngine sharedEngine] preloadEffect:dic[key]];
+    }
+}
+
+- (NSDictionary *)musicEffect
+{
+    return @{kHandGunBullet:@"hand_gun_fire.mp3",
+      kFireGunBullet:@"fire_gun_fire.mp3",
+      kElectriGunBullet:@"",
+      kCannonBullet: @"cannon_fire.mp3"};
+}
+
+- (void)playMusicEffect:(NSString *)bulletType
+{
+    NSString *fileName = [self musicEffect][bulletType];
+    [[SimpleAudioEngine sharedEngine] playEffect:fileName];
+}
 
 - (void)fire
 {
@@ -45,6 +71,7 @@
     }
     [self configBullet:bullet degreeOffset:0];
     [self fireAnimation];
+    [self playMusicEffect:bullet.bulletType];
 }
 
 - (void)configBullet:(ILBullet *)bullet degreeOffset:(float)offset

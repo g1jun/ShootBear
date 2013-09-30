@@ -41,4 +41,6 @@
 
 - (void)addStencil:(CCNode *)node;
 - (void)removeStencil:(CCNode *)node;
+- (void)removeBear:(ILBear *)bear;
+- (float)levelCompletedDelay;
 @end

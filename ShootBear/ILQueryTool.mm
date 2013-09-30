@@ -14,7 +14,11 @@
 
 + (void)queryAround:(ILSpriteBase *)sprite callback:(b2QueryCallback *)callback;
 {
-    [ILQueryTool queryAround:sprite callback:callback scale:1.5];
+    float scale = 1.1;
+    if (sprite.b2Body->GetType() == b2_staticBody) {
+        scale = 1.5;
+    }
+    [ILQueryTool queryAround:sprite callback:callback scale:scale];
 }
 
 + (void)queryAround:(ILSpriteBase *)sprite callback:(b2QueryCallback *)callback scale:(float)scale

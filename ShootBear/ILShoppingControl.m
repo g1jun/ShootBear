@@ -45,22 +45,36 @@
 
 - (void)consumeCoins:(float)coins
 {
-    
+    [self coinQuantityChange:-coins];
+
+}
+
+- (void)coinQuantityChange:(float)change
+{
+    float temp = [[ILDataSimpleSave sharedDataSave] floatWithKey:kCoinAmount];
+    temp += change;
+    [[ILDataSimpleSave sharedDataSave] saveFloat:temp forKey:kCoinAmount];
+    [self updateCoinLabel];
 }
 
 - (void)consumeMoney:(float)money
 {
-    
+    [self updateCoinLabel];
+
 }
 
 - (void)dealWithPrice:(NSString *)labelString
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:kShoppingUpdate object:nil];
     if ([labelString hasPrefix:@"$"]) {
         NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"$ "];
         NSString *temp = [labelString stringByTrimmingCharactersInSet:set];
         [self consumeMoney:[temp floatValue]];
+        return;
     }
     [self consumeCoins:[labelString floatValue]];
+
+
 }
 
 

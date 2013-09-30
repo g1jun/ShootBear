@@ -46,6 +46,7 @@
     float _passTime;
     CCLabelTTF *_levelNO;
     CCLabelTTF *_coinLabel;
+    BOOL _isShowBulletUseUpHint;
 }
 
 @property (assign, nonatomic) id<ILPlayControlDelegate> delegate;

@@ -58,6 +58,7 @@
 }
 
 @property (copy, nonatomic)NSString *animationRule;
+@property (copy, nonatomic)NSString *levelState;
 
 - (CGPoint)explisionPosition;
 

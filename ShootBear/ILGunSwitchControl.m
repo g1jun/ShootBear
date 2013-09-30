@@ -11,6 +11,21 @@
 
 @implementation ILGunSwitchControl
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLabel) name:kShoppingUpdate object:nil];
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super dealloc];
+}
+
 - (void)didLoadFromCCB
 {
     [_button addTarget:self action:@selector(used:) forControlEvents:CCControlEventTouchUpInside];
@@ -27,9 +42,7 @@
 - (int)quantityBullet
 {
     int ret = [[ILDataSimpleSave sharedDataSave] intWithKey:_gunType];
-    if (ret == 0) {
-        _label.visible = NO;
-    }
+    _label.visible = !ret <= 0;
     return ret;
 }
 

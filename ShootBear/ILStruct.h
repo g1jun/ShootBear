@@ -22,3 +22,4 @@ static NSString* const kHandGun = @"Gun0";
 static NSString* const kFireGun = @"Gun2";
 static NSString* const kElectriGun = @"Gun1";
 static NSString* const kCannon = @"ShooterCannon";
+static NSString* const kShoppingUpdate = @"kShoppingUpdate";

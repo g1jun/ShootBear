@@ -16,4 +16,6 @@
 
 - (void)used;
 
+- (void)recovery;
+
 @end

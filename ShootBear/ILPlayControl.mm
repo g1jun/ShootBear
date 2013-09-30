@@ -13,8 +13,8 @@
 #import "ILBox2dFactory.h"
 #import "ILDataSimpleSave.h"
 #import "ILGunSwitchControl.h"
+#import "SimpleAudioEngine.h"
 
-#define BULLET_NUMBER 4;
 
 
 @implementation ILPlayControl
@@ -24,7 +24,6 @@
     if (self) {
         [[CCDirector sharedDirector].touchDispatcher addTargetedDelegate:self priority:10 swallowsTouches:NO];
         _levelControlLayer = (ILLevelControlLayer *)[CCBReader nodeGraphFromFile:@"LevelControlLayer.ccbi" owner:self];
-        _levelControlLayer.bulletNumberShow.bulletNumber = BULLET_NUMBER;
         _passTime = -1;
         [self addChild:_levelControlLayer];
         _settingLayer = (CCLayer *)[CCBReader nodeGraphFromFile:@"SettingControlLayer.ccbi" owner:self];
@@ -33,10 +32,16 @@
         [self configSwitch];
         [self scheduleUpdate];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageReceive:) name:@"coin_increase" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateShopping) name:kShoppingUpdate object:nil];
 
         
     }
     return self;
+}
+
+- (void)updateShopping
+{
+    [self updateCoinLabel];
 }
 
 - (void)dealloc
@@ -86,6 +91,17 @@
     [super onEnter];
     _levelNO.string = [NSString stringWithFormat:@"%i-%i", _level.page + 1, _level.levelNo + 1];
     [self updateCoinLabel];
+    if ([self isHideShrinkPanel]){
+        _levelControlLayer.shrinkPanel.visible = NO;
+        _coinLabel.visible = NO;
+        _levelControlLayer.coinNode.visible = NO;
+    }
+}
+
+
+- (BOOL)isHideShrinkPanel
+{
+    return _level.page == 0 && _level.levelNo < 7;
 }
 
 - (void)configSwitch
@@ -94,6 +110,9 @@
         if ([[sender lastCompletedSequenceName] isEqualToString:@"exit"]) {
             _settingLayer.visible = NO;
             [_levelControlLayer show];
+            if ([self isHideShrinkPanel]) {
+                _levelControlLayer.shrinkPanel.visible = NO;
+            }
             [[NSNotificationCenter defaultCenter] postNotificationName:@"continue" object:nil];
             [self scheduleUpdate];
             [self.failedDelegate resume];
@@ -113,7 +132,7 @@
 - (BOOL)isOthersGunUsedUp:(id)sender
 {
     ILGunSwitchControl *switchControl = (ILGunSwitchControl *)[sender parent];
-    if(switchControl.quantityBullet == 0) {
+    if(switchControl.quantityBullet <= 0) {
         [self.failedDelegate pressedShoppingButton:sender];
         return YES;
     }
@@ -213,11 +232,18 @@
         [self.delegate notificationShooterFire];
         [_levelControlLayer.bulletNumberShow reduceBullet];
     }
+    if (_levelControlLayer.bulletNumberShow.bulletNumber < 0) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"bullet_use_up.mp3"];
+        if (!_isShowBulletUseUpHint) {
+            _isShowBulletUseUpHint = YES;
+            CCNode *hint = [CCBReader nodeGraphFromFile:@"BulletUseUpHint.ccbi"];
+            [self addChild:hint];
+        }
+    }
     if (_levelControlLayer.bulletNumberShow.bulletNumber == 0 && !_hasRunFailedDelegate) {
         [_levelControlLayer.shrinkPanel hideMyself];
         _passTime = 5;
         [_levelControlLayer.bulletNumberShow reduceBullet];
-
     }
     _usedGunType = nil;
 

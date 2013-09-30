@@ -78,6 +78,10 @@
 		0406048017EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043D17EE6D6A002B6E8B /* ShooterRight.ccbi */; };
 		0406048117EE6D6A002B6E8B /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043E17EE6D6A002B6E8B /* TestScene.ccbi */; };
 		0406048217EE6D6A002B6E8B /* TestScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 0406043E17EE6D6A002B6E8B /* TestScene.ccbi */; };
+		0407723417F904AE0083D27B /* ILLabelTTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407723317F904AE0083D27B /* ILLabelTTF.m */; };
+		0407723517F904AE0083D27B /* ILLabelTTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407723317F904AE0083D27B /* ILLabelTTF.m */; };
+		0407723917F90CC40083D27B /* ILLevelShootHelp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0407723817F90CC40083D27B /* ILLevelShootHelp.mm */; };
+		0407723A17F90CC40083D27B /* ILLevelShootHelp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0407723817F90CC40083D27B /* ILLevelShootHelp.mm */; };
 		040D9FCE17C9C1A20053BBCA /* ILMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FCD17C9C1A20053BBCA /* ILMetal.mm */; };
 		040D9FD117C9C1C30053BBCA /* ILWood.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FD017C9C1C30053BBCA /* ILWood.mm */; };
 		040DA00117C9F2180053BBCA /* ILQueryTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040DA00017C9F2180053BBCA /* ILQueryTool.mm */; };
@@ -117,27 +121,6 @@
 		04306B7B17B6806E00350575 /* ILShooterArm.m in Sources */ = {isa = PBXBuildFile; fileRef = 04306B7A17B6806D00350575 /* ILShooterArm.m */; };
 		04382BAE17D3755B00257293 /* ILMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04382BAD17D3755B00257293 /* ILMenuLayer.m */; };
 		04382BB117D3771900257293 /* ILMenuScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04382BB017D3771900257293 /* ILMenuScene.mm */; };
-		04382BC817D3788600257293 /* BulletNumberShow.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB317D3788600257293 /* BulletNumberShow.ccbi */; };
-		04382BC917D3788600257293 /* BulletShowUnit.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB417D3788600257293 /* BulletShowUnit.ccbi */; };
-		04382BCA17D3788600257293 /* ButtonBack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB517D3788600257293 /* ButtonBack.ccbi */; };
-		04382BCB17D3788600257293 /* ButtonBomb.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB617D3788600257293 /* ButtonBomb.ccbi */; };
-		04382BCC17D3788600257293 /* ButtonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB717D3788600257293 /* ButtonFire.ccbi */; };
-		04382BCD17D3788600257293 /* ButtonFlash.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB817D3788600257293 /* ButtonFlash.ccbi */; };
-		04382BCE17D3788600257293 /* ButtonHelp.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB917D3788600257293 /* ButtonHelp.ccbi */; };
-		04382BCF17D3788600257293 /* ButtonHome.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBA17D3788600257293 /* ButtonHome.ccbi */; };
-		04382BD017D3788600257293 /* ButtonList.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBB17D3788600257293 /* ButtonList.ccbi */; };
-		04382BD117D3788600257293 /* ButtonMore.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBC17D3788600257293 /* ButtonMore.ccbi */; };
-		04382BD217D3788600257293 /* ButtonNext.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBD17D3788600257293 /* ButtonNext.ccbi */; };
-		04382BD317D3788600257293 /* ButtonRetry.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBE17D3788600257293 /* ButtonRetry.ccbi */; };
-		04382BD417D3788600257293 /* ButtonShopping.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBF17D3788600257293 /* ButtonShopping.ccbi */; };
-		04382BD517D3788600257293 /* ButtonShrink.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC017D3788600257293 /* ButtonShrink.ccbi */; };
-		04382BD617D3788600257293 /* ButtonSound.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC117D3788600257293 /* ButtonSound.ccbi */; };
-		04382BD717D3788600257293 /* LevelCompletedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC217D3788600257293 /* LevelCompletedLayer.ccbi */; };
-		04382BD817D3788600257293 /* LevelControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC317D3788600257293 /* LevelControlLayer.ccbi */; };
-		04382BD917D3788600257293 /* LevelFailedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC417D3788600257293 /* LevelFailedLayer.ccbi */; };
-		04382BDA17D3788600257293 /* LevelMenu.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC517D3788600257293 /* LevelMenu.ccbi */; };
-		04382BDB17D3788600257293 /* SettingControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC617D3788600257293 /* SettingControlLayer.ccbi */; };
-		04382BDC17D3788600257293 /* ShrinkPanel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC717D3788600257293 /* ShrinkPanel.ccbi */; };
 		04382BF917D38FD900257293 /* CCScrollLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04382BF817D38FD800257293 /* CCScrollLayer.m */; };
 		043C2D5817C5EEE600E81CA6 /* ElementPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043C2D5717C5EEE600E81CA6 /* ElementPhysics.plist */; };
 		0443B66817AFA92B00DA0D69 /* ILBox2dDebug.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0443B66717AFA92B00DA0D69 /* ILBox2dDebug.mm */; };
@@ -444,27 +427,6 @@
 		0453ECF917DD814500B72CB7 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
 		0453ECFA17DD814500B72CB7 /* ElementPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043C2D5717C5EEE600E81CA6 /* ElementPhysics.plist */; };
 		0453ED1917DD814500B72CB7 /* SceneBackground1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04AEBB0B17CDBDEC00BD9D65 /* SceneBackground1.ccbi */; };
-		0453ED3517DD814500B72CB7 /* BulletNumberShow.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB317D3788600257293 /* BulletNumberShow.ccbi */; };
-		0453ED3617DD814500B72CB7 /* BulletShowUnit.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB417D3788600257293 /* BulletShowUnit.ccbi */; };
-		0453ED3717DD814500B72CB7 /* ButtonBack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB517D3788600257293 /* ButtonBack.ccbi */; };
-		0453ED3817DD814500B72CB7 /* ButtonBomb.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB617D3788600257293 /* ButtonBomb.ccbi */; };
-		0453ED3917DD814500B72CB7 /* ButtonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB717D3788600257293 /* ButtonFire.ccbi */; };
-		0453ED3A17DD814500B72CB7 /* ButtonFlash.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB817D3788600257293 /* ButtonFlash.ccbi */; };
-		0453ED3B17DD814500B72CB7 /* ButtonHelp.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BB917D3788600257293 /* ButtonHelp.ccbi */; };
-		0453ED3C17DD814500B72CB7 /* ButtonHome.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBA17D3788600257293 /* ButtonHome.ccbi */; };
-		0453ED3D17DD814500B72CB7 /* ButtonList.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBB17D3788600257293 /* ButtonList.ccbi */; };
-		0453ED3E17DD814500B72CB7 /* ButtonMore.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBC17D3788600257293 /* ButtonMore.ccbi */; };
-		0453ED3F17DD814500B72CB7 /* ButtonNext.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBD17D3788600257293 /* ButtonNext.ccbi */; };
-		0453ED4017DD814500B72CB7 /* ButtonRetry.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBE17D3788600257293 /* ButtonRetry.ccbi */; };
-		0453ED4117DD814500B72CB7 /* ButtonShopping.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BBF17D3788600257293 /* ButtonShopping.ccbi */; };
-		0453ED4217DD814500B72CB7 /* ButtonShrink.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC017D3788600257293 /* ButtonShrink.ccbi */; };
-		0453ED4317DD814500B72CB7 /* ButtonSound.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC117D3788600257293 /* ButtonSound.ccbi */; };
-		0453ED4417DD814500B72CB7 /* LevelCompletedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC217D3788600257293 /* LevelCompletedLayer.ccbi */; };
-		0453ED4517DD814500B72CB7 /* LevelControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC317D3788600257293 /* LevelControlLayer.ccbi */; };
-		0453ED4617DD814500B72CB7 /* LevelFailedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC417D3788600257293 /* LevelFailedLayer.ccbi */; };
-		0453ED4717DD814500B72CB7 /* LevelMenu.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC517D3788600257293 /* LevelMenu.ccbi */; };
-		0453ED4817DD814500B72CB7 /* SettingControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC617D3788600257293 /* SettingControlLayer.ccbi */; };
-		0453ED4917DD814500B72CB7 /* ShrinkPanel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04382BC717D3788600257293 /* ShrinkPanel.ccbi */; };
 		0453ED4A17DD814500B72CB7 /* HomeLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82817D9B55200072F4D /* HomeLayer.ccbi */; };
 		0453ED4C17DD814500B72CB7 /* MenuGroup1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82A17D9B55200072F4D /* MenuGroup1.ccbi */; };
 		0453ED4D17DD814500B72CB7 /* MenuGroup2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82B17D9B55200072F4D /* MenuGroup2.ccbi */; };
@@ -832,6 +794,8 @@
 		04C430FA17F6D8F800FA47C6 /* ShoppingCoin.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DD17F6D8F800FA47C6 /* ShoppingCoin.ccbi */; };
 		04C430FB17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DE17F6D8F800FA47C6 /* ShoppingLayer.ccbi */; };
 		04C430FC17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04C430DE17F6D8F800FA47C6 /* ShoppingLayer.ccbi */; };
+		04C4310017F702F400FA47C6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04C4310317F702F400FA47C6 /* Localizable.strings */; };
+		04C4310117F702F400FA47C6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04C4310317F702F400FA47C6 /* Localizable.strings */; };
 		04D236AE17B777CD007608F4 /* ILGun.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D236AD17B777CD007608F4 /* ILGun.mm */; };
 		04D236B317B79DDF007608F4 /* ILShooterHalf.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D236B217B79DDF007608F4 /* ILShooterHalf.m */; };
 		04D7A83417D9B55200072F4D /* HomeLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04D7A82817D9B55200072F4D /* HomeLayer.ccbi */; };
@@ -858,6 +822,64 @@
 		04E828B817BD07A000CF0006 /* ILBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828B717BD07A000CF0006 /* ILBear.mm */; };
 		04E828BB17BD0E4000CF0006 /* ILPhysicsBearBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */; };
 		04E828BE17BD194100CF0006 /* ILBulletEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BD17BD194100CF0006 /* ILBulletEntity.mm */; };
+		04EA800817F82A5500FA483A /* bullet_use_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800317F82A5500FA483A /* bullet_use_up.mp3 */; };
+		04EA800917F82A5500FA483A /* bullet_use_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800317F82A5500FA483A /* bullet_use_up.mp3 */; };
+		04EA800A17F82A5500FA483A /* cannon_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800417F82A5500FA483A /* cannon_fire.mp3 */; };
+		04EA800B17F82A5500FA483A /* cannon_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800417F82A5500FA483A /* cannon_fire.mp3 */; };
+		04EA800C17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */; };
+		04EA800D17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */; };
+		04EA800E17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */; };
+		04EA800F17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */; };
+		04EA801017F82A5500FA483A /* metal_collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800717F82A5500FA483A /* metal_collision.mp3 */; };
+		04EA801117F82A5500FA483A /* metal_collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800717F82A5500FA483A /* metal_collision.mp3 */; };
+		04EA801617F8379C00FA483A /* ILLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA801517F8379C00FA483A /* ILLoadManager.m */; };
+		04EA801717F8379C00FA483A /* ILLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA801517F8379C00FA483A /* ILLoadManager.m */; };
+		04EA803017F8500800FA483A /* BulletNumberShow.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801917F8500800FA483A /* BulletNumberShow.ccbi */; };
+		04EA803117F8500800FA483A /* BulletNumberShow.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801917F8500800FA483A /* BulletNumberShow.ccbi */; };
+		04EA803217F8500800FA483A /* BulletShowUnit.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801A17F8500800FA483A /* BulletShowUnit.ccbi */; };
+		04EA803317F8500800FA483A /* BulletShowUnit.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801A17F8500800FA483A /* BulletShowUnit.ccbi */; };
+		04EA803417F8500800FA483A /* BulletUseUpHint.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801B17F8500800FA483A /* BulletUseUpHint.ccbi */; };
+		04EA803517F8500800FA483A /* BulletUseUpHint.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801B17F8500800FA483A /* BulletUseUpHint.ccbi */; };
+		04EA803617F8500800FA483A /* ButtonBack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801C17F8500800FA483A /* ButtonBack.ccbi */; };
+		04EA803717F8500800FA483A /* ButtonBack.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801C17F8500800FA483A /* ButtonBack.ccbi */; };
+		04EA803817F8500800FA483A /* ButtonBomb.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801D17F8500800FA483A /* ButtonBomb.ccbi */; };
+		04EA803917F8500800FA483A /* ButtonBomb.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801D17F8500800FA483A /* ButtonBomb.ccbi */; };
+		04EA803A17F8500800FA483A /* ButtonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801E17F8500800FA483A /* ButtonFire.ccbi */; };
+		04EA803B17F8500800FA483A /* ButtonFire.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801E17F8500800FA483A /* ButtonFire.ccbi */; };
+		04EA803C17F8500800FA483A /* ButtonFlash.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801F17F8500800FA483A /* ButtonFlash.ccbi */; };
+		04EA803D17F8500800FA483A /* ButtonFlash.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801F17F8500800FA483A /* ButtonFlash.ccbi */; };
+		04EA803E17F8500800FA483A /* ButtonHelp.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802017F8500800FA483A /* ButtonHelp.ccbi */; };
+		04EA803F17F8500800FA483A /* ButtonHelp.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802017F8500800FA483A /* ButtonHelp.ccbi */; };
+		04EA804017F8500800FA483A /* ButtonHome.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802117F8500800FA483A /* ButtonHome.ccbi */; };
+		04EA804117F8500800FA483A /* ButtonHome.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802117F8500800FA483A /* ButtonHome.ccbi */; };
+		04EA804217F8500800FA483A /* ButtonList.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802217F8500800FA483A /* ButtonList.ccbi */; };
+		04EA804317F8500800FA483A /* ButtonList.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802217F8500800FA483A /* ButtonList.ccbi */; };
+		04EA804417F8500800FA483A /* ButtonMore.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802317F8500800FA483A /* ButtonMore.ccbi */; };
+		04EA804517F8500800FA483A /* ButtonMore.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802317F8500800FA483A /* ButtonMore.ccbi */; };
+		04EA804617F8500800FA483A /* ButtonNext.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802417F8500800FA483A /* ButtonNext.ccbi */; };
+		04EA804717F8500800FA483A /* ButtonNext.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802417F8500800FA483A /* ButtonNext.ccbi */; };
+		04EA804817F8500800FA483A /* ButtonRetry.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802517F8500800FA483A /* ButtonRetry.ccbi */; };
+		04EA804917F8500800FA483A /* ButtonRetry.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802517F8500800FA483A /* ButtonRetry.ccbi */; };
+		04EA804A17F8500800FA483A /* ButtonShopping.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802617F8500800FA483A /* ButtonShopping.ccbi */; };
+		04EA804B17F8500800FA483A /* ButtonShopping.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802617F8500800FA483A /* ButtonShopping.ccbi */; };
+		04EA804C17F8500800FA483A /* ButtonShrink.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802717F8500800FA483A /* ButtonShrink.ccbi */; };
+		04EA804D17F8500800FA483A /* ButtonShrink.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802717F8500800FA483A /* ButtonShrink.ccbi */; };
+		04EA804E17F8500800FA483A /* ButtonSound.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802817F8500800FA483A /* ButtonSound.ccbi */; };
+		04EA804F17F8500800FA483A /* ButtonSound.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802817F8500800FA483A /* ButtonSound.ccbi */; };
+		04EA805017F8500800FA483A /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802917F8500800FA483A /* CoinCollection.ccbi */; };
+		04EA805117F8500800FA483A /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802917F8500800FA483A /* CoinCollection.ccbi */; };
+		04EA805217F8500800FA483A /* LevelCompletedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802A17F8500800FA483A /* LevelCompletedLayer.ccbi */; };
+		04EA805317F8500800FA483A /* LevelCompletedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802A17F8500800FA483A /* LevelCompletedLayer.ccbi */; };
+		04EA805417F8500800FA483A /* LevelControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802B17F8500800FA483A /* LevelControlLayer.ccbi */; };
+		04EA805517F8500800FA483A /* LevelControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802B17F8500800FA483A /* LevelControlLayer.ccbi */; };
+		04EA805617F8500800FA483A /* LevelFailedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802C17F8500800FA483A /* LevelFailedLayer.ccbi */; };
+		04EA805717F8500800FA483A /* LevelFailedLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802C17F8500800FA483A /* LevelFailedLayer.ccbi */; };
+		04EA805817F8500800FA483A /* LevelMenu.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802D17F8500800FA483A /* LevelMenu.ccbi */; };
+		04EA805917F8500800FA483A /* LevelMenu.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802D17F8500800FA483A /* LevelMenu.ccbi */; };
+		04EA805A17F8500800FA483A /* SettingControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802E17F8500800FA483A /* SettingControlLayer.ccbi */; };
+		04EA805B17F8500800FA483A /* SettingControlLayer.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802E17F8500800FA483A /* SettingControlLayer.ccbi */; };
+		04EA805C17F8500800FA483A /* ShrinkPanel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802F17F8500800FA483A /* ShrinkPanel.ccbi */; };
+		04EA805D17F8500800FA483A /* ShrinkPanel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA802F17F8500800FA483A /* ShrinkPanel.ccbi */; };
 		04EE6F9917DD539100C185B8 /* Level0-0.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EE6F8A17DD539100C185B8 /* Level0-0.ccbi */; };
 		04EE6F9A17DD539100C185B8 /* Level0-1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EE6F8B17DD539100C185B8 /* Level0-1.ccbi */; };
 		04EE6F9B17DD539100C185B8 /* Level0-10.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EE6F8C17DD539100C185B8 /* Level0-10.ccbi */; };
@@ -941,8 +963,6 @@
 		04F05AF817E9C10400D4F6B8 /* Level2-8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F05AD917E9C10400D4F6B8 /* Level2-8.ccbi */; };
 		04F05AF917E9C10400D4F6B8 /* Level2-9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */; };
 		04F05AFA17E9C10400D4F6B8 /* Level2-9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */; };
-		04F2E22D17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */; };
-		04F2E22E17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */; };
 		04F2E23517EFD5870009EB21 /* ILDataSimpleSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */; };
 		04F2E23617EFD5870009EB21 /* ILDataSimpleSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */; };
 		04F3CD6D17F5274C00477BD5 /* ILShoppingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3CD6C17F5274C00477BD5 /* ILShoppingControl.m */; };
@@ -1062,6 +1082,10 @@
 		0406043C17EE6D6A002B6E8B /* ShooterLeft.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterLeft.ccbi; sourceTree = "<group>"; };
 		0406043D17EE6D6A002B6E8B /* ShooterRight.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShooterRight.ccbi; sourceTree = "<group>"; };
 		0406043E17EE6D6A002B6E8B /* TestScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScene.ccbi; sourceTree = "<group>"; };
+		0407723217F904AE0083D27B /* ILLabelTTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLabelTTF.h; sourceTree = "<group>"; };
+		0407723317F904AE0083D27B /* ILLabelTTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLabelTTF.m; sourceTree = "<group>"; };
+		0407723717F90CC40083D27B /* ILLevelShootHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLevelShootHelp.h; sourceTree = "<group>"; };
+		0407723817F90CC40083D27B /* ILLevelShootHelp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILLevelShootHelp.mm; sourceTree = "<group>"; };
 		040D9FCC17C9C1A20053BBCA /* ILMetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMetal.h; sourceTree = "<group>"; };
 		040D9FCD17C9C1A20053BBCA /* ILMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILMetal.mm; sourceTree = "<group>"; };
 		040D9FCF17C9C1C30053BBCA /* ILWood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILWood.h; sourceTree = "<group>"; };
@@ -1112,27 +1136,6 @@
 		04382BAD17D3755B00257293 /* ILMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMenuLayer.m; sourceTree = "<group>"; };
 		04382BAF17D3771900257293 /* ILMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMenuScene.h; sourceTree = "<group>"; };
 		04382BB017D3771900257293 /* ILMenuScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILMenuScene.mm; sourceTree = "<group>"; };
-		04382BB317D3788600257293 /* BulletNumberShow.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletNumberShow.ccbi; sourceTree = "<group>"; };
-		04382BB417D3788600257293 /* BulletShowUnit.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletShowUnit.ccbi; sourceTree = "<group>"; };
-		04382BB517D3788600257293 /* ButtonBack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBack.ccbi; sourceTree = "<group>"; };
-		04382BB617D3788600257293 /* ButtonBomb.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBomb.ccbi; sourceTree = "<group>"; };
-		04382BB717D3788600257293 /* ButtonFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFire.ccbi; sourceTree = "<group>"; };
-		04382BB817D3788600257293 /* ButtonFlash.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFlash.ccbi; sourceTree = "<group>"; };
-		04382BB917D3788600257293 /* ButtonHelp.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHelp.ccbi; sourceTree = "<group>"; };
-		04382BBA17D3788600257293 /* ButtonHome.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHome.ccbi; sourceTree = "<group>"; };
-		04382BBB17D3788600257293 /* ButtonList.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonList.ccbi; sourceTree = "<group>"; };
-		04382BBC17D3788600257293 /* ButtonMore.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonMore.ccbi; sourceTree = "<group>"; };
-		04382BBD17D3788600257293 /* ButtonNext.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonNext.ccbi; sourceTree = "<group>"; };
-		04382BBE17D3788600257293 /* ButtonRetry.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonRetry.ccbi; sourceTree = "<group>"; };
-		04382BBF17D3788600257293 /* ButtonShopping.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShopping.ccbi; sourceTree = "<group>"; };
-		04382BC017D3788600257293 /* ButtonShrink.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShrink.ccbi; sourceTree = "<group>"; };
-		04382BC117D3788600257293 /* ButtonSound.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonSound.ccbi; sourceTree = "<group>"; };
-		04382BC217D3788600257293 /* LevelCompletedLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelCompletedLayer.ccbi; sourceTree = "<group>"; };
-		04382BC317D3788600257293 /* LevelControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelControlLayer.ccbi; sourceTree = "<group>"; };
-		04382BC417D3788600257293 /* LevelFailedLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelFailedLayer.ccbi; sourceTree = "<group>"; };
-		04382BC517D3788600257293 /* LevelMenu.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelMenu.ccbi; sourceTree = "<group>"; };
-		04382BC617D3788600257293 /* SettingControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SettingControlLayer.ccbi; sourceTree = "<group>"; };
-		04382BC717D3788600257293 /* ShrinkPanel.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShrinkPanel.ccbi; sourceTree = "<group>"; };
 		04382BF717D38FD800257293 /* CCScrollLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScrollLayer.h; sourceTree = "<group>"; };
 		04382BF817D38FD800257293 /* CCScrollLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScrollLayer.m; sourceTree = "<group>"; };
 		043C2D5717C5EEE600E81CA6 /* ElementPhysics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElementPhysics.plist; sourceTree = "<group>"; };
@@ -1681,6 +1684,8 @@
 		04C430DC17F6D8F800FA47C6 /* ShoppingBuy.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingBuy.ccbi; sourceTree = "<group>"; };
 		04C430DD17F6D8F800FA47C6 /* ShoppingCoin.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingCoin.ccbi; sourceTree = "<group>"; };
 		04C430DE17F6D8F800FA47C6 /* ShoppingLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShoppingLayer.ccbi; sourceTree = "<group>"; };
+		04C4310217F702F400FA47C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04C4310517F7032800FA47C6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		04D236AC17B777CD007608F4 /* ILGun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGun.h; sourceTree = "<group>"; };
 		04D236AD17B777CD007608F4 /* ILGun.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILGun.mm; sourceTree = "<group>"; };
 		04D236B117B79DDF007608F4 /* ILShooterHalf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShooterHalf.h; sourceTree = "<group>"; };
@@ -1720,6 +1725,36 @@
 		04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsBearBase.mm; sourceTree = "<group>"; };
 		04E828BC17BD194100CF0006 /* ILBulletEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletEntity.h; sourceTree = "<group>"; };
 		04E828BD17BD194100CF0006 /* ILBulletEntity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBulletEntity.mm; sourceTree = "<group>"; };
+		04EA800317F82A5500FA483A /* bullet_use_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullet_use_up.mp3; sourceTree = "<group>"; };
+		04EA800417F82A5500FA483A /* cannon_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cannon_fire.mp3; sourceTree = "<group>"; };
+		04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire_gun_fire.mp3; sourceTree = "<group>"; };
+		04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hand_gun_fire.mp3; sourceTree = "<group>"; };
+		04EA800717F82A5500FA483A /* metal_collision.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = metal_collision.mp3; sourceTree = "<group>"; };
+		04EA801417F8379C00FA483A /* ILLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLoadManager.h; sourceTree = "<group>"; };
+		04EA801517F8379C00FA483A /* ILLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLoadManager.m; sourceTree = "<group>"; };
+		04EA801917F8500800FA483A /* BulletNumberShow.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletNumberShow.ccbi; sourceTree = "<group>"; };
+		04EA801A17F8500800FA483A /* BulletShowUnit.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletShowUnit.ccbi; sourceTree = "<group>"; };
+		04EA801B17F8500800FA483A /* BulletUseUpHint.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletUseUpHint.ccbi; sourceTree = "<group>"; };
+		04EA801C17F8500800FA483A /* ButtonBack.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBack.ccbi; sourceTree = "<group>"; };
+		04EA801D17F8500800FA483A /* ButtonBomb.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonBomb.ccbi; sourceTree = "<group>"; };
+		04EA801E17F8500800FA483A /* ButtonFire.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFire.ccbi; sourceTree = "<group>"; };
+		04EA801F17F8500800FA483A /* ButtonFlash.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonFlash.ccbi; sourceTree = "<group>"; };
+		04EA802017F8500800FA483A /* ButtonHelp.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHelp.ccbi; sourceTree = "<group>"; };
+		04EA802117F8500800FA483A /* ButtonHome.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonHome.ccbi; sourceTree = "<group>"; };
+		04EA802217F8500800FA483A /* ButtonList.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonList.ccbi; sourceTree = "<group>"; };
+		04EA802317F8500800FA483A /* ButtonMore.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonMore.ccbi; sourceTree = "<group>"; };
+		04EA802417F8500800FA483A /* ButtonNext.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonNext.ccbi; sourceTree = "<group>"; };
+		04EA802517F8500800FA483A /* ButtonRetry.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonRetry.ccbi; sourceTree = "<group>"; };
+		04EA802617F8500800FA483A /* ButtonShopping.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShopping.ccbi; sourceTree = "<group>"; };
+		04EA802717F8500800FA483A /* ButtonShrink.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonShrink.ccbi; sourceTree = "<group>"; };
+		04EA802817F8500800FA483A /* ButtonSound.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonSound.ccbi; sourceTree = "<group>"; };
+		04EA802917F8500800FA483A /* CoinCollection.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinCollection.ccbi; sourceTree = "<group>"; };
+		04EA802A17F8500800FA483A /* LevelCompletedLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelCompletedLayer.ccbi; sourceTree = "<group>"; };
+		04EA802B17F8500800FA483A /* LevelControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelControlLayer.ccbi; sourceTree = "<group>"; };
+		04EA802C17F8500800FA483A /* LevelFailedLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelFailedLayer.ccbi; sourceTree = "<group>"; };
+		04EA802D17F8500800FA483A /* LevelMenu.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelMenu.ccbi; sourceTree = "<group>"; };
+		04EA802E17F8500800FA483A /* SettingControlLayer.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SettingControlLayer.ccbi; sourceTree = "<group>"; };
+		04EA802F17F8500800FA483A /* ShrinkPanel.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShrinkPanel.ccbi; sourceTree = "<group>"; };
 		04EE6F8A17DD539100C185B8 /* Level0-0.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level0-0.ccbi"; sourceTree = "<group>"; };
 		04EE6F8B17DD539100C185B8 /* Level0-1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level0-1.ccbi"; sourceTree = "<group>"; };
 		04EE6F8C17DD539100C185B8 /* Level0-10.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level0-10.ccbi"; sourceTree = "<group>"; };
@@ -1769,7 +1804,6 @@
 		04F05AD817E9C10400D4F6B8 /* Level2-7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-7.ccbi"; sourceTree = "<group>"; };
 		04F05AD917E9C10400D4F6B8 /* Level2-8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-8.ccbi"; sourceTree = "<group>"; };
 		04F05ADA17E9C10400D4F6B8 /* Level2-9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Level2-9.ccbi"; sourceTree = "<group>"; };
-		04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoinCollection.ccbi; sourceTree = "<group>"; };
 		04F2E23317EFD5870009EB21 /* ILDataSimpleSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDataSimpleSave.h; sourceTree = "<group>"; };
 		04F2E23417EFD5870009EB21 /* ILDataSimpleSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDataSimpleSave.m; sourceTree = "<group>"; };
 		04F3CD6B17F5274C00477BD5 /* ILShoppingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILShoppingControl.h; sourceTree = "<group>"; };
@@ -1954,6 +1988,15 @@
 			path = Shooter;
 			sourceTree = "<group>";
 		};
+		0407723617F90C990083D27B /* LevelHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0407723717F90CC40083D27B /* ILLevelShootHelp.h */,
+				0407723817F90CC40083D27B /* ILLevelShootHelp.mm */,
+			);
+			name = LevelHelper;
+			sourceTree = "<group>";
+		};
 		040D9FCB17C9C1920053BBCA /* Element */ = {
 			isa = PBXGroup;
 			children = (
@@ -2001,6 +2044,8 @@
 				0475DDD317D9DBC6000BC749 /* ILStruct.h */,
 				0411DAB817AE60E50023BD39 /* ILTMXLayer.h */,
 				0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */,
+				0407723217F904AE0083D27B /* ILLabelTTF.h */,
+				0407723317F904AE0083D27B /* ILLabelTTF.m */,
 			);
 			name = PlayScene;
 			sourceTree = "<group>";
@@ -2080,35 +2125,6 @@
 				049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */,
 			);
 			name = Menu;
-			sourceTree = "<group>";
-		};
-		04382BB217D3788600257293 /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				04382BB317D3788600257293 /* BulletNumberShow.ccbi */,
-				04382BB417D3788600257293 /* BulletShowUnit.ccbi */,
-				04F2E22C17EFCADF0009EB21 /* CoinCollection.ccbi */,
-				04382BB517D3788600257293 /* ButtonBack.ccbi */,
-				04382BB617D3788600257293 /* ButtonBomb.ccbi */,
-				04382BB717D3788600257293 /* ButtonFire.ccbi */,
-				04382BB817D3788600257293 /* ButtonFlash.ccbi */,
-				04382BB917D3788600257293 /* ButtonHelp.ccbi */,
-				04382BBA17D3788600257293 /* ButtonHome.ccbi */,
-				04382BBB17D3788600257293 /* ButtonList.ccbi */,
-				04382BBC17D3788600257293 /* ButtonMore.ccbi */,
-				04382BBD17D3788600257293 /* ButtonNext.ccbi */,
-				04382BBE17D3788600257293 /* ButtonRetry.ccbi */,
-				04382BBF17D3788600257293 /* ButtonShopping.ccbi */,
-				04382BC017D3788600257293 /* ButtonShrink.ccbi */,
-				04382BC117D3788600257293 /* ButtonSound.ccbi */,
-				04382BC217D3788600257293 /* LevelCompletedLayer.ccbi */,
-				04382BC317D3788600257293 /* LevelControlLayer.ccbi */,
-				04382BC417D3788600257293 /* LevelFailedLayer.ccbi */,
-				04382BC517D3788600257293 /* LevelMenu.ccbi */,
-				04382BC617D3788600257293 /* SettingControlLayer.ccbi */,
-				04382BC717D3788600257293 /* ShrinkPanel.ccbi */,
-			);
-			path = Layer;
 			sourceTree = "<group>";
 		};
 		04382BF617D38FD800257293 /* CCScrollLayer */ = {
@@ -2213,6 +2229,8 @@
 		04886C0C17ACB1F6005D8DB9 /* ShootBear */ = {
 			isa = PBXGroup;
 			children = (
+				0407723617F90C990083D27B /* LevelHelper */,
+				04EA801217F8376E00FA483A /* LoadManager */,
 				04DBE38D17F46622005DE5D3 /* Shopping */,
 				04382BAB17D36B7400257293 /* Menu */,
 				040D9FCB17C9C1920053BBCA /* Element */,
@@ -2226,6 +2244,7 @@
 				04DCE26717B4D41E0036CA68 /* CCBI */,
 				0403DF0217C74BF80044DFCF /* CCBResources */,
 				04886C0D17ACB1F6005D8DB9 /* Resources */,
+				04EA800217F82A5500FA483A /* SoundResources */,
 				04886C2517ACB1F7005D8DB9 /* libs */,
 				04886E2C17ACB20D005D8DB9 /* Supporting Files */,
 				0411DABB17AE61A40023BD39 /* ILShootBear.h */,
@@ -2758,6 +2777,7 @@
 			children = (
 				04886E2D17ACB20D005D8DB9 /* Prefix.pch */,
 				04886E2E17ACB20D005D8DB9 /* main.m */,
+				04C4310317F702F400FA47C6 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3028,6 +3048,7 @@
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
+				04EA801817F8500800FA483A /* Layer */,
 				04C430CF17F6D8F800FA47C6 /* Shopping */,
 				0406041C17EE6D6A002B6E8B /* Shooter */,
 				04F05ACA17E9C10400D4F6B8 /* LevelGroup2 */,
@@ -3038,7 +3059,6 @@
 				0448DF1517DC92ED00BEF8B1 /* DynamicElement */,
 				0448DED017DC747E00BEF8B1 /* Bear */,
 				04D7A82717D9B55200072F4D /* Menu */,
-				04382BB217D3788600257293 /* Layer */,
 				04AEBB0A17CDBDEC00BD9D65 /* PlayBackground */,
 			);
 			name = CCBI;
@@ -3051,6 +3071,57 @@
 				04DCE28517B4D61A0036CA68 /* BearPhysics.plist */,
 			);
 			name = Physics;
+			sourceTree = "<group>";
+		};
+		04EA800217F82A5500FA483A /* SoundResources */ = {
+			isa = PBXGroup;
+			children = (
+				04EA800317F82A5500FA483A /* bullet_use_up.mp3 */,
+				04EA800417F82A5500FA483A /* cannon_fire.mp3 */,
+				04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */,
+				04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */,
+				04EA800717F82A5500FA483A /* metal_collision.mp3 */,
+			);
+			path = SoundResources;
+			sourceTree = "<group>";
+		};
+		04EA801217F8376E00FA483A /* LoadManager */ = {
+			isa = PBXGroup;
+			children = (
+				04EA801417F8379C00FA483A /* ILLoadManager.h */,
+				04EA801517F8379C00FA483A /* ILLoadManager.m */,
+			);
+			name = LoadManager;
+			sourceTree = "<group>";
+		};
+		04EA801817F8500800FA483A /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				04EA801917F8500800FA483A /* BulletNumberShow.ccbi */,
+				04EA801A17F8500800FA483A /* BulletShowUnit.ccbi */,
+				04EA801B17F8500800FA483A /* BulletUseUpHint.ccbi */,
+				04EA801C17F8500800FA483A /* ButtonBack.ccbi */,
+				04EA801D17F8500800FA483A /* ButtonBomb.ccbi */,
+				04EA801E17F8500800FA483A /* ButtonFire.ccbi */,
+				04EA801F17F8500800FA483A /* ButtonFlash.ccbi */,
+				04EA802017F8500800FA483A /* ButtonHelp.ccbi */,
+				04EA802117F8500800FA483A /* ButtonHome.ccbi */,
+				04EA802217F8500800FA483A /* ButtonList.ccbi */,
+				04EA802317F8500800FA483A /* ButtonMore.ccbi */,
+				04EA802417F8500800FA483A /* ButtonNext.ccbi */,
+				04EA802517F8500800FA483A /* ButtonRetry.ccbi */,
+				04EA802617F8500800FA483A /* ButtonShopping.ccbi */,
+				04EA802717F8500800FA483A /* ButtonShrink.ccbi */,
+				04EA802817F8500800FA483A /* ButtonSound.ccbi */,
+				04EA802917F8500800FA483A /* CoinCollection.ccbi */,
+				04EA802A17F8500800FA483A /* LevelCompletedLayer.ccbi */,
+				04EA802B17F8500800FA483A /* LevelControlLayer.ccbi */,
+				04EA802C17F8500800FA483A /* LevelFailedLayer.ccbi */,
+				04EA802D17F8500800FA483A /* LevelMenu.ccbi */,
+				04EA802E17F8500800FA483A /* SettingControlLayer.ccbi */,
+				04EA802F17F8500800FA483A /* ShrinkPanel.ccbi */,
+			);
+			path = Layer;
 			sourceTree = "<group>";
 		};
 		04EE6F8917DD539100C185B8 /* LevelGroup0 */ = {
@@ -3215,6 +3286,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 04886BEC17ACB1F5005D8DB9;
 			productRefGroup = 04886BF617ACB1F6005D8DB9 /* Products */;
@@ -3232,10 +3304,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EA800B17F82A5500FA483A /* cannon_fire.mp3 in Resources */,
 				0453ECE817DD814500B72CB7 /* Default.png in Resources */,
 				0453ECE917DD814500B72CB7 /* Default@2x.png in Resources */,
 				0453ECEA17DD814500B72CB7 /* Default-568h@2x.png in Resources */,
 				0453ECEB17DD814500B72CB7 /* Default-Landscape~ipad.png in Resources */,
+				04EA805317F8500800FA483A /* LevelCompletedLayer.ccbi in Resources */,
 				0453ECEC17DD814500B72CB7 /* Icon-72.png in Resources */,
 				0453ECED17DD814500B72CB7 /* Icon-Small-50.png in Resources */,
 				04C430FA17F6D8F800FA47C6 /* ShoppingCoin.ccbi in Resources */,
@@ -3248,6 +3322,7 @@
 				04C430F617F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */,
 				0453ECF317DD814500B72CB7 /* ChangeLog in Resources */,
 				0453ECF417DD814500B72CB7 /* blocks.png in Resources */,
+				04EA803317F8500800FA483A /* BulletShowUnit.ccbi in Resources */,
 				0453ECF517DD814500B72CB7 /* collision.txt in Resources */,
 				0453ECF617DD814500B72CB7 /* README.md in Resources */,
 				04C430F817F6D8F800FA47C6 /* ShoppingBuy.ccbi in Resources */,
@@ -3256,38 +3331,21 @@
 				0453ECF917DD814500B72CB7 /* BearPhysics.plist in Resources */,
 				0453ECFA17DD814500B72CB7 /* ElementPhysics.plist in Resources */,
 				0453ED1917DD814500B72CB7 /* SceneBackground1.ccbi in Resources */,
+				04EA803517F8500800FA483A /* BulletUseUpHint.ccbi in Resources */,
 				0406044C17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
-				0453ED3517DD814500B72CB7 /* BulletNumberShow.ccbi in Resources */,
+				04EA800D17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */,
 				04C430E617F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */,
-				0453ED3617DD814500B72CB7 /* BulletShowUnit.ccbi in Resources */,
-				0453ED3717DD814500B72CB7 /* ButtonBack.ccbi in Resources */,
 				0406044E17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
-				0453ED3817DD814500B72CB7 /* ButtonBomb.ccbi in Resources */,
-				0453ED3917DD814500B72CB7 /* ButtonFire.ccbi in Resources */,
+				04EA803117F8500800FA483A /* BulletNumberShow.ccbi in Resources */,
 				0406045417EE6D6A002B6E8B /* FireBullet.ccbi in Resources */,
-				0453ED3A17DD814500B72CB7 /* ButtonFlash.ccbi in Resources */,
 				0406047C17EE6D6A002B6E8B /* ShooterHeadRight.ccbi in Resources */,
-				0453ED3B17DD814500B72CB7 /* ButtonHelp.ccbi in Resources */,
-				0453ED3C17DD814500B72CB7 /* ButtonHome.ccbi in Resources */,
 				0406046017EE6D6A002B6E8B /* Gun2Right.ccbi in Resources */,
-				0453ED3D17DD814500B72CB7 /* ButtonList.ccbi in Resources */,
+				04EA803F17F8500800FA483A /* ButtonHelp.ccbi in Resources */,
 				0406044017EE6D6A002B6E8B /* BulletTrack.ccbi in Resources */,
 				0406047A17EE6D6A002B6E8B /* ShooterHeadLeft.ccbi in Resources */,
 				0406045C17EE6D6A002B6E8B /* Gun1Right.ccbi in Resources */,
-				0453ED3E17DD814500B72CB7 /* ButtonMore.ccbi in Resources */,
-				0453ED3F17DD814500B72CB7 /* ButtonNext.ccbi in Resources */,
-				0453ED4017DD814500B72CB7 /* ButtonRetry.ccbi in Resources */,
-				0453ED4117DD814500B72CB7 /* ButtonShopping.ccbi in Resources */,
 				0406047417EE6D6A002B6E8B /* ShooterBodyRight.ccbi in Resources */,
-				0453ED4217DD814500B72CB7 /* ButtonShrink.ccbi in Resources */,
 				0406044417EE6D6A002B6E8B /* CannonBodyRight.ccbi in Resources */,
-				0453ED4317DD814500B72CB7 /* ButtonSound.ccbi in Resources */,
-				0453ED4417DD814500B72CB7 /* LevelCompletedLayer.ccbi in Resources */,
-				0453ED4517DD814500B72CB7 /* LevelControlLayer.ccbi in Resources */,
-				0453ED4617DD814500B72CB7 /* LevelFailedLayer.ccbi in Resources */,
-				0453ED4717DD814500B72CB7 /* LevelMenu.ccbi in Resources */,
-				0453ED4817DD814500B72CB7 /* SettingControlLayer.ccbi in Resources */,
-				0453ED4917DD814500B72CB7 /* ShrinkPanel.ccbi in Resources */,
 				0453ED4A17DD814500B72CB7 /* HomeLayer.ccbi in Resources */,
 				0406048217EE6D6A002B6E8B /* TestScene.ccbi in Resources */,
 				0453ED4C17DD814500B72CB7 /* MenuGroup1.ccbi in Resources */,
@@ -3299,15 +3357,19 @@
 				0406047E17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				0453ED5217DD814500B72CB7 /* MenuGroup7.ccbi in Resources */,
 				0453ED5317DD814500B72CB7 /* MenuItem1.ccbi in Resources */,
+				04EA800917F82A5500FA483A /* bullet_use_up.mp3 in Resources */,
+				04EA803D17F8500800FA483A /* ButtonFlash.ccbi in Resources */,
 				04C430F417F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */,
 				0453ED5417DD814500B72CB7 /* MenuLayer.ccbi in Resources */,
 				0453ED5517DD814500B72CB7 /* MenuTheme.ccbi in Resources */,
 				0406045217EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
+				04EA805517F8500800FA483A /* LevelControlLayer.ccbi in Resources */,
 				0453ED5617DD814500B72CB7 /* bear.plist in Resources */,
 				0453ED5717DD814500B72CB7 /* bear.png in Resources */,
 				0406044217EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				0453ED5817DD814500B72CB7 /* ccbParticleBone.png in Resources */,
 				0453ED5A17DD814500B72CB7 /* ccbParticleFire.png in Resources */,
+				04EA805117F8500800FA483A /* CoinCollection.ccbi in Resources */,
 				0453ED5B17DD814500B72CB7 /* ccbParticleSmoke.png in Resources */,
 				0453ED5C17DD814500B72CB7 /* ccbParticleSnow.png in Resources */,
 				0406044817EE6D6A002B6E8B /* CannonExplosion.ccbi in Resources */,
@@ -3319,6 +3381,7 @@
 				0453ED6117DD814500B72CB7 /* menu.png in Resources */,
 				0453ED6217DD814500B72CB7 /* othres.plist in Resources */,
 				0453ED6317DD814500B72CB7 /* othres.png in Resources */,
+				04EA805B17F8500800FA483A /* SettingControlLayer.ccbi in Resources */,
 				0453ED6417DD814500B72CB7 /* people.plist in Resources */,
 				0453ED6517DD814500B72CB7 /* people.png in Resources */,
 				0406044617EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */,
@@ -3341,6 +3404,7 @@
 				0453ED7217DD814500B72CB7 /* BlackBearRightHead.ccbi in Resources */,
 				0453ED7317DD814500B72CB7 /* BlackBearRightLegOutter.ccbi in Resources */,
 				0453ED7417DD814500B72CB7 /* BrownBear.ccbi in Resources */,
+				04EA805D17F8500800FA483A /* ShrinkPanel.ccbi in Resources */,
 				0453ED7517DD814500B72CB7 /* BrownBearLeft.ccbi in Resources */,
 				0453ED7617DD814500B72CB7 /* BrownBearLeftArmOutter.ccbi in Resources */,
 				0453ED7717DD814500B72CB7 /* BrownBearLeftHead.ccbi in Resources */,
@@ -3354,12 +3418,14 @@
 				0453ED7F17DD814500B72CB7 /* YellowBearLeftArmOutter.ccbi in Resources */,
 				0453ED8017DD814500B72CB7 /* YellowBearLeftHead.ccbi in Resources */,
 				0453ED8117DD814500B72CB7 /* YellowBearLeftLegOutter.ccbi in Resources */,
+				04EA804117F8500800FA483A /* ButtonHome.ccbi in Resources */,
 				0453ED8217DD814500B72CB7 /* YellowBearRight.ccbi in Resources */,
 				0453ED8317DD814500B72CB7 /* YellowBearRightArmOutter.ccbi in Resources */,
 				0453ED8417DD814500B72CB7 /* YellowBearRightHead.ccbi in Resources */,
 				0453ED8517DD814500B72CB7 /* YellowBearRightLegOutter.ccbi in Resources */,
 				04C430FC17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */,
 				0453ED8617DD814500B72CB7 /* DefendNet.ccbi in Resources */,
+				04EA800F17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */,
 				0453ED8717DD814500B72CB7 /* Ladder.ccbi in Resources */,
 				0453ED8817DD814500B72CB7 /* MetalBox.ccbi in Resources */,
 				0453ED8917DD814500B72CB7 /* MetalCircle.ccbi in Resources */,
@@ -3374,6 +3440,7 @@
 				0453ED9117DD814500B72CB7 /* WoodRectangle.ccbi in Resources */,
 				0453ED9217DD814500B72CB7 /* Level0-0.ccbi in Resources */,
 				0453ED9317DD814500B72CB7 /* Level0-1.ccbi in Resources */,
+				04EA805717F8500800FA483A /* LevelFailedLayer.ccbi in Resources */,
 				0453ED9417DD814500B72CB7 /* Level0-10.ccbi in Resources */,
 				0453ED9517DD814500B72CB7 /* Level0-11.ccbi in Resources */,
 				0406045017EE6D6A002B6E8B /* CannonRight.ccbi in Resources */,
@@ -3381,6 +3448,7 @@
 				0453ED9717DD814500B72CB7 /* Level0-13.ccbi in Resources */,
 				0453ED9817DD814500B72CB7 /* Level0-14.ccbi in Resources */,
 				0453ED9917DD814500B72CB7 /* Level0-2.ccbi in Resources */,
+				04EA804317F8500800FA483A /* ButtonList.ccbi in Resources */,
 				0453ED9A17DD814500B72CB7 /* Level0-3.ccbi in Resources */,
 				0453ED9B17DD814500B72CB7 /* Level0-4.ccbi in Resources */,
 				0406046E17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */,
@@ -3403,19 +3471,24 @@
 				04F40E6117DF72CF00B493C9 /* StaticMetal7.ccbi in Resources */,
 				04F40E6317DF72CF00B493C9 /* StaticMetal8.ccbi in Resources */,
 				04F40E6517DF72CF00B493C9 /* StaticMetal9.ccbi in Resources */,
+				04EA804717F8500800FA483A /* ButtonNext.ccbi in Resources */,
 				0406047617EE6D6A002B6E8B /* ShooterCannonLeft.ccbi in Resources */,
+				04EA803B17F8500800FA483A /* ButtonFire.ccbi in Resources */,
 				04F40E6717DF72CF00B493C9 /* StaticMetalUnit.ccbi in Resources */,
 				04F40E6917DF72CF00B493C9 /* StaticMetalUnit1.ccbi in Resources */,
 				04F40E6B17DF72CF00B493C9 /* StaticMetalUnit2.ccbi in Resources */,
+				04EA801117F82A5500FA483A /* metal_collision.mp3 in Resources */,
 				04F40E6D17DF72CF00B493C9 /* StaticMetalUnit3.ccbi in Resources */,
 				04F40E6F17DF72CF00B493C9 /* StaticStone1.ccbi in Resources */,
 				04F40E7117DF72CF00B493C9 /* StaticStone2.ccbi in Resources */,
 				0406046417EE6D6A002B6E8B /* HandBullet.ccbi in Resources */,
 				04F40E7317DF72CF00B493C9 /* StaticStone3.ccbi in Resources */,
 				04F40E7517DF72CF00B493C9 /* StaticStone4.ccbi in Resources */,
+				04EA803917F8500800FA483A /* ButtonBomb.ccbi in Resources */,
 				04F40E7717DF72CF00B493C9 /* StaticStoneUnit.ccbi in Resources */,
 				04F40E7917DF72CF00B493C9 /* StaticWood1.ccbi in Resources */,
 				04F40E7B17DF72CF00B493C9 /* StaticWood2.ccbi in Resources */,
+				04C4310117F702F400FA47C6 /* Localizable.strings in Resources */,
 				04F40E7D17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
 				04C430E017F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */,
 				04F40E7F17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
@@ -3431,6 +3504,7 @@
 				04F40E8B17DF72CF00B493C9 /* StaticWoodUnit1.ccbi in Resources */,
 				04F40E8D17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8F17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
+				04EA803717F8500800FA483A /* ButtonBack.ccbi in Resources */,
 				04C430F217F6D8F800FA47C6 /* CoinBuy2.ccbi in Resources */,
 				04F40E9117DF72CF00B493C9 /* WoodParticle.ccbi in Resources */,
 				0412D5EE17E540CE00EDFEE0 /* lightning1.png in Resources */,
@@ -3440,19 +3514,24 @@
 				0412D5F417E540CE00EDFEE0 /* lightning4.png in Resources */,
 				0412D5F617E540CE00EDFEE0 /* lightning5.png in Resources */,
 				0412D5F817E540CE00EDFEE0 /* lightning6.png in Resources */,
+				04EA804D17F8500800FA483A /* ButtonShrink.ccbi in Resources */,
 				0412D5FA17E540CE00EDFEE0 /* lightning7.png in Resources */,
 				04F05AA717E9C0FE00D4F6B8 /* Level1-0.ccbi in Resources */,
 				04F05AA917E9C0FE00D4F6B8 /* Level1-1.ccbi in Resources */,
 				04F05AAB17E9C0FE00D4F6B8 /* Level1-10.ccbi in Resources */,
+				04EA804B17F8500800FA483A /* ButtonShopping.ccbi in Resources */,
 				04F05AAD17E9C0FE00D4F6B8 /* Level1-11.ccbi in Resources */,
 				04F05AAF17E9C0FE00D4F6B8 /* Level1-12.ccbi in Resources */,
 				04F05AB117E9C0FE00D4F6B8 /* Level1-13.ccbi in Resources */,
 				0406048017EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */,
 				04F05AB317E9C0FE00D4F6B8 /* Level1-14.ccbi in Resources */,
+				04EA805917F8500800FA483A /* LevelMenu.ccbi in Resources */,
 				04F05AB517E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
+				04EA804517F8500800FA483A /* ButtonMore.ccbi in Resources */,
 				04F05AB717E9C0FE00D4F6B8 /* Level1-16.ccbi in Resources */,
 				04F05AB917E9C0FE00D4F6B8 /* Level1-17.ccbi in Resources */,
 				04C430F017F6D8F800FA47C6 /* CoinBuy1.ccbi in Resources */,
+				04EA804F17F8500800FA483A /* ButtonSound.ccbi in Resources */,
 				04F05ABB17E9C0FE00D4F6B8 /* Level1-2.ccbi in Resources */,
 				04F05ABD17E9C0FE00D4F6B8 /* Level1-3.ccbi in Resources */,
 				04F05ABF17E9C0FE00D4F6B8 /* Level1-4.ccbi in Resources */,
@@ -3462,6 +3541,7 @@
 				04F05AC517E9C0FE00D4F6B8 /* Level1-7.ccbi in Resources */,
 				04F05AC717E9C0FE00D4F6B8 /* Level1-8.ccbi in Resources */,
 				04F05AC917E9C0FE00D4F6B8 /* Level1-9.ccbi in Resources */,
+				04EA804917F8500800FA483A /* ButtonRetry.ccbi in Resources */,
 				04F05ADC17E9C10400D4F6B8 /* Level2-0.ccbi in Resources */,
 				04F05ADE17E9C10400D4F6B8 /* Level2-1.ccbi in Resources */,
 				04F05AE017E9C10400D4F6B8 /* Level2-10.ccbi in Resources */,
@@ -3477,7 +3557,6 @@
 				04F05AF217E9C10400D4F6B8 /* Level2-5.ccbi in Resources */,
 				04F05AF417E9C10400D4F6B8 /* Level2-6.ccbi in Resources */,
 				04F05AF617E9C10400D4F6B8 /* Level2-7.ccbi in Resources */,
-				04F2E22E17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */,
 				04F05AF817E9C10400D4F6B8 /* Level2-8.ccbi in Resources */,
 				04F05AFA17E9C10400D4F6B8 /* Level2-9.ccbi in Resources */,
 			);
@@ -3487,10 +3566,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EA800A17F82A5500FA483A /* cannon_fire.mp3 in Resources */,
 				04886C0F17ACB1F6005D8DB9 /* Default.png in Resources */,
 				04886C1117ACB1F6005D8DB9 /* Default@2x.png in Resources */,
 				04886C1317ACB1F6005D8DB9 /* Default-568h@2x.png in Resources */,
 				04886C1517ACB1F6005D8DB9 /* Default-Landscape~ipad.png in Resources */,
+				04EA805217F8500800FA483A /* LevelCompletedLayer.ccbi in Resources */,
 				04886C1717ACB1F6005D8DB9 /* Icon-72.png in Resources */,
 				04886C1917ACB1F6005D8DB9 /* Icon-Small-50.png in Resources */,
 				04C430F917F6D8F800FA47C6 /* ShoppingCoin.ccbi in Resources */,
@@ -3503,6 +3584,7 @@
 				04C430F517F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */,
 				04886D7D17ACB205005D8DB9 /* ChangeLog in Resources */,
 				04886E3D17ACB20E005D8DB9 /* blocks.png in Resources */,
+				04EA803217F8500800FA483A /* BulletShowUnit.ccbi in Resources */,
 				0411DAC517AE74690023BD39 /* collision.txt in Resources */,
 				04B1092317B37F4000778F8E /* README.md in Resources */,
 				04C430F717F6D8F800FA47C6 /* ShoppingBuy.ccbi in Resources */,
@@ -3511,38 +3593,21 @@
 				04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */,
 				043C2D5817C5EEE600E81CA6 /* ElementPhysics.plist in Resources */,
 				04AEBB0C17CDBDEC00BD9D65 /* SceneBackground1.ccbi in Resources */,
+				04EA803417F8500800FA483A /* BulletUseUpHint.ccbi in Resources */,
 				0406044B17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
-				04382BC817D3788600257293 /* BulletNumberShow.ccbi in Resources */,
+				04EA800C17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */,
 				04C430E517F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */,
-				04382BC917D3788600257293 /* BulletShowUnit.ccbi in Resources */,
-				04382BCA17D3788600257293 /* ButtonBack.ccbi in Resources */,
 				0406044D17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
-				04382BCB17D3788600257293 /* ButtonBomb.ccbi in Resources */,
-				04382BCC17D3788600257293 /* ButtonFire.ccbi in Resources */,
+				04EA803017F8500800FA483A /* BulletNumberShow.ccbi in Resources */,
 				0406045317EE6D6A002B6E8B /* FireBullet.ccbi in Resources */,
-				04382BCD17D3788600257293 /* ButtonFlash.ccbi in Resources */,
 				0406047B17EE6D6A002B6E8B /* ShooterHeadRight.ccbi in Resources */,
-				04382BCE17D3788600257293 /* ButtonHelp.ccbi in Resources */,
-				04382BCF17D3788600257293 /* ButtonHome.ccbi in Resources */,
 				0406045F17EE6D6A002B6E8B /* Gun2Right.ccbi in Resources */,
-				04382BD017D3788600257293 /* ButtonList.ccbi in Resources */,
+				04EA803E17F8500800FA483A /* ButtonHelp.ccbi in Resources */,
 				0406043F17EE6D6A002B6E8B /* BulletTrack.ccbi in Resources */,
 				0406047917EE6D6A002B6E8B /* ShooterHeadLeft.ccbi in Resources */,
 				0406045B17EE6D6A002B6E8B /* Gun1Right.ccbi in Resources */,
-				04382BD117D3788600257293 /* ButtonMore.ccbi in Resources */,
-				04382BD217D3788600257293 /* ButtonNext.ccbi in Resources */,
-				04382BD317D3788600257293 /* ButtonRetry.ccbi in Resources */,
-				04382BD417D3788600257293 /* ButtonShopping.ccbi in Resources */,
 				0406047317EE6D6A002B6E8B /* ShooterBodyRight.ccbi in Resources */,
-				04382BD517D3788600257293 /* ButtonShrink.ccbi in Resources */,
 				0406044317EE6D6A002B6E8B /* CannonBodyRight.ccbi in Resources */,
-				04382BD617D3788600257293 /* ButtonSound.ccbi in Resources */,
-				04382BD717D3788600257293 /* LevelCompletedLayer.ccbi in Resources */,
-				04382BD817D3788600257293 /* LevelControlLayer.ccbi in Resources */,
-				04382BD917D3788600257293 /* LevelFailedLayer.ccbi in Resources */,
-				04382BDA17D3788600257293 /* LevelMenu.ccbi in Resources */,
-				04382BDB17D3788600257293 /* SettingControlLayer.ccbi in Resources */,
-				04382BDC17D3788600257293 /* ShrinkPanel.ccbi in Resources */,
 				04D7A83417D9B55200072F4D /* HomeLayer.ccbi in Resources */,
 				0406048117EE6D6A002B6E8B /* TestScene.ccbi in Resources */,
 				04D7A83617D9B55200072F4D /* MenuGroup1.ccbi in Resources */,
@@ -3554,15 +3619,19 @@
 				0406047D17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				04D7A83C17D9B55200072F4D /* MenuGroup7.ccbi in Resources */,
 				04D7A83D17D9B55200072F4D /* MenuItem1.ccbi in Resources */,
+				04EA800817F82A5500FA483A /* bullet_use_up.mp3 in Resources */,
+				04EA803C17F8500800FA483A /* ButtonFlash.ccbi in Resources */,
 				04C430F317F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */,
 				04D7A83E17D9B55200072F4D /* MenuLayer.ccbi in Resources */,
 				04D7A83F17D9B55200072F4D /* MenuTheme.ccbi in Resources */,
 				0406045117EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
+				04EA805417F8500800FA483A /* LevelControlLayer.ccbi in Resources */,
 				04797C1517DB12CB003E1C20 /* bear.plist in Resources */,
 				04797C1617DB12CB003E1C20 /* bear.png in Resources */,
 				0406044117EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				04797C1717DB12CB003E1C20 /* ccbParticleBone.png in Resources */,
 				04797C1917DB12CB003E1C20 /* ccbParticleFire.png in Resources */,
+				04EA805017F8500800FA483A /* CoinCollection.ccbi in Resources */,
 				04797C1A17DB12CB003E1C20 /* ccbParticleSmoke.png in Resources */,
 				04797C1B17DB12CB003E1C20 /* ccbParticleSnow.png in Resources */,
 				0406044717EE6D6A002B6E8B /* CannonExplosion.ccbi in Resources */,
@@ -3574,6 +3643,7 @@
 				04797C2017DB12CB003E1C20 /* menu.png in Resources */,
 				04797C2117DB12CB003E1C20 /* othres.plist in Resources */,
 				04797C2217DB12CB003E1C20 /* othres.png in Resources */,
+				04EA805A17F8500800FA483A /* SettingControlLayer.ccbi in Resources */,
 				04797C2317DB12CB003E1C20 /* people.plist in Resources */,
 				04797C2417DB12CB003E1C20 /* people.png in Resources */,
 				0406044517EE6D6A002B6E8B /* CannonBullet.ccbi in Resources */,
@@ -3596,6 +3666,7 @@
 				0448DEF517DC747E00BEF8B1 /* BlackBearRightHead.ccbi in Resources */,
 				0448DEF617DC747E00BEF8B1 /* BlackBearRightLegOutter.ccbi in Resources */,
 				0448DEF717DC747E00BEF8B1 /* BrownBear.ccbi in Resources */,
+				04EA805C17F8500800FA483A /* ShrinkPanel.ccbi in Resources */,
 				0448DEF817DC747E00BEF8B1 /* BrownBearLeft.ccbi in Resources */,
 				0448DEF917DC747E00BEF8B1 /* BrownBearLeftArmOutter.ccbi in Resources */,
 				0448DEFA17DC747E00BEF8B1 /* BrownBearLeftHead.ccbi in Resources */,
@@ -3609,12 +3680,14 @@
 				0448DF0217DC747E00BEF8B1 /* YellowBearLeftArmOutter.ccbi in Resources */,
 				0448DF0317DC747E00BEF8B1 /* YellowBearLeftHead.ccbi in Resources */,
 				0448DF0417DC747E00BEF8B1 /* YellowBearLeftLegOutter.ccbi in Resources */,
+				04EA804017F8500800FA483A /* ButtonHome.ccbi in Resources */,
 				0448DF0517DC747E00BEF8B1 /* YellowBearRight.ccbi in Resources */,
 				0448DF0617DC747E00BEF8B1 /* YellowBearRightArmOutter.ccbi in Resources */,
 				0448DF0717DC747E00BEF8B1 /* YellowBearRightHead.ccbi in Resources */,
 				0448DF0817DC747E00BEF8B1 /* YellowBearRightLegOutter.ccbi in Resources */,
 				04C430FB17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */,
 				0448DF2217DC92ED00BEF8B1 /* DefendNet.ccbi in Resources */,
+				04EA800E17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */,
 				0448DF2317DC92ED00BEF8B1 /* Ladder.ccbi in Resources */,
 				0448DF2417DC92ED00BEF8B1 /* MetalBox.ccbi in Resources */,
 				0448DF2517DC92ED00BEF8B1 /* MetalCircle.ccbi in Resources */,
@@ -3629,6 +3702,7 @@
 				0448DF2D17DC92ED00BEF8B1 /* WoodRectangle.ccbi in Resources */,
 				04EE6F9917DD539100C185B8 /* Level0-0.ccbi in Resources */,
 				04EE6F9A17DD539100C185B8 /* Level0-1.ccbi in Resources */,
+				04EA805617F8500800FA483A /* LevelFailedLayer.ccbi in Resources */,
 				04EE6F9B17DD539100C185B8 /* Level0-10.ccbi in Resources */,
 				04EE6F9C17DD539100C185B8 /* Level0-11.ccbi in Resources */,
 				0406044F17EE6D6A002B6E8B /* CannonRight.ccbi in Resources */,
@@ -3636,6 +3710,7 @@
 				04EE6F9E17DD539100C185B8 /* Level0-13.ccbi in Resources */,
 				04EE6F9F17DD539100C185B8 /* Level0-14.ccbi in Resources */,
 				04EE6FA017DD539100C185B8 /* Level0-2.ccbi in Resources */,
+				04EA804217F8500800FA483A /* ButtonList.ccbi in Resources */,
 				04EE6FA117DD539100C185B8 /* Level0-3.ccbi in Resources */,
 				04EE6FA217DD539100C185B8 /* Level0-4.ccbi in Resources */,
 				0406046D17EE6D6A002B6E8B /* ShooterArmLeft.ccbi in Resources */,
@@ -3658,19 +3733,24 @@
 				04F40E6017DF72CF00B493C9 /* StaticMetal7.ccbi in Resources */,
 				04F40E6217DF72CF00B493C9 /* StaticMetal8.ccbi in Resources */,
 				04F40E6417DF72CF00B493C9 /* StaticMetal9.ccbi in Resources */,
+				04EA804617F8500800FA483A /* ButtonNext.ccbi in Resources */,
 				0406047517EE6D6A002B6E8B /* ShooterCannonLeft.ccbi in Resources */,
+				04EA803A17F8500800FA483A /* ButtonFire.ccbi in Resources */,
 				04F40E6617DF72CF00B493C9 /* StaticMetalUnit.ccbi in Resources */,
 				04F40E6817DF72CF00B493C9 /* StaticMetalUnit1.ccbi in Resources */,
 				04F40E6A17DF72CF00B493C9 /* StaticMetalUnit2.ccbi in Resources */,
+				04EA801017F82A5500FA483A /* metal_collision.mp3 in Resources */,
 				04F40E6C17DF72CF00B493C9 /* StaticMetalUnit3.ccbi in Resources */,
 				04F40E6E17DF72CF00B493C9 /* StaticStone1.ccbi in Resources */,
 				04F40E7017DF72CF00B493C9 /* StaticStone2.ccbi in Resources */,
 				0406046317EE6D6A002B6E8B /* HandBullet.ccbi in Resources */,
 				04F40E7217DF72CF00B493C9 /* StaticStone3.ccbi in Resources */,
 				04F40E7417DF72CF00B493C9 /* StaticStone4.ccbi in Resources */,
+				04EA803817F8500800FA483A /* ButtonBomb.ccbi in Resources */,
 				04F40E7617DF72CF00B493C9 /* StaticStoneUnit.ccbi in Resources */,
 				04F40E7817DF72CF00B493C9 /* StaticWood1.ccbi in Resources */,
 				04F40E7A17DF72CF00B493C9 /* StaticWood2.ccbi in Resources */,
+				04C4310017F702F400FA47C6 /* Localizable.strings in Resources */,
 				04F40E7C17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
 				04C430DF17F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */,
 				04F40E7E17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
@@ -3686,6 +3766,7 @@
 				04F40E8A17DF72CF00B493C9 /* StaticWoodUnit1.ccbi in Resources */,
 				04F40E8C17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */,
 				04F40E8E17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */,
+				04EA803617F8500800FA483A /* ButtonBack.ccbi in Resources */,
 				04C430F117F6D8F800FA47C6 /* CoinBuy2.ccbi in Resources */,
 				04F40E9017DF72CF00B493C9 /* WoodParticle.ccbi in Resources */,
 				0412D5ED17E540CE00EDFEE0 /* lightning1.png in Resources */,
@@ -3695,19 +3776,24 @@
 				0412D5F317E540CE00EDFEE0 /* lightning4.png in Resources */,
 				0412D5F517E540CE00EDFEE0 /* lightning5.png in Resources */,
 				0412D5F717E540CE00EDFEE0 /* lightning6.png in Resources */,
+				04EA804C17F8500800FA483A /* ButtonShrink.ccbi in Resources */,
 				0412D5F917E540CE00EDFEE0 /* lightning7.png in Resources */,
 				04F05AA617E9C0FE00D4F6B8 /* Level1-0.ccbi in Resources */,
 				04F05AA817E9C0FE00D4F6B8 /* Level1-1.ccbi in Resources */,
 				04F05AAA17E9C0FE00D4F6B8 /* Level1-10.ccbi in Resources */,
+				04EA804A17F8500800FA483A /* ButtonShopping.ccbi in Resources */,
 				04F05AAC17E9C0FE00D4F6B8 /* Level1-11.ccbi in Resources */,
 				04F05AAE17E9C0FE00D4F6B8 /* Level1-12.ccbi in Resources */,
 				04F05AB017E9C0FE00D4F6B8 /* Level1-13.ccbi in Resources */,
 				0406047F17EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */,
 				04F05AB217E9C0FE00D4F6B8 /* Level1-14.ccbi in Resources */,
+				04EA805817F8500800FA483A /* LevelMenu.ccbi in Resources */,
 				04F05AB417E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
+				04EA804417F8500800FA483A /* ButtonMore.ccbi in Resources */,
 				04F05AB617E9C0FE00D4F6B8 /* Level1-16.ccbi in Resources */,
 				04F05AB817E9C0FE00D4F6B8 /* Level1-17.ccbi in Resources */,
 				04C430EF17F6D8F800FA47C6 /* CoinBuy1.ccbi in Resources */,
+				04EA804E17F8500800FA483A /* ButtonSound.ccbi in Resources */,
 				04F05ABA17E9C0FE00D4F6B8 /* Level1-2.ccbi in Resources */,
 				04F05ABC17E9C0FE00D4F6B8 /* Level1-3.ccbi in Resources */,
 				04F05ABE17E9C0FE00D4F6B8 /* Level1-4.ccbi in Resources */,
@@ -3717,6 +3803,7 @@
 				04F05AC417E9C0FE00D4F6B8 /* Level1-7.ccbi in Resources */,
 				04F05AC617E9C0FE00D4F6B8 /* Level1-8.ccbi in Resources */,
 				04F05AC817E9C0FE00D4F6B8 /* Level1-9.ccbi in Resources */,
+				04EA804817F8500800FA483A /* ButtonRetry.ccbi in Resources */,
 				04F05ADB17E9C10400D4F6B8 /* Level2-0.ccbi in Resources */,
 				04F05ADD17E9C10400D4F6B8 /* Level2-1.ccbi in Resources */,
 				04F05ADF17E9C10400D4F6B8 /* Level2-10.ccbi in Resources */,
@@ -3732,7 +3819,6 @@
 				04F05AF117E9C10400D4F6B8 /* Level2-5.ccbi in Resources */,
 				04F05AF317E9C10400D4F6B8 /* Level2-6.ccbi in Resources */,
 				04F05AF517E9C10400D4F6B8 /* Level2-7.ccbi in Resources */,
-				04F2E22D17EFCADF0009EB21 /* CoinCollection.ccbi in Resources */,
 				04F05AF717E9C10400D4F6B8 /* Level2-8.ccbi in Resources */,
 				04F05AF917E9C10400D4F6B8 /* Level2-9.ccbi in Resources */,
 			);
@@ -3763,6 +3849,7 @@
 				0453EC0117DD814500B72CB7 /* CCAtlasNode.m in Sources */,
 				0453EC0217DD814500B72CB7 /* CCCamera.m in Sources */,
 				0453EC0317DD814500B72CB7 /* CCClippingNode.m in Sources */,
+				04EA801717F8379C00FA483A /* ILLoadManager.m in Sources */,
 				0453EC0417DD814500B72CB7 /* CCConfiguration.m in Sources */,
 				0453EC0517DD814500B72CB7 /* ccDeprecated.m in Sources */,
 				0453EC0617DD814500B72CB7 /* CCDirector.m in Sources */,
@@ -3851,6 +3938,7 @@
 				0453EC5817DD814500B72CB7 /* quaternion.c in Sources */,
 				0453EC5917DD814500B72CB7 /* ray2.c in Sources */,
 				0453EC5A17DD814500B72CB7 /* utility.c in Sources */,
+				0407723517F904AE0083D27B /* ILLabelTTF.m in Sources */,
 				0453EC5B17DD814500B72CB7 /* vec2.c in Sources */,
 				0453EC5C17DD814500B72CB7 /* vec3.c in Sources */,
 				0453EC5D17DD814500B72CB7 /* vec4.c in Sources */,
@@ -3870,6 +3958,7 @@
 				0453EC6B17DD814500B72CB7 /* b2Draw.cpp in Sources */,
 				0453EC6C17DD814500B72CB7 /* b2Math.cpp in Sources */,
 				0453EC6D17DD814500B72CB7 /* b2Settings.cpp in Sources */,
+				0407723A17F90CC40083D27B /* ILLevelShootHelp.mm in Sources */,
 				0453EC6E17DD814500B72CB7 /* b2StackAllocator.cpp in Sources */,
 				0453EC6F17DD814500B72CB7 /* b2Timer.cpp in Sources */,
 				0453EC7017DD814500B72CB7 /* b2Body.cpp in Sources */,
@@ -4017,6 +4106,7 @@
 				04886C5617ACB1F8005D8DB9 /* CCAtlasNode.m in Sources */,
 				04886C5917ACB1F9005D8DB9 /* CCCamera.m in Sources */,
 				04886C5C17ACB1F9005D8DB9 /* CCClippingNode.m in Sources */,
+				04EA801617F8379C00FA483A /* ILLoadManager.m in Sources */,
 				04886C6017ACB1F9005D8DB9 /* CCConfiguration.m in Sources */,
 				04886C6317ACB1F9005D8DB9 /* ccDeprecated.m in Sources */,
 				04886C6617ACB1F9005D8DB9 /* CCDirector.m in Sources */,
@@ -4105,6 +4195,7 @@
 				04886D8D17ACB205005D8DB9 /* quaternion.c in Sources */,
 				04886D8F17ACB206005D8DB9 /* ray2.c in Sources */,
 				04886D9117ACB206005D8DB9 /* utility.c in Sources */,
+				0407723417F904AE0083D27B /* ILLabelTTF.m in Sources */,
 				04886D9317ACB206005D8DB9 /* vec2.c in Sources */,
 				04886D9517ACB206005D8DB9 /* vec3.c in Sources */,
 				04886D9717ACB206005D8DB9 /* vec4.c in Sources */,
@@ -4124,6 +4215,7 @@
 				04886DC617ACB208005D8DB9 /* b2Draw.cpp in Sources */,
 				04886DCA17ACB208005D8DB9 /* b2Math.cpp in Sources */,
 				04886DCD17ACB208005D8DB9 /* b2Settings.cpp in Sources */,
+				0407723917F90CC40083D27B /* ILLevelShootHelp.mm in Sources */,
 				04886DD017ACB208005D8DB9 /* b2StackAllocator.cpp in Sources */,
 				04886DD317ACB209005D8DB9 /* b2Timer.cpp in Sources */,
 				04886DD717ACB209005D8DB9 /* b2Body.cpp in Sources */,
@@ -4250,6 +4342,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04C4310317F702F400FA47C6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C4310217F702F400FA47C6 /* Base */,
+				04C4310517F7032800FA47C6 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0453EDA217DD814500B72CB7 /* Debug */ = {

@@ -188,6 +188,7 @@
     [_thing release];
     [self unscheduleUpdate];
     self.animationRule = nil;
+    self.levelState = nil;
     [super dealloc];
 }
 

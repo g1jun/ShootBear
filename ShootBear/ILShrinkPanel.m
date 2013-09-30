@@ -54,6 +54,9 @@
 
 - (void)switchButton:(ILGunSwitchControl *)button
 {
+    if (button.quantityBullet <= 0) {
+        return;
+    }
     _currentSelectedButton = button;
     for (id item in _buttonArray) {
         if (item != button ) {

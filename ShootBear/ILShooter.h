@@ -16,6 +16,7 @@
     ILShooterHalf *_leftShooter;
     ILShooterHalf *_rightShooter;
     CCSpriteBatchNode *_batchNode;
+    int _shooterRotation;
     
 }
 

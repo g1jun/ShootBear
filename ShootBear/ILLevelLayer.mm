@@ -103,8 +103,13 @@
     [self.userObject removeDeadNode:bear];
     [bear removeFromParentAndCleanup:YES];
     if (_bears.count == 0 && bear != nil) {
-        [(id)self.delegate performSelector:@selector(levelCompleted) withObject:nil afterDelay:1];
+        [(id)self.delegate performSelector:@selector(levelCompleted) withObject:nil afterDelay:[self levelCompletedDelay]];
     }
+}
+
+- (float)levelCompletedDelay
+{
+    return 1;
 }
 
 - (void)runCoinAddAnimation:(CGPoint )position coin:(float)number

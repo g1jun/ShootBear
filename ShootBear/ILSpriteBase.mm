@@ -84,6 +84,15 @@
     return super.position;
 }
 
+- (float)rotation
+{
+    if (_mode == Box2dMode) {
+        return (_ignoreBodyRotation ? super.rotation :
+                -CC_RADIANS_TO_DEGREES( _b2Body->GetAngle() ) );
+    }
+    return super.rotation;
+}
+
 - (void)setPosition:(CGPoint)position
 {
     if (_mode == Box2dMode) {

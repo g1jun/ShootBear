@@ -16,4 +16,11 @@
     _used.visible = YES;
 }
 
+- (void)recovery
+{
+    _unused.visible = YES;
+    _used.visible = NO;
+    
+}
+
 @end
