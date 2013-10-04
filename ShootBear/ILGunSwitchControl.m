@@ -35,6 +35,7 @@
 
 - (void)updateLabel
 {
+    _label.visible = YES;
     _label.string = [NSString stringWithFormat:@"%i", [self quantityBullet]];
 
 }
@@ -42,7 +43,9 @@
 - (int)quantityBullet
 {
     int ret = [[ILDataSimpleSave sharedDataSave] intWithKey:_gunType];
-    _label.visible = !ret <= 0;
+    if (ret <= 0 || _tryMode) {
+        _label.visible = NO;
+    }
     return ret;
 }
 
@@ -90,6 +93,12 @@
         }
     }
     
+}
+
+- (void)switchTryMode
+{
+    _tryMode = YES;
+    _label.visible = NO;
 }
 
 @end

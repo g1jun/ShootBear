@@ -17,6 +17,7 @@
 
 @property (assign, nonatomic, readonly)BOOL isSelected;
 @property (assign, nonatomic, readonly) CCControlButton *button;
+@property (assign, nonatomic)BOOL tryMode;
 
 
 - (void)recover;
@@ -24,6 +25,8 @@
 - (int)quantityBullet;
 
 - (void)bulletHasUsed;
+
+- (void)switchTryMode;
 
 
 @end

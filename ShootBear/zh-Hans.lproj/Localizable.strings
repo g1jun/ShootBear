@@ -10,9 +10,9 @@
 "level0-0:hint" = "点击开枪";
 "level0-0:bear_dead_one" = "打的非常好！";
 "level0-0:next_hint" = "轮到它了";
-"level0-0:bear_all_dead" = "你的点射太棒了！";
+"level0-0:bear_all_dead" = "你真是太棒了！";
 
 
-"level0-1:hint" = "试试滑动到这里再松开";
+"level0-1:hint" = "拖动枪线穿过这里";
 "level0-1:next_hint" = "再试一次";
 "level0-1:bear_all_dead" = "果然是传说中的神抢手";

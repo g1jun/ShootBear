@@ -8,6 +8,9 @@
 
 #import "CCNode.h"
 #import "CCControlButton.h"
+#import "ILStruct.h"
+
+
 
 @interface ILMenuItem : CCNode
 {
@@ -19,7 +22,9 @@
 @property (assign, nonatomic, readonly) int levelNO;
 @property (assign, nonatomic, readonly) BOOL hasOpen;
 @property (assign, nonatomic,)int groupIndex;
+@property (assign, nonatomic)CCSprite *goodSprite;
+@property (assign, nonatomic)CCSprite *generalSprite;
 
-- (void)open;
+- (void)open:(LevelGrade) grade;
 
 @end

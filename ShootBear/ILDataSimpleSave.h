@@ -19,14 +19,14 @@
 - (void)saveInt:(int)vlaue forKey:(NSString *)key;
 - (void)saveFloat:(float)value forKey:(NSString *)key;
 - (void)saveBool:(BOOL)vlaue forKey:(NSString *)key;
-- (void)saveLevelPass:(Level)level;
+- (void)saveLevelPass:(Level)level grade:(LevelGrade)grade;
 
 
 - (NSString *)stringWithKey:(NSString *)key;
 - (int)intWithKey:(NSString *)key;
 - (float)floatWithKey:(NSString *)key;
 - (BOOL)boolWithKey:(NSString *)key;
-- (BOOL)levelState:(Level)leve;
+- (LevelGrade)levelState:(Level)leve;
 + (ILDataSimpleSave *)sharedDataSave;
 
 @end

@@ -14,7 +14,7 @@
 - (void)didLoadFromCCB
 {
     if (_hasOpen) {
-        [self open];
+        [self open:kPass];
     }
 }
 
@@ -24,19 +24,24 @@
     Level level;
     level.levelNo = _levelNO;
     level.page = groupIndex;
-    BOOL pass = [[ILDataSimpleSave sharedDataSave] levelState:level];
-    if (pass) {
-        [self open];
+    int pass = [[ILDataSimpleSave sharedDataSave] levelState:level];
+    if (pass > 0) {
+        [self open:pass];
     }
 }
 
-- (void)open
+- (void)open:(LevelGrade)grade
 {
     _lockSprite.visible = NO;
     _label.string = [NSString stringWithFormat:@"%i", _levelNO + 1];
     _label.visible = YES;
     _hasOpen = YES;
     _button.enabled = YES;
+    if (grade == kGeneral) {
+        self.generalSprite.visible = YES;
+    } else if (grade == kGood) {
+        self.goodSprite.visible = YES;
+    }
 }
 
 @end

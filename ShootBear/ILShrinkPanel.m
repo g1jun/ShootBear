@@ -74,22 +74,20 @@
 
 - (void)hasUsed
 {
-    [_currentSelectedButton bulletHasUsed];
     [self recoverAll];
+    if (_tryMode) {
+        return;
+    }
+    [_currentSelectedButton bulletHasUsed];
     _usedTimes ++;
     if (_usedTimes > 1) {
         [self hideMyself];
     }
-//    [_buttonArray removeObject:_currentSelectedButton];
-//    _currentSelectedButton = nil;
-//    if (_buttonArray.count <= 1) {
-//        [self hideMyself];
-//    }
 }
 
 - (void)hideMyself
 {
-    if (_hasHide) {
+    if (_hasHide || _tryMode) {
         return;
     }
     if (_foldState) {
@@ -126,6 +124,9 @@
 
 - (void)pushState
 {
+    if (_tryMode) {
+        return;
+    }
     if (!_foldState && !_hasHide) {
         [self foldPanel];
     }
@@ -133,6 +134,9 @@
 
 - (void)popState
 {
+    if (_tryMode) {
+        return;
+    }
     if (!_foldState && !_hasHide) {
         [self unfoldPanel];
     }
@@ -162,6 +166,39 @@
 {
     [_buttonArray release], _buttonArray = nil;
     [super dealloc];
+}
+
+- (void)tryFireGun
+{
+    [self hideAll];
+    [self configTryMode:_secondButton];
+}
+
+- (void)configTryMode:(ILGunSwitchControl *)button
+{
+    button.visible = YES;
+    button.position = CGPointZero;
+    [button switchTryMode];
+}
+
+- (void)tryElectricGun
+{
+    [self hideAll];
+    [self configTryMode:_thirdButton];
+}
+
+- (void)tryCannon
+{
+    [self hideAll];
+    [self configTryMode:_forthButton];
+}
+
+- (void)hideAll
+{
+    _tryMode = YES;
+    for (id node in self.children) {
+        [node setVisible:NO];
+    }
 }
 
 

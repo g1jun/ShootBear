@@ -13,6 +13,14 @@ typedef struct {
     int levelNo;
 } Level;
 
+enum LevelGrade {
+    kPass = 1,
+    kGeneral = 2,
+    kGood = 3,
+};
+
+typedef enum LevelGrade LevelGrade;
+
 
 static NSString* const kCoinAmount = @"coin_amount";
 static NSString* const kBulletQuantity = @"bullet_quantity";

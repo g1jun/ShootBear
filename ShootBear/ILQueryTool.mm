@@ -16,7 +16,7 @@
 {
     float scale = 1.1;
     if (sprite.b2Body->GetType() == b2_staticBody) {
-        scale = 1.5;
+        scale = 1.4;
     }
     [ILQueryTool queryAround:sprite callback:callback scale:scale];
 }

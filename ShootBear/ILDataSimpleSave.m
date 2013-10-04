@@ -72,10 +72,10 @@ static ILDataSimpleSave *_dataSimpleSave = nil;
     return [NSString stringWithFormat:@"level_pass_state-%i-%i", level.page, level.levelNo];
 }
 
-- (void)saveLevelPass:(Level)level
+- (void)saveLevelPass:(Level)level grade:(LevelGrade)grade
 {
     NSString *key = [self keyStringWithLevel:level];
-    [_dataSave setBool:YES forKey:key];
+    [_dataSave setInteger:grade forKey:key];
     [_dataSave synchronize];
 }
 
@@ -100,10 +100,10 @@ static ILDataSimpleSave *_dataSimpleSave = nil;
 }
 
 
-- (BOOL)levelState:(Level)leve
+- (LevelGrade)levelState:(Level)leve
 {
     NSString *key = [self keyStringWithLevel:leve];
-    return [_dataSave boolForKey:key];
+    return [_dataSave integerForKey:key];
 }
 
 @end

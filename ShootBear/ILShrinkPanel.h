@@ -23,6 +23,8 @@
     int _usedTimes;
 }
 
+@property (assign, nonatomic)BOOL tryMode;
+
 - (void)pushState;
 
 - (void)popState;
@@ -32,5 +34,11 @@
 - (void)forbiddenAllButtons;
 
 - (void)hideMyself;
+
+- (void)tryFireGun;
+
+- (void)tryElectricGun;
+
+- (void)tryCannon;
 
 @end

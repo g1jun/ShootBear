@@ -22,8 +22,14 @@
 {
    
     [self searchSprite:self];
+    _bearsQuantity = _bears.count;
 
     
+}
+
+- (int)bearsQuantity
+{
+    return _bearsQuantity;
 }
 
 - (void)onEnter
@@ -103,8 +109,15 @@
     [self.userObject removeDeadNode:bear];
     [bear removeFromParentAndCleanup:YES];
     if (_bears.count == 0 && bear != nil) {
-        [(id)self.delegate performSelector:@selector(levelCompleted) withObject:nil afterDelay:[self levelCompletedDelay]];
+        [self performSelector:@selector(completedLevel) withObject:nil afterDelay:[self levelCompletedDelay]];
     }
+}
+
+- (void)completedLevel
+{
+    float percent = (float)_bearDeadPerfect / _bearsQuantity;
+    [self.delegate levelCompleted:percent];
+
 }
 
 - (float)levelCompletedDelay
@@ -112,12 +125,12 @@
     return 1;
 }
 
-- (void)runCoinAddAnimation:(CGPoint )position coin:(float)number
+- (void)runCoinAddAnimation:(CGPoint )position coin:(int)number
 {
-    NSString *coinNumber = [NSString stringWithFormat:@"+%.1f", number];
+    NSString *coinNumber = [NSString stringWithFormat:@"+%i", number];
     position.y -= 30;
-    CCLabelTTF *label = [CCLabelTTF labelWithString:coinNumber fontName:@"Helvetica" fontSize:18 * [self resolutionScale]];
-    [label setColor:ccYELLOW];
+    CCLabelTTF *label = [CCLabelTTF labelWithString:coinNumber fontName:@"Helvetica" fontSize:24 * [self resolutionScale]];
+    [label setColor:ccRED];
     label.position = position;
     [self addChild:label];
     id animationSub1 = [CCFadeOut actionWithDuration:2];
@@ -135,12 +148,13 @@
 
 - (void)headCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
+    _bearDeadPerfect++;
     CGPoint position = bear.explisionPosition;
     __block CCNode *headGood = [CCBReader nodeGraphFromFile:@"HeadGood.ccbi"];
     typeof(self) bself = self;
     [headGood.userObject setCompletedAnimationCallbackBlock:^(id sender) {
         [headGood removeFromParent];
-        [bself runCoinAddAnimation:position coin:1];
+        [bself runCoinAddAnimation:position coin:10];
         [headGood.userObject setCompletedAnimationCallbackBlock:nil];
     }];
     headGood.position = position;
@@ -160,13 +174,14 @@
     CGPoint position = bear.explisionPosition;
     [self removeBear:bear];
     [self postMessage:@"body"];
-    [self runCoinAddAnimation:position coin:0.1];
+    [self runCoinAddAnimation:position coin:1];
 
 
 }
 
 - (void)legCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
+    _bearDeadPerfect++;
     CGPoint position = bear.explisionPosition;
     __block CCNode *legGood = [CCBReader nodeGraphFromFile:@"LegGood.ccbi"];
     [legGood.userObject setCompletedAnimationCallbackBlock:^(id sender) {
@@ -177,7 +192,7 @@
     [self addChild:legGood];
     [self removeBear:bear];
     [self postMessage:@"leg"];
-    [self runCoinAddAnimation:position coin:0.5];
+    [self runCoinAddAnimation:position coin:5];
     
 }
 

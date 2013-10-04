@@ -16,7 +16,7 @@
 @protocol ILLevelCompletedDelegate <NSObject>
 
 @required
-- (void)levelCompleted;
+- (void)levelCompleted:(float)percent;
 
 @end
 
@@ -29,6 +29,8 @@
     CCParticleBatchNode *_particleBatchNode;
     CCSpriteBatchNode *_electricBatchNode;
     ILClippingNode *_clippingNode;
+    int _bearsQuantity;
+    int _bearDeadPerfect;
 }
 
 @property (assign, nonatomic) id<ILLevelCompletedDelegate> delegate;
@@ -43,4 +45,5 @@
 - (void)removeStencil:(CCNode *)node;
 - (void)removeBear:(ILBear *)bear;
 - (float)levelCompletedDelay;
+- (int)bearsQuantity;
 @end

@@ -50,8 +50,8 @@ public:
                     size = 1;
                 }
                 temp.Normalize();
-                temp.operator*=(size * _resultion * 0.003);
-                body->ApplyLinearImpulse(temp, b2Vec2(0, 0));
+                temp.operator*=(size * _resultion * 0.008);
+                body->ApplyLinearImpulse(temp, body->GetWorldCenter());
                 
             }
         }

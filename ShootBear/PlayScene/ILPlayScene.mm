@@ -17,6 +17,7 @@
 #import "ILPlayControl.h"
 #import "ILDataSimpleSave.h"
 #import "ILShoppingControl.h"
+#import "ILLevelCompletedLayer.h"
 
 
 #define zBK 0
@@ -106,25 +107,47 @@
 
 }
 
-- (void)levelCompleted
+- (void)levelCompleted:(float)percent
 {
     Level next = [self nextLevel];
-    [[ILDataSimpleSave sharedDataSave] saveLevelPass:next];
+    LevelGrade grade = [self grade:percent];
+    [self savePassState:next grade:kPass];
+    [self savePassState:_currentLevelNO grade:grade];
+    
     [_playControl pause];
-    [self loadLevelFinished:@"LevelCompletedLayer.ccbi"];
+    ILLevelCompletedLayer *compltedLayer = (ILLevelCompletedLayer *)[self loadLevelFinished:@"LevelCompletedLayer.ccbi"];
+    compltedLayer.percent = percent;
+
 }
 
-- (void)loadLevelFinished:(NSString *)ccbName
+- (void)savePassState:(Level) level grade:(LevelGrade)grade
+{
+    LevelGrade current = [[ILDataSimpleSave sharedDataSave] levelState:level];
+    if (grade > current) {
+        [[ILDataSimpleSave sharedDataSave] saveLevelPass:level grade:grade];
+    }
+}
+
+- (LevelGrade)grade:(float)percent
+{
+    if (percent > 0.1 && percent < 0.99) {
+        return kGeneral;
+    } else if (percent > 0.99) {
+        return kGood;
+    }
+    return kPass;
+}
+
+- (CCLayer *)loadLevelFinished:(NSString *)ccbName
 {
     if (_cacheLayers[@"levelResult"]) {
-        return;
+        return _cacheLayers[@"levelResult"];
     }
     CCLayer* _tempLayer = (CCLayer *)[CCBReader nodeGraphFromFile:ccbName owner:self];
     _cacheLayers[@"levelResult"] = _tempLayer;
     [self addChild:_tempLayer z:zLevelCompleted];
-    CCBAnimationManager *manager = _tempLayer.userObject;
     _playControl.forbiddenTouch = YES;
-    [manager runAnimationsForSequenceNamed:@"first"];
+    return _tempLayer;
 }
 
 

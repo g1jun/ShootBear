@@ -55,11 +55,11 @@
     NSDictionary *dic = notification.userInfo;
     NSString *message = dic[@"bear"];
     if ([message isEqualToString:@"head"]) {
-        [self coinIncrease:1];
+        [self coinIncrease:10];
     } else if ([message isEqualToString:@"body"]) {
-        [self coinIncrease:0.1];
+        [self coinIncrease:1];
     } else if ([message isEqualToString:@"leg"]) {
-        [self coinIncrease:0.5];
+        [self coinIncrease:5];
     }
 }
 
@@ -82,8 +82,8 @@
 
 - (void)updateCoinLabel
 {
-    float coins = [[ILDataSimpleSave sharedDataSave] floatWithKey:kCoinAmount];
-    _coinLabel.string = [NSString stringWithFormat:@"%.1f", coins];
+    int coins = [[ILDataSimpleSave sharedDataSave] intWithKey:kCoinAmount];
+    _coinLabel.string = [NSString stringWithFormat:@"%i", coins];
 }
 
 - (void)onEnter
@@ -91,8 +91,29 @@
     [super onEnter];
     _levelNO.string = [NSString stringWithFormat:@"%i-%i", _level.page + 1, _level.levelNo + 1];
     [self updateCoinLabel];
+    [self hideSomeNode];
+    [self tryModeCheck];
+}
+
+- (void)tryModeCheck
+{
+    if (_level.page == 0 && _level.levelNo == 5) {
+        [_levelControlLayer.shrinkPanel tryFireGun];
+    }
+    if (_level.page == 0 && _level.levelNo == 7) {
+        [_levelControlLayer.shrinkPanel tryElectricGun];
+    }
+    if (_level.page == 0 && _level.levelNo == 8) {
+        [_levelControlLayer.shrinkPanel tryCannon];
+    }
+}
+
+- (void)hideSomeNode
+{
     if ([self isHideShrinkPanel]){
         _levelControlLayer.shrinkPanel.visible = NO;
+    }
+    if ([self isHideCoinLabel]) {
         _coinLabel.visible = NO;
         _levelControlLayer.coinNode.visible = NO;
     }
@@ -101,7 +122,16 @@
 
 - (BOOL)isHideShrinkPanel
 {
-    return _level.page == 0 && _level.levelNo < 7;
+    if (_level.page == 0) {
+        return _level.levelNo < 9 && _level.levelNo != 5
+        && _level.levelNo != 7 && _level.levelNo != 8;
+    }
+    return NO;
+}
+
+- (BOOL)isHideCoinLabel
+{
+    return _level.page == 0 && _level.levelNo < 3;
 }
 
 - (void)configSwitch
@@ -110,9 +140,7 @@
         if ([[sender lastCompletedSequenceName] isEqualToString:@"exit"]) {
             _settingLayer.visible = NO;
             [_levelControlLayer show];
-            if ([self isHideShrinkPanel]) {
-                _levelControlLayer.shrinkPanel.visible = NO;
-            }
+            [self hideSomeNode];
             [[NSNotificationCenter defaultCenter] postNotificationName:@"continue" object:nil];
             [self scheduleUpdate];
             [self.failedDelegate resume];
@@ -132,7 +160,7 @@
 - (BOOL)isOthersGunUsedUp:(id)sender
 {
     ILGunSwitchControl *switchControl = (ILGunSwitchControl *)[sender parent];
-    if(switchControl.quantityBullet <= 0) {
+    if(switchControl.quantityBullet <= 0 && !switchControl.tryMode) {
         [self.failedDelegate pressedShoppingButton:sender];
         return YES;
     }

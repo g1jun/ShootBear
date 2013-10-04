@@ -33,8 +33,8 @@
 
 - (void)updateCoinLabel
 {
-    float coinAmout = [[ILDataSimpleSave sharedDataSave] floatWithKey:kCoinAmount];
-    NSString *string = [NSString stringWithFormat:@"%.1f", coinAmout];
+    int coinAmout = [[ILDataSimpleSave sharedDataSave] intWithKey:kCoinAmount];
+    NSString *string = [NSString stringWithFormat:@"%i", coinAmout];
     _coinLabel.string = string;
 }
 
@@ -65,7 +65,6 @@
 
 - (void)dealWithPrice:(NSString *)labelString
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kShoppingUpdate object:nil];
     if ([labelString hasPrefix:@"$"]) {
         NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"$ "];
         NSString *temp = [labelString stringByTrimmingCharactersInSet:set];
@@ -73,6 +72,8 @@
         return;
     }
     [self consumeCoins:[labelString floatValue]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kShoppingUpdate object:nil];
+
 
 
 }
