@@ -17,7 +17,10 @@
     BOOL _isCannon;
 }
 
-@property (assign, nonatomic) ILGun *gun;
+@property (assign, nonatomic)ILGun *gun;
+@property (assign, nonatomic)BOOL updateGunDirection;
+@property (assign, nonatomic)CGPoint touchPoint;
+@property (assign, nonatomic)BOOL hasTap;
 
 - (float)currentDegree;
 

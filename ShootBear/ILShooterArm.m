@@ -37,6 +37,22 @@
     return self;
 }
 
+- (void)updateGunDirection:(float)delta
+{
+    if (self.hasTap) {
+        [self rotationToTouchPoint:self.touchPoint];
+
+    }
+}
+
+- (void)setUpdateGunDirection:(BOOL)updateGunDirection
+{
+    _updateGunDirection = YES;
+    if (updateGunDirection) {
+        [self schedule:@selector(updateGunDirection:)];
+    }
+}
+
 
 - (void)onEnter
 {
@@ -85,8 +101,10 @@
 
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    [self rotationToTouchPoint:touch];
-    
+    self.hasTap = YES;
+    CGPoint glPoint = [[CCDirector sharedDirector] convertTouchToGL:touch];
+    self.touchPoint = glPoint;
+    [self rotationToTouchPoint:glPoint];
     return YES;
 }
 
@@ -96,9 +114,8 @@
 }
 
 
-- (void)rotationToTouchPoint:(UITouch *)touch
+- (void)rotationToTouchPoint:(CGPoint)glPoint
 {
-    CGPoint glPoint = [[CCDirector sharedDirector] convertTouchToGL:touch];
     CGPoint centerPoint = _isCannon ? [self.gun.parent convertToWorldSpace:self.gun.position]
      : [self.parent convertToWorldSpace:self.position];
     CGPoint targetVector = ccpSub(glPoint, centerPoint);
@@ -136,7 +153,15 @@
 
 - (void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    [self rotationToTouchPoint:touch];
+    self.hasTap = YES;
+    CGPoint glPoint = [[CCDirector sharedDirector] convertTouchToGL:touch];
+    self.touchPoint = glPoint;
+    [self rotationToTouchPoint:glPoint];
+}
+
+- (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    self.hasTap = NO;
 }
 
 - (BOOL)touchNOResponseArea:(UITouch *)touch

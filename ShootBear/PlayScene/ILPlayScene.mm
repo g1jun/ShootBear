@@ -141,7 +141,7 @@
 - (CCLayer *)loadLevelFinished:(NSString *)ccbName
 {
     if (_cacheLayers[@"levelResult"]) {
-        return _cacheLayers[@"levelResult"];
+        return nil;
     }
     CCLayer* _tempLayer = (CCLayer *)[CCBReader nodeGraphFromFile:ccbName owner:self];
     _cacheLayers[@"levelResult"] = _tempLayer;

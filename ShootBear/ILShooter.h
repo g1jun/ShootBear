@@ -17,6 +17,7 @@
     ILShooterHalf *_rightShooter;
     CCSpriteBatchNode *_batchNode;
     int _shooterRotation;
+    BOOL _updateGun;
     
 }
 

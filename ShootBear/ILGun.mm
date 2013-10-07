@@ -16,6 +16,7 @@
 #import "ILShooter.h"
 #import "CCBAnimationManager.h"
 #import "SimpleAudioEngine.h"
+#import "ILBulletCanon.h"
 
 #define BULLET 30
 
@@ -65,9 +66,12 @@
 - (void)fire
 {
     ILBullet *bullet = [self bulletInstance];
-    if ([bullet.bulletType isEqual:kFireGunBullet]) {
+    if ([bullet.bulletType isEqualToString:kFireGunBullet]) {
         [self configBullet:[self bulletInstance] degreeOffset:-5];
         [self configBullet:[self bulletInstance] degreeOffset:5];
+    }
+    if ([bullet.bulletType isEqualToString:kCannonBullet]) {
+        [(ILBulletCanon*)bullet lifeStart];
     }
     [self configBullet:bullet degreeOffset:0];
     [self fireAnimation];
@@ -112,7 +116,7 @@
     CCNode *temp = self;
     while (temp) {
         if ([temp isKindOfClass:[ILShooter class]]) {
-            return temp.parent;
+            return temp.parent.parent;
         }
         temp = temp.parent;
     }

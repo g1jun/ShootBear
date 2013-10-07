@@ -43,16 +43,16 @@ public:
                     }
                     return true;
                 }
-                b2Vec2 bodyPosition = body->GetPosition();
+                b2Vec2 bodyPosition = body->GetWorldCenter();
                 b2Vec2 temp = bodyPosition -  _position;
                 float size = _killR - temp.Length();
                 if (size < 0) {
-                    size = 1;
+                    size = 0;
                 }
                 temp.Normalize();
-                temp.operator*=(size * _resultion * 0.008);
+                temp.operator*=(size * _resultion * 0.01);
                 body->ApplyLinearImpulse(temp, body->GetWorldCenter());
-                
+                 
             }
         }
         
@@ -65,17 +65,20 @@ public:
 
 - (void)lifeStart
 {
+    if (_lifeStart) {
+        return;
+    }
     [super lifeStart];
     [self schedule:@selector(updateTimer:) interval:1];
     _flash.visible = YES;
     [self.userObject runAnimationsForSequenceNamed:@"flash"];
+    _lifeStart = YES;
 
 }
 
 - (void)onEnter
 {
     [super onEnter];
-    [self lifeStart];
 }
 
 

@@ -516,6 +516,8 @@
 		045BEB2717E7157E00E2ED0B /* ILCannonIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BEB2517E7157E00E2ED0B /* ILCannonIndicator.m */; };
 		04670E1017FE62120012BB8C /* ILLevelCompletedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04670E0F17FE62120012BB8C /* ILLevelCompletedLayer.m */; };
 		04670E1117FE62120012BB8C /* ILLevelCompletedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04670E0F17FE62120012BB8C /* ILLevelCompletedLayer.m */; };
+		04670E1417FEE2B40012BB8C /* ILStone.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04670E1317FEE2B40012BB8C /* ILStone.mm */; };
+		04670E1517FEE2B40012BB8C /* ILStone.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04670E1317FEE2B40012BB8C /* ILStone.mm */; };
 		046C49C217C8C21D000727A0 /* NSDictionary+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C49C117C8C21D000727A0 /* NSDictionary+DeepCopy.m */; };
 		04797C1517DB12CB003E1C20 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0017DB12CB003E1C20 /* bear.plist */; };
 		04797C1617DB12CB003E1C20 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0117DB12CB003E1C20 /* bear.png */; };
@@ -1192,6 +1194,8 @@
 		045BEB2517E7157E00E2ED0B /* ILCannonIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILCannonIndicator.m; sourceTree = "<group>"; };
 		04670E0E17FE62120012BB8C /* ILLevelCompletedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLevelCompletedLayer.h; sourceTree = "<group>"; };
 		04670E0F17FE62120012BB8C /* ILLevelCompletedLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLevelCompletedLayer.m; sourceTree = "<group>"; };
+		04670E1217FEE2B40012BB8C /* ILStone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILStone.h; sourceTree = "<group>"; };
+		04670E1317FEE2B40012BB8C /* ILStone.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILStone.mm; sourceTree = "<group>"; };
 		046C49C017C8C21D000727A0 /* NSDictionary+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DeepCopy.h"; sourceTree = "<group>"; };
 		046C49C117C8C21D000727A0 /* NSDictionary+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DeepCopy.m"; sourceTree = "<group>"; };
 		0475DDD317D9DBC6000BC749 /* ILStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILStruct.h; sourceTree = "<group>"; };
@@ -2020,6 +2024,8 @@
 				040DA00017C9F2180053BBCA /* ILQueryTool.mm */,
 				04A1BA2E17E0613B0003777E /* ILDefendNet.h */,
 				04A1BA2F17E0613B0003777E /* ILDefendNet.mm */,
+				04670E1217FEE2B40012BB8C /* ILStone.h */,
+				04670E1317FEE2B40012BB8C /* ILStone.mm */,
 			);
 			name = Element;
 			sourceTree = "<group>";
@@ -4049,6 +4055,7 @@
 				0453ECB617DD814500B72CB7 /* ILGun.mm in Sources */,
 				0453ECB717DD814500B72CB7 /* ILShooterHalf.m in Sources */,
 				0453ECB817DD814500B72CB7 /* ILTools.m in Sources */,
+				04670E1517FEE2B40012BB8C /* ILStone.mm in Sources */,
 				0453ECB917DD814500B72CB7 /* ILShapeCache.mm in Sources */,
 				0453ECBA17DD814500B72CB7 /* ILBox2dEntity.mm in Sources */,
 				0453ECBB17DD814500B72CB7 /* ILBullet.mm in Sources */,
@@ -4308,6 +4315,7 @@
 				04D236AE17B777CD007608F4 /* ILGun.mm in Sources */,
 				04D236B317B79DDF007608F4 /* ILShooterHalf.m in Sources */,
 				049EF6FF17B8ABBB00A9D1B7 /* ILTools.m in Sources */,
+				04670E1417FEE2B40012BB8C /* ILStone.mm in Sources */,
 				049EF70517B8D74900A9D1B7 /* ILShapeCache.mm in Sources */,
 				04FCDCC717BAFD9D005D151B /* ILBox2dEntity.mm in Sources */,
 				04FCDCCB17BB8285005D151B /* ILBullet.mm in Sources */,

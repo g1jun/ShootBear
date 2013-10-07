@@ -35,6 +35,10 @@
     [self turnRight];
     [self scheduleUpdate];
     [self syncPosition];
+    if (_updateGun) {
+        _rightShooter.arm.updateGunDirection = YES;
+        _leftShooter.arm.updateGunDirection = YES;
+    }
 }
 
 - (void)onEnter

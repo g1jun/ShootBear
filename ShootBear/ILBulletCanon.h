@@ -12,6 +12,7 @@
 {
     CCLabelTTF *_timer;
     CCSprite *_flash;
+    BOOL _lifeStart;
     
 }
 

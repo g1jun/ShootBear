@@ -37,7 +37,7 @@
         [self setGrade:kGood];
     }
     NSString *temp = _percentLabel.string;
-    NSString *number = [NSString stringWithFormat:@"%i", show];
+    NSString *number = [NSString stringWithFormat:@"%i%%", show];
     temp = [temp stringByAppendingString:number];
     _percentLabel.string = temp;
 }
