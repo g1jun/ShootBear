@@ -85,6 +85,28 @@
 		040D9FCE17C9C1A20053BBCA /* ILMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FCD17C9C1A20053BBCA /* ILMetal.mm */; };
 		040D9FD117C9C1C30053BBCA /* ILWood.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FD017C9C1C30053BBCA /* ILWood.mm */; };
 		040DA00117C9F2180053BBCA /* ILQueryTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040DA00017C9F2180053BBCA /* ILQueryTool.mm */; };
+		040EEA421806A428006D875E /* bear_dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA381806A428006D875E /* bear_dead.mp3 */; };
+		040EEA431806A428006D875E /* bear_dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA381806A428006D875E /* bear_dead.mp3 */; };
+		040EEA441806A428006D875E /* bear_dead_good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA391806A428006D875E /* bear_dead_good.mp3 */; };
+		040EEA451806A428006D875E /* bear_dead_good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA391806A428006D875E /* bear_dead_good.mp3 */; };
+		040EEA461806A428006D875E /* bomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3A1806A428006D875E /* bomb.wav */; };
+		040EEA471806A428006D875E /* bomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3A1806A428006D875E /* bomb.wav */; };
+		040EEA481806A428006D875E /* bullet_use_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3B1806A428006D875E /* bullet_use_up.mp3 */; };
+		040EEA491806A428006D875E /* bullet_use_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3B1806A428006D875E /* bullet_use_up.mp3 */; };
+		040EEA4A1806A428006D875E /* cannon_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3C1806A428006D875E /* cannon_fire.mp3 */; };
+		040EEA4B1806A428006D875E /* cannon_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3C1806A428006D875E /* cannon_fire.mp3 */; };
+		040EEA4C1806A428006D875E /* elctric_gun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3D1806A428006D875E /* elctric_gun.mp3 */; };
+		040EEA4D1806A428006D875E /* elctric_gun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3D1806A428006D875E /* elctric_gun.mp3 */; };
+		040EEA4E1806A428006D875E /* fire_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3E1806A428006D875E /* fire_gun_fire.mp3 */; };
+		040EEA4F1806A428006D875E /* fire_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3E1806A428006D875E /* fire_gun_fire.mp3 */; };
+		040EEA501806A428006D875E /* game_dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3F1806A428006D875E /* game_dead.mp3 */; };
+		040EEA511806A428006D875E /* game_dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA3F1806A428006D875E /* game_dead.mp3 */; };
+		040EEA521806A428006D875E /* hand_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA401806A428006D875E /* hand_gun_fire.mp3 */; };
+		040EEA531806A428006D875E /* hand_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA401806A428006D875E /* hand_gun_fire.mp3 */; };
+		040EEA541806A428006D875E /* metal_collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA411806A428006D875E /* metal_collision.mp3 */; };
+		040EEA551806A428006D875E /* metal_collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040EEA411806A428006D875E /* metal_collision.mp3 */; };
+		040EEA581806ABC5006D875E /* ILSoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040EEA571806ABC5006D875E /* ILSoundButton.m */; };
+		040EEA591806ABC5006D875E /* ILSoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040EEA571806ABC5006D875E /* ILSoundButton.m */; };
 		0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB217AE606D0023BD39 /* ILPlayScene.mm */; };
 		0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */; };
 		0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DABC17AE61A40023BD39 /* ILShootBear.mm */; };
@@ -538,6 +560,14 @@
 		04797C2617DB12CB003E1C20 /* resources-ipad in Resources */ = {isa = PBXBuildFile; fileRef = 04797C1117DB12CB003E1C20 /* resources-ipad */; };
 		04797C2717DB12CB003E1C20 /* resources-ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 04797C1217DB12CB003E1C20 /* resources-ipadhd */; };
 		04797C2817DB12CB003E1C20 /* resources-iphonehd in Resources */ = {isa = PBXBuildFile; fileRef = 04797C1317DB12CB003E1C20 /* resources-iphonehd */; };
+		04870A561807A4F100CF1435 /* SceneBackground1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04870A541807A4F100CF1435 /* SceneBackground1.ccbi */; };
+		04870A571807A4F100CF1435 /* SceneBackground1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04870A541807A4F100CF1435 /* SceneBackground1.ccbi */; };
+		04870A581807A4F100CF1435 /* SceneBackground2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04870A551807A4F100CF1435 /* SceneBackground2.ccbi */; };
+		04870A591807A4F100CF1435 /* SceneBackground2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04870A551807A4F100CF1435 /* SceneBackground2.ccbi */; };
+		04870A5B1807A50E00CF1435 /* clound.png in Resources */ = {isa = PBXBuildFile; fileRef = 04870A5A1807A50E00CF1435 /* clound.png */; };
+		04870A5C1807A50E00CF1435 /* clound.png in Resources */ = {isa = PBXBuildFile; fileRef = 04870A5A1807A50E00CF1435 /* clound.png */; };
+		04870A5E1807A51800CF1435 /* play_bk2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04870A5D1807A51700CF1435 /* play_bk2.png */; };
+		04870A5F1807A51800CF1435 /* play_bk2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04870A5D1807A51700CF1435 /* play_bk2.png */; };
 		04886BF917ACB1F6005D8DB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BF817ACB1F6005D8DB9 /* QuartzCore.framework */; };
 		04886BFB17ACB1F6005D8DB9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BFA17ACB1F6005D8DB9 /* OpenGLES.framework */; };
 		04886BFD17ACB1F6005D8DB9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886BFC17ACB1F6005D8DB9 /* OpenAL.framework */; };
@@ -816,6 +846,10 @@
 		04DCE28617B4D61A0036CA68 /* BearPhysics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DCE28517B4D61A0036CA68 /* BearPhysics.plist */; };
 		04DCE28D17B4E1010036CA68 /* ILPhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */; };
 		04E0832017B50901007F5486 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0831F17B50901007F5486 /* libobjc.A.dylib */; };
+		04E2EF611807C7A9000425C0 /* ILHomeLayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2EF601807C7A9000425C0 /* ILHomeLayerControl.m */; };
+		04E2EF621807C7A9000425C0 /* ILHomeLayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2EF601807C7A9000425C0 /* ILHomeLayerControl.m */; };
+		04E2EF671807CE93000425C0 /* ILSceneReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2EF661807CE93000425C0 /* ILSceneReplace.m */; };
+		04E2EF681807CE93000425C0 /* ILSceneReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2EF661807CE93000425C0 /* ILSceneReplace.m */; };
 		04E53F2917D0174000AE15A5 /* ILLevelControlLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */; };
 		04E53F2C17D0212D00AE15A5 /* ILBulletShowUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2B17D0212D00AE15A5 /* ILBulletShowUnit.m */; };
 		04E53F2F17D0226000AE15A5 /* ILBulletNumberShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E53F2E17D0226000AE15A5 /* ILBulletNumberShow.m */; };
@@ -826,16 +860,6 @@
 		04E828B817BD07A000CF0006 /* ILBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828B717BD07A000CF0006 /* ILBear.mm */; };
 		04E828BB17BD0E4000CF0006 /* ILPhysicsBearBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */; };
 		04E828BE17BD194100CF0006 /* ILBulletEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04E828BD17BD194100CF0006 /* ILBulletEntity.mm */; };
-		04EA800817F82A5500FA483A /* bullet_use_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800317F82A5500FA483A /* bullet_use_up.mp3 */; };
-		04EA800917F82A5500FA483A /* bullet_use_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800317F82A5500FA483A /* bullet_use_up.mp3 */; };
-		04EA800A17F82A5500FA483A /* cannon_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800417F82A5500FA483A /* cannon_fire.mp3 */; };
-		04EA800B17F82A5500FA483A /* cannon_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800417F82A5500FA483A /* cannon_fire.mp3 */; };
-		04EA800C17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */; };
-		04EA800D17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */; };
-		04EA800E17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */; };
-		04EA800F17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */; };
-		04EA801017F82A5500FA483A /* metal_collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800717F82A5500FA483A /* metal_collision.mp3 */; };
-		04EA801117F82A5500FA483A /* metal_collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04EA800717F82A5500FA483A /* metal_collision.mp3 */; };
 		04EA801617F8379C00FA483A /* ILLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA801517F8379C00FA483A /* ILLoadManager.m */; };
 		04EA801717F8379C00FA483A /* ILLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA801517F8379C00FA483A /* ILLoadManager.m */; };
 		04EA803017F8500800FA483A /* BulletNumberShow.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04EA801917F8500800FA483A /* BulletNumberShow.ccbi */; };
@@ -1098,6 +1122,18 @@
 		040D9FD017C9C1C30053BBCA /* ILWood.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILWood.mm; sourceTree = "<group>"; };
 		040D9FFF17C9F2180053BBCA /* ILQueryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILQueryTool.h; sourceTree = "<group>"; };
 		040DA00017C9F2180053BBCA /* ILQueryTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILQueryTool.mm; sourceTree = "<group>"; };
+		040EEA381806A428006D875E /* bear_dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bear_dead.mp3; sourceTree = "<group>"; };
+		040EEA391806A428006D875E /* bear_dead_good.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bear_dead_good.mp3; sourceTree = "<group>"; };
+		040EEA3A1806A428006D875E /* bomb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bomb.wav; sourceTree = "<group>"; };
+		040EEA3B1806A428006D875E /* bullet_use_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullet_use_up.mp3; sourceTree = "<group>"; };
+		040EEA3C1806A428006D875E /* cannon_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cannon_fire.mp3; sourceTree = "<group>"; };
+		040EEA3D1806A428006D875E /* elctric_gun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elctric_gun.mp3; sourceTree = "<group>"; };
+		040EEA3E1806A428006D875E /* fire_gun_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire_gun_fire.mp3; sourceTree = "<group>"; };
+		040EEA3F1806A428006D875E /* game_dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_dead.mp3; sourceTree = "<group>"; };
+		040EEA401806A428006D875E /* hand_gun_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hand_gun_fire.mp3; sourceTree = "<group>"; };
+		040EEA411806A428006D875E /* metal_collision.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = metal_collision.mp3; sourceTree = "<group>"; };
+		040EEA561806ABC5006D875E /* ILSoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSoundButton.h; sourceTree = "<group>"; };
+		040EEA571806ABC5006D875E /* ILSoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSoundButton.m; sourceTree = "<group>"; };
 		0411DAB117AE606D0023BD39 /* ILPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILPlayScene.h; path = PlayScene/ILPlayScene.h; sourceTree = "<group>"; };
 		0411DAB217AE606D0023BD39 /* ILPlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ILPlayScene.mm; path = PlayScene/ILPlayScene.mm; sourceTree = "<group>"; };
 		0411DAB817AE60E50023BD39 /* ILTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTMXLayer.h; sourceTree = "<group>"; };
@@ -1218,6 +1254,10 @@
 		04797C1117DB12CB003E1C20 /* resources-ipad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-ipad"; sourceTree = "<group>"; };
 		04797C1217DB12CB003E1C20 /* resources-ipadhd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-ipadhd"; sourceTree = "<group>"; };
 		04797C1317DB12CB003E1C20 /* resources-iphonehd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "resources-iphonehd"; sourceTree = "<group>"; };
+		04870A541807A4F100CF1435 /* SceneBackground1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SceneBackground1.ccbi; sourceTree = "<group>"; };
+		04870A551807A4F100CF1435 /* SceneBackground2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SceneBackground2.ccbi; sourceTree = "<group>"; };
+		04870A5A1807A50E00CF1435 /* clound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clound.png; sourceTree = "<group>"; };
+		04870A5D1807A51700CF1435 /* play_bk2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_bk2.png; sourceTree = "<group>"; };
 		04886BF517ACB1F6005D8DB9 /* ShootBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04886BF817ACB1F6005D8DB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04886BFA17ACB1F6005D8DB9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1594,7 +1634,6 @@
 		04886E3C17ACB20E005D8DB9 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		049B5C7E17D5D3CD00F67159 /* ILMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMenuItem.h; sourceTree = "<group>"; };
 		049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMenuItem.m; sourceTree = "<group>"; };
-		049B83F517E6B64700A61446 /* SceneBackground1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = SceneBackground1.ccbi; sourceTree = "<group>"; };
 		049B83F817E6D60F00A61446 /* ILBulletEntityBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletEntityBase.h; sourceTree = "<group>"; };
 		049B83F917E6D60F00A61446 /* ILBulletEntityBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBulletEntityBase.mm; sourceTree = "<group>"; };
 		049EF6FD17B8ABBB00A9D1B7 /* ILTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTools.h; sourceTree = "<group>"; };
@@ -1715,6 +1754,10 @@
 		04DCE28B17B4E1010036CA68 /* ILPhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPhysicsSprite.h; sourceTree = "<group>"; };
 		04DCE28C17B4E1010036CA68 /* ILPhysicsSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsSprite.mm; sourceTree = "<group>"; };
 		04E0831F17B50901007F5486 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		04E2EF5F1807C7A9000425C0 /* ILHomeLayerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHomeLayerControl.h; sourceTree = "<group>"; };
+		04E2EF601807C7A9000425C0 /* ILHomeLayerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHomeLayerControl.m; sourceTree = "<group>"; };
+		04E2EF651807CE93000425C0 /* ILSceneReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSceneReplace.h; sourceTree = "<group>"; };
+		04E2EF661807CE93000425C0 /* ILSceneReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSceneReplace.m; sourceTree = "<group>"; };
 		04E53F2717D0174000AE15A5 /* ILLevelControlLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLevelControlLayer.h; sourceTree = "<group>"; };
 		04E53F2817D0174000AE15A5 /* ILLevelControlLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLevelControlLayer.m; sourceTree = "<group>"; };
 		04E53F2A17D0212D00AE15A5 /* ILBulletShowUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletShowUnit.h; sourceTree = "<group>"; };
@@ -1735,11 +1778,6 @@
 		04E828BA17BD0E4000CF0006 /* ILPhysicsBearBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILPhysicsBearBase.mm; sourceTree = "<group>"; };
 		04E828BC17BD194100CF0006 /* ILBulletEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletEntity.h; sourceTree = "<group>"; };
 		04E828BD17BD194100CF0006 /* ILBulletEntity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBulletEntity.mm; sourceTree = "<group>"; };
-		04EA800317F82A5500FA483A /* bullet_use_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullet_use_up.mp3; sourceTree = "<group>"; };
-		04EA800417F82A5500FA483A /* cannon_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cannon_fire.mp3; sourceTree = "<group>"; };
-		04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire_gun_fire.mp3; sourceTree = "<group>"; };
-		04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hand_gun_fire.mp3; sourceTree = "<group>"; };
-		04EA800717F82A5500FA483A /* metal_collision.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = metal_collision.mp3; sourceTree = "<group>"; };
 		04EA801417F8379C00FA483A /* ILLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLoadManager.h; sourceTree = "<group>"; };
 		04EA801517F8379C00FA483A /* ILLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLoadManager.m; sourceTree = "<group>"; };
 		04EA801917F8500800FA483A /* BulletNumberShow.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = BulletNumberShow.ccbi; sourceTree = "<group>"; };
@@ -1929,6 +1967,8 @@
 		0403DF0217C74BF80044DFCF /* CCBResources */ = {
 			isa = PBXGroup;
 			children = (
+				04870A5D1807A51700CF1435 /* play_bk2.png */,
+				04870A5A1807A50E00CF1435 /* clound.png */,
 				0412D5E617E540CE00EDFEE0 /* lightning1.png */,
 				0412D5E717E540CE00EDFEE0 /* lightning2.png */,
 				0412D5E817E540CE00EDFEE0 /* lightning3.png */,
@@ -2030,9 +2070,28 @@
 			name = Element;
 			sourceTree = "<group>";
 		};
+		040EEA371806A428006D875E /* SoundResources */ = {
+			isa = PBXGroup;
+			children = (
+				040EEA381806A428006D875E /* bear_dead.mp3 */,
+				040EEA391806A428006D875E /* bear_dead_good.mp3 */,
+				040EEA3A1806A428006D875E /* bomb.wav */,
+				040EEA3B1806A428006D875E /* bullet_use_up.mp3 */,
+				040EEA3C1806A428006D875E /* cannon_fire.mp3 */,
+				040EEA3D1806A428006D875E /* elctric_gun.mp3 */,
+				040EEA3E1806A428006D875E /* fire_gun_fire.mp3 */,
+				040EEA3F1806A428006D875E /* game_dead.mp3 */,
+				040EEA401806A428006D875E /* hand_gun_fire.mp3 */,
+				040EEA411806A428006D875E /* metal_collision.mp3 */,
+			);
+			path = SoundResources;
+			sourceTree = "<group>";
+		};
 		0411DAB417AE60760023BD39 /* PlayScene */ = {
 			isa = PBXGroup;
 			children = (
+				040EEA561806ABC5006D875E /* ILSoundButton.h */,
+				040EEA571806ABC5006D875E /* ILSoundButton.m */,
 				0411DAB117AE606D0023BD39 /* ILPlayScene.h */,
 				0411DAB217AE606D0023BD39 /* ILPlayScene.mm */,
 				04E7FF7717CCDE25006F1881 /* ILLevelLayer.h */,
@@ -2135,6 +2194,10 @@
 		04382BAB17D36B7400257293 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				04E2EF651807CE93000425C0 /* ILSceneReplace.h */,
+				04E2EF661807CE93000425C0 /* ILSceneReplace.m */,
+				04E2EF5F1807C7A9000425C0 /* ILHomeLayerControl.h */,
+				04E2EF601807C7A9000425C0 /* ILHomeLayerControl.m */,
 				04382BAC17D3755B00257293 /* ILMenuLayer.h */,
 				04382BAD17D3755B00257293 /* ILMenuLayer.m */,
 				04382BAF17D3771900257293 /* ILMenuScene.h */,
@@ -2208,6 +2271,15 @@
 			path = DynamicElement;
 			sourceTree = "<group>";
 		};
+		04870A531807A4F100CF1435 /* PlayBackground */ = {
+			isa = PBXGroup;
+			children = (
+				04870A541807A4F100CF1435 /* SceneBackground1.ccbi */,
+				04870A551807A4F100CF1435 /* SceneBackground2.ccbi */,
+			);
+			path = PlayBackground;
+			sourceTree = "<group>";
+		};
 		04886BEC17ACB1F5005D8DB9 = {
 			isa = PBXGroup;
 			children = (
@@ -2262,7 +2334,6 @@
 				04DCE26717B4D41E0036CA68 /* CCBI */,
 				0403DF0217C74BF80044DFCF /* CCBResources */,
 				04886C0D17ACB1F6005D8DB9 /* Resources */,
-				04EA800217F82A5500FA483A /* SoundResources */,
 				04886C2517ACB1F7005D8DB9 /* libs */,
 				04886E2C17ACB20D005D8DB9 /* Supporting Files */,
 				0411DABB17AE61A40023BD39 /* ILShootBear.h */,
@@ -2274,6 +2345,7 @@
 		04886C0D17ACB1F6005D8DB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				040EEA371806A428006D875E /* SoundResources */,
 				04DCE28417B4D5EE0036CA68 /* Physics */,
 				04886E4617ACB591005D8DB9 /* common */,
 				04886E4317ACB55E005D8DB9 /* config */,
@@ -2828,14 +2900,6 @@
 			name = common;
 			sourceTree = "<group>";
 		};
-		049B83F417E6B64700A61446 /* PlayBackground */ = {
-			isa = PBXGroup;
-			children = (
-				049B83F517E6B64700A61446 /* SceneBackground1.ccbi */,
-			);
-			path = PlayBackground;
-			sourceTree = "<group>";
-		};
 		049EF6FC17B8AB9700A9D1B7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -3066,12 +3130,12 @@
 		04DCE26717B4D41E0036CA68 /* CCBI */ = {
 			isa = PBXGroup;
 			children = (
+				04870A531807A4F100CF1435 /* PlayBackground */,
 				04EA801817F8500800FA483A /* Layer */,
 				04C430CF17F6D8F800FA47C6 /* Shopping */,
 				0406041C17EE6D6A002B6E8B /* Shooter */,
 				04F05ACA17E9C10400D4F6B8 /* LevelGroup2 */,
 				04F05A9317E9C0FE00D4F6B8 /* LevelGroup1 */,
-				049B83F417E6B64700A61446 /* PlayBackground */,
 				04F40E3117DF72CF00B493C9 /* StaticElement */,
 				04EE6F8917DD539100C185B8 /* LevelGroup0 */,
 				0448DF1517DC92ED00BEF8B1 /* DynamicElement */,
@@ -3089,18 +3153,6 @@
 				04DCE28517B4D61A0036CA68 /* BearPhysics.plist */,
 			);
 			name = Physics;
-			sourceTree = "<group>";
-		};
-		04EA800217F82A5500FA483A /* SoundResources */ = {
-			isa = PBXGroup;
-			children = (
-				04EA800317F82A5500FA483A /* bullet_use_up.mp3 */,
-				04EA800417F82A5500FA483A /* cannon_fire.mp3 */,
-				04EA800517F82A5500FA483A /* fire_gun_fire.mp3 */,
-				04EA800617F82A5500FA483A /* hand_gun_fire.mp3 */,
-				04EA800717F82A5500FA483A /* metal_collision.mp3 */,
-			);
-			path = SoundResources;
 			sourceTree = "<group>";
 		};
 		04EA801217F8376E00FA483A /* LoadManager */ = {
@@ -3322,7 +3374,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04EA800B17F82A5500FA483A /* cannon_fire.mp3 in Resources */,
 				0453ECE817DD814500B72CB7 /* Default.png in Resources */,
 				0453ECE917DD814500B72CB7 /* Default@2x.png in Resources */,
 				0453ECEA17DD814500B72CB7 /* Default-568h@2x.png in Resources */,
@@ -3338,6 +3389,7 @@
 				0453ECF117DD814500B72CB7 /* Icon@2x.png in Resources */,
 				0453ECF217DD814500B72CB7 /* iTunesArtwork in Resources */,
 				04C430F617F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */,
+				040EEA551806A428006D875E /* metal_collision.mp3 in Resources */,
 				0453ECF317DD814500B72CB7 /* ChangeLog in Resources */,
 				0453ECF417DD814500B72CB7 /* blocks.png in Resources */,
 				04EA803317F8500800FA483A /* BulletShowUnit.ccbi in Resources */,
@@ -3351,7 +3403,6 @@
 				0453ED1917DD814500B72CB7 /* SceneBackground1.ccbi in Resources */,
 				04EA803517F8500800FA483A /* BulletUseUpHint.ccbi in Resources */,
 				0406044C17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
-				04EA800D17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */,
 				04C430E617F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */,
 				0406044E17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
 				04EA803117F8500800FA483A /* BulletNumberShow.ccbi in Resources */,
@@ -3375,7 +3426,6 @@
 				0406047E17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				0453ED5217DD814500B72CB7 /* MenuGroup7.ccbi in Resources */,
 				0453ED5317DD814500B72CB7 /* MenuItem1.ccbi in Resources */,
-				04EA800917F82A5500FA483A /* bullet_use_up.mp3 in Resources */,
 				04EA803D17F8500800FA483A /* ButtonFlash.ccbi in Resources */,
 				04C430F417F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */,
 				0453ED5417DD814500B72CB7 /* MenuLayer.ccbi in Resources */,
@@ -3383,6 +3433,7 @@
 				0406045217EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
 				04EA805517F8500800FA483A /* LevelControlLayer.ccbi in Resources */,
 				0453ED5617DD814500B72CB7 /* bear.plist in Resources */,
+				040EEA511806A428006D875E /* game_dead.mp3 in Resources */,
 				0453ED5717DD814500B72CB7 /* bear.png in Resources */,
 				0406044217EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				0453ED5817DD814500B72CB7 /* ccbParticleBone.png in Resources */,
@@ -3409,6 +3460,7 @@
 				04C430E817F6D8F800FA47C6 /* BuyFireGun.ccbi in Resources */,
 				0453ED6817DD814500B72CB7 /* resources-ipadhd in Resources */,
 				0453ED6917DD814500B72CB7 /* resources-iphonehd in Resources */,
+				04870A571807A4F100CF1435 /* SceneBackground1.ccbi in Resources */,
 				0453ED6A17DD814500B72CB7 /* BearDeadParticle.ccbi in Resources */,
 				0406047017EE6D6A002B6E8B /* ShooterArmRight.ccbi in Resources */,
 				0453ED6B17DD814500B72CB7 /* BlackBear.ccbi in Resources */,
@@ -3430,6 +3482,7 @@
 				0453ED7917DD814500B72CB7 /* BrownBearRight.ccbi in Resources */,
 				0453ED7A17DD814500B72CB7 /* BrownBearRightArmOutter.ccbi in Resources */,
 				0453ED7B17DD814500B72CB7 /* BrownBearRightHead.ccbi in Resources */,
+				04870A591807A4F100CF1435 /* SceneBackground2.ccbi in Resources */,
 				0453ED7C17DD814500B72CB7 /* BrownBearRightLegOutter.ccbi in Resources */,
 				0453ED7D17DD814500B72CB7 /* YellowBear.ccbi in Resources */,
 				0453ED7E17DD814500B72CB7 /* YellowBearLeft.ccbi in Resources */,
@@ -3442,8 +3495,8 @@
 				0453ED8417DD814500B72CB7 /* YellowBearRightHead.ccbi in Resources */,
 				0453ED8517DD814500B72CB7 /* YellowBearRightLegOutter.ccbi in Resources */,
 				04C430FC17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */,
+				040EEA491806A428006D875E /* bullet_use_up.mp3 in Resources */,
 				0453ED8617DD814500B72CB7 /* DefendNet.ccbi in Resources */,
-				04EA800F17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */,
 				0453ED8717DD814500B72CB7 /* Ladder.ccbi in Resources */,
 				0453ED8817DD814500B72CB7 /* MetalBox.ccbi in Resources */,
 				0453ED8917DD814500B72CB7 /* MetalCircle.ccbi in Resources */,
@@ -3461,6 +3514,7 @@
 				04EA805717F8500800FA483A /* LevelFailedLayer.ccbi in Resources */,
 				0453ED9417DD814500B72CB7 /* Level0-10.ccbi in Resources */,
 				0453ED9517DD814500B72CB7 /* Level0-11.ccbi in Resources */,
+				040EEA451806A428006D875E /* bear_dead_good.mp3 in Resources */,
 				0406045017EE6D6A002B6E8B /* CannonRight.ccbi in Resources */,
 				0453ED9617DD814500B72CB7 /* Level0-12.ccbi in Resources */,
 				0453ED9717DD814500B72CB7 /* Level0-13.ccbi in Resources */,
@@ -3480,8 +3534,10 @@
 				04F40E5317DF72CF00B493C9 /* MetalLightning.ccbi in Resources */,
 				04F40E5517DF72CF00B493C9 /* StaticMetal1.ccbi in Resources */,
 				04F40E5717DF72CF00B493C9 /* StaticMetal2.ccbi in Resources */,
+				040EEA4F1806A428006D875E /* fire_gun_fire.mp3 in Resources */,
 				0406047817EE6D6A002B6E8B /* ShooterCannonRight.ccbi in Resources */,
 				04F40E5917DF72CF00B493C9 /* StaticMetal3.ccbi in Resources */,
+				04870A5F1807A51800CF1435 /* play_bk2.png in Resources */,
 				04F40E5B17DF72CF00B493C9 /* StaticMetal4.ccbi in Resources */,
 				04F40E5D17DF72CF00B493C9 /* StaticMetal5.ccbi in Resources */,
 				0406046617EE6D6A002B6E8B /* HeadGood.ccbi in Resources */,
@@ -3495,11 +3551,11 @@
 				04F40E6717DF72CF00B493C9 /* StaticMetalUnit.ccbi in Resources */,
 				04F40E6917DF72CF00B493C9 /* StaticMetalUnit1.ccbi in Resources */,
 				04F40E6B17DF72CF00B493C9 /* StaticMetalUnit2.ccbi in Resources */,
-				04EA801117F82A5500FA483A /* metal_collision.mp3 in Resources */,
 				04F40E6D17DF72CF00B493C9 /* StaticMetalUnit3.ccbi in Resources */,
 				04F40E6F17DF72CF00B493C9 /* StaticStone1.ccbi in Resources */,
 				04F40E7117DF72CF00B493C9 /* StaticStone2.ccbi in Resources */,
 				0406046417EE6D6A002B6E8B /* HandBullet.ccbi in Resources */,
+				040EEA4B1806A428006D875E /* cannon_fire.mp3 in Resources */,
 				04F40E7317DF72CF00B493C9 /* StaticStone3.ccbi in Resources */,
 				04F40E7517DF72CF00B493C9 /* StaticStone4.ccbi in Resources */,
 				04EA803917F8500800FA483A /* ButtonBomb.ccbi in Resources */,
@@ -3509,6 +3565,7 @@
 				04C4310117F702F400FA47C6 /* Localizable.strings in Resources */,
 				04F40E7D17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
 				04C430E017F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */,
+				040EEA431806A428006D875E /* bear_dead.mp3 in Resources */,
 				04F40E7F17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
 				04F40E8117DF72CF00B493C9 /* StaticWood5.ccbi in Resources */,
 				0406047217EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */,
@@ -3543,6 +3600,7 @@
 				04F05AB117E9C0FE00D4F6B8 /* Level1-13.ccbi in Resources */,
 				0406048017EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */,
 				04F05AB317E9C0FE00D4F6B8 /* Level1-14.ccbi in Resources */,
+				040EEA4D1806A428006D875E /* elctric_gun.mp3 in Resources */,
 				04EA805917F8500800FA483A /* LevelMenu.ccbi in Resources */,
 				04F05AB517E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
 				04EA804517F8500800FA483A /* ButtonMore.ccbi in Resources */,
@@ -3552,6 +3610,7 @@
 				04EA804F17F8500800FA483A /* ButtonSound.ccbi in Resources */,
 				04F05ABB17E9C0FE00D4F6B8 /* Level1-2.ccbi in Resources */,
 				04F05ABD17E9C0FE00D4F6B8 /* Level1-3.ccbi in Resources */,
+				040EEA531806A428006D875E /* hand_gun_fire.mp3 in Resources */,
 				04F05ABF17E9C0FE00D4F6B8 /* Level1-4.ccbi in Resources */,
 				04C430EA17F6D8F800FA47C6 /* BuyGameTheme.ccbi in Resources */,
 				04F05AC117E9C0FE00D4F6B8 /* Level1-5.ccbi in Resources */,
@@ -3565,10 +3624,12 @@
 				04F05AE017E9C10400D4F6B8 /* Level2-10.ccbi in Resources */,
 				04F05AE217E9C10400D4F6B8 /* Level2-11.ccbi in Resources */,
 				04F05AE417E9C10400D4F6B8 /* Level2-12.ccbi in Resources */,
+				04870A5C1807A50E00CF1435 /* clound.png in Resources */,
 				04F05AE617E9C10400D4F6B8 /* Level2-13.ccbi in Resources */,
 				04F05AE817E9C10400D4F6B8 /* Level2-14.ccbi in Resources */,
 				04F05AEA17E9C10400D4F6B8 /* Level2-15.ccbi in Resources */,
 				04F05AEC17E9C10400D4F6B8 /* Level2-2.ccbi in Resources */,
+				040EEA471806A428006D875E /* bomb.wav in Resources */,
 				04F05AEE17E9C10400D4F6B8 /* Level2-3.ccbi in Resources */,
 				04F05AF017E9C10400D4F6B8 /* Level2-4.ccbi in Resources */,
 				0406044A17EE6D6A002B6E8B /* CannonFire.ccbi in Resources */,
@@ -3584,7 +3645,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04EA800A17F82A5500FA483A /* cannon_fire.mp3 in Resources */,
 				04886C0F17ACB1F6005D8DB9 /* Default.png in Resources */,
 				04886C1117ACB1F6005D8DB9 /* Default@2x.png in Resources */,
 				04886C1317ACB1F6005D8DB9 /* Default-568h@2x.png in Resources */,
@@ -3600,6 +3660,7 @@
 				04886C2117ACB1F7005D8DB9 /* Icon@2x.png in Resources */,
 				04886C2417ACB1F7005D8DB9 /* iTunesArtwork in Resources */,
 				04C430F517F6D8F800FA47C6 /* CoinBuy4.ccbi in Resources */,
+				040EEA541806A428006D875E /* metal_collision.mp3 in Resources */,
 				04886D7D17ACB205005D8DB9 /* ChangeLog in Resources */,
 				04886E3D17ACB20E005D8DB9 /* blocks.png in Resources */,
 				04EA803217F8500800FA483A /* BulletShowUnit.ccbi in Resources */,
@@ -3613,7 +3674,6 @@
 				04AEBB0C17CDBDEC00BD9D65 /* SceneBackground1.ccbi in Resources */,
 				04EA803417F8500800FA483A /* BulletUseUpHint.ccbi in Resources */,
 				0406044B17EE6D6A002B6E8B /* CannonIndicator.ccbi in Resources */,
-				04EA800C17F82A5500FA483A /* fire_gun_fire.mp3 in Resources */,
 				04C430E517F6D8F800FA47C6 /* BuyElectricGun.ccbi in Resources */,
 				0406044D17EE6D6A002B6E8B /* CannonLeft.ccbi in Resources */,
 				04EA803017F8500800FA483A /* BulletNumberShow.ccbi in Resources */,
@@ -3637,7 +3697,6 @@
 				0406047D17EE6D6A002B6E8B /* ShooterLeft.ccbi in Resources */,
 				04D7A83C17D9B55200072F4D /* MenuGroup7.ccbi in Resources */,
 				04D7A83D17D9B55200072F4D /* MenuItem1.ccbi in Resources */,
-				04EA800817F82A5500FA483A /* bullet_use_up.mp3 in Resources */,
 				04EA803C17F8500800FA483A /* ButtonFlash.ccbi in Resources */,
 				04C430F317F6D8F800FA47C6 /* CoinBuy3.ccbi in Resources */,
 				04D7A83E17D9B55200072F4D /* MenuLayer.ccbi in Resources */,
@@ -3645,6 +3704,7 @@
 				0406045117EE6D6A002B6E8B /* ElectricBullet.ccbi in Resources */,
 				04EA805417F8500800FA483A /* LevelControlLayer.ccbi in Resources */,
 				04797C1517DB12CB003E1C20 /* bear.plist in Resources */,
+				040EEA501806A428006D875E /* game_dead.mp3 in Resources */,
 				04797C1617DB12CB003E1C20 /* bear.png in Resources */,
 				0406044117EE6D6A002B6E8B /* CannonBodyLeft.ccbi in Resources */,
 				04797C1717DB12CB003E1C20 /* ccbParticleBone.png in Resources */,
@@ -3671,6 +3731,7 @@
 				04C430E717F6D8F800FA47C6 /* BuyFireGun.ccbi in Resources */,
 				04797C2717DB12CB003E1C20 /* resources-ipadhd in Resources */,
 				04797C2817DB12CB003E1C20 /* resources-iphonehd in Resources */,
+				04870A561807A4F100CF1435 /* SceneBackground1.ccbi in Resources */,
 				0448DEED17DC747E00BEF8B1 /* BearDeadParticle.ccbi in Resources */,
 				0406046F17EE6D6A002B6E8B /* ShooterArmRight.ccbi in Resources */,
 				0448DEEE17DC747E00BEF8B1 /* BlackBear.ccbi in Resources */,
@@ -3692,6 +3753,7 @@
 				0448DEFC17DC747E00BEF8B1 /* BrownBearRight.ccbi in Resources */,
 				0448DEFD17DC747E00BEF8B1 /* BrownBearRightArmOutter.ccbi in Resources */,
 				0448DEFE17DC747E00BEF8B1 /* BrownBearRightHead.ccbi in Resources */,
+				04870A581807A4F100CF1435 /* SceneBackground2.ccbi in Resources */,
 				0448DEFF17DC747E00BEF8B1 /* BrownBearRightLegOutter.ccbi in Resources */,
 				0448DF0017DC747E00BEF8B1 /* YellowBear.ccbi in Resources */,
 				0448DF0117DC747E00BEF8B1 /* YellowBearLeft.ccbi in Resources */,
@@ -3704,8 +3766,8 @@
 				0448DF0717DC747E00BEF8B1 /* YellowBearRightHead.ccbi in Resources */,
 				0448DF0817DC747E00BEF8B1 /* YellowBearRightLegOutter.ccbi in Resources */,
 				04C430FB17F6D8F800FA47C6 /* ShoppingLayer.ccbi in Resources */,
+				040EEA481806A428006D875E /* bullet_use_up.mp3 in Resources */,
 				0448DF2217DC92ED00BEF8B1 /* DefendNet.ccbi in Resources */,
-				04EA800E17F82A5500FA483A /* hand_gun_fire.mp3 in Resources */,
 				0448DF2317DC92ED00BEF8B1 /* Ladder.ccbi in Resources */,
 				0448DF2417DC92ED00BEF8B1 /* MetalBox.ccbi in Resources */,
 				0448DF2517DC92ED00BEF8B1 /* MetalCircle.ccbi in Resources */,
@@ -3723,6 +3785,7 @@
 				04EA805617F8500800FA483A /* LevelFailedLayer.ccbi in Resources */,
 				04EE6F9B17DD539100C185B8 /* Level0-10.ccbi in Resources */,
 				04EE6F9C17DD539100C185B8 /* Level0-11.ccbi in Resources */,
+				040EEA441806A428006D875E /* bear_dead_good.mp3 in Resources */,
 				0406044F17EE6D6A002B6E8B /* CannonRight.ccbi in Resources */,
 				04EE6F9D17DD539100C185B8 /* Level0-12.ccbi in Resources */,
 				04EE6F9E17DD539100C185B8 /* Level0-13.ccbi in Resources */,
@@ -3742,8 +3805,10 @@
 				04F40E5217DF72CF00B493C9 /* MetalLightning.ccbi in Resources */,
 				04F40E5417DF72CF00B493C9 /* StaticMetal1.ccbi in Resources */,
 				04F40E5617DF72CF00B493C9 /* StaticMetal2.ccbi in Resources */,
+				040EEA4E1806A428006D875E /* fire_gun_fire.mp3 in Resources */,
 				0406047717EE6D6A002B6E8B /* ShooterCannonRight.ccbi in Resources */,
 				04F40E5817DF72CF00B493C9 /* StaticMetal3.ccbi in Resources */,
+				04870A5E1807A51800CF1435 /* play_bk2.png in Resources */,
 				04F40E5A17DF72CF00B493C9 /* StaticMetal4.ccbi in Resources */,
 				04F40E5C17DF72CF00B493C9 /* StaticMetal5.ccbi in Resources */,
 				0406046517EE6D6A002B6E8B /* HeadGood.ccbi in Resources */,
@@ -3757,11 +3822,11 @@
 				04F40E6617DF72CF00B493C9 /* StaticMetalUnit.ccbi in Resources */,
 				04F40E6817DF72CF00B493C9 /* StaticMetalUnit1.ccbi in Resources */,
 				04F40E6A17DF72CF00B493C9 /* StaticMetalUnit2.ccbi in Resources */,
-				04EA801017F82A5500FA483A /* metal_collision.mp3 in Resources */,
 				04F40E6C17DF72CF00B493C9 /* StaticMetalUnit3.ccbi in Resources */,
 				04F40E6E17DF72CF00B493C9 /* StaticStone1.ccbi in Resources */,
 				04F40E7017DF72CF00B493C9 /* StaticStone2.ccbi in Resources */,
 				0406046317EE6D6A002B6E8B /* HandBullet.ccbi in Resources */,
+				040EEA4A1806A428006D875E /* cannon_fire.mp3 in Resources */,
 				04F40E7217DF72CF00B493C9 /* StaticStone3.ccbi in Resources */,
 				04F40E7417DF72CF00B493C9 /* StaticStone4.ccbi in Resources */,
 				04EA803817F8500800FA483A /* ButtonBomb.ccbi in Resources */,
@@ -3771,6 +3836,7 @@
 				04C4310017F702F400FA47C6 /* Localizable.strings in Resources */,
 				04F40E7C17DF72CF00B493C9 /* StaticWood3.ccbi in Resources */,
 				04C430DF17F6D8F800FA47C6 /* BuyBullet.ccbi in Resources */,
+				040EEA421806A428006D875E /* bear_dead.mp3 in Resources */,
 				04F40E7E17DF72CF00B493C9 /* StaticWood4.ccbi in Resources */,
 				04F40E8017DF72CF00B493C9 /* StaticWood5.ccbi in Resources */,
 				0406047117EE6D6A002B6E8B /* ShooterBodyLeft.ccbi in Resources */,
@@ -3805,6 +3871,7 @@
 				04F05AB017E9C0FE00D4F6B8 /* Level1-13.ccbi in Resources */,
 				0406047F17EE6D6A002B6E8B /* ShooterRight.ccbi in Resources */,
 				04F05AB217E9C0FE00D4F6B8 /* Level1-14.ccbi in Resources */,
+				040EEA4C1806A428006D875E /* elctric_gun.mp3 in Resources */,
 				04EA805817F8500800FA483A /* LevelMenu.ccbi in Resources */,
 				04F05AB417E9C0FE00D4F6B8 /* Level1-15.ccbi in Resources */,
 				04EA804417F8500800FA483A /* ButtonMore.ccbi in Resources */,
@@ -3814,6 +3881,7 @@
 				04EA804E17F8500800FA483A /* ButtonSound.ccbi in Resources */,
 				04F05ABA17E9C0FE00D4F6B8 /* Level1-2.ccbi in Resources */,
 				04F05ABC17E9C0FE00D4F6B8 /* Level1-3.ccbi in Resources */,
+				040EEA521806A428006D875E /* hand_gun_fire.mp3 in Resources */,
 				04F05ABE17E9C0FE00D4F6B8 /* Level1-4.ccbi in Resources */,
 				04C430E917F6D8F800FA47C6 /* BuyGameTheme.ccbi in Resources */,
 				04F05AC017E9C0FE00D4F6B8 /* Level1-5.ccbi in Resources */,
@@ -3827,10 +3895,12 @@
 				04F05ADF17E9C10400D4F6B8 /* Level2-10.ccbi in Resources */,
 				04F05AE117E9C10400D4F6B8 /* Level2-11.ccbi in Resources */,
 				04F05AE317E9C10400D4F6B8 /* Level2-12.ccbi in Resources */,
+				04870A5B1807A50E00CF1435 /* clound.png in Resources */,
 				04F05AE517E9C10400D4F6B8 /* Level2-13.ccbi in Resources */,
 				04F05AE717E9C10400D4F6B8 /* Level2-14.ccbi in Resources */,
 				04F05AE917E9C10400D4F6B8 /* Level2-15.ccbi in Resources */,
 				04F05AEB17E9C10400D4F6B8 /* Level2-2.ccbi in Resources */,
+				040EEA461806A428006D875E /* bomb.wav in Resources */,
 				04F05AED17E9C10400D4F6B8 /* Level2-3.ccbi in Resources */,
 				04F05AEF17E9C10400D4F6B8 /* Level2-4.ccbi in Resources */,
 				0406044917EE6D6A002B6E8B /* CannonFire.ccbi in Resources */,
@@ -3910,11 +3980,13 @@
 				0453EC2917DD814500B72CB7 /* CCTexture2D.m in Sources */,
 				0453EC2A17DD814500B72CB7 /* CCTextureAtlas.m in Sources */,
 				0453EC2B17DD814500B72CB7 /* CCTextureCache.m in Sources */,
+				04E2EF621807C7A9000425C0 /* ILHomeLayerControl.m in Sources */,
 				0453EC2C17DD814500B72CB7 /* CCTexturePVR.m in Sources */,
 				0453EC2D17DD814500B72CB7 /* CCTileMapAtlas.m in Sources */,
 				0453EC2E17DD814500B72CB7 /* CCTMXLayer.m in Sources */,
 				0453EC2F17DD814500B72CB7 /* CCTMXObjectGroup.m in Sources */,
 				0453EC3017DD814500B72CB7 /* CCTMXTiledMap.m in Sources */,
+				040EEA591806ABC5006D875E /* ILSoundButton.m in Sources */,
 				0453EC3117DD814500B72CB7 /* CCTMXXMLParser.m in Sources */,
 				0453EC3217DD814500B72CB7 /* CCTransition.m in Sources */,
 				0453EC3317DD814500B72CB7 /* CCTransitionPageTurn.m in Sources */,
@@ -4081,6 +4153,7 @@
 				0453ECCF17DD814500B72CB7 /* ILShrinkButton.m in Sources */,
 				0453ECD017DD814500B72CB7 /* ILGunSwitchControl.m in Sources */,
 				0453ECD117DD814500B72CB7 /* ILPlayControl.mm in Sources */,
+				04E2EF681807CE93000425C0 /* ILSceneReplace.m in Sources */,
 				0453ECD217DD814500B72CB7 /* ILLevelControlLayer.m in Sources */,
 				0453ECD317DD814500B72CB7 /* ILBulletShowUnit.m in Sources */,
 				0453ECD417DD814500B72CB7 /* ILBulletNumberShow.m in Sources */,
@@ -4170,11 +4243,13 @@
 				04886CE017ACB1FE005D8DB9 /* CCTexture2D.m in Sources */,
 				04886CE317ACB1FE005D8DB9 /* CCTextureAtlas.m in Sources */,
 				04886CE617ACB1FF005D8DB9 /* CCTextureCache.m in Sources */,
+				04E2EF611807C7A9000425C0 /* ILHomeLayerControl.m in Sources */,
 				04886CE917ACB1FF005D8DB9 /* CCTexturePVR.m in Sources */,
 				04886CEC17ACB1FF005D8DB9 /* CCTileMapAtlas.m in Sources */,
 				04886CEF17ACB1FF005D8DB9 /* CCTMXLayer.m in Sources */,
 				04886CF217ACB1FF005D8DB9 /* CCTMXObjectGroup.m in Sources */,
 				04886CF517ACB1FF005D8DB9 /* CCTMXTiledMap.m in Sources */,
+				040EEA581806ABC5006D875E /* ILSoundButton.m in Sources */,
 				04886CF817ACB1FF005D8DB9 /* CCTMXXMLParser.m in Sources */,
 				04886CFB17ACB200005D8DB9 /* CCTransition.m in Sources */,
 				04886CFE17ACB200005D8DB9 /* CCTransitionPageTurn.m in Sources */,
@@ -4341,6 +4416,7 @@
 				04B83D6D17CF6E22001C634A /* ILShrinkButton.m in Sources */,
 				04B83D7017CF7BC2001C634A /* ILGunSwitchControl.m in Sources */,
 				04B83D7317CF8341001C634A /* ILPlayControl.mm in Sources */,
+				04E2EF671807CE93000425C0 /* ILSceneReplace.m in Sources */,
 				04E53F2917D0174000AE15A5 /* ILLevelControlLayer.m in Sources */,
 				04E53F2C17D0212D00AE15A5 /* ILBulletShowUnit.m in Sources */,
 				04E53F2F17D0226000AE15A5 /* ILBulletNumberShow.m in Sources */,

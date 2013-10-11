@@ -23,4 +23,10 @@
 
 }
 
+- (void)setB2Body:(b2Body *)b2Body
+{
+    [super setB2Body:b2Body];
+    b2Body->SetBullet(YES);
+}
+
 @end

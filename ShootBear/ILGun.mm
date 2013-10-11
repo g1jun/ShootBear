@@ -31,7 +31,6 @@
 }
 - (void)didLoadFromCCB
 {
-    [self loadMusic];
 }
 
 - (ILBullet *)bulletInstance
@@ -41,19 +40,12 @@
     return bullet;
 }
 
-- (void)loadMusic
-{
-    NSDictionary *dic = [self musicEffect];
-    for (NSString *key in dic) {
-        [[SimpleAudioEngine sharedEngine] preloadEffect:dic[key]];
-    }
-}
 
 - (NSDictionary *)musicEffect
 {
     return @{kHandGunBullet:@"hand_gun_fire.mp3",
       kFireGunBullet:@"fire_gun_fire.mp3",
-      kElectriGunBullet:@"",
+      kElectriGunBullet:@"elctric_gun.mp3",
       kCannonBullet: @"cannon_fire.mp3"};
 }
 

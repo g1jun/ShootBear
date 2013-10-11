@@ -12,6 +12,9 @@
 #import "ILMenuLayer.h"
 #import "ILPlayScene.h"
 #import "ILMenuItem.h"
+#import "ILDataSimpleSave.h"
+#import "ILSceneReplace.h"
+#import "ILHomeLayerControl.h"
 
 @implementation ILMenuScene
 
@@ -39,7 +42,7 @@
     CGSize winSize = [CCDirector sharedDirector].winSize;
     NSMutableArray *layers = [NSMutableArray array];
     for (int i = 0; i < 3; i++) {
-        ILMenuLayer *layer = (ILMenuLayer *)[CCBReader nodeGraphFromFile:@"MenuLayer.ccbi"];
+        ILMenuLayer *layer = (ILMenuLayer *)[CCBReader nodeGraphFromFile:@"MenuLayer.ccbi" owner:self];
         NSString *groupFile = [NSString stringWithFormat:@"MenuGroup%i.ccbi", i + 1];
         layer.menuGroup = [CCBReader nodeGraphFromFile:groupFile owner:self];
         layer.position = ccp(winSize.width * i, 0);
@@ -48,11 +51,24 @@
 
 
     }
-    CCScrollLayer *scroll = [[CCScrollLayer alloc] initWithLayers:layers widthOffset:0];
-    scroll.delegate = self;
-    [self addChild:scroll];
-    [scroll release];
+    _scrollLayer = [[CCScrollLayer alloc] initWithLayers:layers widthOffset:0];
+    _scrollLayer.delegate = self;
+    [self addChild:_scrollLayer];
+    [_scrollLayer release];
     
+}
+
+- (void)pressedHomButton:(id)sender
+{
+    [ILSceneReplace replaceScene:[ILHomeLayerControl scene]];
+}
+
+- (void)onEnter
+{
+    [super onEnter];
+    int page = [[ILDataSimpleSave sharedDataSave] intWithKey:@"current_page"];
+    [_scrollLayer selectPage:page];
+    self.currentPage = page;
 }
 
 - (void)pressedMenuItem:(id)sender
@@ -62,7 +78,7 @@
     level.levelNo = item.levelNO;
     level.page = self.currentPage;
     ILPlayScene *playScene = [[ILPlayScene alloc] initWithLevel:level];
-    [[CCDirector sharedDirector] replaceScene:playScene];
+    [ILSceneReplace replaceScene:playScene];
     [playScene release];
     
 }

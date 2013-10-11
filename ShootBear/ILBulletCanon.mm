@@ -15,6 +15,7 @@
 #import "ILBox2dFactory.h"
 #import "CCNode+CCBRelativePositioning.h"
 #import "ILBear.h"
+#import "SimpleAudioEngine.h"
 
 class BulletCanonExplosionCallback : public b2QueryCallback
 {
@@ -136,6 +137,7 @@ public:
     [self performSelector:@selector(destroySelf) withObject:nil afterDelay:1.05];
     [_timer removeFromParent], _timer = nil;
     [self.entity removeFromParent], self.entity = nil;
+    [[SimpleAudioEngine sharedEngine] playEffect:@"bomb.wav"];
     
     
 }

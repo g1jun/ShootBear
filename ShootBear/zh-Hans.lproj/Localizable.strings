@@ -16,3 +16,24 @@
 "level0-1:hint" = "拖动枪线穿过这里";
 "level0-1:next_hint" = "再试一次";
 "level0-1:bear_all_dead" = "果然是传说中的神抢手";
+
+"level0-2:hint" = "子弹撞到边缘，会弹回";
+
+"level0-3:hint" = "收集更多金币";
+
+"level0-5:next" = "火枪瞬间点燃木头";
+
+
+"level:switch" = "点击切换";
+
+"level0-7:hint" = "金属导电";
+
+"level0-8:hint" = "滑动,调整发射距离";
+
+
+
+
+
+
+
+

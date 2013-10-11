@@ -15,6 +15,7 @@
 #import "ILClippingNode.h"
 #import "ILLightning.h"
 #import "CCNode+CCBRelativePositioning.h"
+#import "SimpleAudioEngine.h"
 
 @implementation ILLevelLayer
 
@@ -161,6 +162,8 @@
     [self addChild:headGood];
     [self removeBear:bear];
     [self postMessage:@"head"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead_good.mp3"];
+
 }
 
 - (void)postMessage:(NSString *)message
@@ -175,6 +178,7 @@
     [self removeBear:bear];
     [self postMessage:@"body"];
     [self runCoinAddAnimation:position coin:1];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead.mp3"];
 
 
 }
@@ -193,6 +197,7 @@
     [self removeBear:bear];
     [self postMessage:@"leg"];
     [self runCoinAddAnimation:position coin:5];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead_good.mp3"];
     
 }
 

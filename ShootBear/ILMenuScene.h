@@ -10,6 +10,9 @@
 #import "CCScrollLayer.h"
 
 @interface ILMenuScene : CCScene <CCScrollLayerDelegate>
+{
+    CCScrollLayer *_scrollLayer;
+}
 
 @property (assign, nonatomic) int currentPage;
 

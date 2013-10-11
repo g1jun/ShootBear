@@ -11,7 +11,7 @@
 #import "ILShapeCache.h"
 #import "ILBox2dFactory.h"
 #import "ILTools.h"
-#import "ILLightning.h"
+#import "SimpleAudioEngine.h"
 
 @implementation ILDefendNet
 
@@ -74,6 +74,14 @@
 - (NSString *)collisionType
 {
     return kCollisionDefendNet;
+}
+
+- (void)collisionDealWith:(id<ILCollisionDelegate>)another
+{
+    [super collisionDealWith:another];
+    if ([[another collisionType] isEqualToString:kCollisionBullet]) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"metal_collision.mp3"];
+    }
 }
 
 - (void)update:(ccTime)delta

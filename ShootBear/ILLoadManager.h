@@ -10,4 +10,6 @@
 
 @interface ILLoadManager : NSObject
 
+- (void)loadSoundResources;
+
 @end

@@ -18,6 +18,8 @@
 #import "ILDataSimpleSave.h"
 #import "ILShoppingControl.h"
 #import "ILLevelCompletedLayer.h"
+#import "SimpleAudioEngine.h"
+#import "ILSceneReplace.h"
 
 
 #define zBK 0
@@ -38,7 +40,7 @@
     if(self) {
         _cacheLayers = [[NSMutableDictionary dictionary] retain];
         [self configBox2d];
-        [self configSubLayers];
+        [self configSubLayers:level.page];
         [self loadLayer:level];
         [self loadControl];
         
@@ -70,10 +72,18 @@
 
 }
 
-- (void)configSubLayers
+- (void)configSubLayers:(int)page
 {
-    CCNode *bk = [CCBReader nodeGraphFromFile:@"SceneBackground1.ccbi"];
-    [self addChild:bk z:zBK];
+    if (_bk && _bk.tag != page) {
+        [_bk removeFromParent];
+        _bk = nil;
+    }
+    NSString *fileName = [NSString stringWithFormat:@"SceneBackground%i.ccbi", page + 1];
+    if (_bk == nil) {
+        _bk = [CCBReader nodeGraphFromFile:fileName];
+        _bk.tag = _currentLevelNO.page;
+        [self addChild:_bk z:zBK];
+    }
 }
 
 - (void)loadLayer:(Level)level
@@ -104,12 +114,16 @@
 {
     [_playControl pause];
     [self loadLevelFinished:@"LevelFailedLayer.ccbi"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"game_dead.mp3"];
 
 }
 
 - (void)levelCompleted:(float)percent
 {
     Level next = [self nextLevel];
+    if (next.page == 1) {
+        [[ILDataSimpleSave sharedDataSave] saveInt:1 forKey:@"current_page"];
+    }
     LevelGrade grade = [self grade:percent];
     [self savePassState:next grade:kPass];
     [self savePassState:_currentLevelNO grade:grade];
@@ -166,6 +180,12 @@
 
 - (Level)nextLevel
 {
+    if (_currentLevelNO.page == 1 && _currentLevelNO.levelNo == 17) {
+        Level ret;
+        ret.levelNo = 0;
+        ret.page = 0;
+        return ret;
+    }
     Level temp = _currentLevelNO;
     NSString *key = [NSString stringWithFormat:@"%i", temp.page];
     int max = [[self levelGroupNumber][key] intValue];
@@ -184,6 +204,7 @@
     [self removeTempLayer];
     [self loadLayer:_currentLevelNO];
     [self loadControl];
+    [self configSubLayers:_currentLevelNO.page];
 }
 
 - (void)pressedShoppingButton:(id)sender
@@ -201,7 +222,7 @@
 
 - (void)pressedMoreButton:(id)sender
 {
-    [[CCDirector sharedDirector] replaceScene:[ILMenuScene node]];
+    [ILSceneReplace replaceScene:[ILMenuScene node]];
 }
 
 - (void)pause

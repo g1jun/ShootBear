@@ -11,7 +11,9 @@
 #import "IntroLayer.h"
 #import "HelloWorldLayer.h"
 #import "ILMenuScene.h"
-
+#import "ILLoadManager.h"
+#import "ILSceneReplace.h"
+#import "ILHomeLayerControl.h"
 
 #pragma mark - IntroLayer
 
@@ -62,8 +64,17 @@
 -(void) onEnter
 {
 	[super onEnter];
-    [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[ILMenuScene node] ]];
-
-//	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] ]];
+    [ILSceneReplace replaceScene:[ILHomeLayerControl scene]];
+    [self loadResources];
 }
+
+- (void)loadResources
+{
+    ILLoadManager *load = [ILLoadManager new];
+    [load loadSoundResources];
+    [load release];
+    
+}
+
+
 @end

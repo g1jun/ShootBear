@@ -22,6 +22,7 @@
     ILPlayControl *_playControl;
     NSMutableDictionary *_cacheLayers;
     Level _currentLevelNO;
+    CCNode *_bk;
 }
 
 - (id)initWithLevel:(Level) level;
