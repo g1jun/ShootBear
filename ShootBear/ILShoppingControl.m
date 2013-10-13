@@ -10,6 +10,7 @@
 #import "CCBReader.h"
 #import "ILDataSimpleSave.h"
 #import "ILShoppingCard.h"
+#import "GRAlertView.h"
 
 @implementation ILShoppingControl
 
@@ -27,15 +28,24 @@
 - (void)onEnter
 {
     [super onEnter];
-    [self updateCoinLabel];
+    [self updateAll];
     
 }
 
-- (void)updateCoinLabel
+- (void)updateAll
 {
-    int coinAmout = [[ILDataSimpleSave sharedDataSave] intWithKey:kCoinAmount];
+    [self updateLabelWithKey:kCoinAmount label:_coinLabel];
+    [self updateLabelWithKey:kFireGun label:_fireGunLabel];
+    [self updateLabelWithKey:kElectriGun label:_electricGunLabel];
+    [self updateLabelWithKey:kCannon label:_cannonLabel];
+    [self updateLabelWithKey:kBulletQuantity label:_bulletLabel];
+}
+
+- (void)updateLabelWithKey:(NSString *)key label:(CCLabelTTF *)label
+{
+    int coinAmout = [[ILDataSimpleSave sharedDataSave] intWithKey:key];
     NSString *string = [NSString stringWithFormat:@"%i", coinAmout];
-    _coinLabel.string = string;
+    label.string = string;
 }
 
 - (void)pressedBackButton:(id)sender
@@ -54,12 +64,12 @@
     float temp = [[ILDataSimpleSave sharedDataSave] floatWithKey:kCoinAmount];
     temp += change;
     [[ILDataSimpleSave sharedDataSave] saveFloat:temp forKey:kCoinAmount];
-    [self updateCoinLabel];
+    [self updateAll];
 }
 
 - (void)consumeMoney:(float)money
 {
-    [self updateCoinLabel];
+    [self updateAll];
 
 }
 
@@ -71,11 +81,47 @@
         [self consumeMoney:[temp floatValue]];
         return;
     }
-    [self consumeCoins:[labelString floatValue]];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kShoppingUpdate object:nil];
+    _price = [labelString intValue];
+    int coinAmout = [[ILDataSimpleSave sharedDataSave] intWithKey:kCoinAmount];
+    if (_price > coinAmout) {
+        [self showInfoAlertView];
+    } else {
+        [self showAskAlertView];
+    }
+    
+}
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+{
+    if (buttonIndex == 1) {
+        [self consumeCoins:_price];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kShoppingUpdate object:nil];
 
+    }
+}
 
+- (void)showInfoAlertView
+{
+    GRAlertView *alert = [[GRAlertView alloc] initWithTitle:NSLocalizedString(@"ask", nil)
+                                       message:NSLocalizedString(@"coin_not_enough", nil)
+                                      delegate:self
+                             cancelButtonTitle:nil
+                             otherButtonTitles:NSLocalizedString(@"yes", nil), nil];
+    alert.style = GRAlertStyleWarning;
+    [alert show];
+    [alert release];
+}
+
+- (void)showAskAlertView
+{
+    GRAlertView *alert = [[GRAlertView alloc] initWithTitle:NSLocalizedString(@"ask", nil)
+                                                    message:NSLocalizedString(@"ask_info", nil)
+                                                   delegate:self
+                                          cancelButtonTitle:NSLocalizedString(@"cancel", nil)
+                                          otherButtonTitles:NSLocalizedString(@"yes", nil), nil];
+    alert.style = GRAlertStyleInfo;
+    [alert show];
+    [alert release];
 }
 
 

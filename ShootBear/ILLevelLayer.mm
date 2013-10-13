@@ -16,7 +16,8 @@
 #import "ILLightning.h"
 #import "CCNode+CCBRelativePositioning.h"
 #import "SimpleAudioEngine.h"
-
+#import "ILCoin.h"
+#import "ILDataSimpleSave.h"
 @implementation ILLevelLayer
 
 - (void)didLoadFromCCB
@@ -123,23 +124,45 @@
 
 - (float)levelCompletedDelay
 {
-    return 1;
+    return 2;
 }
 
-- (void)runCoinAddAnimation:(CGPoint )position coin:(int)number
+- (void)runCoinAddAnimation:(CGPoint )position file:(NSString *)fileName
 {
-    NSString *coinNumber = [NSString stringWithFormat:@"+%i", number];
-    position.y -= 30;
-    CCLabelTTF *label = [CCLabelTTF labelWithString:coinNumber fontName:@"Helvetica" fontSize:24 * [self resolutionScale]];
-    [label setColor:ccRED];
-    label.position = position;
-    [self addChild:label];
-    id animationSub1 = [CCFadeOut actionWithDuration:2];
-    id animationSub2 = [CCMoveBy actionWithDuration:2 position:ccp(0, 30)];
-    id animation1 = [CCSpawn actions:animationSub1, animationSub2, nil];
-    id animation2 = [CCCallFuncN actionWithTarget:self selector:@selector(removeLabelFromParent:)];
-    id seq = [CCSequence actions:animation1, animation2, nil];
-    [label runAction:seq];
+    BOOL isShowCoin = [[ILDataSimpleSave sharedDataSave] boolWithKey:@"show_coin_teach"];
+    if (!isShowCoin) {
+        return;
+    }
+    CCNode *coinItem = [CCBReader nodeGraphFromFile:fileName owner:self];
+    coinItem.position = position;
+    [self addChild:coinItem];
+}
+
+- (void)collectCoin:(id)sender
+{
+    [sender removeFromParent];
+    if ([sender isKindOfClass:[ILCoin class]]) {
+        ILCoin *coin = (ILCoin *)sender;
+        [self postMessage:coin.coinType];
+
+    }
+    [[SimpleAudioEngine sharedEngine] playEffect:@"pick_up_coin.wav"];
+
+
+}
+
+- (void)pressedCoinButton:(id)sender
+{
+    CGPoint temp = self.moneyBagPosition;
+    temp.y -= 33 / 2 * [self resolutionScale];
+    CCMoveTo *move = [CCMoveTo actionWithDuration:0.7 position:temp];
+    CCEaseExponentialOut *ease = [CCEaseExponentialOut actionWithAction:move];
+    CCScaleTo *scale = [CCScaleTo actionWithDuration:0.7 scale:0.5];
+    CCCallFuncN *call = [CCCallFuncN actionWithTarget:self selector:@selector(collectCoin:)];
+    CCSpawn *spawn = [CCSpawn actions:ease, scale,nil];
+    CCSequence *sequence = [CCSequence actions:spawn, call, nil];
+    CCNode *node = [[sender parent] parent];
+    [node runAction:sequence];
 }
 
 - (void)removeLabelFromParent:(id)sender
@@ -153,16 +176,16 @@
     CGPoint position = bear.explisionPosition;
     __block CCNode *headGood = [CCBReader nodeGraphFromFile:@"HeadGood.ccbi"];
     typeof(self) bself = self;
+    CGPoint foot = [bear footPosition];
     [headGood.userObject setCompletedAnimationCallbackBlock:^(id sender) {
         [headGood removeFromParent];
-        [bself runCoinAddAnimation:position coin:10];
+        [bself runCoinAddAnimation:foot file:@"CoinItem3.ccbi"];
         [headGood.userObject setCompletedAnimationCallbackBlock:nil];
     }];
     headGood.position = position;
     [self addChild:headGood];
     [self removeBear:bear];
-    [self postMessage:@"head"];
-    [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead_good.mp3"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead_good.wav"];
 
 }
 
@@ -174,10 +197,9 @@
 
 - (void)bodyCollision:(ILBear *)bear bullet:(ILBullet *)bullet
 {
-    CGPoint position = bear.explisionPosition;
+    CGPoint foot = [bear footPosition];
     [self removeBear:bear];
-    [self postMessage:@"body"];
-    [self runCoinAddAnimation:position coin:1];
+    [self runCoinAddAnimation:foot file:@"CoinItem1.ccbi"];
     [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead.mp3"];
 
 
@@ -192,12 +214,12 @@
         [legGood removeFromParent];
         [legGood.userObject setCompletedAnimationCallbackBlock:nil];
     }];
+    CGPoint foot = [bear footPosition];
     legGood.position = position;
     [self addChild:legGood];
     [self removeBear:bear];
-    [self postMessage:@"leg"];
-    [self runCoinAddAnimation:position coin:5];
-    [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead_good.mp3"];
+    [self runCoinAddAnimation:foot file:@"CoinItem2.ccbi"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"bear_dead_good.wav"];
     
 }
 

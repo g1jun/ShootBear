@@ -53,6 +53,7 @@
     NSString *_rightTowardAnimationName;
     float _previousX;
     CCNode *_explisionNode;
+    CCNode *_footNode;
      ILDefendNet* _thing;
     BOOL _thingUpdate;
 }
@@ -61,6 +62,7 @@
 @property (copy, nonatomic)NSString *levelState;
 
 - (CGPoint)explisionPosition;
+- (CGPoint)footPosition;
 
 - (void)dead;
 

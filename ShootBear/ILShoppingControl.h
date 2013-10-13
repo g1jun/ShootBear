@@ -8,9 +8,14 @@
 
 #import "CCNode.h"
 
-@interface ILShoppingControl : CCNode
+@interface ILShoppingControl : CCNode <UIAlertViewDelegate>
 {
     CCLabelTTF * _coinLabel;
+    CCLabelTTF *_fireGunLabel;
+    CCLabelTTF *_electricGunLabel;
+    CCLabelTTF *_cannonLabel;
+    CCLabelTTF *_bulletLabel;
+    int _price;
 }
 
 @end

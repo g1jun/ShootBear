@@ -13,7 +13,7 @@
 
 + (void)replaceScene:(CCScene *)scene
 {
-    id tsg = [CCTransitionCrossFade transitionWithDuration:TRANSITION_DURATION scene:scene];
+    id tsg = [CCTransitionFade transitionWithDuration:TRANSITION_DURATION scene:scene];
     [[CCDirector sharedDirector] replaceScene:tsg];
 
 }

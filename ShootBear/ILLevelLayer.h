@@ -34,6 +34,7 @@
 }
 
 @property (assign, nonatomic) id<ILLevelCompletedDelegate> delegate;
+@property (assign, nonatomic)CGPoint moneyBagPosition;
 
 - (void)addToFireParticleBatchNode:(CCParticleSystem *)particle;
 

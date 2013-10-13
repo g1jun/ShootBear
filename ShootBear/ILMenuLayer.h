@@ -7,11 +7,12 @@
 //
 
 #import "CCLayer.h"
+#import "ILMenuTheme.h"
 
 @interface ILMenuLayer : CCLayer
 
 
-@property (assign, nonatomic) CCNode *menuTheme;
+@property (assign, nonatomic)ILMenuTheme *menuTheme;
 @property (assign, nonatomic)CCNode *menuGroup;
 
 @property (assign, nonatomic)int groupIndex;

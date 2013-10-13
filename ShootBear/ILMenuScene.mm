@@ -23,11 +23,27 @@
 {
     self = [super init];
     if (self) {
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"group.plist"];
         [self configBackground];
         [self configMenu];
+        [self configHomeButton];
         self.currentPage = 0;
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"group.plist"];
+    [super dealloc];
+}
+
+- (void)configHomeButton
+{
+    CCNode *homeButton = [CCBReader nodeGraphFromFile:@"ButtonHome.ccbi" owner:self];
+    CGSize winSize = [CCDirector sharedDirector].winSize;
+    homeButton.position = ccp(winSize.width * 0.95, winSize.height * 0.075);
+    [self addChild:homeButton];
 }
 
 - (void)configBackground
@@ -42,7 +58,7 @@
     CGSize winSize = [CCDirector sharedDirector].winSize;
     NSMutableArray *layers = [NSMutableArray array];
     for (int i = 0; i < 3; i++) {
-        ILMenuLayer *layer = (ILMenuLayer *)[CCBReader nodeGraphFromFile:@"MenuLayer.ccbi" owner:self];
+        ILMenuLayer *layer = (ILMenuLayer *)[CCBReader nodeGraphFromFile:@"MenuLayer.ccbi"];
         NSString *groupFile = [NSString stringWithFormat:@"MenuGroup%i.ccbi", i + 1];
         layer.menuGroup = [CCBReader nodeGraphFromFile:groupFile owner:self];
         layer.position = ccp(winSize.width * i, 0);

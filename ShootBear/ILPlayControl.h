@@ -59,5 +59,7 @@
 
 - (void)coinIncrease:(float)amount;
 
+- (CGPoint)moneyPosition;
+
 
 @end

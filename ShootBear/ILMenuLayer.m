@@ -29,9 +29,13 @@
             [ch setGroupIndex:groupIndex];
         }
     }
+    NSString *fileName = [NSString stringWithFormat:@"group_%i.png", groupIndex];
+    [self.menuTheme setGroupImage:fileName];
+    NSString *stringName = [NSString stringWithFormat:@"group%i", groupIndex];
+    [self.menuTheme setGroupString:NSLocalizedString(stringName, nil)];
 }
 
-- (void)setMenuTheme:(CCNode *)menuTheme
+- (void)setMenuTheme:(ILMenuTheme *)menuTheme
 {
     menuTheme.position = _menuTheme.position;
     menuTheme.anchorPoint = _menuTheme.anchorPoint;

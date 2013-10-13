@@ -43,7 +43,7 @@
 
 - (NSDictionary *)musicEffect
 {
-    return @{kHandGunBullet:@"hand_gun_fire.mp3",
+    return @{kHandGunBullet:@"hand_gun_fire.wav",
       kFireGunBullet:@"fire_gun_fire.mp3",
       kElectriGunBullet:@"elctric_gun.mp3",
       kCannonBullet: @"cannon_fire.mp3"};

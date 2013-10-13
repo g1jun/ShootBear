@@ -43,6 +43,7 @@
         [self configSubLayers:level.page];
         [self loadLayer:level];
         [self loadControl];
+        _currentLevel.moneyBagPosition = _playControl.moneyPosition;
         
     }
     return self;
@@ -110,12 +111,21 @@
     [super dealloc];
 }
 
+
 - (void)levelFailed
 {
     [_playControl pause];
     [self loadLevelFinished:@"LevelFailedLayer.ccbi"];
     [[SimpleAudioEngine sharedEngine] playEffect:@"game_dead.mp3"];
 
+}
+
+- (void)openNextLevel:(Level)next
+{
+    [self savePassState:next grade:kPass];
+    if (next.page == 0 && next.levelNo == 3) {
+        [[ILDataSimpleSave sharedDataSave] saveBool:YES forKey:@"show_coin_teach"];
+    }
 }
 
 - (void)levelCompleted:(float)percent
@@ -125,7 +135,7 @@
         [[ILDataSimpleSave sharedDataSave] saveInt:1 forKey:@"current_page"];
     }
     LevelGrade grade = [self grade:percent];
-    [self savePassState:next grade:kPass];
+    [self openNextLevel:next];
     [self savePassState:_currentLevelNO grade:grade];
     
     [_playControl pause];
@@ -204,6 +214,7 @@
     [self removeTempLayer];
     [self loadLayer:_currentLevelNO];
     [self loadControl];
+    _currentLevel.moneyBagPosition = _playControl.moneyPosition;
     [self configSubLayers:_currentLevelNO.page];
 }
 
@@ -218,11 +229,17 @@
     [self removeTempLayer];
     [self loadLayer:_currentLevelNO];
     [self loadControl];
+    _currentLevel.moneyBagPosition = _playControl.moneyPosition;
 }
 
 - (void)pressedMoreButton:(id)sender
 {
     [ILSceneReplace replaceScene:[ILMenuScene node]];
+}
+
+- (void)pressedHelpButton:(id)sender
+{
+    
 }
 
 - (void)pause

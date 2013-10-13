@@ -19,7 +19,7 @@
 
 "level0-2:hint" = "子弹撞到边缘，会弹回";
 
-"level0-3:hint" = "收集更多金币";
+"level0-3:hint" = "点击金币，多多收集";
 
 "level0-5:next" = "火枪瞬间点燃木头";
 
@@ -30,6 +30,27 @@
 
 "level0-8:hint" = "滑动,调整发射距离";
 
+
+
+//Menu Theme Group Label
+
+"group0" = "求学之旅";
+"group1" = "时空开展";
+"group2" = "即将开启";
+
+
+//shopping
+
+"coin_not_enough" = "金币不够";
+"ask" = "提示";
+"ask_info" = "确定购买此项吗？";
+
+"yes" = "确认";
+"cancel" = "取消";
+
+// others
+
+"head_dead" = "爆头:";
 
 
 

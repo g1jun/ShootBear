@@ -52,6 +52,7 @@
 
 - (void)messageReceive:(NSNotification *)notification
 {
+    [_levelControlLayer.coinNode.userObject runAnimationsForSequenceNamed:@"coin"];
     NSDictionary *dic = notification.userInfo;
     NSString *message = dic[@"bear"];
     if ([message isEqualToString:@"head"]) {
@@ -131,7 +132,8 @@
 
 - (BOOL)isHideCoinLabel
 {
-    return _level.page == 0 && _level.levelNo < 3;
+    BOOL hasShowCoinTeach = [[ILDataSimpleSave sharedDataSave] boolWithKey:@"show_coin_teach"];
+    return _level.page == 0 && _level.levelNo < 3 && !hasShowCoinTeach;
 }
 
 - (void)configSwitch
@@ -244,6 +246,11 @@
     return YES;
 }
 
+- (CGPoint)moneyPosition
+{
+    return [_levelControlLayer.coinNode.parent convertToWorldSpace:_levelControlLayer.coinNode.position];
+}
+
 - (void)failed
 {
     [self.failedDelegate levelFailed];
@@ -270,7 +277,7 @@
     }
     if (_levelControlLayer.bulletNumberShow.bulletNumber == 0 && !_hasRunFailedDelegate) {
         [_levelControlLayer.shrinkPanel hideMyself];
-        _passTime = 5;
+        _passTime = 6.5;
         [_levelControlLayer.bulletNumberShow reduceBullet];
     }
     _usedGunType = nil;

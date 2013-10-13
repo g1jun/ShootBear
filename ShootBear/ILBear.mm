@@ -182,6 +182,10 @@
     }
 }
 
+- (CGPoint)footPosition
+{
+    return [_footNode.parent convertToWorldSpace:_footNode.position];
+}
 
 - (void)dealloc
 {
