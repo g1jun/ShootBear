@@ -8,13 +8,26 @@
 
 #import "ILLoadManager.h"
 #import "SimpleAudioEngine.h"
+#import "ILDataSimpleSave.h"
 
 @implementation ILLoadManager
 
 - (void)loadSoundResources
 {
+    [self firstLoad];
     [self loadBackgroundSound];
     [self loadEffectSound];
+}
+
+- (void)firstLoad
+{
+    BOOL hasGive = [[ILDataSimpleSave sharedDataSave] boolWithKey:@"has_give_guns"];
+    if (!hasGive) {
+        [[ILDataSimpleSave sharedDataSave] saveInt:3 forKey:kFireGun];
+        [[ILDataSimpleSave sharedDataSave] saveInt:3 forKey:kElectriGun];
+        [[ILDataSimpleSave sharedDataSave] saveInt:3 forKey:kCannon];
+        [[ILDataSimpleSave sharedDataSave] saveBool:YES forKey:@"has_give_guns"];
+    }
 }
 
 - (void)loadBackgroundSound

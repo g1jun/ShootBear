@@ -9,7 +9,6 @@
 #import "ILBear.h"
 #import "CCBAnimationManager.h"
 #import "ILBox2dTools.h"
-#import "CCBAnimationManager+RmoveDeadNode.h"
 #import "ILBox2dFactory.h"
 #import "ILTools.h"
 
@@ -156,7 +155,7 @@
     }
     _thing = (ILDefendNet *)[node retain];
     [node removeFromParent];
-    [node.userObject removeDeadNode:node];
+    [node.userObject removeUnusedNode:node];
     return node;
 }
 

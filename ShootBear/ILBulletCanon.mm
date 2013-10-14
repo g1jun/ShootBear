@@ -11,7 +11,6 @@
 #import "ILQueryTool.h"
 #import "ILBox2dConfig.h"
 #import "CCBAnimationManager.h"
-#import "CCBAnimationManager+RmoveDeadNode.m"
 #import "ILBox2dFactory.h"
 #import "CCNode+CCBRelativePositioning.h"
 #import "ILBear.h"
@@ -129,7 +128,7 @@ public:
 {
     [self explosion];
     _flash.visible = NO;
-    [self.userObject removeDeadNode:_flash];
+    [self.userObject removeUnusedNode:_flash];
     [_flash removeFromParent], _flash = nil;
     CCNode *explosion = [CCBReader nodeGraphFromFile:@"CannonExplosion.ccbi"];
     explosion.position = self.entity.position;

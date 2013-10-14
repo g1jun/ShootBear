@@ -9,7 +9,6 @@
 #import "ILShooterArm.h"
 #import "CCControlExtension.h"
 #import "CCBReader.h"
-#import "CCBAnimationManager+RmoveDeadNode.h"
 #import "CCNode+CCBRelativePositioning.h"
 
 #define ANGLE_STEP 0.0001
@@ -180,7 +179,7 @@
 {
     ILGun *newGun = (ILGun *)[CCBReader nodeGraphFromFile:type];
     CCBAnimationManager *manager = self.gun.userObject;
-    [manager removeDeadNode:self.gun];
+    [manager removeUnusedNode:self.gun];
     newGun.position = self.gun.position;
     [self removeChild:self.gun];
     self.gun = newGun;

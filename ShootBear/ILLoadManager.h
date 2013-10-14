@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+
+@protocol ILLoadManagerDelegate <NSObject>
+
+- (void)loadPercent:(float)percent;
+
+- (void)startLoad;
+
+- (void)finishLoad;
+
+@end
+
 @interface ILLoadManager : NSObject
 
 - (void)loadSoundResources;

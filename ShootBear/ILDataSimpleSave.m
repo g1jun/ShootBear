@@ -15,7 +15,7 @@ static ILDataSimpleSave *_dataSimpleSave = nil;
 
 - (id)init
 {
-    [super init];
+    self = [super init];
     if (self) {
         _dataSave = [[NSUserDefaults standardUserDefaults] retain];
     }

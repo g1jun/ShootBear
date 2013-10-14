@@ -8,7 +8,6 @@
 
 #import "ILLevelLayer.h"
 #import "ILBox2dFactory.h"
-#import "CCBAnimationManager+RmoveDeadNode.h"
 #import "CCBAnimationManager.h"
 #import "CCBReader.h"
 #import "ILOptimalPerformance.h"
@@ -108,7 +107,7 @@
     [explisionNode.userObject setCompletedAnimationCallbackBlock:^(id sender) {
         [explisionNode removeFromParent];
     }];
-    [self.userObject removeDeadNode:bear];
+    [self.userObject removeUnusedNode:bear];
     [bear removeFromParentAndCleanup:YES];
     if (_bears.count == 0 && bear != nil) {
         [self performSelector:@selector(completedLevel) withObject:nil afterDelay:[self levelCompletedDelay]];

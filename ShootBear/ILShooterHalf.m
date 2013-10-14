@@ -9,7 +9,6 @@
 #import "ILShooterHalf.h"
 #import "ILShooter.h"
 #import "CCBReader.h"
-#import "CCBAnimationManager+RmoveDeadNode.h"
 #import "ILStruct.h"
 
 @implementation ILShooterHalf
@@ -58,7 +57,7 @@
 - (void)changeArm:(ILShooterArm *)cannonArm
 {
     CCBAnimationManager *manager = self.userObject;
-    [manager removeDeadNode:self.arm];
+    [manager removeUnusedNode:self.arm];
     cannonArm.position = self.arm.position;
     [cannonArm setAllRotation:[self totalRotation]];
     [self removeChild:self.arm cleanup:YES];

@@ -73,28 +73,30 @@
 
 }
 
-- (void)dealWithPrice:(NSString *)labelString
+- (void)dealWithShopping:(ILShoppingCard *)card
 {
+    NSString *labelString = card.priceLabel.string;
     if ([labelString hasPrefix:@"$"]) {
         NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"$ "];
         NSString *temp = [labelString stringByTrimmingCharactersInSet:set];
         [self consumeMoney:[temp floatValue]];
         return;
     }
-    _price = [labelString intValue];
+    int price = [labelString intValue];
     int coinAmout = [[ILDataSimpleSave sharedDataSave] intWithKey:kCoinAmount];
-    if (_price > coinAmout) {
+    if (price > coinAmout) {
         [self showInfoAlertView];
     } else {
         [self showAskAlertView];
     }
-    
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 {
     if (buttonIndex == 1) {
-        [self consumeCoins:_price];
+        [_shoppingCard buy];
+        int price = [_shoppingCard.priceLabel.string intValue];
+        [self consumeCoins:price];
         [[NSNotificationCenter defaultCenter] postNotificationName:kShoppingUpdate object:nil];
 
     }
@@ -128,8 +130,7 @@
 - (void)pressedBuyButton:(id)sender
 {
     ILShoppingCard *card = (ILShoppingCard *)[[sender parent] parent];
-    [card buy];
-    [self dealWithPrice:card.priceLabel.string];
+    [self dealWithShopping:card];
 }
 
 @end
