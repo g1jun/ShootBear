@@ -20,7 +20,13 @@
 @end
 
 @interface ILLoadManager : NSObject
+{
+    int _totoalResources;
+    int _currentFinished;
+}
 
-- (void)loadSoundResources;
+- (void)load;
+
+@property (assign, nonatomic)id<ILLoadManagerDelegate> delegate;
 
 @end

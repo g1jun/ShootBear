@@ -9,7 +9,6 @@
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "HelloWorldLayer.h"
 #import "ILMenuScene.h"
 #import "ILLoadManager.h"
 #import "ILSceneReplace.h"
@@ -55,7 +54,7 @@
 		background.position = ccp(size.width/2, size.height/2);
 		
 		// add the label as a child to this Layer
-		[self addChild: background];
+//		[self addChild: background];
 	}
 	
 	return self;
@@ -65,16 +64,8 @@
 {
 	[super onEnter];
     [ILSceneReplace replaceScene:[ILHomeLayerControl scene]];
-    [self loadResources];
 }
 
-- (void)loadResources
-{
-    ILLoadManager *load = [ILLoadManager new];
-    [load loadSoundResources];
-    [load release];
-    
-}
 
 
 @end

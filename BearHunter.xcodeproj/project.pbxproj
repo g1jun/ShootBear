@@ -51,6 +51,7 @@
 		040D9FD117C9C1C30053BBCA /* ILWood.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040D9FD017C9C1C30053BBCA /* ILWood.mm */; };
 		040DA00117C9F2180053BBCA /* ILQueryTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040DA00017C9F2180053BBCA /* ILQueryTool.mm */; };
 		040EEA581806ABC5006D875E /* ILSoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040EEA571806ABC5006D875E /* ILSoundButton.m */; };
+		040FCA36180D1A7A0057179F /* ILHomeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 040FCA35180D1A7A0057179F /* ILHomeLayer.m */; };
 		0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB217AE606D0023BD39 /* ILPlayScene.mm */; };
 		0411DABA17AE60E50023BD39 /* ILTMXLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DAB917AE60E50023BD39 /* ILTMXLayer.mm */; };
 		0411DABD17AE61A40023BD39 /* ILShootBear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0411DABC17AE61A40023BD39 /* ILShootBear.mm */; };
@@ -181,7 +182,6 @@
 		04886C0517ACB1F6005D8DB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886C0417ACB1F6005D8DB9 /* Foundation.framework */; };
 		04886C0717ACB1F6005D8DB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886C0617ACB1F6005D8DB9 /* CoreGraphics.framework */; };
 		04886C0917ACB1F6005D8DB9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886C0817ACB1F6005D8DB9 /* CoreText.framework */; };
-		04886C0B17ACB1F6005D8DB9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04886C0A17ACB1F6005D8DB9 /* GameKit.framework */; };
 		04886C2917ACB1F7005D8DB9 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 04886C2817ACB1F7005D8DB9 /* CCAction.m */; };
 		04886C2C17ACB1F7005D8DB9 /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 04886C2B17ACB1F7005D8DB9 /* CCActionCamera.m */; };
 		04886C2F17ACB1F7005D8DB9 /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 04886C2E17ACB1F7005D8DB9 /* CCActionCatmullRom.m */; };
@@ -338,7 +338,6 @@
 		04886E2917ACB20D005D8DB9 /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04886E2817ACB20D005D8DB9 /* b2Rope.cpp */; };
 		04886E2F17ACB20D005D8DB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04886E2E17ACB20D005D8DB9 /* main.m */; };
 		04886E3217ACB20D005D8DB9 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3117ACB20D005D8DB9 /* AppDelegate.mm */; };
-		04886E3517ACB20D005D8DB9 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3417ACB20D005D8DB9 /* HelloWorldLayer.mm */; };
 		04886E3817ACB20E005D8DB9 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3717ACB20E005D8DB9 /* IntroLayer.mm */; };
 		04886E3B17ACB20E005D8DB9 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */; };
 		049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */; };
@@ -613,6 +612,8 @@
 		040DA00017C9F2180053BBCA /* ILQueryTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILQueryTool.mm; sourceTree = "<group>"; };
 		040EEA561806ABC5006D875E /* ILSoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSoundButton.h; sourceTree = "<group>"; };
 		040EEA571806ABC5006D875E /* ILSoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSoundButton.m; sourceTree = "<group>"; };
+		040FCA34180D1A7A0057179F /* ILHomeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHomeLayer.h; sourceTree = "<group>"; };
+		040FCA35180D1A7A0057179F /* ILHomeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHomeLayer.m; sourceTree = "<group>"; };
 		0411DAB117AE606D0023BD39 /* ILPlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILPlayScene.h; path = PlayScene/ILPlayScene.h; sourceTree = "<group>"; };
 		0411DAB217AE606D0023BD39 /* ILPlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ILPlayScene.mm; path = PlayScene/ILPlayScene.mm; sourceTree = "<group>"; };
 		0411DAB817AE60E50023BD39 /* ILTMXLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTMXLayer.h; sourceTree = "<group>"; };
@@ -771,7 +772,6 @@
 		04886C0417ACB1F6005D8DB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04886C0617ACB1F6005D8DB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		04886C0817ACB1F6005D8DB9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		04886C0A17ACB1F6005D8DB9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		04886C2217ACB1F7005D8DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		04886C2717ACB1F7005D8DB9 /* CCAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCAction.h; path = libs/cocos2d/CCAction.h; sourceTree = "<group>"; };
 		04886C2817ACB1F7005D8DB9 /* CCAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CCAction.m; path = libs/cocos2d/CCAction.m; sourceTree = "<group>"; };
@@ -1117,8 +1117,6 @@
 		04886E2E17ACB20D005D8DB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04886E3017ACB20D005D8DB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04886E3117ACB20D005D8DB9 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		04886E3317ACB20D005D8DB9 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		04886E3417ACB20D005D8DB9 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		04886E3617ACB20E005D8DB9 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		04886E3717ACB20E005D8DB9 /* IntroLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
 		04886E3917ACB20E005D8DB9 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
@@ -1426,7 +1424,6 @@
 				04886C0517ACB1F6005D8DB9 /* Foundation.framework in Frameworks */,
 				04886C0717ACB1F6005D8DB9 /* CoreGraphics.framework in Frameworks */,
 				04886C0917ACB1F6005D8DB9 /* CoreText.framework in Frameworks */,
-				04886C0B17ACB1F6005D8DB9 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1645,8 +1642,6 @@
 			children = (
 				04886E3017ACB20D005D8DB9 /* AppDelegate.h */,
 				04886E3117ACB20D005D8DB9 /* AppDelegate.mm */,
-				04886E3317ACB20D005D8DB9 /* HelloWorldLayer.h */,
-				04886E3417ACB20D005D8DB9 /* HelloWorldLayer.mm */,
 				04886E3617ACB20E005D8DB9 /* IntroLayer.h */,
 				04886E3717ACB20E005D8DB9 /* IntroLayer.mm */,
 				04886E3917ACB20E005D8DB9 /* GLES-Render.h */,
@@ -1685,6 +1680,8 @@
 				049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */,
 				0448E9541808DE420092D9E7 /* ILMenuTheme.h */,
 				0448E9551808DE420092D9E7 /* ILMenuTheme.m */,
+				040FCA34180D1A7A0057179F /* ILHomeLayer.h */,
+				040FCA35180D1A7A0057179F /* ILHomeLayer.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -1791,7 +1788,6 @@
 				04886C0417ACB1F6005D8DB9 /* Foundation.framework */,
 				04886C0617ACB1F6005D8DB9 /* CoreGraphics.framework */,
 				04886C0817ACB1F6005D8DB9 /* CoreText.framework */,
-				04886C0A17ACB1F6005D8DB9 /* GameKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2853,6 +2849,16 @@
 				CLASSPREFIX = IL;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04886BF417ACB1F5005D8DB9 = {
+						DevelopmentTeam = R378MY6449;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 04886BF017ACB1F5005D8DB9 /* Build configuration list for PBXProject "BearHunter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2861,6 +2867,7 @@
 			knownRegions = (
 				en,
 				"zh-Hans",
+				ja,
 			);
 			mainGroup = 04886BEC17ACB1F5005D8DB9;
 			productRefGroup = 04886BF617ACB1F6005D8DB9 /* Products */;
@@ -3205,6 +3212,7 @@
 				04886C8E17ACB1FB005D8DB9 /* CCMenu.m in Sources */,
 				04886C9117ACB1FB005D8DB9 /* CCMenuItem.m in Sources */,
 				04886C9417ACB1FB005D8DB9 /* CCMotionStreak.m in Sources */,
+				040FCA36180D1A7A0057179F /* ILHomeLayer.m in Sources */,
 				04886C9717ACB1FB005D8DB9 /* CCNode+Debug.m in Sources */,
 				04886C9A17ACB1FB005D8DB9 /* CCNode.m in Sources */,
 				04886C9D17ACB1FB005D8DB9 /* CCParallaxNode.m in Sources */,
@@ -3336,7 +3344,6 @@
 				04886E2917ACB20D005D8DB9 /* b2Rope.cpp in Sources */,
 				04886E2F17ACB20D005D8DB9 /* main.m in Sources */,
 				04886E3217ACB20D005D8DB9 /* AppDelegate.mm in Sources */,
-				04886E3517ACB20D005D8DB9 /* HelloWorldLayer.mm in Sources */,
 				04886E3817ACB20E005D8DB9 /* IntroLayer.mm in Sources */,
 				04886E3B17ACB20E005D8DB9 /* GLES-Render.mm in Sources */,
 				0411DAB317AE606D0023BD39 /* ILPlayScene.mm in Sources */,
@@ -3506,6 +3513,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3524,6 +3533,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = BearHunter;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"ShootBear/libs\"";
 				WRAPPER_EXTENSION = app;
@@ -3534,6 +3544,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ShootBear/Prefix.pch;
@@ -3551,6 +3563,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = BearHunter;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"ShootBear/libs\"";
 				VALIDATE_PRODUCT = YES;

@@ -12,4 +12,7 @@
 
 + (void)replaceScene:(CCScene *)scene;
 
+
++ (void)runScene:(CCScene *)scene;
+
 @end

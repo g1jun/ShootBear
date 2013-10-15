@@ -18,4 +18,10 @@
 
 }
 
++ (void)runScene:(CCScene *)scene
+{
+    id tsg = [CCTransitionFade transitionWithDuration:TRANSITION_DURATION scene:scene];
+    [[CCDirector sharedDirector] runWithScene:tsg];
+}
+
 @end

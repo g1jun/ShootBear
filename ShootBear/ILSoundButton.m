@@ -15,6 +15,7 @@
 - (void)didLoadFromCCB
 {
     BOOL isOff = [[ILDataSimpleSave sharedDataSave] boolWithKey:@"music"];
+    [SimpleAudioEngine sharedEngine];
     [[SimpleAudioEngine sharedEngine] setMute:isOff];
     [self updateForbiddenSprite];
 }

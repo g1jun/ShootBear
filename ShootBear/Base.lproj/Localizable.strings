@@ -1,10 +1,64 @@
-/* 
-  Localizable.strings
-  ShootBear
+/*
+ Localizable.strings
+ ShootBear
+ 
+ Created by mac on 13-9-28.
+ Copyright (c) 2013年 mac. All rights reserved.
+ */
 
-  Created by mac on 13-9-28.
-  Copyright (c) 2013年 mac. All rights reserved.
-*/
+
+"level0-0:hint" = "Click to Fire";
+"level0-0:bear_dead_one" = "Good！";
+"level0-0:next_hint" = "Turn it up";
+"level0-0:bear_all_dead" = "You are really great！";
 
 
-"level0-0:hint" = "";
+"level0-1:hint" = "Drag the gun line through here";
+"level0-1:next_hint" = "Try again";
+"level0-1:bear_all_dead" = "the legendary god sought";
+
+"level0-2:hint" = "Bullets hit the edge, will bounce back";
+
+"level0-3:hint" = "Click to Collect coins";
+
+"level0-5:next" = "Musket may fire wood";
+
+
+"level:switch" = "Click to toggle";
+
+"level0-7:hint" = "Metal conductive";
+
+"level0-8:hint" = "Slide to adjust the transmission distance";
+
+
+
+//Menu Theme Group Label
+
+"group0" = "Attend school";
+"group1" = "Grow up";
+"group2" = "Soon to open";
+
+
+//shopping
+
+"coin_not_enough" = "Coins are not enough";
+"ask" = "Info";
+"ask_info" = "Are you sure to buy this item?";
+
+"yes" = "Yes";
+"cancel" = "Cancel";
+
+// others
+
+"head_dead" = "Headshot:";
+
+//home
+
+"home_load" = "load:";
+
+"bullet_use_up" = "Run out of bullets";
+
+
+
+
+

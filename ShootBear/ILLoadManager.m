@@ -12,11 +12,20 @@
 
 @implementation ILLoadManager
 
-- (void)loadSoundResources
+
+- (id)init
 {
-    [self firstLoad];
-    [self loadBackgroundSound];
-    [self loadEffectSound];
+    self = [super init];
+    if (self) {
+        _totoalResources = [self imageResources].count + [self soundResources].count;
+
+    }
+    return self;
+}
+
+- (void)load
+{
+    [self performSelectorInBackground:@selector(asyncLoad) withObject:nil]; 
 }
 
 - (void)firstLoad
@@ -30,16 +39,64 @@
     }
 }
 
+- (void)asyncLoad
+{
+    [self firstLoad];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.delegate startLoad];
+    });
+    [self loadBackgroundSound];
+    [self loadEffectSound];
+    [self loadImages];
+}
+
+- (void)loadImages
+{
+    for (NSString *name in [self imageResources]) {
+        [[CCTextureCache sharedTextureCache] addImageAsync:name withBlock:^(CCTexture2D *tex) {
+            [self increasePercent];
+        }];
+    }
+    
+}
+
+- (void)increasePercent
+{
+    @synchronized(self) {
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+            _currentFinished++;
+            [self.delegate loadPercent:(float)_currentFinished / _totoalResources];
+            if (_currentFinished == _totoalResources) {
+                [self.delegate finishLoad];
+            }
+    });
+    }
+    
+}
+
+
+
 - (void)loadBackgroundSound
 {
     
 }
 
+- (NSArray *)imageResources
+{
+    return @[@"bear.png", @"element.png", @"other.png", @"clound.png"];
+}
+
+- (NSArray *)soundResources
+{
+    return @[@"bear_dead.mp3", @"bear_dead_good.wav", @"bomb.wav", @"bullet_use_up.mp3", @"cannon_fire.mp3", @"elctric_gun.mp3", @"", @"fire_gun_fire.mp3", @"game_dead.mp3", @"hand_gun_fire.wav", @"metal_collision.mp3", @"pick_up_coin"];
+}
+
 - (void)loadEffectSound
 {
-    NSArray *effectNames = @[@"bear_dead.mp3", @"bear_dead_good.wav", @"bomb.wav", @"bullet_use_up.mp3", @"cannon_fire.mp3", @"elctric_gun.mp3", @"", @"fire_gun_fire.mp3", @"game_dead.mp3", @"hand_gun_fire.wav", @"metal_collision.mp3", @"pick_up_coin"];
-    for (NSString *sound in effectNames) {
+    for (NSString *sound in [self soundResources]) {
         [[SimpleAudioEngine sharedEngine] preloadEffect:sound];
+        [self increasePercent];
     }
 }
 

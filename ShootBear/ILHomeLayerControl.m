@@ -11,6 +11,7 @@
 #import "ILMenuScene.h"
 #import "ILSceneReplace.h"
 #import "ILShoppingControl.h"
+#import "ILMenuScene.h"
 
 @implementation ILHomeLayerControl
 
@@ -20,6 +21,7 @@
     CCScene *scene = [CCScene node];
     ILHomeLayerControl *home = [ILHomeLayerControl node];
     [scene addChild:home];
+//    ILMenuScene *scene = [ILMenuScene node];
     return scene;
 }
 
