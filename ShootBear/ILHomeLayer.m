@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 mac. All rights reserved.
 //
 
+#import "SimpleAudioEngine.h"
 #import "ILHomeLayer.h"
 
 @implementation ILHomeLayer
@@ -47,8 +48,16 @@
 
 - (void)finishLoad
 {
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"menu_sound.mp3"];
     _label.visible = NO;
     _control.visible = YES;
+}
+
+
+- (void)onExit
+{
+    [super onExit];
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
 }
 
 - (void)loadPercent:(float)percent

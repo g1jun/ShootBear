@@ -25,6 +25,9 @@
 {
     if ([node isKindOfClass:[ILSpriteBase class]]) {
         ILSpriteBase *base = (ILSpriteBase *)node;
+        if (base.b2Body == NULL) {
+            return;
+        }
         b2Fixture *fixture = base.b2Body->GetFixtureList();
         if (fixture == NULL) {
             return;

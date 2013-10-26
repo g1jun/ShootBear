@@ -6,7 +6,6 @@
   Copyright (c) 2013年 mac. All rights reserved.
 */
 
-
 "level0-0:hint" = "点击开枪";
 "level0-0:bear_dead_one" = "打的非常好！";
 "level0-0:next_hint" = "轮到它了";
@@ -19,7 +18,7 @@
 
 "level0-2:hint" = "子弹撞到边缘，会弹回";
 
-"level0-3:hint" = "点击金币，多多收集";
+"level0-3:hint" = "点击金币,收集";
 
 "level0-5:next" = "火枪瞬间点燃木头";
 

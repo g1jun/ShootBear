@@ -36,6 +36,7 @@
         [[ILDataSimpleSave sharedDataSave] saveInt:3 forKey:kElectriGun];
         [[ILDataSimpleSave sharedDataSave] saveInt:3 forKey:kCannon];
         [[ILDataSimpleSave sharedDataSave] saveBool:YES forKey:@"has_give_guns"];
+        [[ILDataSimpleSave sharedDataSave] saveFloat:1.0 forKey:@"version"];
     }
 }
 
@@ -79,12 +80,12 @@
 
 - (void)loadBackgroundSound
 {
-    
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"menu_sound.mp3"];
 }
 
 - (NSArray *)imageResources
 {
-    return @[@"bear.png", @"element.png", @"other.png", @"clound.png"];
+    return @[@"bear.png", @"element.png", @"others.png", @"clound.png"];
 }
 
 - (NSArray *)soundResources

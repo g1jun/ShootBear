@@ -11,6 +11,10 @@
 
 @implementation ILShoppingCard
 
+- (void)didLoadFromCCB
+{
+    
+}
 
 - (void)buy
 {

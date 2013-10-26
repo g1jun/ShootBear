@@ -73,9 +73,9 @@
 
 }
 
-- (void)dealWithShopping:(ILShoppingCard *)card
+- (void)dealWithShopping
 {
-    NSString *labelString = card.priceLabel.string;
+    NSString *labelString = _shoppingCard.priceLabel.string;
     if ([labelString hasPrefix:@"$"]) {
         NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"$ "];
         NSString *temp = [labelString stringByTrimmingCharactersInSet:set];
@@ -100,6 +100,7 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:kShoppingUpdate object:nil];
 
     }
+    _shoppingCard = nil;
 }
 
 - (void)showInfoAlertView
@@ -129,8 +130,8 @@
 
 - (void)pressedBuyButton:(id)sender
 {
-    ILShoppingCard *card = (ILShoppingCard *)[[sender parent] parent];
-    [self dealWithShopping:card];
+    _shoppingCard = (ILShoppingCard *)[[sender parent] parent];
+    [self dealWithShopping];
 }
 
 @end

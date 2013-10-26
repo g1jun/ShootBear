@@ -42,8 +42,10 @@
 
 - (void)dealloc
 {
-    [ILBox2dFactory sharedFactory].world->DestroyBody(self.b2Body);
-    _b2Body = NULL;
+    if (self.b2Body != NULL) {
+        [ILBox2dFactory sharedFactory].world->DestroyBody(self.b2Body);
+        _b2Body = NULL;
+    }
     [super dealloc];
 }
 
@@ -54,6 +56,9 @@
 
 - (void)configBody
 {
+    if ([ILBox2dFactory sharedFactory].world == NULL) {
+        return;
+    }
     b2BodyDef bodyDef;
     bodyDef.type = _isStatic ? b2_staticBody : b2_dynamicBody;
     b2Body *body = [ILBox2dFactory sharedFactory].world->CreateBody(&bodyDef);

@@ -6,27 +6,26 @@
  Copyright (c) 2013年 mac. All rights reserved.
  */
 
-
-"level0-0:hint" = "Click to Fire";
+"level0-0:hint" = "Tap to Fire";
 "level0-0:bear_dead_one" = "Good！";
-"level0-0:next_hint" = "Turn it up";
+"level0-0:next_hint" = "Next";
 "level0-0:bear_all_dead" = "You are really great！";
 
 
 "level0-1:hint" = "Drag the gun line through here";
 "level0-1:next_hint" = "Try again";
-"level0-1:bear_all_dead" = "the legendary god sought";
+"level0-1:bear_all_dead" = "Sharpshooter！";
 
 "level0-2:hint" = "Bullets hit the edge, will bounce back";
 
-"level0-3:hint" = "Click to Collect coins";
+"level0-3:hint" = "Tap to Collect coins";
 
 "level0-5:next" = "Musket may fire wood";
 
 
-"level:switch" = "Click to toggle";
+"level:switch" = "Tap to fast switch";
 
-"level0-7:hint" = "Metal conductive";
+"level0-7:hint" = "Metal conducts electricity";
 
 "level0-8:hint" = "Slide to adjust the transmission distance";
 
