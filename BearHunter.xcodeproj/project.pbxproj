@@ -149,8 +149,13 @@
 		0448E9561808DE420092D9E7 /* ILMenuTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448E9551808DE420092D9E7 /* ILMenuTheme.m */; };
 		044924FE181378F100130B52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04492500181378F100130B52 /* InfoPlist.strings */; };
 		045BEB2617E7157E00E2ED0B /* ILCannonIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BEB2517E7157E00E2ED0B /* ILCannonIndicator.m */; };
+		046096EC185A9FE300203B74 /* libFlurry_4.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046096EB185A9FE300203B74 /* libFlurry_4.3.0.a */; };
+		046096EE185AA03600203B74 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046096ED185AA03600203B74 /* SystemConfiguration.framework */; };
+		0461B369186451C200B1AEF6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0461B368186451C200B1AEF6 /* GameKit.framework */; };
+		0461B36B186451D200B1AEF6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0461B36A186451D200B1AEF6 /* StoreKit.framework */; };
 		04670E1017FE62120012BB8C /* ILLevelCompletedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04670E0F17FE62120012BB8C /* ILLevelCompletedLayer.m */; };
 		04670E1417FEE2B40012BB8C /* ILStone.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04670E1317FEE2B40012BB8C /* ILStone.mm */; };
+		04678E15186FA5D40097BE4B /* ILIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04678E14186FA5D40097BE4B /* ILIAPManager.m */; };
 		046C49C217C8C21D000727A0 /* NSDictionary+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C49C117C8C21D000727A0 /* NSDictionary+DeepCopy.m */; };
 		04797C1517DB12CB003E1C20 /* bear.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0017DB12CB003E1C20 /* bear.plist */; };
 		04797C1617DB12CB003E1C20 /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 04797C0117DB12CB003E1C20 /* bear.png */; };
@@ -341,6 +346,7 @@
 		04886E3217ACB20D005D8DB9 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3117ACB20D005D8DB9 /* AppDelegate.mm */; };
 		04886E3817ACB20E005D8DB9 /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3717ACB20E005D8DB9 /* IntroLayer.mm */; };
 		04886E3B17ACB20E005D8DB9 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */; };
+		048978AE185AA0640032AA6A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048978AD185AA0640032AA6A /* AdSupport.framework */; };
 		049B5C8017D5D3CD00F67159 /* ILMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */; };
 		049B83FA17E6D60F00A61446 /* ILBulletEntityBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049B83F917E6D60F00A61446 /* ILBulletEntityBase.mm */; };
 		049EF6FF17B8ABBB00A9D1B7 /* ILTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EF6FE17B8ABBB00A9D1B7 /* ILTools.m */; };
@@ -513,6 +519,7 @@
 		04F40E8C17DF72CF00B493C9 /* StaticWoodUnit2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E4F17DF72CF00B493C9 /* StaticWoodUnit2.ccbi */; };
 		04F40E8E17DF72CF00B493C9 /* StaticWoodUnit3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E5017DF72CF00B493C9 /* StaticWoodUnit3.ccbi */; };
 		04F40E9017DF72CF00B493C9 /* WoodParticle.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 04F40E5117DF72CF00B493C9 /* WoodParticle.ccbi */; };
+		04F586E1185F3D9F0027ACE2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F586E0185F3D9F0027ACE2 /* Security.framework */; };
 		04FB362417E836B400FD4A13 /* ILBulletCanon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04FB362317E836B400FD4A13 /* ILBulletCanon.mm */; };
 		04FB362817E87CC500FD4A13 /* ILBulletBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04FB362717E87CC400FD4A13 /* ILBulletBase.mm */; };
 		04FB368D17E88E4500FD4A13 /* ILBulletCannonEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04FB368C17E88E4500FD4A13 /* ILBulletCannonEntity.mm */; };
@@ -733,15 +740,22 @@
 		0448E9541808DE420092D9E7 /* ILMenuTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMenuTheme.h; sourceTree = "<group>"; };
 		0448E9551808DE420092D9E7 /* ILMenuTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMenuTheme.m; sourceTree = "<group>"; };
 		044924F51813775D00130B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		044924FF181378F100130B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		04492501181378FE00130B52 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		04492502181378FF00130B52 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		044924FF181378F100130B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04492501181378FE00130B52 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		04492502181378FF00130B52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		045BEB2417E7157E00E2ED0B /* ILCannonIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILCannonIndicator.h; sourceTree = "<group>"; };
 		045BEB2517E7157E00E2ED0B /* ILCannonIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILCannonIndicator.m; sourceTree = "<group>"; };
+		046096EA185A9FE300203B74 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		046096EB185A9FE300203B74 /* libFlurry_4.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.0.a; sourceTree = "<group>"; };
+		046096ED185AA03600203B74 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0461B368186451C200B1AEF6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		0461B36A186451D200B1AEF6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		04670E0E17FE62120012BB8C /* ILLevelCompletedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLevelCompletedLayer.h; sourceTree = "<group>"; };
 		04670E0F17FE62120012BB8C /* ILLevelCompletedLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLevelCompletedLayer.m; sourceTree = "<group>"; };
 		04670E1217FEE2B40012BB8C /* ILStone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILStone.h; sourceTree = "<group>"; };
 		04670E1317FEE2B40012BB8C /* ILStone.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILStone.mm; sourceTree = "<group>"; };
+		04678E13186FA5D40097BE4B /* ILIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILIAPManager.h; path = IAP/ILIAPManager.h; sourceTree = "<group>"; };
+		04678E14186FA5D40097BE4B /* ILIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILIAPManager.m; path = IAP/ILIAPManager.m; sourceTree = "<group>"; };
 		046C49C017C8C21D000727A0 /* NSDictionary+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DeepCopy.h"; sourceTree = "<group>"; };
 		046C49C117C8C21D000727A0 /* NSDictionary+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DeepCopy.m"; sourceTree = "<group>"; };
 		0475DDD317D9DBC6000BC749 /* ILStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILStruct.h; sourceTree = "<group>"; };
@@ -1126,6 +1140,7 @@
 		04886E3717ACB20E005D8DB9 /* IntroLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
 		04886E3917ACB20E005D8DB9 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		04886E3A17ACB20E005D8DB9 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
+		048978AD185AA0640032AA6A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		049B5C7E17D5D3CD00F67159 /* ILMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMenuItem.h; sourceTree = "<group>"; };
 		049B5C7F17D5D3CD00F67159 /* ILMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMenuItem.m; sourceTree = "<group>"; };
 		049B83F817E6D60F00A61446 /* ILBulletEntityBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletEntityBase.h; sourceTree = "<group>"; };
@@ -1364,6 +1379,7 @@
 		04F40E4F17DF72CF00B493C9 /* StaticWoodUnit2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWoodUnit2.ccbi; sourceTree = "<group>"; };
 		04F40E5017DF72CF00B493C9 /* StaticWoodUnit3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = StaticWoodUnit3.ccbi; sourceTree = "<group>"; };
 		04F40E5117DF72CF00B493C9 /* WoodParticle.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = WoodParticle.ccbi; sourceTree = "<group>"; };
+		04F586E0185F3D9F0027ACE2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		04FB362217E836B400FD4A13 /* ILBulletCanon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletCanon.h; sourceTree = "<group>"; };
 		04FB362317E836B400FD4A13 /* ILBulletCanon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBulletCanon.mm; sourceTree = "<group>"; };
 		04FB362617E87CC400FD4A13 /* ILBulletBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBulletBase.h; sourceTree = "<group>"; };
@@ -1421,11 +1437,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F586E1185F3D9F0027ACE2 /* Security.framework in Frameworks */,
+				048978AE185AA0640032AA6A /* AdSupport.framework in Frameworks */,
+				046096EE185AA03600203B74 /* SystemConfiguration.framework in Frameworks */,
+				0461B36B186451D200B1AEF6 /* StoreKit.framework in Frameworks */,
 				04E0832017B50901007F5486 /* libobjc.A.dylib in Frameworks */,
 				04886BF917ACB1F6005D8DB9 /* QuartzCore.framework in Frameworks */,
 				04886BFB17ACB1F6005D8DB9 /* OpenGLES.framework in Frameworks */,
+				046096EC185A9FE300203B74 /* libFlurry_4.3.0.a in Frameworks */,
 				04886BFD17ACB1F6005D8DB9 /* OpenAL.framework in Frameworks */,
 				04886BFF17ACB1F6005D8DB9 /* AudioToolbox.framework in Frameworks */,
+				0461B369186451C200B1AEF6 /* GameKit.framework in Frameworks */,
 				04886C0117ACB1F6005D8DB9 /* AVFoundation.framework in Frameworks */,
 				04886C0317ACB1F6005D8DB9 /* UIKit.framework in Frameworks */,
 				04886C0517ACB1F6005D8DB9 /* Foundation.framework in Frameworks */,
@@ -1756,6 +1778,24 @@
 			path = DynamicElement;
 			sourceTree = "<group>";
 		};
+		046096E9185A9FE300203B74 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				046096EA185A9FE300203B74 /* Flurry.h */,
+				046096EB185A9FE300203B74 /* libFlurry_4.3.0.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		04678E12186FA5A20097BE4B /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				04678E13186FA5D40097BE4B /* ILIAPManager.h */,
+				04678E14186FA5D40097BE4B /* ILIAPManager.m */,
+			);
+			name = IAP;
+			sourceTree = "<group>";
+		};
 		04870A531807A4F100CF1435 /* PlayBackground */ = {
 			isa = PBXGroup;
 			children = (
@@ -1785,6 +1825,12 @@
 		04886BF717ACB1F6005D8DB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0461B36A186451D200B1AEF6 /* StoreKit.framework */,
+				0461B368186451C200B1AEF6 /* GameKit.framework */,
+				04F586E0185F3D9F0027ACE2 /* Security.framework */,
+				048978AD185AA0640032AA6A /* AdSupport.framework */,
+				046096ED185AA03600203B74 /* SystemConfiguration.framework */,
+				046096E9185A9FE300203B74 /* Flurry */,
 				04E0831F17B50901007F5486 /* libobjc.A.dylib */,
 				04886BF817ACB1F6005D8DB9 /* QuartzCore.framework */,
 				04886BFA17ACB1F6005D8DB9 /* OpenGLES.framework */,
@@ -1802,6 +1848,7 @@
 		04886C0C17ACB1F6005D8DB9 /* ShootBear */ = {
 			isa = PBXGroup;
 			children = (
+				04678E12186FA5A20097BE4B /* IAP */,
 				04D15974180A2A0C00CC373D /* AlertView */,
 				0407723617F90C990083D27B /* LevelHelper */,
 				04EA801217F8376E00FA483A /* LoadManager */,
@@ -2856,14 +2903,17 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IL;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
 					04886BF417ACB1F5005D8DB9 = {
 						DevelopmentTeam = R378MY6449;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
-								enabled = 0;
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
 							};
 						};
 					};
@@ -3304,6 +3354,7 @@
 				04886D9117ACB206005D8DB9 /* utility.c in Sources */,
 				0407723417F904AE0083D27B /* ILLabelTTF.m in Sources */,
 				04886D9317ACB206005D8DB9 /* vec2.c in Sources */,
+				04678E15186FA5D40097BE4B /* ILIAPManager.m in Sources */,
 				04886D9517ACB206005D8DB9 /* vec3.c in Sources */,
 				04886D9717ACB206005D8DB9 /* vec4.c in Sources */,
 				04886D9F17ACB206005D8DB9 /* b2BroadPhase.cpp in Sources */,
@@ -3481,13 +3532,16 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
 					"COCOS2D_DEBUG=1",
+					BOX2D_DEBUG,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -3512,8 +3566,10 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
@@ -3550,6 +3606,10 @@
 				HEADER_SEARCH_PATHS = "\"ShootBear/libs/kazmath/include\"";
 				INFOPLIST_FILE = ShootBear/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mac/Documents/XcodeProject/ShootBear/Flurry,
+				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -3568,6 +3628,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3580,6 +3641,10 @@
 				HEADER_SEARCH_PATHS = "\"ShootBear/libs/kazmath/include\"";
 				INFOPLIST_FILE = ShootBear/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mac/Documents/XcodeProject/ShootBear/Flurry,
+				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",

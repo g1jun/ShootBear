@@ -2,7 +2,7 @@
 //  AppDelegate.mm
 //  ShootBear
 //
-//  Created by mac on 13-8-3.
+//  Created by 一叶   欢迎访问http://00red.com on 13-8-3.
 //  Copyright mac 2013年. All rights reserved.
 //
 
@@ -12,6 +12,7 @@
 #import "IntroLayer.h"
 #import "ILSceneReplace.h"
 #import "ILHomeLayerControl.h"
+#import "Flurry.h"
 
 @implementation MyNavigationController
 
@@ -64,10 +65,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Flurry setAppVersion:@"2.0"];
+    [Flurry setCrashReportingEnabled:YES];
+    //note: iOS only allows one crash reporting tool per app; if using another, set to: NO
+    [Flurry startSession:@"ZMY56SB3MDZ86DFXTSG4"];
 	// Create the main window
 	window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	
-	
 	// CCGLView creation
 	// viewWithFrame: size of the OpenGL view. For full screen use [_window bounds]
 	//  - Possible values: any CGRect

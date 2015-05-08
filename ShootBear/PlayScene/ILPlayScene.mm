@@ -2,7 +2,7 @@
 //  ILPlayScene.m
 //  ShootBear
 //
-//  Created by mac on 13-8-4.
+//  Created by 一叶   欢迎访问http://00red.com on 13-8-4.
 //  Copyright 2013年 mac. All rights reserved.
 //
 
@@ -20,6 +20,7 @@
 #import "ILLevelCompletedLayer.h"
 #import "SimpleAudioEngine.h"
 #import "ILSceneReplace.h"
+#import "Flurry.h"
 
 
 #define zBK 0
@@ -65,11 +66,11 @@
 - (void)configBox2d
 {
     [[ILBox2dFactory sharedFactory] prepareB2World];
-#ifdef BOX2D_DEBUG
+//#ifdef BOX2D_DEBUG
     ILBox2dDebug *debug = [[ILBox2dDebug alloc] init];
     [self addChild:debug z:100];
     [debug release];
-#endif
+//#endif
 
 }
 
@@ -98,7 +99,16 @@
     _currentLevel = [(ILLevelLayer *)[CCBReader nodeGraphFromFile:levelFileName] retain];
     _currentLevel.position = ccp(0, 0);
     _currentLevel.delegate = self;
+    NSString *record = [NSString stringWithFormat:@"Level-%i-%i Start",level.page, level.levelNo];
+    [Flurry logEvent:record timed:YES];
     [self addChild:_currentLevel z:zLevel];
+}
+
+- (void)endFlurryRecord:(NSString *) pass
+{
+    NSDictionary *dic = @{@"PassState" : pass};
+    NSString *record = [NSString stringWithFormat:@"Level-%i-%i End",_currentLevelNO.page, _currentLevelNO.levelNo];
+    [Flurry endTimedEvent:record withParameters:dic];
 }
 
 - (void)dealloc
@@ -115,6 +125,7 @@
 - (void)levelFailed
 {
     [_playControl pause];
+    [self endFlurryRecord:@"pass successed"];
     [self loadLevelFinished:@"LevelFailedLayer.ccbi"];
     [[SimpleAudioEngine sharedEngine] playEffect:@"game_dead.mp3"];
 
@@ -130,6 +141,7 @@
 
 - (void)levelCompleted:(float)percent
 {
+    [self endFlurryRecord:@"pass failed"];
     Level next = [self nextLevel];
     if (next.page == 1) {
         [[ILDataSimpleSave sharedDataSave] saveInt:1 forKey:@"current_page"];

@@ -2,7 +2,7 @@
 //  ILControl.m
 //  ShootBear
 //
-//  Created by mac on 13-8-29.
+//  Created by 一叶   欢迎访问http://00red.com on 13-8-29.
 //  Copyright (c) 2013年 mac. All rights reserved.
 //
 
@@ -14,6 +14,7 @@
 #import "ILDataSimpleSave.h"
 #import "ILGunSwitchControl.h"
 #import "SimpleAudioEngine.h"
+#import "Flurry.h"
 
 
 
@@ -164,6 +165,7 @@
     ILGunSwitchControl *switchControl = (ILGunSwitchControl *)[sender parent];
     if(switchControl.quantityBullet <= 0 && !switchControl.tryMode) {
         [self.failedDelegate pressedShoppingButton:sender];
+        [Flurry logEvent:@"shopping from playing"];
         return YES;
     }
     return NO;
@@ -232,6 +234,7 @@
 
 - (void)pressedShoppingButton:(id)sender
 {
+    [Flurry logEvent:@"shopping from menu"];
     [_settingLayer.userObject runAnimationsForSequenceNamed:@"exit"];
     [self.failedDelegate pressedShoppingButton:sender];
 }
